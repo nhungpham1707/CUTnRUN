@@ -1,3 +1,7 @@
+# all self defined files
+.zip
+.gz
+
 # History files
 .Rhistory
 .Rapp.history

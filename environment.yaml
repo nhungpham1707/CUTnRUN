@@ -1,0 +1,35 @@
+name: cutnrun_trimgalore
+channels:
+- bioconda
+- conda-forge
+- anaconda
+- r
+dependencies:
+- bioconda::trim-galore
+- bioconda::macs2
+- bioconda::cutadapt
+- conda-forge::python=3.9
+- conda-forge::pip
+- conda-forge::r-essentials
+- conda-forge::r-base
+- conda-forge::r-dplyr
+- conda-forge::r-stringr
+- conda-forge::r-ggplot2
+- conda-forge::r-viridis
+- conda-forge::r-ggpubr
+- conda-forge::r-corrplot
+- bioconda::bioconductor-genomicranges
+- bioconda::bioconductor-deseq2
+- bioconda::bioconductor-biocinstaller
+- bioconda::bioconductor-chipseeker
+- bioconda::fastqc
+- bioconda::bowtie2
+- bioconda::samtools
+- bioconda::bedtools
+- bioconda::picard
+- bioconda::deeptools
+- bioconda::trimmomatic
+- bioconda::bwa
+- bioconda::homer
+- bioconda::meme
+- bioconda::ucsc-bedgraphtobigwig
