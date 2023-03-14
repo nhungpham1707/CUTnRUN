@@ -10,7 +10,7 @@ All scripts were run on HPC with a customized conda environment. Similar environ
 
 The cut and run data were analyzed based on published protocol with modification
 
-# Steps:
+## Steps:
 
-1. FastQC: check sequences quality (before_trimming_fastqc_all_samples.sh) 
-2. Trim: remove adapter with trim_galore 
+1. FastQC: check sequences quality. Run time with the current setup in the script: 3-4 hours for 18 samples. Script: before_trimming_fastqc_all_samples.sh 
+2. Trim: remove adapter with trim_galore  
