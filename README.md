@@ -4,24 +4,27 @@ Nhung Pham, 14-03-2023
 ## Data description
 
 ## Set up
-All scripts were run on HPC with a customized conda environment. Similar environment can be created from environment.yaml
+All scripts were run on HPC with slurm in a conda environment. A similar environment can be created from environment.yaml
 
 ```
 conda env create -f environment.yaml
 ```
+## Steps description
 
-## Scripts description
+The cut and run data were analyzed based on published protocol with modification [add ref]. The running time was calculated with the current setup in each script. 
 
-The cut and run data were analyzed based on published protocol with modification
+|Steps | Description | Run time (hours)| Script name|
+|------|-------------|-----------------|------------|
+|1. Quality checking  | check reads quality with fastQC | 3-4| before_trimming_fastqc_all_samples.sh|
+|2. Trimming| remove adapter and conduct fastQC after with trim_galore | | |
+|3. Alignment| | | |
+|4. Remove duplicate | | | |
+|5. Call peak| | | |
+|6. Peak annotation | | | |
+|7. Find motif | | | |
+|8. Transform bam file to bigwig | | | |
+|9. Analyze motif | | | | 
 
-## Steps:
 
-1. FastQC: check sequences quality. Run time with the current setup in the script: 3-4 hours for 18 samples. Script: before_trimming_fastqc_all_samples.sh 
-2. Trim: remove adapter with trim_galore  
-3. Alignment
-4. Remove duplicate
-5. Call peak
-6. Peak annotation
-7. Find motif
-8. Transform bam file to bigwig
-9. Analyze motif
+
+
