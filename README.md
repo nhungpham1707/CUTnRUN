@@ -4,7 +4,7 @@ Nhung Pham, 14-03-2023
 ## Data description
 
 ## Set up
-All scripts were run on HPC with slurm in a conda environment. A similar environment can be created from environment.yaml
+All scripts were run on HPC with slurm in a conda environment. A similar environment can be created from environment.yaml. The file is arranged to have trim_galore installed before other packages to prevent version conflict. 
 
 ```
 conda env create -f environment.yaml
