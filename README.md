@@ -6,6 +6,10 @@ Nhung Pham, 14-03-2023
 ## Set up
 All scripts were run on HPC with a customized conda environment. Similar environment can be created from environment.yaml
 
+```
+conda env create -f environment.yaml
+```
+
 ## Scripts description
 
 The cut and run data were analyzed based on published protocol with modification
