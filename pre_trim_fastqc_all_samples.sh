@@ -2,7 +2,7 @@
 #SBATCH --job-name=fastqc_all_samples
 #SBATCH --output=before_trimming_fastqc_all_samples.out
 #SBATCH --time=96:0:0
-#SBATCH -N 3
+#SBATCH --ntasks=1
 #SBATCH --mem=90G
 #SBATCH --cpus-per-task=32
 #SBATCH --mail-type=FAIL,END
@@ -51,9 +51,10 @@ sample_IDs=( "bulkChIC-PMC-DRO-011" \
 
 
 # find read IDs from a sample
-
+n=0
 for str in ${sample_IDs[@]}; do
-  
+  n=$((n+1))
+  echo "-----------running $n out of $total_sample samples---------------------- "
   sample_ID=$str
   echo $sample_ID
     
@@ -62,17 +63,15 @@ for str in ${sample_IDs[@]}; do
 
   len=${#fastq_IDs[@]}
   echo $len
- # for (( i=0; i<$len; i++ )); do echo "${fastq_IDs[$i]}" ; done
-# #Adapter and quality trimming (Trim Galore!)
- 	#cd $trimmed
- 	mkdir -p ${res_dir}/fastqc_before_trimming/${sample_ID}
- 	sample_fastqc=${res_dir}/fastqc_before_trimming/${sample_ID}
-  echo "start fastqc for $sample_ID at $(date)"
+  # for (( i=0; i<$len; i++ )); do echo "${fastq_IDs[$i]}" ; done"
+  mkdir -p ${res_dir}/fastqc_before_trimming/${sample_ID}
+  sample_fastqc=${res_dir}/fastqc_before_trimming/${sample_ID}
+  echo "---------start fastqc for $sample_ID at $(date)---------"
 
   fastqc ${fastq_IDs[0]} -o $sample_fastqc
   fastqc ${fastq_IDs[1]} -o $sample_fastqc
 
-  echo "finish fastqc for $sample_ID at $(date)"
+  echo "----------finish fastqc for $sample_ID at $(date)---------"
 done
 
 
