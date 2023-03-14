@@ -14,3 +14,10 @@ The cut and run data were analyzed based on published protocol with modification
 
 1. FastQC: check sequences quality. Run time with the current setup in the script: 3-4 hours for 18 samples. Script: before_trimming_fastqc_all_samples.sh 
 2. Trim: remove adapter with trim_galore  
+3. Alignment
+4. Remove duplicate
+5. Call peak
+6. Peak annotation
+7. Find motif
+8. Transform bam file to bigwig
+9. Analyze motif
