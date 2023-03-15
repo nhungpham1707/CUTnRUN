@@ -1,0 +1,64 @@
+-----------running 1 out of 19 samples---------------------- 
+bulkChIC-PMC-DRO-011
+2
+-----start alignment for bulkChIC-PMC-DRO-011 at Wed Mar 15 09:40:33 CET 2023-------
+14439590 reads; of these:
+  14439590 (100.00%) were paired; of these:
+    1670682 (11.57%) aligned concordantly 0 times
+    11306238 (78.30%) aligned concordantly exactly 1 time
+    1462670 (10.13%) aligned concordantly >1 times
+    ----
+    1670682 pairs aligned concordantly 0 times; of these:
+      693683 (41.52%) aligned discordantly 1 time
+    ----
+    976999 pairs aligned 0 times concordantly or discordantly; of these:
+      1953998 mates make up the pairs; of these:
+        1159210 (59.33%) aligned 0 times
+        446736 (22.86%) aligned exactly 1 time
+        348052 (17.81%) aligned >1 times
+95.99% overall alignment rate
+-------finish alignment for bulkChIC-PMC-DRO-011 at Wed Mar 15 09:56:49 CET 2023--------
+-----------running 2 out of 19 samples---------------------- 
+bulkChIC-PMC-DRO-013
+2
+-----start alignment for bulkChIC-PMC-DRO-013 at Wed Mar 15 09:56:49 CET 2023-------
+18834234 reads; of these:
+  18834234 (100.00%) were paired; of these:
+    1846597 (9.80%) aligned concordantly 0 times
+    14853227 (78.86%) aligned concordantly exactly 1 time
+    2134410 (11.33%) aligned concordantly >1 times
+    ----
+    1846597 pairs aligned concordantly 0 times; of these:
+      678811 (36.76%) aligned discordantly 1 time
+    ----
+    1167786 pairs aligned 0 times concordantly or discordantly; of these:
+      2335572 mates make up the pairs; of these:
+        1591958 (68.16%) aligned 0 times
+        460513 (19.72%) aligned exactly 1 time
+        283101 (12.12%) aligned >1 times
+95.77% overall alignment rate
+-------finish alignment for bulkChIC-PMC-DRO-013 at Wed Mar 15 10:18:42 CET 2023--------
+-----------running 3 out of 19 samples---------------------- 
+bulkChIC-PMC-DRO-016
+2
+-----start alignment for bulkChIC-PMC-DRO-016 at Wed Mar 15 10:18:42 CET 2023-------
+19990599 reads; of these:
+  19990599 (100.00%) were paired; of these:
+    2909893 (14.56%) aligned concordantly 0 times
+    12958755 (64.82%) aligned concordantly exactly 1 time
+    4121951 (20.62%) aligned concordantly >1 times
+    ----
+    2909893 pairs aligned concordantly 0 times; of these:
+      643886 (22.13%) aligned discordantly 1 time
+    ----
+    2266007 pairs aligned 0 times concordantly or discordantly; of these:
+      4532014 mates make up the pairs; of these:
+        3182902 (70.23%) aligned 0 times
+        736716 (16.26%) aligned exactly 1 time
+        612396 (13.51%) aligned >1 times
+92.04% overall alignment rate
+-------finish alignment for bulkChIC-PMC-DRO-016 at Wed Mar 15 10:48:28 CET 2023--------
+-----------running 4 out of 19 samples---------------------- 
+SCC-bulkChIC-PMC-DRO-005
+2
+-----start alignment for SCC-bulkChIC-PMC-DRO-005 at Wed Mar 15 10:48:28 CET 2023-------
