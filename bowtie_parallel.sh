@@ -1,19 +1,19 @@
 #!/bin/bash
-#SBATCH --job-name=func_paral_bowtiee
-#SBATCH --output=func_paral_all_sample_bowtie2_bam_file.out
+#SBATCH --job-name=bowtie2_all_samples
+#SBATCH --output=all_samples_bowtie2_parallel.out
 #SBATCH --time=96:0:0
-#SBATCH --ntasks=3
-#SBATCH --mem=40G
+#SBATCH --ntasks=1
+#SBATCH --mem=90G
 #SBATCH --cpus-per-task=16
 #SBATCH --mail-type=FAIL,END
 #SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
 
 
-# this script is to conduct alignment for all samples 
+# this script is to conduct alignment for all samples
 
 # Nhung, 15 03 2023
 
-# Tool: bowtie2, ver 0.6.10
+ Tool: bowtie2, ver 0.6.10
 
 # Input: R1 and R2 outputs from trimming for each sample
 
@@ -33,12 +33,13 @@ bowtie2Index=/hpc/pmc_drost/SOURCES/Genomes/human/bowtie2/human_gencode37_hg38
 
 
 # sample_Ids was generated as text file from ls filename.txt from the data_dir
-sample_IDs=( "bulkChIC-PMC-DRO-011"\
-	     "bulkChIC-PMC-DRO-013"\
+# remove       "SCC-bulkChIC-PMC-DRO-005"\ because it is running on test_bowtie2.sh to not overwrite
+sample_IDs=( "bulkChIC-PMC-DRO-011" \
+      "bulkChIC-PMC-DRO-013"\
       "bulkChIC-PMC-DRO-016"\
-      "SCC-bulkChIC-PMC-DRO-005"\
       "SCC-ChIC-PMC-DRO-L5"\
       "bulkChIC-PMC-DRO-012"\
+      "SCC-bulkChIC-PMC-DRO-005"\
       "SCC-bulkChIC-PMC-DRO-008"\
       "SCC-ChIC-PMC-DRO-LH"\
       "bulkChIC-PMC-DRO-013"\
@@ -52,12 +53,13 @@ sample_IDs=( "bulkChIC-PMC-DRO-011"\
       "SCC-ChIC-PMC-DRO-TH"\
       "SCC-bulkChIC-PMC-DRO-002"\
       "SCC-ChIC-PMC-DRO-L1")
-    
-total_sample=${#sample_IDs[@]}
-n=0
 
-task(){
-	trim_IDs=( $(find ${res_dir}/trimmed/${sample_ID} -name "*.fq.gz") )
+task () {
+
+  sample_ID=$str
+  echo $sample_ID
+    
+  trim_IDs=( $(find ${res_dir}/trimmed/${sample_ID} -name "*.fq.gz") )
   #declare -p fastq_IDs
 
   len=${#trim_IDs[@]}
@@ -68,23 +70,21 @@ task(){
   
   echo "-----start alignment for $sample_ID at $(date)-------"
 
-##Alignment to both target and spike-in genomes (Bowtie 2)
-#cd $sample_align_dir # go to where the res will be saved
-
 bowtie2 --end-to-end -p 16 -x $bowtie2Index -1 ${trim_IDs[0]} -2 ${trim_IDs[1]} | samtools view -bS - > ${sample_align_dir}/${sample_ID}.bam
 
-  echo "-------finish alignment for $sample_ID at $(date)--------"; 	}
+  echo "-------finish alignment for $sample_ID at $(date)--------" ;
+}
 
 
+total_sample=${#sample_IDs[@]}
+n=0
 for str in ${sample_IDs[@]}; do
   n=$((n+1))
   echo "-----------running $n out of $total_sample samples---------------------- "
-  sample_ID=$str
-  task "$sample_ID" &	
- 
+ task '$str' &
+
 done
 
 wait
 
-echo "all done"
-
+echo("all done")

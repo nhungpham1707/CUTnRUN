@@ -62,3 +62,4 @@ SCC-bulkChIC-PMC-DRO-005
 -------finish alignment for bulkChIC-PMC-DRO-016 at Wed Mar 15 11:00:28 CET 2023--------
 2
 -----start alignment for SCC-bulkChIC-PMC-DRO-005 at Wed Mar 15 11:00:28 CET 2023-------
+slurmstepd: error: *** JOB 22868378 ON n0040 CANCELLED AT 2023-03-15T11:16:44 ***
