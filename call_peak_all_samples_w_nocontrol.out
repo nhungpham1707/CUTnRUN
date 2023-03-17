@@ -1,0 +1,2369 @@
+-----------running 1 out of 1 tfe3 samples---------------
+-----------running 2 out of 1 tfe3 samples---------------
+-----------running 3 out of 1 tfe3 samples---------------
+-----------running 4 out of 1 tfe3 samples---------------
+----------------start-narrow-peak-calling-for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 13:26:34 CET 2023----------
+----------------start-narrow-peak-calling-for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 13:26:34 CET 2023----------
+----------------start-narrow-peak-calling-for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 13:26:34 CET 2023----------
+----------------start-narrow-peak-calling-for bulkChIC-PMC-DRO-016 at Fri Mar 17 13:26:34 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:26:38: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-016_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/narrow
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-016_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:26:38: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-T1_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/narrow
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-T1_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:26:38: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-008_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/narrow
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-008_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:26:38: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-T5_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/narrow
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-T5_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:26:38: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:26:38: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:26:38: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:26:38: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:26:38: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:26:38: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:26:38: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:26:38: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:26:41: 695257 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:26:41: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:26:41: 663497 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:26:41: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:26:41:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:26:42:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:26:44:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:26:45:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:26:45:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:26:45:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:26:48:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:26:48:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:26:48:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:26:49:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:26:51:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:26:51:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:26:51:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:26:53:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:26:54:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:26:55:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:26:55:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:26:56:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:26:57:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:26:58:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:26:58:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:27:00:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:27:00:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:27:02:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:27:02:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:27:03:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:27:03:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:27:05:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:27:05:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:27:06:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:27:07:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:27:08:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:27:08:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:27:09:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:27:10:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:27:12:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:27:12:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:27:12:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:27:14:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:27:15:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:27:15:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:27:16:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:27:17:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:27:19:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:27:19:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:27:19:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:27:21:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:27:22:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:27:22:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:27:22:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:27:25:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:27:25:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:27:25:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:27:25:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:27:27: 13851581 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:27:28:  16000000 
+INFO  @ Fri, 17 Mar 2023 13:27:29:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:27:29:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:27:31:  17000000 
+INFO  @ Fri, 17 Mar 2023 13:27:32:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:27:32:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:27:32: 15027670 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:27:32: 15027670 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:27:34:  18000000 
+INFO  @ Fri, 17 Mar 2023 13:27:35: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:27:37:  19000000 
+INFO  @ Fri, 17 Mar 2023 13:27:38:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:27:40:  20000000 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 mean fragment size is determined as 198.6 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 note: mean fragment size in control is 267.1 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 fragment size = 198.6 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1  total fragments in treatment: 663497 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 mean fragment size is determined as 201.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 note: mean fragment size in control is 267.1 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 fragment size = 201.1 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1  total fragments in treatment: 695257 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1  fragments after filtering in treatment: 394119 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1  Redundant rate of treatment: 0.41 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1  total fragments in control: 15027670 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:27:41: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:27:42:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:27:42: #1  fragments after filtering in treatment: 416327 
+INFO  @ Fri, 17 Mar 2023 13:27:42: #1  Redundant rate of treatment: 0.40 
+INFO  @ Fri, 17 Mar 2023 13:27:42: #1  total fragments in control: 15027670 
+INFO  @ Fri, 17 Mar 2023 13:27:42: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:27:42: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:27:44:  21000000 
+INFO  @ Fri, 17 Mar 2023 13:27:45:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:27:47:  22000000 
+INFO  @ Fri, 17 Mar 2023 13:27:48:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:27:50:  23000000 
+INFO  @ Fri, 17 Mar 2023 13:27:52:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:27:53:  24000000 
+INFO  @ Fri, 17 Mar 2023 13:27:55:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:27:56:  25000000 
+INFO  @ Fri, 17 Mar 2023 13:27:57: #1  fragments after filtering in control: 11876210 
+INFO  @ Fri, 17 Mar 2023 13:27:57: #1  Redundant rate of control: 0.21 
+INFO  @ Fri, 17 Mar 2023 13:27:57: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:27:57: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:27:57: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:27:57: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:27:57: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:27:58:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:27:59:  26000000 
+INFO  @ Fri, 17 Mar 2023 13:27:59: #1  fragments after filtering in control: 11876210 
+INFO  @ Fri, 17 Mar 2023 13:27:59: #1  Redundant rate of control: 0.21 
+INFO  @ Fri, 17 Mar 2023 13:27:59: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:27:59: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:27:59: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:27:59: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:27:59: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:28:02:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:28:03:  27000000 
+INFO  @ Fri, 17 Mar 2023 13:28:05:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:28:06:  28000000 
+INFO  @ Fri, 17 Mar 2023 13:28:09:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:28:09:  29000000 
+INFO  @ Fri, 17 Mar 2023 13:28:12:  30000000 
+INFO  @ Fri, 17 Mar 2023 13:28:12:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:28:15:  31000000 
+INFO  @ Fri, 17 Mar 2023 13:28:15:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:28:18:  32000000 
+INFO  @ Fri, 17 Mar 2023 13:28:19:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:28:21:  33000000 
+INFO  @ Fri, 17 Mar 2023 13:28:22:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:28:24:  34000000 
+INFO  @ Fri, 17 Mar 2023 13:28:25:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:28:26: 15027670 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:28:27:  35000000 
+INFO  @ Fri, 17 Mar 2023 13:28:30:  36000000 
+INFO  @ Fri, 17 Mar 2023 13:28:34:  37000000 
+INFO  @ Fri, 17 Mar 2023 13:28:34: #1 mean fragment size is determined as 249.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:28:34: #1 note: mean fragment size in control is 267.1 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:28:34: #1 fragment size = 249.1 
+INFO  @ Fri, 17 Mar 2023 13:28:34: #1  total fragments in treatment: 13851581 
+INFO  @ Fri, 17 Mar 2023 13:28:34: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:28:34: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:28:37:  38000000 
+INFO  @ Fri, 17 Mar 2023 13:28:40:  39000000 
+INFO  @ Fri, 17 Mar 2023 13:28:43:  40000000 
+INFO  @ Fri, 17 Mar 2023 13:28:46:  41000000 
+INFO  @ Fri, 17 Mar 2023 13:28:49: #1  fragments after filtering in treatment: 11180074 
+INFO  @ Fri, 17 Mar 2023 13:28:49: #1  Redundant rate of treatment: 0.19 
+INFO  @ Fri, 17 Mar 2023 13:28:49: #1  total fragments in control: 15027670 
+INFO  @ Fri, 17 Mar 2023 13:28:49: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:28:49: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:28:49:  42000000 
+INFO  @ Fri, 17 Mar 2023 13:28:52:  43000000 
+INFO  @ Fri, 17 Mar 2023 13:28:53: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:28:55: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:28:55:  44000000 
+INFO  @ Fri, 17 Mar 2023 13:28:59:  45000000 
+INFO  @ Fri, 17 Mar 2023 13:29:02:  46000000 
+INFO  @ Fri, 17 Mar 2023 13:29:05:  47000000 
+INFO  @ Fri, 17 Mar 2023 13:29:05: #1  fragments after filtering in control: 11876210 
+INFO  @ Fri, 17 Mar 2023 13:29:05: #1  Redundant rate of control: 0.21 
+INFO  @ Fri, 17 Mar 2023 13:29:05: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:29:05: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:29:05: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:29:05: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:29:05: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:29:08:  48000000 
+INFO  @ Fri, 17 Mar 2023 13:29:11:  49000000 
+INFO  @ Fri, 17 Mar 2023 13:29:14:  50000000 
+INFO  @ Fri, 17 Mar 2023 13:29:17:  51000000 
+INFO  @ Fri, 17 Mar 2023 13:29:20:  52000000 
+INFO  @ Fri, 17 Mar 2023 13:29:22: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:29:22: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_control_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:29:22: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_control_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:29:22: Done! 
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 13:29:22 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:29:22: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-T5_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/broad
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-T5_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:29:22: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:29:22: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:29:23:  53000000 
+INFO  @ Fri, 17 Mar 2023 13:29:24: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/narrow/SCC-ChIC-PMC-DRO-T1_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:29:24: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/narrow/SCC-ChIC-PMC-DRO-T1_paired_control_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:29:24: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/narrow/SCC-ChIC-PMC-DRO-T1_paired_control_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:29:24: Done! 
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 13:29:24 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:29:24: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-T1_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/broad
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-T1_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:29:24: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:29:24: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:29:24: 663497 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:29:25: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:29:26: 695257 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:29:26:  54000000 
+INFO  @ Fri, 17 Mar 2023 13:29:27: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:29:28:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:29:30:  55000000 
+INFO  @ Fri, 17 Mar 2023 13:29:30:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:29:31:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:29:33:  56000000 
+INFO  @ Fri, 17 Mar 2023 13:29:33:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:29:35:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:29:36:  57000000 
+INFO  @ Fri, 17 Mar 2023 13:29:37:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:29:38:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:29:39:  58000000 
+INFO  @ Fri, 17 Mar 2023 13:29:40:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:29:41:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:29:42:  59000000 
+INFO  @ Fri, 17 Mar 2023 13:29:44:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:29:45:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:29:45:  60000000 
+INFO  @ Fri, 17 Mar 2023 13:29:47:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:29:48:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:29:48:  61000000 
+INFO  @ Fri, 17 Mar 2023 13:29:50:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:29:51:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:29:52:  62000000 
+INFO  @ Fri, 17 Mar 2023 13:29:54:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:29:55:  63000000 
+INFO  @ Fri, 17 Mar 2023 13:29:55:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:29:57:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:29:58:  64000000 
+INFO  @ Fri, 17 Mar 2023 13:29:58:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:30:00:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:30:01:  65000000 
+INFO  @ Fri, 17 Mar 2023 13:30:02:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:30:04:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:30:04:  66000000 
+INFO  @ Fri, 17 Mar 2023 13:30:05:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:30:07:  67000000 
+INFO  @ Fri, 17 Mar 2023 13:30:07:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:30:08:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:30:10:  68000000 
+INFO  @ Fri, 17 Mar 2023 13:30:10:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:30:12:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:30:13:  69000000 
+INFO  @ Fri, 17 Mar 2023 13:30:14: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:30:14:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:30:14: 69578550 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:30:15:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:30:15: 15027670 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:30:17:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:30:17: 15027670 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:30:23: #1 mean fragment size is determined as 198.6 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:30:23: #1 note: mean fragment size in control is 267.1 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:30:23: #1 fragment size = 198.6 
+INFO  @ Fri, 17 Mar 2023 13:30:23: #1  total fragments in treatment: 663497 
+INFO  @ Fri, 17 Mar 2023 13:30:23: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:30:23: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:30:24: #1  fragments after filtering in treatment: 394119 
+INFO  @ Fri, 17 Mar 2023 13:30:24: #1  Redundant rate of treatment: 0.41 
+INFO  @ Fri, 17 Mar 2023 13:30:24: #1  total fragments in control: 15027670 
+INFO  @ Fri, 17 Mar 2023 13:30:24: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:30:24: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1 mean fragment size is determined as 201.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1 note: mean fragment size in control is 267.1 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1 fragment size = 201.1 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1  total fragments in treatment: 695257 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1  fragments after filtering in treatment: 416327 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1  Redundant rate of treatment: 0.40 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1  total fragments in control: 15027670 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:30:26: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:30:40: #1  fragments after filtering in control: 11876210 
+INFO  @ Fri, 17 Mar 2023 13:30:40: #1  Redundant rate of control: 0.21 
+INFO  @ Fri, 17 Mar 2023 13:30:40: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:30:40: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:30:40: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:30:40: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:30:40: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:30:40: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:30:42: #1  fragments after filtering in control: 11876210 
+INFO  @ Fri, 17 Mar 2023 13:30:42: #1  Redundant rate of control: 0.21 
+INFO  @ Fri, 17 Mar 2023 13:30:42: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:30:42: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:30:42: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:30:42: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:30:42: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:30:42: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:30:49: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/narrow/bulkChIC-PMC-DRO-016_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:30:49: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/narrow/bulkChIC-PMC-DRO-016_paired_control_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:30:49: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/narrow/bulkChIC-PMC-DRO-016_paired_control_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:30:49: Done! 
+----------------start-broad-peak-calling-for bulkChIC-PMC-DRO-016 at Fri Mar 17 13:30:49 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:30:49: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-016_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/broad
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-016_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:30:49: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:30:49: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:30:53:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:30:57:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:31:00:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:31:01: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:31:04:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:31:04:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:31:07:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:31:07:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:31:10:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:31:11:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:31:14:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:31:14:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:31:17:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:31:18:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:31:20:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:31:21:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:31:24:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:31:25:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:31:27:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:31:28:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:31:30:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:31:32:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:31:34:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:31:34: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:31:35:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:31:37:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:31:37: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:31:38: 13851581 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:31:40:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:31:44:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:31:46: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:31:47:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:31:49:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:31:50:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:31:50: 15027670 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:31:52:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:31:56:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:31:59: #1 mean fragment size is determined as 268.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:31:59: #1 note: mean fragment size in control is 267.1 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:31:59: #1 fragment size = 268.1 
+INFO  @ Fri, 17 Mar 2023 13:31:59: #1  total fragments in treatment: 69578550 
+INFO  @ Fri, 17 Mar 2023 13:31:59: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:31:59: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:31:59:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:32:02: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/broad/SCC-ChIC-PMC-DRO-T5_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:32:02: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/broad/SCC-ChIC-PMC-DRO-T5_paired_control_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:32:02: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/broad/SCC-ChIC-PMC-DRO-T5_paired_control_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:32:02: Done! 
+----------------finish-broad-peak-calling-for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 13:32:02 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:32:03:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:32:06:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:32:06: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/broad/SCC-ChIC-PMC-DRO-T1_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:32:06: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/broad/SCC-ChIC-PMC-DRO-T1_paired_control_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:32:06: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/broad/SCC-ChIC-PMC-DRO-T1_paired_control_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:32:06: Done! 
+----------------finish-broad-peak-calling-for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 13:32:06 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:32:09:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:32:13:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:32:16:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:32:19:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:32:23:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:32:26:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:32:30:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:32:33:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:32:37:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:32:37: 15027670 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:32:45: #1 mean fragment size is determined as 249.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:32:45: #1 note: mean fragment size in control is 267.1 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:32:45: #1 fragment size = 249.1 
+INFO  @ Fri, 17 Mar 2023 13:32:45: #1  total fragments in treatment: 13851581 
+INFO  @ Fri, 17 Mar 2023 13:32:45: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:32:45: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:33:00: #1  fragments after filtering in treatment: 11180074 
+INFO  @ Fri, 17 Mar 2023 13:33:00: #1  Redundant rate of treatment: 0.19 
+INFO  @ Fri, 17 Mar 2023 13:33:00: #1  total fragments in control: 15027670 
+INFO  @ Fri, 17 Mar 2023 13:33:00: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:33:00: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:33:09: #1  fragments after filtering in treatment: 43442829 
+INFO  @ Fri, 17 Mar 2023 13:33:09: #1  Redundant rate of treatment: 0.38 
+INFO  @ Fri, 17 Mar 2023 13:33:09: #1  total fragments in control: 15027670 
+INFO  @ Fri, 17 Mar 2023 13:33:09: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:33:09: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:33:17: #1  fragments after filtering in control: 11876210 
+INFO  @ Fri, 17 Mar 2023 13:33:17: #1  Redundant rate of control: 0.21 
+INFO  @ Fri, 17 Mar 2023 13:33:17: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:33:17: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:33:17: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:33:17: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:33:17: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:33:17: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:33:25: #1  fragments after filtering in control: 11876210 
+INFO  @ Fri, 17 Mar 2023 13:33:25: #1  Redundant rate of control: 0.21 
+INFO  @ Fri, 17 Mar 2023 13:33:25: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:33:25: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:33:25: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:33:25: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:33:25: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:34:37: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:35:05: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:35:20: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/broad/bulkChIC-PMC-DRO-016_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:35:20: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/broad/bulkChIC-PMC-DRO-016_paired_control_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:35:21: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/broad/bulkChIC-PMC-DRO-016_paired_control_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:35:21: Done! 
+----------------finish-broad-peak-calling-for bulkChIC-PMC-DRO-016 at Fri Mar 17 13:35:21 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:36:05: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/narrow/SCC-bulkChIC-PMC-DRO-008_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:36:06: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/narrow/SCC-bulkChIC-PMC-DRO-008_paired_control_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:36:06: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/narrow/SCC-bulkChIC-PMC-DRO-008_paired_control_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:36:06: Done! 
+----------------start-broad-peak-calling-for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 13:36:06 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:36:07: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-008_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/broad
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-008_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:36:07: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:36:07: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:36:10:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:36:13:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:36:16:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:36:19:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:36:22:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:36:25:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:36:28:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:36:31:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:36:34:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:36:37:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:36:40:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:36:43:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:36:46:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:36:49:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:36:52:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:36:55:  16000000 
+INFO  @ Fri, 17 Mar 2023 13:36:59:  17000000 
+INFO  @ Fri, 17 Mar 2023 13:37:02:  18000000 
+INFO  @ Fri, 17 Mar 2023 13:37:05:  19000000 
+INFO  @ Fri, 17 Mar 2023 13:37:08:  20000000 
+INFO  @ Fri, 17 Mar 2023 13:37:11:  21000000 
+INFO  @ Fri, 17 Mar 2023 13:37:14:  22000000 
+INFO  @ Fri, 17 Mar 2023 13:37:17:  23000000 
+INFO  @ Fri, 17 Mar 2023 13:37:20:  24000000 
+INFO  @ Fri, 17 Mar 2023 13:37:23:  25000000 
+INFO  @ Fri, 17 Mar 2023 13:37:26:  26000000 
+INFO  @ Fri, 17 Mar 2023 13:37:29:  27000000 
+INFO  @ Fri, 17 Mar 2023 13:37:32:  28000000 
+INFO  @ Fri, 17 Mar 2023 13:37:35:  29000000 
+INFO  @ Fri, 17 Mar 2023 13:37:38:  30000000 
+INFO  @ Fri, 17 Mar 2023 13:37:41:  31000000 
+INFO  @ Fri, 17 Mar 2023 13:37:44:  32000000 
+INFO  @ Fri, 17 Mar 2023 13:37:47:  33000000 
+INFO  @ Fri, 17 Mar 2023 13:37:50:  34000000 
+INFO  @ Fri, 17 Mar 2023 13:37:53:  35000000 
+INFO  @ Fri, 17 Mar 2023 13:37:57:  36000000 
+INFO  @ Fri, 17 Mar 2023 13:38:00:  37000000 
+INFO  @ Fri, 17 Mar 2023 13:38:03:  38000000 
+INFO  @ Fri, 17 Mar 2023 13:38:06:  39000000 
+INFO  @ Fri, 17 Mar 2023 13:38:09:  40000000 
+INFO  @ Fri, 17 Mar 2023 13:38:12:  41000000 
+INFO  @ Fri, 17 Mar 2023 13:38:15:  42000000 
+INFO  @ Fri, 17 Mar 2023 13:38:18:  43000000 
+INFO  @ Fri, 17 Mar 2023 13:38:21:  44000000 
+INFO  @ Fri, 17 Mar 2023 13:38:24:  45000000 
+INFO  @ Fri, 17 Mar 2023 13:38:27:  46000000 
+INFO  @ Fri, 17 Mar 2023 13:38:30:  47000000 
+INFO  @ Fri, 17 Mar 2023 13:38:33:  48000000 
+INFO  @ Fri, 17 Mar 2023 13:38:36:  49000000 
+INFO  @ Fri, 17 Mar 2023 13:38:39:  50000000 
+INFO  @ Fri, 17 Mar 2023 13:38:42:  51000000 
+INFO  @ Fri, 17 Mar 2023 13:38:45:  52000000 
+INFO  @ Fri, 17 Mar 2023 13:38:48:  53000000 
+INFO  @ Fri, 17 Mar 2023 13:38:52:  54000000 
+INFO  @ Fri, 17 Mar 2023 13:38:55:  55000000 
+INFO  @ Fri, 17 Mar 2023 13:38:58:  56000000 
+INFO  @ Fri, 17 Mar 2023 13:39:01:  57000000 
+INFO  @ Fri, 17 Mar 2023 13:39:04:  58000000 
+INFO  @ Fri, 17 Mar 2023 13:39:07:  59000000 
+INFO  @ Fri, 17 Mar 2023 13:39:10:  60000000 
+INFO  @ Fri, 17 Mar 2023 13:39:13:  61000000 
+INFO  @ Fri, 17 Mar 2023 13:39:16:  62000000 
+INFO  @ Fri, 17 Mar 2023 13:39:19:  63000000 
+INFO  @ Fri, 17 Mar 2023 13:39:22:  64000000 
+INFO  @ Fri, 17 Mar 2023 13:39:26:  65000000 
+INFO  @ Fri, 17 Mar 2023 13:39:29:  66000000 
+INFO  @ Fri, 17 Mar 2023 13:39:32:  67000000 
+INFO  @ Fri, 17 Mar 2023 13:39:34:  68000000 
+INFO  @ Fri, 17 Mar 2023 13:39:37:  69000000 
+INFO  @ Fri, 17 Mar 2023 13:39:39: 69578550 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:40:25: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:40:29:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:40:32:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:40:35:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:40:39:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:40:42:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:40:46:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:40:49:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:40:52:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:40:56:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:40:59:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:41:02:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:41:06:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:41:09:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:41:13:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:41:16:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:41:16: 15027670 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:41:25: #1 mean fragment size is determined as 268.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:41:25: #1 note: mean fragment size in control is 267.1 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:41:25: #1 fragment size = 268.1 
+INFO  @ Fri, 17 Mar 2023 13:41:25: #1  total fragments in treatment: 69578550 
+INFO  @ Fri, 17 Mar 2023 13:41:25: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:41:25: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:42:36: #1  fragments after filtering in treatment: 43442829 
+INFO  @ Fri, 17 Mar 2023 13:42:36: #1  Redundant rate of treatment: 0.38 
+INFO  @ Fri, 17 Mar 2023 13:42:36: #1  total fragments in control: 15027670 
+INFO  @ Fri, 17 Mar 2023 13:42:36: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:42:36: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:42:52: #1  fragments after filtering in control: 11876210 
+INFO  @ Fri, 17 Mar 2023 13:42:52: #1  Redundant rate of control: 0.21 
+INFO  @ Fri, 17 Mar 2023 13:42:52: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:42:52: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:42:52: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:42:52: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:42:52: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:42:52: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:44:37: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:45:46: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/broad/SCC-bulkChIC-PMC-DRO-008_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:45:46: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/broad/SCC-bulkChIC-PMC-DRO-008_paired_control_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:45:46: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/broad/SCC-bulkChIC-PMC-DRO-008_paired_control_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:45:47: Done! 
+----------------finish-broad-peak-calling-for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 13:45:47 CET 2023----------
+all done for tfe3
+-----------running 1 out of 1 luciferase samples---------------
+-----------running 2 out of 1 luciferase samples---------------
+-----------running 3 out of 1 luciferase samples---------------
+-----------running 4 out of 1 luciferase samples---------------
+----------------start-narrow-peak-calling-for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 13:45:47 CET 2023----------
+----------------start-narrow-peak-calling-for bulkChIC-PMC-DRO-014 at Fri Mar 17 13:45:47 CET 2023----------
+----------------start-narrow-peak-calling-for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 13:45:47 CET 2023----------
+----------------start-narrow-peak-calling-for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 13:45:47 CET 2023----------
+usage: macs2 callpeak [-h] -t TFILE [TFILE ...] [-c [CFILE ...]]
+                      [-f {AUTO,BAM,SAM,BED,ELAND,ELANDMULTI,ELANDEXPORT,BOWTIE,BAMPE,BEDPE}]
+                      [-g GSIZE] [-s TSIZE] [--keep-dup KEEPDUPLICATES]
+                      [--outdir OUTDIR] [-n NAME] [-B] [--verbose VERBOSE]
+                      [--trackline] [--SPMR] [--nomodel] [--shift SHIFT]
+                      [--extsize EXTSIZE] [--bw BW] [--d-min D_MIN]
+                      [-m MFOLD MFOLD] [--fix-bimodal] [-q QVALUE | -p PVALUE]
+                      [--scale-to {large,small}] [--down-sample] [--seed SEED]
+                      [--tempdir TEMPDIR] [--nolambda] [--slocal SMALLLOCAL]
+                      [--llocal LARGELOCAL] [--max-gap MAXGAP]
+                      [--min-length MINLEN] [--broad]
+                      [--broad-cutoff BROADCUTOFF] [--cutoff-analysis]
+                      [--call-summits] [--fe-cutoff FECUTOFF]
+                      [--buffer-size BUFFER_SIZE] [--to-large] [--ratio RATIO]
+usage: macs2 callpeak [-h] -t TFILE [TFILE ...] [-c [CFILE ...]]
+                      [-f {AUTO,BAM,SAM,BED,ELAND,ELANDMULTI,ELANDEXPORT,BOWTIE,BAMPE,BEDPE}]
+                      [-g GSIZE] [-s TSIZE] [--keep-dup KEEPDUPLICATES]
+                      [--outdir OUTDIR] [-n NAME] [-B] [--verbose VERBOSE]
+                      [--trackline] [--SPMR] [--nomodel] [--shift SHIFT]
+                      [--extsize EXTSIZE] [--bw BW] [--d-min D_MIN]
+                      [-m MFOLD MFOLD] [--fix-bimodal] [-q QVALUE | -p PVALUE]
+                      [--scale-to {large,small}] [--down-sample] [--seed SEED]
+                      [--tempdir TEMPDIR] [--nolambda] [--slocal SMALLLOCAL]
+                      [--llocal LARGELOCAL] [--max-gap MAXGAP]
+                      [--min-length MINLEN] [--broad]
+                      [--broad-cutoff BROADCUTOFF] [--cutoff-analysis]
+                      [--call-summits] [--fe-cutoff FECUTOFF]
+                      [--buffer-size BUFFER_SIZE] [--to-large] [--ratio RATIO]
+macs2 callpeak: error: argument -t/--treatment: expected at least one argument
+macs2 callpeak: error: argument -t/--treatment: expected at least one argument
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 13:45:47 CET 2023----------
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 13:45:47 CET 2023----------
+usage: macs2 callpeak [-h] -t TFILE [TFILE ...] [-c [CFILE ...]]
+                      [-f {AUTO,BAM,SAM,BED,ELAND,ELANDMULTI,ELANDEXPORT,BOWTIE,BAMPE,BEDPE}]
+                      [-g GSIZE] [-s TSIZE] [--keep-dup KEEPDUPLICATES]
+                      [--outdir OUTDIR] [-n NAME] [-B] [--verbose VERBOSE]
+                      [--trackline] [--SPMR] [--nomodel] [--shift SHIFT]
+                      [--extsize EXTSIZE] [--bw BW] [--d-min D_MIN]
+                      [-m MFOLD MFOLD] [--fix-bimodal] [-q QVALUE | -p PVALUE]
+                      [--scale-to {large,small}] [--down-sample] [--seed SEED]
+                      [--tempdir TEMPDIR] [--nolambda] [--slocal SMALLLOCAL]
+                      [--llocal LARGELOCAL] [--max-gap MAXGAP]
+                      [--min-length MINLEN] [--broad]
+                      [--broad-cutoff BROADCUTOFF] [--cutoff-analysis]
+                      [--call-summits] [--fe-cutoff FECUTOFF]
+                      [--buffer-size BUFFER_SIZE] [--to-large] [--ratio RATIO]
+macs2 callpeak: error: argument -t/--treatment: expected at least one argument
+----------------finish-broad-peak-calling-for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 13:45:47 CET 2023----------
+usage: macs2 callpeak [-h] -t TFILE [TFILE ...] [-c [CFILE ...]]
+                      [-f {AUTO,BAM,SAM,BED,ELAND,ELANDMULTI,ELANDEXPORT,BOWTIE,BAMPE,BEDPE}]
+                      [-g GSIZE] [-s TSIZE] [--keep-dup KEEPDUPLICATES]
+                      [--outdir OUTDIR] [-n NAME] [-B] [--verbose VERBOSE]
+                      [--trackline] [--SPMR] [--nomodel] [--shift SHIFT]
+                      [--extsize EXTSIZE] [--bw BW] [--d-min D_MIN]
+                      [-m MFOLD MFOLD] [--fix-bimodal] [-q QVALUE | -p PVALUE]
+                      [--scale-to {large,small}] [--down-sample] [--seed SEED]
+                      [--tempdir TEMPDIR] [--nolambda] [--slocal SMALLLOCAL]
+                      [--llocal LARGELOCAL] [--max-gap MAXGAP]
+                      [--min-length MINLEN] [--broad]
+                      [--broad-cutoff BROADCUTOFF] [--cutoff-analysis]
+                      [--call-summits] [--fe-cutoff FECUTOFF]
+                      [--buffer-size BUFFER_SIZE] [--to-large] [--ratio RATIO]
+macs2 callpeak: error: argument -t/--treatment: expected at least one argument
+----------------finish-broad-peak-calling-for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 13:45:47 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:45:47: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-005_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-005/narrow
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-005_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:45:47: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:45:47: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:45:47: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-014_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/narrow
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-014_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:45:47: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:45:47: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:45:47: 0 fragments have been read. 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 350, in load_frag_files_options
+    treat = tp.build_petrack()
+  File "MACS2/IO/Parser.pyx", line 1267, in MACS2.IO.Parser.BAMPEParser.build_petrack
+  File "MACS2/IO/Parser.pyx", line 1311, in MACS2.IO.Parser.BAMPEParser.build_petrack
+ZeroDivisionError: float division
+----------------start-broad-peak-calling-for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 13:45:48 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:45:48: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-005_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-005/broad
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-005_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:45:48: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:45:48: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:45:48: 0 fragments have been read. 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 350, in load_frag_files_options
+    treat = tp.build_petrack()
+  File "MACS2/IO/Parser.pyx", line 1267, in MACS2.IO.Parser.BAMPEParser.build_petrack
+  File "MACS2/IO/Parser.pyx", line 1311, in MACS2.IO.Parser.BAMPEParser.build_petrack
+ZeroDivisionError: float division
+----------------finish-broad-peak-calling-for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 13:45:48 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:45:51:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:45:55:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:45:59:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:46:02:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:46:06:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:46:10:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:46:13:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:46:17:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:46:20:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:46:24:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:46:27: 10775440 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:46:32: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:46:36:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:46:39:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:46:43:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:46:46:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:46:50:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:46:53:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:46:57:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:47:00:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:47:03:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:47:07:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:47:10:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:47:12: 11494608 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:47:18: #1 mean fragment size is determined as 259.5 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:47:18: #1 note: mean fragment size in control is 280.0 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:47:18: #1 fragment size = 259.5 
+INFO  @ Fri, 17 Mar 2023 13:47:18: #1  total fragments in treatment: 10775440 
+INFO  @ Fri, 17 Mar 2023 13:47:18: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:47:18: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:47:29: #1  fragments after filtering in treatment: 8751226 
+INFO  @ Fri, 17 Mar 2023 13:47:29: #1  Redundant rate of treatment: 0.19 
+INFO  @ Fri, 17 Mar 2023 13:47:29: #1  total fragments in control: 11494608 
+INFO  @ Fri, 17 Mar 2023 13:47:29: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:47:29: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:47:41: #1  fragments after filtering in control: 9144732 
+INFO  @ Fri, 17 Mar 2023 13:47:41: #1  Redundant rate of control: 0.20 
+INFO  @ Fri, 17 Mar 2023 13:47:41: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:47:41: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:47:41: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:47:41: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:47:41: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:48:42: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:49:15: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/narrow/bulkChIC-PMC-DRO-014_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:49:15: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/narrow/bulkChIC-PMC-DRO-014_paired_control_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:49:15: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/narrow/bulkChIC-PMC-DRO-014_paired_control_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:49:15: Done! 
+----------------start-broad-peak-calling-for bulkChIC-PMC-DRO-014 at Fri Mar 17 13:49:15 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:49:15: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-014_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/broad
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-014_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:49:15: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:49:15: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:49:19:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:49:22:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:49:26:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:49:30:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:49:33:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:49:37:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:49:40:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:49:44:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:49:48:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:49:51:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:49:54: 10775440 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:49:59: #1.2 read input fragments... 
+INFO  @ Fri, 17 Mar 2023 13:50:03:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:50:06:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:50:10:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:50:13:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:50:17:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:50:20:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:50:24:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:50:27:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:50:31:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:50:34:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:50:37:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:50:39: 11494608 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:50:45: #1 mean fragment size is determined as 259.5 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:50:46: #1 note: mean fragment size in control is 280.0 bp -- value ignored 
+INFO  @ Fri, 17 Mar 2023 13:50:46: #1 fragment size = 259.5 
+INFO  @ Fri, 17 Mar 2023 13:50:46: #1  total fragments in treatment: 10775440 
+INFO  @ Fri, 17 Mar 2023 13:50:46: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:50:46: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:50:57: #1  fragments after filtering in treatment: 8751226 
+INFO  @ Fri, 17 Mar 2023 13:50:57: #1  Redundant rate of treatment: 0.19 
+INFO  @ Fri, 17 Mar 2023 13:50:57: #1  total fragments in control: 11494608 
+INFO  @ Fri, 17 Mar 2023 13:50:57: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:50:57: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:51:08: #1  fragments after filtering in control: 9144732 
+INFO  @ Fri, 17 Mar 2023 13:51:08: #1  Redundant rate of control: 0.20 
+INFO  @ Fri, 17 Mar 2023 13:51:08: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:51:08: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:51:08: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:51:08: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:51:08: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:51:08: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:52:06: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:52:40: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/broad/bulkChIC-PMC-DRO-014_paired_control_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:52:40: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/broad/bulkChIC-PMC-DRO-014_paired_control_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:52:40: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/broad/bulkChIC-PMC-DRO-014_paired_control_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:52:41: Done! 
+----------------finish-broad-peak-calling-for bulkChIC-PMC-DRO-014 at Fri Mar 17 13:52:41 CET 2023----------
+all done for luciferase
+-----------running 1 out of 1 fusion samples---------------
+-----------running 2 out of 1 fusion samples---------------
+-----------running 3 out of 1 fusion samples---------------
+-----------running 4 out of 1 fusion samples---------------
+----------------start-narrow-peak-calling-for bulkChIC-PMC-DRO-015 at Fri Mar 17 13:52:41 CET 2023----------
+----------------start-narrow-peak-calling-for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 13:52:41 CET 2023----------
+----------------start-narrow-peak-calling-for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 13:52:41 CET 2023----------
+----------------start-narrow-peak-calling-for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 13:52:41 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:52:41: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-F1_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-F1/narrow
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-F1_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:52:41: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-015_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-015/narrow
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-015_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-F5_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-F5/narrow
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-F5_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-002_paired_control -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-002/narrow
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-002_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: 0 fragments have been read. 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 350, in load_frag_files_options
+    treat = tp.build_petrack()
+  File "MACS2/IO/Parser.pyx", line 1267, in MACS2.IO.Parser.BAMPEParser.build_petrack
+  File "MACS2/IO/Parser.pyx", line 1311, in MACS2.IO.Parser.BAMPEParser.build_petrack
+ZeroDivisionError: float division
+----------------start-broad-peak-calling-for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 13:52:41 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:52:41: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-002_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-002/broad
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-002_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:52:41: 0 fragments have been read. 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 350, in load_frag_files_options
+    treat = tp.build_petrack()
+  File "MACS2/IO/Parser.pyx", line 1267, in MACS2.IO.Parser.BAMPEParser.build_petrack
+  File "MACS2/IO/Parser.pyx", line 1311, in MACS2.IO.Parser.BAMPEParser.build_petrack
+ZeroDivisionError: float division
+----------------finish-broad-peak-calling-for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 13:52:42 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:52:43: 636179 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:52:44: 690454 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:52:44: #1.2 read input fragments... 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 363, in load_frag_files_options
+    cp = options.parser(options.cfile[0], buffer_size=options.buffer_size)
+  File "MACS2/IO/Parser.pyx", line 1063, in MACS2.IO.Parser.BAMParser.__init__
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 173, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam'
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 13:52:44 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:52:44: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-F1_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-F1/broad
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-F1_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:52:44: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:52:44: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:52:44: #1.2 read input fragments... 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 363, in load_frag_files_options
+    cp = options.parser(options.cfile[0], buffer_size=options.buffer_size)
+  File "MACS2/IO/Parser.pyx", line 1063, in MACS2.IO.Parser.BAMParser.__init__
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 173, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam'
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 13:52:44 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:52:44: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-F5_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-F5/broad
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-F5_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:52:44: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:52:44: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:52:45:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:52:46: 636179 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:52:47: #1.2 read input fragments... 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 363, in load_frag_files_options
+    cp = options.parser(options.cfile[0], buffer_size=options.buffer_size)
+  File "MACS2/IO/Parser.pyx", line 1063, in MACS2.IO.Parser.BAMParser.__init__
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 173, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam'
+----------------finish-broad-peak-calling-for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 13:52:47 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:52:47: 690454 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:52:47: #1.2 read input fragments... 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 363, in load_frag_files_options
+    cp = options.parser(options.cfile[0], buffer_size=options.buffer_size)
+  File "MACS2/IO/Parser.pyx", line 1063, in MACS2.IO.Parser.BAMParser.__init__
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 173, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam'
+----------------finish-broad-peak-calling-for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 13:52:47 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:52:49:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:52:52:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:52:56:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:52:59:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:53:03:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:53:07:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:53:10:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:53:14:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:53:17:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:53:21:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:53:24:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:53:28:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:53:29: 13406891 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:53:37: #1.2 read input fragments... 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 363, in load_frag_files_options
+    cp = options.parser(options.cfile[0], buffer_size=options.buffer_size)
+  File "MACS2/IO/Parser.pyx", line 1063, in MACS2.IO.Parser.BAMParser.__init__
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 173, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam'
+----------------start-broad-peak-calling-for bulkChIC-PMC-DRO-015 at Fri Mar 17 13:53:37 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:53:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup_filt.bam -c /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-015_paired_control -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-015/broad
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-015_paired_control
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup_filt.bam']
+# control file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 1000 bps and 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:53:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:53:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:53:41:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:53:45:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:53:48:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:53:52:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:53:56:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:54:00:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:54:04:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:54:07:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:54:11:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:54:15:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:54:19:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:54:23:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:54:27:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:54:28: 13406891 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:54:36: #1.2 read input fragments... 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 363, in load_frag_files_options
+    cp = options.parser(options.cfile[0], buffer_size=options.buffer_size)
+  File "MACS2/IO/Parser.pyx", line 1063, in MACS2.IO.Parser.BAMParser.__init__
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 58, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/gzip.py", line 173, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam'
+----------------finish-broad-peak-calling-for bulkChIC-PMC-DRO-015 at Fri Mar 17 13:54:36 CET 2023----------
+all done for fusion
+-----------running 1 out of 1 all samples---------------
+-----------running 2 out of 1 all samples---------------
+-----------running 3 out of 1 all samples---------------
+-----------running 4 out of 1 all samples---------------
+-----------running 5 out of 1 all samples---------------
+-----------running 6 out of 1 all samples---------------
+-----------running 7 out of 1 all samples---------------
+-----------running 8 out of 1 all samples---------------
+-----------running 9 out of 1 all samples---------------
+-----------running 10 out of 1 all samples---------------
+-----------running 11 out of 1 all samples---------------
+-----------running 12 out of 1 all samples---------------
+----------------start-narrow-peak-calling-no-control-for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for bulkChIC-PMC-DRO-015 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for bulkChIC-PMC-DRO-016 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for bulkChIC-PMC-DRO-014 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-narrow-peak-calling-no-control-for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 13:54:36 CET 2023----------
+usage: macs2 callpeak [-h] -t TFILE [TFILE ...] [-c [CFILE ...]]
+                      [-f {AUTO,BAM,SAM,BED,ELAND,ELANDMULTI,ELANDEXPORT,BOWTIE,BAMPE,BEDPE}]
+                      [-g GSIZE] [-s TSIZE] [--keep-dup KEEPDUPLICATES]
+                      [--outdir OUTDIR] [-n NAME] [-B] [--verbose VERBOSE]
+                      [--trackline] [--SPMR] [--nomodel] [--shift SHIFT]
+                      [--extsize EXTSIZE] [--bw BW] [--d-min D_MIN]
+                      [-m MFOLD MFOLD] [--fix-bimodal] [-q QVALUE | -p PVALUE]
+                      [--scale-to {large,small}] [--down-sample] [--seed SEED]
+                      [--tempdir TEMPDIR] [--nolambda] [--slocal SMALLLOCAL]
+                      [--llocal LARGELOCAL] [--max-gap MAXGAP]
+                      [--min-length MINLEN] [--broad]
+                      [--broad-cutoff BROADCUTOFF] [--cutoff-analysis]
+                      [--call-summits] [--fe-cutoff FECUTOFF]
+                      [--buffer-size BUFFER_SIZE] [--to-large] [--ratio RATIO]
+macs2 callpeak: error: argument -t/--treatment: expected at least one argument
+usage: macs2 callpeak [-h] -t TFILE [TFILE ...] [-c [CFILE ...]]
+                      [-f {AUTO,BAM,SAM,BED,ELAND,ELANDMULTI,ELANDEXPORT,BOWTIE,BAMPE,BEDPE}]
+                      [-g GSIZE] [-s TSIZE] [--keep-dup KEEPDUPLICATES]
+                      [--outdir OUTDIR] [-n NAME] [-B] [--verbose VERBOSE]
+                      [--trackline] [--SPMR] [--nomodel] [--shift SHIFT]
+                      [--extsize EXTSIZE] [--bw BW] [--d-min D_MIN]
+                      [-m MFOLD MFOLD] [--fix-bimodal] [-q QVALUE | -p PVALUE]
+                      [--scale-to {large,small}] [--down-sample] [--seed SEED]
+                      [--tempdir TEMPDIR] [--nolambda] [--slocal SMALLLOCAL]
+                      [--llocal LARGELOCAL] [--max-gap MAXGAP]
+                      [--min-length MINLEN] [--broad]
+                      [--broad-cutoff BROADCUTOFF] [--cutoff-analysis]
+                      [--call-summits] [--fe-cutoff FECUTOFF]
+                      [--buffer-size BUFFER_SIZE] [--to-large] [--ratio RATIO]
+macs2 callpeak: error: argument -t/--treatment: expected at least one argument
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 13:54:36 CET 2023----------
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 13:54:36 CET 2023----------
+usage: macs2 callpeak [-h] -t TFILE [TFILE ...] [-c [CFILE ...]]
+                      [-f {AUTO,BAM,SAM,BED,ELAND,ELANDMULTI,ELANDEXPORT,BOWTIE,BAMPE,BEDPE}]
+                      [-g GSIZE] [-s TSIZE] [--keep-dup KEEPDUPLICATES]
+                      [--outdir OUTDIR] [-n NAME] [-B] [--verbose VERBOSE]
+                      [--trackline] [--SPMR] [--nomodel] [--shift SHIFT]
+                      [--extsize EXTSIZE] [--bw BW] [--d-min D_MIN]
+                      [-m MFOLD MFOLD] [--fix-bimodal] [-q QVALUE | -p PVALUE]
+                      [--scale-to {large,small}] [--down-sample] [--seed SEED]
+                      [--tempdir TEMPDIR] [--nolambda] [--slocal SMALLLOCAL]
+                      [--llocal LARGELOCAL] [--max-gap MAXGAP]
+                      [--min-length MINLEN] [--broad]
+                      [--broad-cutoff BROADCUTOFF] [--cutoff-analysis]
+                      [--call-summits] [--fe-cutoff FECUTOFF]
+                      [--buffer-size BUFFER_SIZE] [--to-large] [--ratio RATIO]
+macs2 callpeak: error: argument -t/--treatment: expected at least one argument
+usage: macs2 callpeak [-h] -t TFILE [TFILE ...] [-c [CFILE ...]]
+                      [-f {AUTO,BAM,SAM,BED,ELAND,ELANDMULTI,ELANDEXPORT,BOWTIE,BAMPE,BEDPE}]
+                      [-g GSIZE] [-s TSIZE] [--keep-dup KEEPDUPLICATES]
+                      [--outdir OUTDIR] [-n NAME] [-B] [--verbose VERBOSE]
+                      [--trackline] [--SPMR] [--nomodel] [--shift SHIFT]
+                      [--extsize EXTSIZE] [--bw BW] [--d-min D_MIN]
+                      [-m MFOLD MFOLD] [--fix-bimodal] [-q QVALUE | -p PVALUE]
+                      [--scale-to {large,small}] [--down-sample] [--seed SEED]
+                      [--tempdir TEMPDIR] [--nolambda] [--slocal SMALLLOCAL]
+                      [--llocal LARGELOCAL] [--max-gap MAXGAP]
+                      [--min-length MINLEN] [--broad]
+                      [--broad-cutoff BROADCUTOFF] [--cutoff-analysis]
+                      [--call-summits] [--fe-cutoff FECUTOFF]
+                      [--buffer-size BUFFER_SIZE] [--to-large] [--ratio RATIO]
+macs2 callpeak: error: argument -t/--treatment: expected at least one argument
+----------------finish-broad-peak-calling-no-control-for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 13:54:37 CET 2023----------
+----------------finish-broad-peak-calling-no-control-for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 13:54:37 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-T5_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T5/narrow
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-T5_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-015_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-015/narrow
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-015_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-014_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-014/narrow
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-014_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-T1_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T1/narrow
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-T1_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-016_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-016/narrow
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-016_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-F1_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F1/narrow
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-F1_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-005_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-005/narrow
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-005_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-002_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-002/narrow
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-002_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-F5_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F5/narrow
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-F5_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 0 fragments have been read. 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+INFO  @ Fri, 17 Mar 2023 13:54:37: 0 fragments have been read. 
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 350, in load_frag_files_options
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    treat = tp.build_petrack()
+  File "MACS2/IO/Parser.pyx", line 1267, in MACS2.IO.Parser.BAMPEParser.build_petrack
+  File "MACS2/IO/Parser.pyx", line 1311, in MACS2.IO.Parser.BAMPEParser.build_petrack
+ZeroDivisionError: float division
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 350, in load_frag_files_options
+    treat = tp.build_petrack()
+  File "MACS2/IO/Parser.pyx", line 1267, in MACS2.IO.Parser.BAMPEParser.build_petrack
+  File "MACS2/IO/Parser.pyx", line 1311, in MACS2.IO.Parser.BAMPEParser.build_petrack
+ZeroDivisionError: float division
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-008_paired -q 0.01 --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-008/narrow
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-008_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff = 1.00e-02
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is off
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+----------------start-broad-peak-calling-for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 13:54:37 CET 2023----------
+----------------start-broad-peak-calling-for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 13:54:37 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-002_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-002/broad
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-002_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 0 fragments have been read. 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 350, in load_frag_files_options
+    treat = tp.build_petrack()
+  File "MACS2/IO/Parser.pyx", line 1267, in MACS2.IO.Parser.BAMPEParser.build_petrack
+  File "MACS2/IO/Parser.pyx", line 1311, in MACS2.IO.Parser.BAMPEParser.build_petrack
+ZeroDivisionError: float division
+INFO  @ Fri, 17 Mar 2023 13:54:37: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-005_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-005/broad
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-005_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:37: 0 fragments have been read. 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 51, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 64, in run
+    if options.PE_MODE: (treat, control) = load_frag_files_options (options)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/callpeak_cmd.py", line 350, in load_frag_files_options
+    treat = tp.build_petrack()
+  File "MACS2/IO/Parser.pyx", line 1267, in MACS2.IO.Parser.BAMPEParser.build_petrack
+  File "MACS2/IO/Parser.pyx", line 1311, in MACS2.IO.Parser.BAMPEParser.build_petrack
+ZeroDivisionError: float division
+----------------finish-broad-peak-calling-no-control-for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 13:54:37 CET 2023----------
+----------------finish-broad-peak-calling-no-control-for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 13:54:37 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:39: 636179 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:54:39: 695257 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:54:39: 690454 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:54:39: 663497 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:54:39: #1 mean fragment size is determined as 202.8 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:54:39: #1 fragment size = 202.8 
+INFO  @ Fri, 17 Mar 2023 13:54:39: #1  total fragments in treatment: 636179 
+INFO  @ Fri, 17 Mar 2023 13:54:39: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:39: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 mean fragment size is determined as 201.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 fragment size = 201.1 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  total fragments in treatment: 695257 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 mean fragment size is determined as 212.3 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 fragment size = 212.3 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  total fragments in treatment: 690454 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 mean fragment size is determined as 198.6 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 fragment size = 198.6 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  total fragments in treatment: 663497 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  fragments after filtering in treatment: 381390 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  Redundant rate of treatment: 0.40 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  fragments after filtering in treatment: 416327 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  Redundant rate of treatment: 0.40 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  fragments after filtering in treatment: 394119 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  Redundant rate of treatment: 0.41 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:54:40:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  fragments after filtering in treatment: 409103 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1  Redundant rate of treatment: 0.41 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:54:40: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:54:41:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:54:41:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:54:41:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:54:41: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:54:42: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:54:42: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:54:42: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:54:42: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F1/narrow/SCC-ChIC-PMC-DRO-F1_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:54:42: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F1/narrow/SCC-ChIC-PMC-DRO-F1_paired_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:42: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F1/narrow/SCC-ChIC-PMC-DRO-F1_paired_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:54:42: Done! 
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 13:54:42 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:43: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-F1_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F1/broad
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-F1_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F5/narrow/SCC-ChIC-PMC-DRO-F5_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F5/narrow/SCC-ChIC-PMC-DRO-F5_paired_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F5/narrow/SCC-ChIC-PMC-DRO-F5_paired_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:54:43: Done! 
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 13:54:43 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:43: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:54:43: Done! 
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 13:54:43 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:43: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-F5_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F5/broad
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-F5_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T1/narrow/SCC-ChIC-PMC-DRO-T1_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T1/narrow/SCC-ChIC-PMC-DRO-T1_paired_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T1/narrow/SCC-ChIC-PMC-DRO-T1_paired_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:54:43: Done! 
+----------------start-broad-peak-calling-for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 13:54:43 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:43: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-T5_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T5/broad
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-T5_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:43: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam -f BAMPE -g hs -n SCC-ChIC-PMC-DRO-T1_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T1/broad
+# ARGUMENTS LIST:
+# name = SCC-ChIC-PMC-DRO-T1_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:54:43: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:44:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:54:45:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:54:45:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:54:45:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:54:45: 636179 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1 mean fragment size is determined as 202.8 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1 fragment size = 202.8 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1  total fragments in treatment: 636179 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:54:46: 695257 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1 mean fragment size is determined as 201.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1 fragment size = 201.1 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1  total fragments in treatment: 695257 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:46: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:54:46: 663497 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1  fragments after filtering in treatment: 381390 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1  Redundant rate of treatment: 0.40 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: 690454 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 mean fragment size is determined as 198.6 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 fragment size = 198.6 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1  total fragments in treatment: 663497 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1  fragments after filtering in treatment: 416327 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1  Redundant rate of treatment: 0.40 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 mean fragment size is determined as 212.3 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 fragment size = 212.3 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1  total fragments in treatment: 690454 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:54:47: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #1  fragments after filtering in treatment: 394119 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #1  Redundant rate of treatment: 0.41 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #1  fragments after filtering in treatment: 409103 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #1  Redundant rate of treatment: 0.41 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:54:48: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:54:48:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:54:48:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:54:48:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:54:49: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:54:49: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F1/broad/SCC-ChIC-PMC-DRO-F1_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:54:49: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F1/broad/SCC-ChIC-PMC-DRO-F1_paired_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:49: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F1/broad/SCC-ChIC-PMC-DRO-F1_paired_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:49: Done! 
+----------------finish-broad-peak-calling-no-control-for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 13:54:49 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:49:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:54:49: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:54:49: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T1/broad/SCC-ChIC-PMC-DRO-T1_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:54:50: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T1/broad/SCC-ChIC-PMC-DRO-T1_paired_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:50: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T1/broad/SCC-ChIC-PMC-DRO-T1_paired_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:50: Done! 
+----------------finish-broad-peak-calling-no-control-for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 13:54:50 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:50: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T5/broad/SCC-ChIC-PMC-DRO-T5_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:54:50: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T5/broad/SCC-ChIC-PMC-DRO-T5_paired_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:50: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-T5/broad/SCC-ChIC-PMC-DRO-T5_paired_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:50: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:54:50: Done! 
+----------------finish-broad-peak-calling-no-control-for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 13:54:50 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:51: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F5/broad/SCC-ChIC-PMC-DRO-F5_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:54:51: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F5/broad/SCC-ChIC-PMC-DRO-F5_paired_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:51: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-F5/broad/SCC-ChIC-PMC-DRO-F5_paired_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:54:51: Done! 
+----------------finish-broad-peak-calling-no-control-for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 13:54:51 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:54:52:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:54:52:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:54:52:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:54:53:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:54:56:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:54:56:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:54:56:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:54:57:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:54:59:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:54:59:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:54:59:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:55:01:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:55:03:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:55:03:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:55:03:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:55:05:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:55:06:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:55:06:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:55:06:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:55:09:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:55:10:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:55:10:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:55:10:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:55:13:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:55:13:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:55:13:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:55:14:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:55:16: 10775440 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:55:16:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:55:17:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:55:17:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:55:20:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:55:20:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:55:20:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:55:22: #1 mean fragment size is determined as 259.5 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:55:22: #1 fragment size = 259.5 
+INFO  @ Fri, 17 Mar 2023 13:55:22: #1  total fragments in treatment: 10775440 
+INFO  @ Fri, 17 Mar 2023 13:55:22: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:55:22: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:55:24:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:55:24:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:55:24:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:55:27: 13851581 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:55:27:  14000000 
+INFO  @ Fri, 17 Mar 2023 13:55:28:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:55:29: 13406891 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:55:31:  15000000 
+INFO  @ Fri, 17 Mar 2023 13:55:33: #1  fragments after filtering in treatment: 8751226 
+INFO  @ Fri, 17 Mar 2023 13:55:33: #1  Redundant rate of treatment: 0.19 
+INFO  @ Fri, 17 Mar 2023 13:55:33: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:55:33: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:55:33: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:55:33: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:55:33: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:55:34:  16000000 
+INFO  @ Fri, 17 Mar 2023 13:55:35: #1 mean fragment size is determined as 249.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:55:35: #1 fragment size = 249.1 
+INFO  @ Fri, 17 Mar 2023 13:55:35: #1  total fragments in treatment: 13851581 
+INFO  @ Fri, 17 Mar 2023 13:55:35: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:55:35: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:55:37: #1 mean fragment size is determined as 281.8 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:55:37: #1 fragment size = 281.8 
+INFO  @ Fri, 17 Mar 2023 13:55:37: #1  total fragments in treatment: 13406891 
+INFO  @ Fri, 17 Mar 2023 13:55:37: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:55:37: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:55:38:  17000000 
+INFO  @ Fri, 17 Mar 2023 13:55:41:  18000000 
+INFO  @ Fri, 17 Mar 2023 13:55:45:  19000000 
+INFO  @ Fri, 17 Mar 2023 13:55:48:  20000000 
+INFO  @ Fri, 17 Mar 2023 13:55:49: #1  fragments after filtering in treatment: 11180074 
+INFO  @ Fri, 17 Mar 2023 13:55:49: #1  Redundant rate of treatment: 0.19 
+INFO  @ Fri, 17 Mar 2023 13:55:49: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:55:49: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:55:49: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:55:49: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:55:49: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:55:52:  21000000 
+INFO  @ Fri, 17 Mar 2023 13:55:54: #1  fragments after filtering in treatment: 10694840 
+INFO  @ Fri, 17 Mar 2023 13:55:54: #1  Redundant rate of treatment: 0.20 
+INFO  @ Fri, 17 Mar 2023 13:55:54: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:55:54: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:55:54: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:55:54: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:55:54: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:55:55:  22000000 
+INFO  @ Fri, 17 Mar 2023 13:55:59:  23000000 
+INFO  @ Fri, 17 Mar 2023 13:56:02:  24000000 
+INFO  @ Fri, 17 Mar 2023 13:56:04: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:56:06:  25000000 
+INFO  @ Fri, 17 Mar 2023 13:56:09:  26000000 
+INFO  @ Fri, 17 Mar 2023 13:56:13:  27000000 
+INFO  @ Fri, 17 Mar 2023 13:56:16:  28000000 
+INFO  @ Fri, 17 Mar 2023 13:56:19: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-014/narrow/bulkChIC-PMC-DRO-014_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:56:19: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-014/narrow/bulkChIC-PMC-DRO-014_paired_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:56:19: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-014/narrow/bulkChIC-PMC-DRO-014_paired_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:56:19: Done! 
+----------------start-broad-peak-calling-for bulkChIC-PMC-DRO-014 at Fri Mar 17 13:56:19 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:56:19: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-014_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-014/broad
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-014_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:56:19: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:56:19: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:56:20:  29000000 
+INFO  @ Fri, 17 Mar 2023 13:56:23: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:56:23:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:56:23:  30000000 
+INFO  @ Fri, 17 Mar 2023 13:56:26:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:56:27:  31000000 
+INFO  @ Fri, 17 Mar 2023 13:56:30:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:56:30:  32000000 
+INFO  @ Fri, 17 Mar 2023 13:56:32: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:56:33:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:56:34:  33000000 
+INFO  @ Fri, 17 Mar 2023 13:56:37:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:56:37:  34000000 
+INFO  @ Fri, 17 Mar 2023 13:56:39: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-016/narrow/bulkChIC-PMC-DRO-016_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:56:39: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-016/narrow/bulkChIC-PMC-DRO-016_paired_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:56:39: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-016/narrow/bulkChIC-PMC-DRO-016_paired_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:56:39: Done! 
+----------------start-broad-peak-calling-for bulkChIC-PMC-DRO-016 at Fri Mar 17 13:56:39 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:56:39: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-016_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-016/broad
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-016_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:56:39: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:56:39: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:56:41:  35000000 
+INFO  @ Fri, 17 Mar 2023 13:56:41:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:56:43:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:56:44:  36000000 
+INFO  @ Fri, 17 Mar 2023 13:56:44:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:56:47:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:56:48:  37000000 
+INFO  @ Fri, 17 Mar 2023 13:56:48:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:56:50:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:56:51:  38000000 
+INFO  @ Fri, 17 Mar 2023 13:56:52:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:56:53: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-015/narrow/bulkChIC-PMC-DRO-015_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:56:53: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-015/narrow/bulkChIC-PMC-DRO-015_paired_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 13:56:54: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-015/narrow/bulkChIC-PMC-DRO-015_paired_summits.bed 
+INFO  @ Fri, 17 Mar 2023 13:56:54: Done! 
+----------------start-broad-peak-calling-for bulkChIC-PMC-DRO-015 at Fri Mar 17 13:56:54 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:56:54:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:56:54: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup_filt.bam -f BAMPE -g hs -n bulkChIC-PMC-DRO-015_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-015/broad
+# ARGUMENTS LIST:
+# name = bulkChIC-PMC-DRO-015_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 13:56:54: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 13:56:54: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 13:56:55:  39000000 
+INFO  @ Fri, 17 Mar 2023 13:56:55:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:56:57:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:56:58: 10775440 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:56:58:  1000000 
+INFO  @ Fri, 17 Mar 2023 13:56:58:  40000000 
+INFO  @ Fri, 17 Mar 2023 13:57:01:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:57:02:  41000000 
+INFO  @ Fri, 17 Mar 2023 13:57:02:  2000000 
+INFO  @ Fri, 17 Mar 2023 13:57:03: #1 mean fragment size is determined as 259.5 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:57:03: #1 fragment size = 259.5 
+INFO  @ Fri, 17 Mar 2023 13:57:03: #1  total fragments in treatment: 10775440 
+INFO  @ Fri, 17 Mar 2023 13:57:03: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:57:03: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:57:05:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:57:05:  42000000 
+INFO  @ Fri, 17 Mar 2023 13:57:06:  3000000 
+INFO  @ Fri, 17 Mar 2023 13:57:08:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:57:09:  43000000 
+INFO  @ Fri, 17 Mar 2023 13:57:10:  4000000 
+INFO  @ Fri, 17 Mar 2023 13:57:12:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:57:12:  44000000 
+INFO  @ Fri, 17 Mar 2023 13:57:14:  5000000 
+INFO  @ Fri, 17 Mar 2023 13:57:15: #1  fragments after filtering in treatment: 8751226 
+INFO  @ Fri, 17 Mar 2023 13:57:15: #1  Redundant rate of treatment: 0.19 
+INFO  @ Fri, 17 Mar 2023 13:57:15: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:57:15: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:57:15: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:57:15: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:57:15: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:57:15: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:57:15:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:57:16:  45000000 
+INFO  @ Fri, 17 Mar 2023 13:57:17:  6000000 
+INFO  @ Fri, 17 Mar 2023 13:57:19:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:57:19:  46000000 
+INFO  @ Fri, 17 Mar 2023 13:57:21:  7000000 
+INFO  @ Fri, 17 Mar 2023 13:57:23:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:57:23:  47000000 
+INFO  @ Fri, 17 Mar 2023 13:57:25:  8000000 
+INFO  @ Fri, 17 Mar 2023 13:57:26:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:57:26:  48000000 
+INFO  @ Fri, 17 Mar 2023 13:57:29: 13851581 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:57:29:  9000000 
+INFO  @ Fri, 17 Mar 2023 13:57:30:  49000000 
+INFO  @ Fri, 17 Mar 2023 13:57:33:  10000000 
+INFO  @ Fri, 17 Mar 2023 13:57:33:  50000000 
+INFO  @ Fri, 17 Mar 2023 13:57:37: #1 mean fragment size is determined as 249.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:57:37: #1 fragment size = 249.1 
+INFO  @ Fri, 17 Mar 2023 13:57:37: #1  total fragments in treatment: 13851581 
+INFO  @ Fri, 17 Mar 2023 13:57:37: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:57:37: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:57:37:  51000000 
+INFO  @ Fri, 17 Mar 2023 13:57:37:  11000000 
+INFO  @ Fri, 17 Mar 2023 13:57:40:  52000000 
+INFO  @ Fri, 17 Mar 2023 13:57:41:  12000000 
+INFO  @ Fri, 17 Mar 2023 13:57:43: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:57:44:  53000000 
+INFO  @ Fri, 17 Mar 2023 13:57:45:  13000000 
+INFO  @ Fri, 17 Mar 2023 13:57:46: 13406891 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:57:47:  54000000 
+INFO  @ Fri, 17 Mar 2023 13:57:51:  55000000 
+INFO  @ Fri, 17 Mar 2023 13:57:51: #1  fragments after filtering in treatment: 11180074 
+INFO  @ Fri, 17 Mar 2023 13:57:51: #1  Redundant rate of treatment: 0.19 
+INFO  @ Fri, 17 Mar 2023 13:57:51: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:57:51: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:57:51: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:57:51: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:57:51: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:57:51: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:57:54:  56000000 
+INFO  @ Fri, 17 Mar 2023 13:57:54: #1 mean fragment size is determined as 281.8 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:57:54: #1 fragment size = 281.8 
+INFO  @ Fri, 17 Mar 2023 13:57:54: #1  total fragments in treatment: 13406891 
+INFO  @ Fri, 17 Mar 2023 13:57:54: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:57:54: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 13:57:58: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-014/broad/bulkChIC-PMC-DRO-014_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:57:58:  57000000 
+INFO  @ Fri, 17 Mar 2023 13:57:58: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-014/broad/bulkChIC-PMC-DRO-014_paired_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:57:58: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-014/broad/bulkChIC-PMC-DRO-014_paired_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:57:58: Done! 
+----------------finish-broad-peak-calling-no-control-for bulkChIC-PMC-DRO-014 at Fri Mar 17 13:57:58 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:58:01:  58000000 
+INFO  @ Fri, 17 Mar 2023 13:58:05:  59000000 
+INFO  @ Fri, 17 Mar 2023 13:58:08:  60000000 
+INFO  @ Fri, 17 Mar 2023 13:58:10: #1  fragments after filtering in treatment: 10694840 
+INFO  @ Fri, 17 Mar 2023 13:58:10: #1  Redundant rate of treatment: 0.20 
+INFO  @ Fri, 17 Mar 2023 13:58:10: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 13:58:10: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 13:58:10: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 13:58:10: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 13:58:10: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 13:58:10: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 13:58:12:  61000000 
+INFO  @ Fri, 17 Mar 2023 13:58:15:  62000000 
+INFO  @ Fri, 17 Mar 2023 13:58:19:  63000000 
+INFO  @ Fri, 17 Mar 2023 13:58:22:  64000000 
+INFO  @ Fri, 17 Mar 2023 13:58:25: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:58:26:  65000000 
+INFO  @ Fri, 17 Mar 2023 13:58:29:  66000000 
+INFO  @ Fri, 17 Mar 2023 13:58:33:  67000000 
+INFO  @ Fri, 17 Mar 2023 13:58:36:  68000000 
+INFO  @ Fri, 17 Mar 2023 13:58:39:  69000000 
+INFO  @ Fri, 17 Mar 2023 13:58:41: 69578550 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 13:58:43: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-016/broad/bulkChIC-PMC-DRO-016_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:58:43: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-016/broad/bulkChIC-PMC-DRO-016_paired_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:58:44: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-016/broad/bulkChIC-PMC-DRO-016_paired_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:58:44: Done! 
+----------------finish-broad-peak-calling-no-control-for bulkChIC-PMC-DRO-016 at Fri Mar 17 13:58:44 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:58:49: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 13:59:18: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-015/broad/bulkChIC-PMC-DRO-015_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 13:59:18: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-015/broad/bulkChIC-PMC-DRO-015_paired_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 13:59:19: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-015/broad/bulkChIC-PMC-DRO-015_paired_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 13:59:19: Done! 
+----------------finish-broad-peak-calling-no-control-for bulkChIC-PMC-DRO-015 at Fri Mar 17 13:59:19 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 13:59:32: #1 mean fragment size is determined as 268.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 13:59:32: #1 fragment size = 268.1 
+INFO  @ Fri, 17 Mar 2023 13:59:32: #1  total fragments in treatment: 69578550 
+INFO  @ Fri, 17 Mar 2023 13:59:32: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 13:59:32: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 14:00:50: #1  fragments after filtering in treatment: 43442829 
+INFO  @ Fri, 17 Mar 2023 14:00:50: #1  Redundant rate of treatment: 0.38 
+INFO  @ Fri, 17 Mar 2023 14:00:50: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 14:00:50: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 14:00:50: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 14:00:50: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 14:00:50: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 14:02:59: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 14:04:10: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-008/narrow/SCC-bulkChIC-PMC-DRO-008_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 14:04:10: #4 Write peak in narrowPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-008/narrow/SCC-bulkChIC-PMC-DRO-008_paired_peaks.narrowPeak 
+INFO  @ Fri, 17 Mar 2023 14:04:11: #4 Write summits bed file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-008/narrow/SCC-bulkChIC-PMC-DRO-008_paired_summits.bed 
+INFO  @ Fri, 17 Mar 2023 14:04:11: Done! 
+----------------start-broad-peak-calling-for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 14:04:11 CET 2023----------
+INFO  @ Fri, 17 Mar 2023 14:04:12: 
+# Command line: callpeak --tempdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam -f BAMPE -g hs -n SCC-bulkChIC-PMC-DRO-008_paired -q 0.01 --broad --outdir /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-008/broad
+# ARGUMENTS LIST:
+# name = SCC-bulkChIC-PMC-DRO-008_paired
+# format = BAMPE
+# ChIP-seq file = ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam']
+# control file = None
+# effective genome size = 2.70e+09
+# band width = 300
+# model fold = [5, 50]
+# qvalue cutoff for narrow/strong regions = 1.00e-02
+# qvalue cutoff for broad/weak regions = 1.00e-01
+# The maximum gap between significant sites is assigned as the read length/tag size.
+# The minimum length of peaks is assigned as the predicted fragment length "d".
+# Larger dataset will be scaled towards smaller dataset.
+# Range for calculating regional lambda is: 10000 bps
+# Broad region calling is on
+# Paired-End mode is on
+ 
+INFO  @ Fri, 17 Mar 2023 14:04:12: #1 read fragment files... 
+INFO  @ Fri, 17 Mar 2023 14:04:12: #1 read treatment fragments... 
+INFO  @ Fri, 17 Mar 2023 14:04:15:  1000000 
+INFO  @ Fri, 17 Mar 2023 14:04:19:  2000000 
+INFO  @ Fri, 17 Mar 2023 14:04:22:  3000000 
+INFO  @ Fri, 17 Mar 2023 14:04:25:  4000000 
+INFO  @ Fri, 17 Mar 2023 14:04:29:  5000000 
+INFO  @ Fri, 17 Mar 2023 14:04:32:  6000000 
+INFO  @ Fri, 17 Mar 2023 14:04:36:  7000000 
+INFO  @ Fri, 17 Mar 2023 14:04:39:  8000000 
+INFO  @ Fri, 17 Mar 2023 14:04:42:  9000000 
+INFO  @ Fri, 17 Mar 2023 14:04:46:  10000000 
+INFO  @ Fri, 17 Mar 2023 14:04:49:  11000000 
+INFO  @ Fri, 17 Mar 2023 14:04:52:  12000000 
+INFO  @ Fri, 17 Mar 2023 14:04:56:  13000000 
+INFO  @ Fri, 17 Mar 2023 14:04:59:  14000000 
+INFO  @ Fri, 17 Mar 2023 14:05:02:  15000000 
+INFO  @ Fri, 17 Mar 2023 14:05:06:  16000000 
+INFO  @ Fri, 17 Mar 2023 14:05:09:  17000000 
+INFO  @ Fri, 17 Mar 2023 14:05:12:  18000000 
+INFO  @ Fri, 17 Mar 2023 14:05:16:  19000000 
+INFO  @ Fri, 17 Mar 2023 14:05:19:  20000000 
+INFO  @ Fri, 17 Mar 2023 14:05:22:  21000000 
+INFO  @ Fri, 17 Mar 2023 14:05:26:  22000000 
+INFO  @ Fri, 17 Mar 2023 14:05:29:  23000000 
+INFO  @ Fri, 17 Mar 2023 14:05:32:  24000000 
+INFO  @ Fri, 17 Mar 2023 14:05:36:  25000000 
+INFO  @ Fri, 17 Mar 2023 14:05:39:  26000000 
+INFO  @ Fri, 17 Mar 2023 14:05:42:  27000000 
+INFO  @ Fri, 17 Mar 2023 14:05:46:  28000000 
+INFO  @ Fri, 17 Mar 2023 14:05:49:  29000000 
+INFO  @ Fri, 17 Mar 2023 14:05:52:  30000000 
+INFO  @ Fri, 17 Mar 2023 14:05:55:  31000000 
+INFO  @ Fri, 17 Mar 2023 14:05:59:  32000000 
+INFO  @ Fri, 17 Mar 2023 14:06:02:  33000000 
+INFO  @ Fri, 17 Mar 2023 14:06:05:  34000000 
+INFO  @ Fri, 17 Mar 2023 14:06:08:  35000000 
+INFO  @ Fri, 17 Mar 2023 14:06:11:  36000000 
+INFO  @ Fri, 17 Mar 2023 14:06:14:  37000000 
+INFO  @ Fri, 17 Mar 2023 14:06:17:  38000000 
+INFO  @ Fri, 17 Mar 2023 14:06:20:  39000000 
+INFO  @ Fri, 17 Mar 2023 14:06:23:  40000000 
+INFO  @ Fri, 17 Mar 2023 14:06:26:  41000000 
+INFO  @ Fri, 17 Mar 2023 14:06:30:  42000000 
+INFO  @ Fri, 17 Mar 2023 14:06:33:  43000000 
+INFO  @ Fri, 17 Mar 2023 14:06:36:  44000000 
+INFO  @ Fri, 17 Mar 2023 14:06:39:  45000000 
+INFO  @ Fri, 17 Mar 2023 14:06:42:  46000000 
+INFO  @ Fri, 17 Mar 2023 14:06:45:  47000000 
+INFO  @ Fri, 17 Mar 2023 14:06:48:  48000000 
+INFO  @ Fri, 17 Mar 2023 14:06:51:  49000000 
+INFO  @ Fri, 17 Mar 2023 14:06:54:  50000000 
+INFO  @ Fri, 17 Mar 2023 14:06:57:  51000000 
+INFO  @ Fri, 17 Mar 2023 14:07:00:  52000000 
+INFO  @ Fri, 17 Mar 2023 14:07:03:  53000000 
+INFO  @ Fri, 17 Mar 2023 14:07:07:  54000000 
+INFO  @ Fri, 17 Mar 2023 14:07:10:  55000000 
+INFO  @ Fri, 17 Mar 2023 14:07:13:  56000000 
+INFO  @ Fri, 17 Mar 2023 14:07:16:  57000000 
+INFO  @ Fri, 17 Mar 2023 14:07:19:  58000000 
+INFO  @ Fri, 17 Mar 2023 14:07:22:  59000000 
+INFO  @ Fri, 17 Mar 2023 14:07:25:  60000000 
+INFO  @ Fri, 17 Mar 2023 14:07:28:  61000000 
+INFO  @ Fri, 17 Mar 2023 14:07:31:  62000000 
+INFO  @ Fri, 17 Mar 2023 14:07:35:  63000000 
+INFO  @ Fri, 17 Mar 2023 14:07:38:  64000000 
+INFO  @ Fri, 17 Mar 2023 14:07:41:  65000000 
+INFO  @ Fri, 17 Mar 2023 14:07:44:  66000000 
+INFO  @ Fri, 17 Mar 2023 14:07:47:  67000000 
+INFO  @ Fri, 17 Mar 2023 14:07:50:  68000000 
+INFO  @ Fri, 17 Mar 2023 14:07:53:  69000000 
+INFO  @ Fri, 17 Mar 2023 14:07:54: 69578550 fragments have been read. 
+INFO  @ Fri, 17 Mar 2023 14:08:41: #1 mean fragment size is determined as 268.1 bp from treatment 
+INFO  @ Fri, 17 Mar 2023 14:08:41: #1 fragment size = 268.1 
+INFO  @ Fri, 17 Mar 2023 14:08:41: #1  total fragments in treatment: 69578550 
+INFO  @ Fri, 17 Mar 2023 14:08:41: #1 user defined the maximum fragments... 
+INFO  @ Fri, 17 Mar 2023 14:08:41: #1 filter out redundant fragments by allowing at most 1 identical fragment(s) 
+INFO  @ Fri, 17 Mar 2023 14:09:53: #1  fragments after filtering in treatment: 43442829 
+INFO  @ Fri, 17 Mar 2023 14:09:53: #1  Redundant rate of treatment: 0.38 
+INFO  @ Fri, 17 Mar 2023 14:09:53: #1 finished! 
+INFO  @ Fri, 17 Mar 2023 14:09:53: #2 Build Peak Model... 
+INFO  @ Fri, 17 Mar 2023 14:09:53: #2 Skipped... 
+INFO  @ Fri, 17 Mar 2023 14:09:53: #3 Call peaks... 
+INFO  @ Fri, 17 Mar 2023 14:09:53: #3 Call broad peaks with given level1 -log10qvalue cutoff and level2: 2.000000, 1.000000... 
+INFO  @ Fri, 17 Mar 2023 14:09:53: #3 Pre-compute pvalue-qvalue table... 
+INFO  @ Fri, 17 Mar 2023 14:12:06: #3 Call peaks for each chromosome... 
+INFO  @ Fri, 17 Mar 2023 14:13:53: #4 Write output xls file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-008/broad/SCC-bulkChIC-PMC-DRO-008_paired_peaks.xls 
+INFO  @ Fri, 17 Mar 2023 14:13:55: #4 Write broad peak in broadPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-008/broad/SCC-bulkChIC-PMC-DRO-008_paired_peaks.broadPeak 
+INFO  @ Fri, 17 Mar 2023 14:13:55: #4 Write broad peak in bed12/gappedPeak format file... /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-bulkChIC-PMC-DRO-008/broad/SCC-bulkChIC-PMC-DRO-008_paired_peaks.gappedPeak 
+INFO  @ Fri, 17 Mar 2023 14:13:57: Done! 
+----------------finish-broad-peak-calling-no-control-for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 14:13:57 CET 2023----------
+all done for no control

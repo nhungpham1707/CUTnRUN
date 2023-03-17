@@ -26,7 +26,6 @@
 # data dir
 data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1
 
-
 res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
 picardTool=/hpc/pmc_drost/PROJECTS/swang/software/picard.jar
 new_tmp_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp # to solve the out of space with the temporary output from picard
@@ -42,7 +41,6 @@ sample_IDs=( "bulkChIC-PMC-DRO-011" \
       "bulkChIC-PMC-DRO-012"\
       "SCC-bulkChIC-PMC-DRO-008"\
       "SCC-ChIC-PMC-DRO-LH"\
-      "bulkChIC-PMC-DRO-013"\
       "SCC-ChIC-PMC-DRO-F1"\
       "SCC-ChIC-PMC-DRO-T1"\
       "SCC-ChIC-PMC-DRO-F5"\
@@ -58,7 +56,7 @@ task () {
 	sample_ID=$str
   echo $sample_ID
     
-  bam_ID=( $(find ${res_dir}/alignment_parallel/${sample_ID} -name "*.bam") )
+  bam_ID=( $(find ${res_dir}/alignment/${sample_ID} -name "*.bam") )
   
   len=${#bam_ID[@]}
   echo $len

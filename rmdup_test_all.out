@@ -1,0 +1,809 @@
+bulkChIC-PMC-DRO-011
+bulkChIC-PMC-DRO-013
+bulkChIC-PMC-DRO-016
+SCC-ChIC-PMC-DRO-L5
+SCC-bulkChIC-PMC-DRO-005
+SCC-ChIC-PMC-DRO-TH
+bulkChIC-PMC-DRO-012
+SCC-bulkChIC-PMC-DRO-002
+SCC-bulkChIC-PMC-DRO-008
+SCC-ChIC-PMC-DRO-LH
+SCC-ChIC-PMC-DRO-L1
+SCC-ChIC-PMC-DRO-F1
+SCC-ChIC-PMC-DRO-T1
+SCC-ChIC-PMC-DRO-F5
+SCC-ChIC-PMC-DRO-T5
+bulkChIC-PMC-DRO-014
+SCC-ChIC-PMC-DRO-FH
+bulkChIC-PMC-DRO-015
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+start sorting and remove dup for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-015 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-016 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-TH at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-011 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-013 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-LH at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-FH at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-014 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 15:32:10 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-012 at Fri Mar 17 15:32:10 CET 2023
+15:32:18.432 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.436 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.438 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.438 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.440 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.439 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.440 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.442 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.443 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.447 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.446 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.449 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.449 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.450 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.451 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.452 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.447 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:32:18.457 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:32:18	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:18	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:18	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:18	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+[Fri Mar 17 15:32:18 CET 2023] picard.sam.SortSam done. Elapsed time: 0.01 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.util.RuntimeIOException: java.util.zip.DataFormatException: invalid distance too far back
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+	at htsjdk.samtools.util.BlockGunzipper.unzipBlock(BlockGunzipper.java:161)
+	at htsjdk.samtools.util.BlockGunzipper.unzipBlock(BlockGunzipper.java:96)
+	at htsjdk.samtools.util.BlockCompressedInputStream.inflateBlock(BlockCompressedInputStream.java:550)
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:532)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+Caused by: java.util.zip.DataFormatException: invalid distance too far back
+	at java.base/java.util.zip.Inflater.inflateBytesBytes(Native Method)
+	at java.base/java.util.zip.Inflater.inflate(Inflater.java:385)
+	at htsjdk.samtools.util.BlockGunzipper.unzipBlock(BlockGunzipper.java:145)
+	... 23 more
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-17 15:32:19	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+start mark dup for bulkChIC-PMC-DRO-013 at Fri Mar 17 15:32:19 CET 2023
+15:32:26.335 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:32:26 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:26 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:32:26 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for bulkChIC-PMC-DRO-013 at Fri Mar 17 15:32:26 CET 2023
+15:32:32.383 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:32:32 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:32:32 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:32:32	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:32:32 CET 2023] picard.sam.SortSam done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+start sorting with samtools for bulkChIC-PMC-DRO-013 at Fri Mar 17 15:32:32 CET 2023
+start indexing for bulkChIC-PMC-DRO-013 at Fri Mar 17 15:32:33 CET 2023
+finish indexing for bulkChIC-PMC-DRO-013 at Fri Mar 17 15:32:33 CET 2023
+INFO	2023-03-17 15:33:04	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:33:04	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:33:05	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:33:06	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:33:09	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:33:10	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:33:16	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:33:18	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:33:33	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:33:56 CET 2023] picard.sam.SortSam done. Elapsed time: 1.64 minutes.
+Runtime.totalMemory()=1089470464
+start mark dup for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 15:33:57 CET 2023
+15:34:00.808 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:00 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:00 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:00 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 15:34:00 CET 2023
+[Fri Mar 17 15:34:02 CET 2023] picard.sam.SortSam done. Elapsed time: 1.73 minutes.
+Runtime.totalMemory()=1088421888
+start mark dup for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 15:34:02 CET 2023
+15:34:03.726 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:03 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:03 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+15:34:05.740 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:05 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:05 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:05 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 15:34:05 CET 2023
+[Fri Mar 17 15:34:07 CET 2023] picard.sam.SortSam done. Elapsed time: 1.83 minutes.
+Runtime.totalMemory()=1089470464
+[Fri Mar 17 15:34:07 CET 2023] picard.sam.SortSam done. Elapsed time: 1.83 minutes.
+Runtime.totalMemory()=1089470464
+start mark dup for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 15:34:08 CET 2023
+start mark dup for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 15:34:08 CET 2023
+[Fri Mar 17 15:34:08 CET 2023] picard.sam.SortSam done. Elapsed time: 1.84 minutes.
+Runtime.totalMemory()=1088421888
+start mark dup for SCC-ChIC-PMC-DRO-FH at Fri Mar 17 15:34:09 CET 2023
+15:34:09.614 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:09 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:09 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+15:34:11.337 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:11 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:11 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:11 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 15:34:11 CET 2023
+15:34:11.705 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:11 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:11 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:11 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 15:34:11 CET 2023
+[Fri Mar 17 15:34:11 CET 2023] picard.sam.SortSam done. Elapsed time: 1.90 minutes.
+Runtime.totalMemory()=1283457024
+start mark dup for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 15:34:12 CET 2023
+15:34:12.492 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:12 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:12 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:12 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-ChIC-PMC-DRO-FH at Fri Mar 17 15:34:12 CET 2023
+15:34:15.149 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+15:34:15.223 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:15 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:15 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:15 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:15 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+15:34:16.198 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:16 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:16 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:16 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 15:34:16 CET 2023
+15:34:16.446 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:16 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:16 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+15:34:21.079 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:21 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:21 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:22 CET 2023] picard.sam.SortSam done. Elapsed time: 2.07 minutes.
+Runtime.totalMemory()=35651584
+start mark dup for SCC-ChIC-PMC-DRO-TH at Fri Mar 17 15:34:22 CET 2023
+15:34:26.044 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:26 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:26 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:26 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-ChIC-PMC-DRO-TH at Fri Mar 17 15:34:26 CET 2023
+INFO	2023-03-17 15:34:26	SortSam	Read    10,000,000 records.  Elapsed time: 00:02:07s.  Time for last 10,000,000:  127s.  Last read position: chr11:100,829,831.  Last read name: VH00208:1:AAALH7CM5:1:1107:49304:19231
+INFO	2023-03-17 15:34:27	SortSam	Read    10,000,000 records.  Elapsed time: 00:02:08s.  Time for last 10,000,000:  128s.  Last read position: chr4:188,274,252.  Last read name: VH00208:1:AAALH7CM5:1:1107:61915:2155
+INFO	2023-03-17 15:34:29	SortSam	Read    10,000,000 records.  Elapsed time: 00:02:11s.  Time for last 10,000,000:  131s.  Last read position: chr2:178,746,710.  Last read name: VH00208:1:AAALH7CM5:1:1107:58564:29284
+15:34:30.145 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:30 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:30 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:34:31	SortSam	Read    10,000,000 records.  Elapsed time: 00:02:12s.  Time for last 10,000,000:  132s.  Last read position: chr3:45,132,705.  Last read name: VH00208:13:AAC22FNM5:1:1404:39723:19307
+INFO	2023-03-17 15:34:31	SortSam	Read    10,000,000 records.  Elapsed time: 00:02:12s.  Time for last 10,000,000:  132s.  Last read position: chr9:113,274,992.  Last read name: VH00208:13:AAC22FNM5:1:1401:48907:10958
+INFO	2023-03-17 15:34:31	SortSam	Read    10,000,000 records.  Elapsed time: 00:02:13s.  Time for last 10,000,000:  133s.  Last read position: chr1:52,785,798.  Last read name: VH00208:13:AAC22FNM5:1:1502:12475:44807
+INFO	2023-03-17 15:34:34	SortSam	Read    10,000,000 records.  Elapsed time: 00:02:15s.  Time for last 10,000,000:  135s.  Last read position: chrM:15,476.  Last read name: VH00208:13:AAC22FNM5:1:1401:61612:55010
+INFO	2023-03-17 15:34:35	SortSam	Read    10,000,000 records.  Elapsed time: 00:02:16s.  Time for last 10,000,000:  136s.  Last read position: chr17:28,160,063.  Last read name: VH00208:13:AAC22FNM5:1:1501:40897:19837
+INFO	2023-03-17 15:34:37	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:34:37 CET 2023] picard.sam.SortSam done. Elapsed time: 2.33 minutes.
+Runtime.totalMemory()=1096810496
+start mark dup for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 15:34:38 CET 2023
+15:34:42.424 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:42 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:42 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:34:42 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 15:34:42 CET 2023
+INFO	2023-03-17 15:34:45	SortSam	Finished reading inputs, merging and writing to output now.
+15:34:46.537 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:34:46 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:34:46 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:34:51	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:34:51	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-17 15:34:53	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:34:57 CET 2023] picard.sam.SortSam done. Elapsed time: 2.66 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.FileTruncatedException: Premature end of file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005.bam
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:530)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start mark dup for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 15:34:59 CET 2023
+[Fri Mar 17 15:35:01 CET 2023] picard.sam.SortSam done. Elapsed time: 2.71 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.FileTruncatedException: Premature end of file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016.bam
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:530)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+INFO	2023-03-17 15:35:02	SortSam	Finished reading inputs, merging and writing to output now.
+start mark dup for bulkChIC-PMC-DRO-016 at Fri Mar 17 15:35:02 CET 2023
+15:35:02.400 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:02 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:02 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:35:02 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 15:35:02 CET 2023
+[Fri Mar 17 15:35:02 CET 2023] picard.sam.SortSam done. Elapsed time: 2.74 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.FileTruncatedException: Premature end of file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014.bam
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:530)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start mark dup for bulkChIC-PMC-DRO-014 at Fri Mar 17 15:35:03 CET 2023
+15:35:05.663 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:05 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:05 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:35:05 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for bulkChIC-PMC-DRO-016 at Fri Mar 17 15:35:05 CET 2023
+15:35:06.017 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:06 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:06 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:35:06	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:35:06 CET 2023] picard.sam.SortSam done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+start sorting with samtools for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 15:35:06 CET 2023
+start indexing for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 15:35:06 CET 2023
+finish indexing for SCC-bulkChIC-PMC-DRO-005 at Fri Mar 17 15:35:06 CET 2023
+15:35:06.955 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:07 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:07 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:35:07 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for bulkChIC-PMC-DRO-014 at Fri Mar 17 15:35:07 CET 2023
+15:35:08.774 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:08 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:08 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:35:08	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:35:08 CET 2023] picard.sam.SortSam done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+start sorting with samtools for bulkChIC-PMC-DRO-016 at Fri Mar 17 15:35:09 CET 2023
+start indexing for bulkChIC-PMC-DRO-016 at Fri Mar 17 15:35:09 CET 2023
+INFO	2023-03-17 15:35:09	SortSam	Finished reading inputs, merging and writing to output now.
+finish indexing for bulkChIC-PMC-DRO-016 at Fri Mar 17 15:35:09 CET 2023
+15:35:09.942 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:10 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:10 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:35:10	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:35:10 CET 2023] picard.sam.SortSam done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+start sorting with samtools for bulkChIC-PMC-DRO-014 at Fri Mar 17 15:35:10 CET 2023
+start indexing for bulkChIC-PMC-DRO-014 at Fri Mar 17 15:35:10 CET 2023
+finish indexing for bulkChIC-PMC-DRO-014 at Fri Mar 17 15:35:10 CET 2023
+[Fri Mar 17 15:35:13 CET 2023] picard.sam.SortSam done. Elapsed time: 2.91 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.FileTruncatedException: Premature end of file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008.bam
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:530)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start mark dup for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 15:35:14 CET 2023
+[Fri Mar 17 15:35:14 CET 2023] picard.sam.SortSam done. Elapsed time: 2.94 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.FileTruncatedException: Premature end of file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015.bam
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:530)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+[Fri Mar 17 15:35:14 CET 2023] picard.sam.SortSam done. Elapsed time: 2.94 minutes.
+Runtime.totalMemory()=1091567616
+start mark dup for SCC-ChIC-PMC-DRO-LH at Fri Mar 17 15:35:15 CET 2023
+start mark dup for bulkChIC-PMC-DRO-015 at Fri Mar 17 15:35:15 CET 2023
+15:35:16.400 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:16 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:16 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:35:16 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 15:35:16 CET 2023
+[Fri Mar 17 15:35:16 CET 2023] picard.sam.SortSam done. Elapsed time: 2.98 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.FileTruncatedException: Premature end of file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011.bam
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:530)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+15:35:17.077 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:17 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:17 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:35:17 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-ChIC-PMC-DRO-LH at Fri Mar 17 15:35:17 CET 2023
+15:35:17.657 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:17 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:17 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:35:17 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for bulkChIC-PMC-DRO-015 at Fri Mar 17 15:35:17 CET 2023
+start mark dup for bulkChIC-PMC-DRO-011 at Fri Mar 17 15:35:17 CET 2023
+INFO	2023-03-17 15:35:18	SortSam	Finished reading inputs, merging and writing to output now.
+15:35:18.675 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:18 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:18 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:35:18	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:35:18 CET 2023] picard.sam.SortSam done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+start sorting with samtools for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 15:35:18 CET 2023
+start indexing for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 15:35:18 CET 2023
+finish indexing for SCC-bulkChIC-PMC-DRO-008 at Fri Mar 17 15:35:18 CET 2023
+15:35:19.356 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:19 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:19 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+15:35:19.726 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:19 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:19 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:35:19	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:35:19 CET 2023] picard.sam.SortSam done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+15:35:19.957 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+start sorting with samtools for bulkChIC-PMC-DRO-015 at Fri Mar 17 15:35:19 CET 2023
+start indexing for bulkChIC-PMC-DRO-015 at Fri Mar 17 15:35:20 CET 2023
+[Fri Mar 17 15:35:20 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:20 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:35:20 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+finish indexing for bulkChIC-PMC-DRO-015 at Fri Mar 17 15:35:20 CET 2023
+start remove dup for bulkChIC-PMC-DRO-011 at Fri Mar 17 15:35:20 CET 2023
+[Fri Mar 17 15:35:20 CET 2023] picard.sam.SortSam done. Elapsed time: 3.05 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.FileTruncatedException: Premature end of file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002.bam
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:530)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+15:35:21.768 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:21 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:21 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:35:21	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:35:21 CET 2023] picard.sam.SortSam done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+start sorting with samtools for bulkChIC-PMC-DRO-011 at Fri Mar 17 15:35:21 CET 2023
+start indexing for bulkChIC-PMC-DRO-011 at Fri Mar 17 15:35:21 CET 2023
+finish indexing for bulkChIC-PMC-DRO-011 at Fri Mar 17 15:35:21 CET 2023
+[Fri Mar 17 15:35:21 CET 2023] picard.sam.SortSam done. Elapsed time: 3.06 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.FileTruncatedException: Premature end of file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012.bam
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:530)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start mark dup for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 15:35:22 CET 2023
+start mark dup for bulkChIC-PMC-DRO-012 at Fri Mar 17 15:35:22 CET 2023
+[Fri Mar 17 15:35:22 CET 2023] picard.sam.SortSam done. Elapsed time: 1.32 minutes.
+Runtime.totalMemory()=1089470464
+start sorting with samtools for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 15:35:23 CET 2023
+15:35:23.214 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:23 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:23 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:35:23 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 15:35:23 CET 2023
+15:35:23.949 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:23 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_mkdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012/marked_dup_metrics.txt --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --REMOVE_DUPLICATES false --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:23 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Fri Mar 17 15:35:23 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.SAMException: Cannot write file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012/marked_dup_metrics.txt. Neither file nor parent directory exist.
+	at htsjdk.samtools.util.IOUtil.assertFileIsWritable(IOUtil.java:554)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:252)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+start remove dup for bulkChIC-PMC-DRO-012 at Fri Mar 17 15:35:24 CET 2023
+15:35:24.615 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:24 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:24 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:35:24	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:35:24 CET 2023] picard.sam.SortSam done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+start sorting with samtools for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 15:35:24 CET 2023
+start indexing for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 15:35:24 CET 2023
+finish indexing for SCC-bulkChIC-PMC-DRO-002 at Fri Mar 17 15:35:24 CET 2023
+15:35:25.527 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Fri Mar 17 15:35:25 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VERBOSITY INFO --QUIET false --VALIDATION_STRINGENCY STRICT --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Fri Mar 17 15:35:25 CET 2023] Executing as npham@n0112.compute.hpc on Linux 3.10.0-1160.81.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-17 15:35:25	SortSam	Finished reading inputs, merging and writing to output now.
+[Fri Mar 17 15:35:25 CET 2023] picard.sam.SortSam done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=2147483648
+start sorting with samtools for bulkChIC-PMC-DRO-012 at Fri Mar 17 15:35:25 CET 2023
+start indexing for bulkChIC-PMC-DRO-012 at Fri Mar 17 15:35:25 CET 2023
+finish indexing for bulkChIC-PMC-DRO-012 at Fri Mar 17 15:35:25 CET 2023
+[Fri Mar 17 15:35:30 CET 2023] picard.sam.SortSam done. Elapsed time: 1.23 minutes.
+Runtime.totalMemory()=31457280
+start sorting with samtools for SCC-ChIC-PMC-DRO-FH at Fri Mar 17 15:35:30 CET 2023
+[Fri Mar 17 15:35:30 CET 2023] picard.sam.SortSam done. Elapsed time: 1.35 minutes.
+Runtime.totalMemory()=31457280
+start indexing for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 15:35:30 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 15:35:30 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-F1 at Fri Mar 17 15:35:31 CET 2023
+[Fri Mar 17 15:35:31 CET 2023] picard.sam.SortSam done. Elapsed time: 1.28 minutes.
+Runtime.totalMemory()=1089470464
+[Fri Mar 17 15:35:31 CET 2023] picard.sam.SortSam done. Elapsed time: 1.28 minutes.
+Runtime.totalMemory()=31457280
+start sorting with samtools for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 15:35:31 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 15:35:31 CET 2023
+[Fri Mar 17 15:35:35 CET 2023] picard.sam.SortSam done. Elapsed time: 1.25 minutes.
+Runtime.totalMemory()=1104150528
+start sorting with samtools for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 15:35:35 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 15:35:38 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-L1 at Fri Mar 17 15:35:38 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-FH at Fri Mar 17 15:35:39 CET 2023
+INFO	2023-03-17 15:35:39	SortSam	Finished reading inputs, merging and writing to output now.
+finish indexing for SCC-ChIC-PMC-DRO-FH at Fri Mar 17 15:35:39 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 15:35:39 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-T5 at Fri Mar 17 15:35:40 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 15:35:40 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-F5 at Fri Mar 17 15:35:40 CET 2023
+[Fri Mar 17 15:35:41 CET 2023] picard.sam.SortSam done. Elapsed time: 1.19 minutes.
+Runtime.totalMemory()=1094713344
+start sorting with samtools for SCC-ChIC-PMC-DRO-TH at Fri Mar 17 15:35:41 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 15:35:43 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-T1 at Fri Mar 17 15:35:44 CET 2023
+[Fri Mar 17 15:35:48 CET 2023] picard.sam.SortSam done. Elapsed time: 1.04 minutes.
+Runtime.totalMemory()=1091567616
+start sorting with samtools for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 15:35:49 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-TH at Fri Mar 17 15:35:51 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-TH at Fri Mar 17 15:35:52 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 15:35:57 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-L5 at Fri Mar 17 15:35:57 CET 2023
+[Fri Mar 17 15:36:11 CET 2023] picard.sam.SortSam done. Elapsed time: 0.88 minutes.
+Runtime.totalMemory()=41943040
+start sorting with samtools for SCC-ChIC-PMC-DRO-LH at Fri Mar 17 15:36:12 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-LH at Fri Mar 17 15:36:25 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-LH at Fri Mar 17 15:36:26 CET 2023
+all done

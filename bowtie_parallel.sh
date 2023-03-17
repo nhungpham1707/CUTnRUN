@@ -13,7 +13,7 @@
 
 # Nhung, 15 03 2023
 
- Tool: bowtie2, ver 0.6.10
+# Tool: bowtie2, ver 0.6.10
 
 # Input: R1 and R2 outputs from trimming for each sample
 
@@ -42,7 +42,6 @@ sample_IDs=( "bulkChIC-PMC-DRO-011" \
       "SCC-bulkChIC-PMC-DRO-005"\
       "SCC-bulkChIC-PMC-DRO-008"\
       "SCC-ChIC-PMC-DRO-LH"\
-      "bulkChIC-PMC-DRO-013"\
       "SCC-ChIC-PMC-DRO-F1"\
       "SCC-ChIC-PMC-DRO-T1"\
       "SCC-ChIC-PMC-DRO-F5"\

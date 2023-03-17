@@ -41,7 +41,6 @@ sample_IDs=( "bulkChIC-PMC-DRO-011"\
       "bulkChIC-PMC-DRO-012"\
       "SCC-bulkChIC-PMC-DRO-008"\
       "SCC-ChIC-PMC-DRO-LH"\
-      "bulkChIC-PMC-DRO-013"\
       "SCC-ChIC-PMC-DRO-F1"\
       "SCC-ChIC-PMC-DRO-T1"\
       "SCC-ChIC-PMC-DRO-F5"\
