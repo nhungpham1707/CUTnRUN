@@ -1,0 +1,19 @@
+declare -a trim_IDs='([0]="/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_AAC22FNM5_S3_L001_R2_001_val_2.fq.gz" [1]="/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_AAC22FNM5_S3_L001_R1_001_val_1.fq.gz")'
+2
+-----start alignment for bulkChIC-PMC-DRO-011 at Mon Mar 20 11:05:47 CET 2023-------
+14439590 reads; of these:
+  14439590 (100.00%) were paired; of these:
+    1670682 (11.57%) aligned concordantly 0 times
+    11306238 (78.30%) aligned concordantly exactly 1 time
+    1462670 (10.13%) aligned concordantly >1 times
+    ----
+    1670682 pairs aligned concordantly 0 times; of these:
+      693683 (41.52%) aligned discordantly 1 time
+    ----
+    976999 pairs aligned 0 times concordantly or discordantly; of these:
+      1953998 mates make up the pairs; of these:
+        1159210 (59.33%) aligned 0 times
+        446736 (22.86%) aligned exactly 1 time
+        348052 (17.81%) aligned >1 times
+95.99% overall alignment rate
+-------finish alignment for bulkChIC-PMC-DRO-011 at Mon Mar 20 11:22:46 CET 2023--------

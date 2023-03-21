@@ -1,0 +1,152 @@
+-----------running 1 out of 18 samples---------------------- 
+-----------running 2 out of 18 samples---------------------- 
+-----------running 3 out of 18 samples---------------------- 
+-----------running 4 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-011
+-----------running 5 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-012
+-----------running 6 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-013
+-----------running 7 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-014
+-----------running 8 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-015
+-----------running 9 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-016
+SCC-bulkChIC-PMC-DRO-002
+SCC-bulkChIC-PMC-DRO-005
+-----------running 10 out of 18 samples---------------------- 
+-----------running 11 out of 18 samples---------------------- 
+-----------running 12 out of 18 samples---------------------- 
+SCC-bulkChIC-PMC-DRO-008
+SCC-ChIC-PMC-DRO-L5
+-----------running 13 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-LH
+SCC-ChIC-PMC-DRO-F1
+-----------running 14 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-F5
+-----------running 15 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-FH
+-----------running 16 out of 18 samples---------------------- 
+-----------running 17 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-T1
+-----------running 18 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-T5
+SCC-ChIC-PMC-DRO-TH
+SCC-ChIC-PMC-DRO-L1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+start sorting and remove dup for bulkChIC-PMC-DRO-012 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-016 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-014 at Tue Mar 21 09:34:20 CET 2023
+1
+1
+1
+1
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-002 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-005 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-011 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-015 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-013 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-LH at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-008 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-FH at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 09:34:20 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-TH at Tue Mar 21 09:34:20 CET 2023
+09:34:31.157 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.162 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.163 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.166 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.167 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.168 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.168 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.171 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.171 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.172 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.172 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.175 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.175 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.174 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.175 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.177 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.177 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+09:34:31.181 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+
+
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 09:34:31 CET 2023] Executing as npham@n0091.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 09:34:31	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:31	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:31	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:34:32	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 09:35:28	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 09:35:28	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 09:35:29	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 09:35:29	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 09:35:31	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 09:35:31	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 09:35:34	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 09:35:36	SortSam	Finished reading inputs, merging and writing to output now.

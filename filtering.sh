@@ -20,8 +20,11 @@
 # Input: 1 bam file for each sample (output from bowtie2)
 
 # Output:
-# -  1 bam file with duplicate remove
 
+# - 1 bam file sorted
+# - 1 bam file remove duplicate
+# - 1 bam file filtering after remove duplicate
+# - 1 index file bam.bai
 #########
 # data dir
 data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1

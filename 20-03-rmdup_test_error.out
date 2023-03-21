@@ -1,0 +1,35 @@
+bulkChIC-PMC-DRO-011
+1
+start sorting and remove dup for bulkChIC-PMC-DRO-011 at Mon Mar 20 10:27:57 CET 2023
+10:28:04.340 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Mon Mar 20 10:28:04 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Mon Mar 20 10:28:04 CET 2023] Executing as npham@n0085.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-20 10:28:04	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-20 10:28:47	SortSam	Read    10,000,000 records.  Elapsed time: 00:00:43s.  Time for last 10,000,000:   43s.  Last read position: chr1:52,785,798.  Last read name: VH00208:13:AAC22FNM5:1:1502:12475:44807
+[Mon Mar 20 10:29:04 CET 2023] picard.sam.SortSam done. Elapsed time: 1.01 minutes.
+Runtime.totalMemory()=2147483648
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.FileTruncatedException: Premature end of file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011.bam
+	at htsjdk.samtools.util.BlockCompressedInputStream.processNextBlock(BlockCompressedInputStream.java:530)
+	at htsjdk.samtools.util.BlockCompressedInputStream.nextBlock(BlockCompressedInputStream.java:468)
+	at htsjdk.samtools.util.BlockCompressedInputStream.readBlock(BlockCompressedInputStream.java:458)
+	at htsjdk.samtools.util.BlockCompressedInputStream.available(BlockCompressedInputStream.java:196)
+	at htsjdk.samtools.util.BlockCompressedInputStream.read(BlockCompressedInputStream.java:331)
+	at java.base/java.io.DataInputStream.read(DataInputStream.java:149)
+	at htsjdk.samtools.util.BinaryCodec.readBytesOrFewer(BinaryCodec.java:421)
+	at htsjdk.samtools.util.BinaryCodec.readBytes(BinaryCodec.java:394)
+	at htsjdk.samtools.util.BinaryCodec.readByteBuffer(BinaryCodec.java:507)
+	at htsjdk.samtools.util.BinaryCodec.readInt(BinaryCodec.java:518)
+	at htsjdk.samtools.BAMRecordCodec.decode(BAMRecordCodec.java:261)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.getNextRecord(BAMFileReader.java:866)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.advance(BAMFileReader.java:840)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:834)
+	at htsjdk.samtools.BAMFileReader$BAMFileIterator.next(BAMFileReader.java:802)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:591)
+	at htsjdk.samtools.SamReader$AssertingIterator.next(SamReader.java:570)
+	at picard.sam.SortSam.doWork(SortSam.java:162)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+finish picard sort for bulkChIC-PMC-DRO-011 at Mon Mar 20 10:29:05 CET 2023
+all done

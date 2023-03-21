@@ -1,0 +1,15 @@
+bulkChIC-PMC-DRO-011
+1
+start sorting and remove dup for bulkChIC-PMC-DRO-011 at Mon Mar 20 12:47:17 CET 2023
+12:47:31.294 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Mon Mar 20 12:47:31 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment_test/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup_test/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Mon Mar 20 12:47:31 CET 2023] Executing as npham@n0080.compute.hpc on Linux 3.10.0-1160.66.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-20 12:47:31	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-20 12:48:17	SortSam	Read    10,000,000 records.  Elapsed time: 00:00:46s.  Time for last 10,000,000:   46s.  Last read position: chr1:143,219,896.  Last read name: VH00208:13:AAC22FNM5:1:1502:33304:44769
+INFO	2023-03-20 12:49:01	SortSam	Read    20,000,000 records.  Elapsed time: 00:01:29s.  Time for last 10,000,000:   43s.  Last read position: chr16:53,665,045.  Last read name: VH00208:13:AAC22FNM5:1:2304:31978:33524
+INFO	2023-03-20 12:49:40	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-20 12:50:54	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:03:23s.  Time for last 10,000,000:   73s.  Last read position: chr6:3,263,263
+INFO	2023-03-20 12:52:07	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:04:35s.  Time for last 10,000,000:   72s.  Last read position: chr13:46,051,987
+[Mon Mar 20 12:53:12 CET 2023] picard.sam.SortSam done. Elapsed time: 5.69 minutes.
+Runtime.totalMemory()=1098907648
+finsh sorting bulkChIC-PMC-DRO-011 at Mon Mar 20 12:53:12 CET 2023
