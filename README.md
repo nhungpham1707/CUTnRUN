@@ -17,7 +17,7 @@ The cut and run data were analyzed based on published protocol with modification
 |------|-------------|-----------------|------------|
 |1. Quality checking  | check reads quality with fastQC | 3-4| before_trimming_fastqc_all_samples.sh|
 |2. Trimming| remove adapter and conduct fastQC after with trim_galore | | all_samples_trim_galore.sh |
-|3. Alignment| map reads to human genome g38| | bowtie_parallel.sh |
+|3. Alignment| map reads to human genome g38| 30 mins - 2 hours (1 sample), 8 hours (18 samples) | alignment.sh |
 |4. Remove duplicate | remove duplicate, reads < 20 |20 (mins with parallel) | filtering.sh |
 |5. Call peak| | | |
 |6. Peak annotation | | | |
