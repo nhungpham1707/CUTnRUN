@@ -150,9 +150,12 @@ tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$res_dir/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
 fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 
+. ./4-filtering.sh
+
+
+
+
 ############### steps #######################
-# call variable
-sh ./variable.sh
 # step 1. quality check: inspect sequencing quality with fastqc
 
 #qualityCheck.sh
@@ -166,8 +169,8 @@ sh ./variable.sh
 # sh ./3-alignment.sh
 
 # step 4. filtering: remove duplciates and reads < 20bp
-echo "-------------------step 4. running filtering-------------------------"
-sh ./4-filtering.sh
+#echo "-------------------step 4. running filtering-------------------------"
+#sh ./4-filtering.sh
 
 # step 5. peak calling with macs2
 #echo "-------------------step 5. running peak calling----------------------"
