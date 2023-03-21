@@ -18,8 +18,8 @@ The cut and run data were analyzed based on published protocol with modification
 |1. Quality checking  | check reads quality with fastQC | 3-4 hours (18 samples) [check parallel]| before_trimming_fastqc_all_samples.sh|
 |2. Trimming| remove adapter and conduct fastQC after with trim_galore | | all_samples_trim_galore.sh |
 |3. Alignment| map reads to human genome g38| 30 mins - 2 hours (1 sample), 8 hours (18 samples) | alignment.sh |
-|4. Remove duplicate | remove duplicate, reads < 20 |20 mins (1 sample) | filtering.sh |
-|5. Call peak| | | |
+|4. Remove duplicate | remove duplicate, reads < 20 |20 mins (1 sample) | 4-filtering.sh |
+|5. Call peak| broad and narrow peak calling with and without control | | 5-peakCalling.sh |
 |6. Peak annotation | | | |
 |7. Find motif | | | |
 |8. Transform bam file to bigwig | | | |
