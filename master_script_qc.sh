@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=peak_callingg
-#SBATCH --output=peakcalling.out
+#SBATCH --job-name=qc
+#SBATCH --output=master_script_qc.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -155,7 +155,7 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 sh ./variable.sh
 # step 1. quality check: inspect sequencing quality with fastqc
 
-#qualityCheck.sh
+sh ./1-qualityCheck.sh
 
 # step 2. adapter and bad reads trimming 
 
@@ -166,8 +166,8 @@ sh ./variable.sh
 # sh ./3-alignment.sh
 
 # step 4. filtering: remove duplciates and reads < 20bp
-echo "-------------------step 4. running filtering-------------------------"
-sh ./4-filtering.sh
+#echo "-------------------step 4. running filtering-------------------------"
+#sh ./4-filtering.sh
 
 # step 5. peak calling with macs2
 #echo "-------------------step 5. running peak calling----------------------"

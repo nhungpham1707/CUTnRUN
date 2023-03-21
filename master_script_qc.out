@@ -1,0 +1,2248 @@
+-----------running 1 out of 18 samples---------------------- 
+-----------running 2 out of 18 samples---------------------- 
+-----------running 3 out of 18 samples---------------------- 
+-----------running 4 out of 18 samples---------------------- 
+-----------running 5 out of 18 samples---------------------- 
+-----------running 6 out of 18 samples---------------------- 
+-----------running 7 out of 18 samples---------------------- 
+-----------running 8 out of 18 samples---------------------- 
+-----------running 9 out of 18 samples---------------------- 
+-----------running 10 out of 18 samples---------------------- 
+-----------running 11 out of 18 samples---------------------- 
+-----------running 12 out of 18 samples---------------------- 
+-----------running 13 out of 18 samples---------------------- 
+-----------running 14 out of 18 samples---------------------- 
+-----------running 15 out of 18 samples---------------------- 
+-----------running 16 out of 18 samples---------------------- 
+-----------running 17 out of 18 samples---------------------- 
+-----------running 18 out of 18 samples---------------------- 
+-----------running 1 out of 18 samples---------------------- 
+-----------running 2 out of 18 samples---------------------- 
+-----------running 3 out of 18 samples---------------------- 
+-----------running 4 out of 18 samples---------------------- 
+-----------running 5 out of 18 samples---------------------- 
+-----------running 6 out of 18 samples---------------------- 
+-----------running 7 out of 18 samples---------------------- 
+-----------running 8 out of 18 samples---------------------- 
+-----------running 9 out of 18 samples---------------------- 
+-----------running 10 out of 18 samples---------------------- 
+-----------running 11 out of 18 samples---------------------- 
+-----------running 12 out of 18 samples---------------------- 
+-----------running 13 out of 18 samples---------------------- 
+-----------running 14 out of 18 samples---------------------- 
+-----------running 15 out of 18 samples---------------------- 
+-----------running 16 out of 18 samples---------------------- 
+-----------running 17 out of 18 samples---------------------- 
+-----------running 18 out of 18 samples---------------------- 
+2
+2
+2
+2
+2
+start trim_galore for bulkChIC-PMC-DRO-011 at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for bulkChIC-PMC-DRO-013 at Tue Mar 21 13:52:55 CET 2023
+2
+start trim_galore for bulkChIC-PMC-DRO-012 at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-TH at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-LH at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-FH at Tue Mar 21 13:52:55 CET 2023
+2
+2
+2
+start trim_galore for bulkChIC-PMC-DRO-014 at Tue Mar 21 13:52:55 CET 2023
+2
+2
+start trim_galore for SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 13:52:55 CET 2023
+2
+start trim_galore for bulkChIC-PMC-DRO-016 at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 13:52:55 CET 2023
+2
+2
+2
+start trim_galore for SCC-bulkChIC-PMC-DRO-008 at Tue Mar 21 13:52:55 CET 2023
+2
+2
+start trim_galore for bulkChIC-PMC-DRO-015 at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for SCC-bulkChIC-PMC-DRO-005 at Tue Mar 21 13:52:55 CET 2023
+start trim_galore for SCC-bulkChIC-PMC-DRO-002 at Tue Mar 21 13:52:55 CET 2023
+2
+start trim_galore for SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 13:52:55 CET 2023
+Multicore support not enabled. Proceeding with single-core trimming.
+Multicore support not enabled. Proceeding with single-core trimming.
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Path to Cutadapt set as: 'cutadapt' (default)
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+single-core operation.
+single-core operation.
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+single-core operation.
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+single-core operation.
+single-core operation.
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+single-core operation.
+single-core operation.
+single-core operation.
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+single-core operation.
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-T1/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-T5/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-L5/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-013/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-014/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-011/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-TH/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-bulkChIC-PMC-DRO-002/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-012/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-F1/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-bulkChIC-PMC-DRO-008/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-F5/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-FH/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-015/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-LH/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-L1/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-016/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-bulkChIC-PMC-DRO-005/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_AAC22FNM5_S6_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_AAC22FNM5_S4_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_AAC22FNM5_S7_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_AAAKGV5M5_S36_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_AAC22FNM5_S5_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_AAALH7CM5_S9_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_AAC22FNM5_S3_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_AAALH7CM5_S10_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_AAC22FNM5_S8_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_AAALH7CM5_S8_L001_R1_001.fastq.gz <<)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	377014	TGGAATTCTCGG	1000000	37.70
+Nextera	5	CTGTCTCTTATA	1000000	0.00
+Illumina	1	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 377014). Second best hit was Nextera (count: 5)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	5	CTGTCTCTTATA	1000000	0.00
+Illumina	2	AGATCGGAAGAGC	1000000	0.00
+smallRNA	0	TGGAATTCTCGG	1000000	0.00
+Using Nextera adapter for trimming (count: 5). Second best hit was Illumina (count: 2)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	51312	TGGAATTCTCGG	1000000	5.13
+Nextera	14	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 51312). Second best hit was Nextera (count: 14)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	323927	TGGAATTCTCGG	1000000	32.39
+Nextera	3	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 323927). Second best hit was Nextera (count: 3)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	9	CTGTCTCTTATA	1000000	0.00
+Illumina	2	AGATCGGAAGAGC	1000000	0.00
+smallRNA	0	TGGAATTCTCGG	1000000	0.00
+Using Nextera adapter for trimming (count: 9). Second best hit was Illumina (count: 2)
+
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	339823	TGGAATTCTCGG	1000000	33.98
+Nextera	5	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 339823). Second best hit was Nextera (count: 5)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	25879	TGGAATTCTCGG	1000000	2.59
+Nextera	4	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 25879). Second best hit was Nextera (count: 4)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	28541	TGGAATTCTCGG	1000000	2.85
+Nextera	4	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 28541). Second best hit was Nextera (count: 4)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R2_001.fastq.gz_trimming_report.txt'
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_AAALH7CM5_S8_L001_R1_001.fastq.gz_trimming_report.txt'
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_AAAKGV5M5_S36_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R2_001.fastq.gz
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_AAALH7CM5_S8_L001_R1_001.fastq.gz
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_AAAKGV5M5_S36_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Cutadapt version: 4.2
+Quality Phred score cutoff: 20
+Number of cores used for trimming: 1
+Quality encoding type selected: ASCII+33
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Quality Phred score cutoff: 20
+Maximum trimming error rate: 0.1 (default)
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Quality encoding type selected: ASCII+33
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Running FastQC on the data once trimming has completed
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Maximum trimming error rate: 0.1 (default)
+Output file(s) will be GZIP compressed
+Running FastQC on the data once trimming has completed
+
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Output file(s) will be GZIP compressed
+
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R1_001.fastq.gz <<< 
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	6	CTGTCTCTTATA	1000000	0.00
+Illumina	2	AGATCGGAAGAGC	1000000	0.00
+smallRNA	1	TGGAATTCTCGG	1000000	0.00
+Using Nextera adapter for trimming (count: 6). Second best hit was Illumina (count: 2)
+
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-LH_AAAKGV5M5_S36_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_AAAKGV5M5_S36_L001_R1_001.fastq.gz <<< 
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R2_001.fastq.gz <<< 
+Writing final adapter and quality trimmed output to SCC-bulkChIC-PMC-DRO-005_AAALH7CM5_S8_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_AAALH7CM5_S8_L001_R1_001.fastq.gz <<< 
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	22	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+smallRNA	0	TGGAATTCTCGG	1000000	0.00
+Using Nextera adapter for trimming (count: 22). Second best hit was Illumina (count: 0)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R2_001_trimmed.fq.gz
+
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R2_001.fastq.gz <<< 
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R1_001.fastq.gz <<< 
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	9	CTGTCTCTTATA	1000000	0.00
+smallRNA	2	TGGAATTCTCGG	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using Nextera adapter for trimming (count: 9). Second best hit was smallRNA (count: 2)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_AAC22FNM5_S6_L001_R1_001.fastq.gz_trimming_report.txt'
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_AAC22FNM5_S5_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_AAC22FNM5_S6_L001_R1_001.fastq.gz
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_AAC22FNM5_S5_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_AAC22FNM5_S8_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_AAC22FNM5_S8_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_AAC22FNM5_S7_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_AAC22FNM5_S7_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to bulkChIC-PMC-DRO-016_AAC22FNM5_S8_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_AAC22FNM5_S8_L001_R2_001.fastq.gz <<< 
+Writing final adapter and quality trimmed output to bulkChIC-PMC-DRO-013_AAC22FNM5_S5_L001_R1_001_trimmed.fq.gz
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_AAC22FNM5_S4_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_AAC22FNM5_S4_L001_R2_001.fastq.gz
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_AAC22FNM5_S5_L001_R1_001.fastq.gz <<< 
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Writing final adapter and quality trimmed output to bulkChIC-PMC-DRO-014_AAC22FNM5_S6_L001_R1_001_trimmed.fq.gz
+
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_AAC22FNM5_S6_L001_R1_001.fastq.gz <<< 
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to bulkChIC-PMC-DRO-012_AAC22FNM5_S4_L001_R2_001_trimmed.fq.gz
+
+Writing final adapter and quality trimmed output to bulkChIC-PMC-DRO-015_AAC22FNM5_S7_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_AAC22FNM5_S7_L001_R2_001.fastq.gz <<< 
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_AAC22FNM5_S4_L001_R2_001.fastq.gz <<< 
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	37157	TGGAATTCTCGG	1000000	3.72
+Nextera	5	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 37157). Second best hit was Nextera (count: 5)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_AAALH7CM5_S10_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_AAALH7CM5_S10_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to SCC-bulkChIC-PMC-DRO-008_AAALH7CM5_S10_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_AAALH7CM5_S10_L001_R1_001.fastq.gz <<< 
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	13	CTGTCTCTTATA	1000000	0.00
+Illumina	7	AGATCGGAAGAGC	1000000	0.00
+smallRNA	0	TGGAATTCTCGG	1000000	0.00
+Using Nextera adapter for trimming (count: 13). Second best hit was Illumina (count: 7)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R2_001.fastq.gz <<< 
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	275574	TGGAATTCTCGG	1000000	27.56
+Nextera	8	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 275574). Second best hit was Nextera (count: 8)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	14	CTGTCTCTTATA	1000000	0.00
+Illumina	6	AGATCGGAAGAGC	1000000	0.00
+smallRNA	0	TGGAATTCTCGG	1000000	0.00
+Using Nextera adapter for trimming (count: 14). Second best hit was Illumina (count: 6)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R1_001.fastq.gz_trimming_report.txt'
+Maximum trimming error rate: 0.1 (default)
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R1_001.fastq.gz
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Running FastQC on the data once trimming has completed
+Number of cores used for trimming: 1
+Output file(s) will be GZIP compressed
+
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R2_001.fastq.gz <<< 
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R1_001.fastq.gz <<< 
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	271628	TGGAATTCTCGG	1000000	27.16
+Nextera	2	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 271628). Second best hit was Nextera (count: 2)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R1_001.fastq.gz <<< 
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+Nextera	13	CTGTCTCTTATA	1000000	0.00
+smallRNA	0	TGGAATTCTCGG	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using Nextera adapter for trimming (count: 13). Second best hit was smallRNA (count: 0)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_AAALH7CM5_S9_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_AAALH7CM5_S9_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to SCC-bulkChIC-PMC-DRO-002_AAALH7CM5_S9_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_AAALH7CM5_S9_L001_R2_001.fastq.gz <<< 
+Found perfect matches for the following adapter sequences:
+Adapter type	Count	Sequence	Sequences analysed	Percentage
+smallRNA	15306	TGGAATTCTCGG	1000000	1.53
+Nextera	5	CTGTCTCTTATA	1000000	0.00
+Illumina	0	AGATCGGAAGAGC	1000000	0.00
+Using smallRNA adapter for trimming (count: 15306). Second best hit was Nextera (count: 5)
+
+Reducing length cutoff to 18bp for small RNA-Seq reads because a cutoff of 20bp may remove some short species of small RNAs if they had been trimmed by 1,2 or 3bp
+Setting the Illumina smallRNA 5' adapter as adapter 2: 'GATCGTCGGACT'
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_AAC22FNM5_S3_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_AAC22FNM5_S3_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j 1
+Writing final adapter and quality trimmed output to bulkChIC-PMC-DRO-011_AAC22FNM5_S3_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'TGGAATTCTCGG' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_AAC22FNM5_S3_L001_R1_001.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.9.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a TGGAATTCTCGG /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R1_001.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 59.624 s (34.509 µs/read; 1.74 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,727,796
+Reads with adapters:                 1,187,093 (68.7%)
+Reads written (passing filters):     1,727,796 (100.0%)
+
+Total basepairs processed:   173,872,925 bp
+Quality-trimmed:               1,177,275 bp (0.7%)
+Total written (filtered):    128,788,267 bp (74.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGGAATTCTCGG; Type: regular 3'; Length: 12; Trimmed: 1187093 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 24.7%
+  C: 18.9%
+  G: 22.0%
+  T: 34.2%
+  none/other: 0.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	356735	431949.0	0	356735
+2	91969	107987.2	0	91969
+3	31712	26996.8	0	31712
+4	7040	6749.2	0	7040
+5	1280	1687.3	0	1280
+6	5841	421.8	0	5841
+7	3560	105.5	0	3560
+8	3928	26.4	0	3928
+9	3103	6.6	0	3040 63
+10	3777	1.6	1	3588 189
+11	3805	0.4	1	3652 153
+12	3727	0.1	1	3555 172
+13	3628	0.1	1	3485 143
+14	3861	0.1	1	3699 162
+15	3266	0.1	1	3132 134
+16	3725	0.1	1	3528 197
+17	7617	0.1	1	7322 295
+18	7138	0.1	1	6854 284
+19	210	0.1	1	115 95
+20	752	0.1	1	646 106
+21	6546	0.1	1	6374 172
+22	3625	0.1	1	3445 180
+23	398	0.1	1	220 178
+24	4167	0.1	1	4015 152
+25	2909	0.1	1	2745 164
+26	3943	0.1	1	3629 314
+27	10622	0.1	1	10073 549
+28	285	0.1	1	169 116
+29	544	0.1	1	491 53
+30	3542	0.1	1	3205 337
+31	7340	0.1	1	6998 342
+32	181	0.1	1	109 72
+33	4080	0.1	1	3755 325
+34	7534	0.1	1	7150 384
+35	456	0.1	1	335 121
+36	3897	0.1	1	3688 209
+37	4296	0.1	1	4024 272
+38	5912	0.1	1	5388 524
+39	6920	0.1	1	6359 561
+40	686	0.1	1	460 226
+41	8558	0.1	1	7611 947
+42	5617	0.1	1	5412 205
+43	4682	0.1	1	4222 460
+44	597	0.1	1	443 154
+45	5053	0.1	1	4651 402
+46	11328	0.1	1	10324 1004
+47	1077	0.1	1	695 382
+48	10043	0.1	1	8499 1544
+49	6758	0.1	1	5981 777
+50	5585	0.1	1	5217 368
+51	5294	0.1	1	4792 502
+52	6800	0.1	1	6129 671
+53	11715	0.1	1	10317 1398
+54	4571	0.1	1	4324 247
+55	9866	0.1	1	8699 1167
+56	18441	0.1	1	16139 2302
+57	3721	0.1	1	3319 402
+58	12484	0.1	1	10771 1713
+59	11374	0.1	1	10416 958
+60	4391	0.1	1	4102 289
+61	9929	0.1	1	8864 1065
+62	18281	0.1	1	16307 1974
+63	12660	0.1	1	11794 866
+64	7431	0.1	1	6681 750
+65	12541	0.1	1	11325 1216
+66	14401	0.1	1	12972 1429
+67	32368	0.1	1	30356 2012
+68	8399	0.1	1	7307 1092
+69	4109	0.1	1	3504 605
+70	2847	0.1	1	2388 459
+71	9395	0.1	1	8768 627
+72	13097	0.1	1	12193 904
+73	13011	0.1	1	12207 804
+74	11627	0.1	1	11041 586
+75	10592	0.1	1	10111 481
+76	9602	0.1	1	9256 346
+77	8613	0.1	1	8359 254
+78	8035	0.1	1	7821 214
+79	7947	0.1	1	7784 163
+80	9215	0.1	1	9043 172
+81	10658	0.1	1	10492 166
+82	14373	0.1	1	14135 238
+83	11656	0.1	1	11425 231
+84	11710	0.1	1	11562 148
+85	10421	0.1	1	10269 152
+86	10502	0.1	1	10340 162
+87	9666	0.1	1	9514 152
+88	14121	0.1	1	13856 265
+89	13584	0.1	1	13364 220
+90	14106	0.1	1	13905 201
+91	21847	0.1	1	21605 242
+92	5327	0.1	1	5248 79
+93	6359	0.1	1	6268 91
+94	13244	0.1	1	13041 203
+95	6228	0.1	1	6120 108
+96	5394	0.1	1	5309 85
+97	2632	0.1	1	2578 54
+98	2404	0.1	1	2361 43
+99	1765	0.1	1	1740 25
+100	2809	0.1	1	2762 47
+101	1675	0.1	1	1639 36
+
+RUN STATISTICS FOR INPUT FILE: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R1_001.fastq.gz
+=============================================
+1727796 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'GATCGTCGGACT' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R2_001.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.9.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a TGGAATTCTCGG /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R1_001.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 66.005 s (38.453 µs/read; 1.56 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,716,497
+Reads with adapters:                 1,079,237 (62.9%)
+Reads written (passing filters):     1,716,497 (100.0%)
+
+Total basepairs processed:   172,664,563 bp
+Quality-trimmed:               1,385,374 bp (0.8%)
+Total written (filtered):    139,837,900 bp (81.0%)
+
+=== Adapter 1 ===
+
+Sequence: TGGAATTCTCGG; Type: regular 3'; Length: 12; Trimmed: 1079237 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 24.0%
+  C: 18.7%
+  G: 20.2%
+  T: 37.0%
+  none/other: 0.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	417350	429124.2	0	417350
+2	108674	107281.1	0	108674
+3	35697	26820.3	0	35697
+4	6795	6705.1	0	6795
+5	1698	1676.3	0	1698
+6	5925	419.1	0	5925
+7	2092	104.8	0	2092
+8	3137	26.2	0	3137
+9	2741	6.5	0	2667 74
+10	3038	1.6	1	2828 210
+11	3076	0.4	1	2920 156
+12	3061	0.1	1	2918 143
+13	2878	0.1	1	2748 130
+14	2993	0.1	1	2847 146
+15	2572	0.1	1	2471 101
+16	2739	0.1	1	2584 155
+17	5591	0.1	1	5318 273
+18	5463	0.1	1	5171 292
+19	216	0.1	1	82 134
+20	556	0.1	1	469 87
+21	4738	0.1	1	4601 137
+22	2511	0.1	1	2375 136
+23	411	0.1	1	187 224
+24	2972	0.1	1	2814 158
+25	2154	0.1	1	2011 143
+26	2917	0.1	1	2651 266
+27	7403	0.1	1	6965 438
+28	206	0.1	1	127 79
+29	345	0.1	1	291 54
+30	2692	0.1	1	2354 338
+31	4926	0.1	1	4664 262
+32	741	0.1	1	468 273
+33	3343	0.1	1	3146 197
+34	4225	0.1	1	3911 314
+35	2565	0.1	1	2377 188
+36	1835	0.1	1	1252 583
+37	3253	0.1	1	2858 395
+38	3351	0.1	1	3145 206
+39	4266	0.1	1	4119 147
+40	451	0.1	1	348 103
+41	7747	0.1	1	7075 672
+42	3816	0.1	1	3683 133
+43	3366	0.1	1	3038 328
+44	643	0.1	1	465 178
+45	7894	0.1	1	7309 585
+46	2958	0.1	1	2707 251
+47	3549	0.1	1	2962 587
+48	14147	0.1	1	12465 1682
+49	12099	0.1	1	10054 2045
+50	1223	0.1	1	808 415
+51	1984	0.1	1	1749 235
+52	2204	0.1	1	1866 338
+53	6033	0.1	1	5458 575
+54	690	0.1	1	469 221
+55	6596	0.1	1	5676 920
+56	15685	0.1	1	13896 1789
+57	3239	0.1	1	2395 844
+58	19492	0.1	1	17456 2036
+59	3404	0.1	1	2818 586
+60	706	0.1	1	508 198
+61	5642	0.1	1	5001 641
+62	21381	0.1	1	19918 1463
+63	4997	0.1	1	4155 842
+64	12649	0.1	1	10929 1720
+65	5784	0.1	1	4979 805
+66	9960	0.1	1	8866 1094
+67	19307	0.1	1	17852 1455
+68	13486	0.1	1	12196 1290
+69	5525	0.1	1	4739 786
+70	7535	0.1	1	6879 656
+71	2996	0.1	1	2611 385
+72	6584	0.1	1	6113 471
+73	9539	0.1	1	8928 611
+74	9448	0.1	1	8912 536
+75	8473	0.1	1	8039 434
+76	7436	0.1	1	7108 328
+77	6337	0.1	1	6129 208
+78	5816	0.1	1	5619 197
+79	5460	0.1	1	5315 145
+80	5872	0.1	1	5739 133
+81	6613	0.1	1	6495 118
+82	8469	0.1	1	8343 126
+83	7232	0.1	1	7078 154
+84	6924	0.1	1	6809 115
+85	6024	0.1	1	5937 87
+86	5607	0.1	1	5513 94
+87	5014	0.1	1	4915 99
+88	7491	0.1	1	7359 132
+89	7274	0.1	1	7161 113
+90	7671	0.1	1	7543 128
+91	11445	0.1	1	11309 136
+92	4346	0.1	1	4285 61
+93	4719	0.1	1	4650 69
+94	8737	0.1	1	8599 138
+95	4828	0.1	1	4749 79
+96	4126	0.1	1	4046 80
+97	2386	0.1	1	2349 37
+98	2059	0.1	1	2017 42
+99	1452	0.1	1	1422 30
+100	2309	0.1	1	2271 38
+101	1212	0.1	1	1191 21
+
+RUN STATISTICS FOR INPUT FILE: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R1_001.fastq.gz
+=============================================
+1716497 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'GATCGTCGGACT' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R2_001.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.9.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R2_001.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 68.588 s (43.162 µs/read; 1.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,589,071
+Reads with adapters:                   448,816 (28.2%)
+Reads written (passing filters):     1,589,071 (100.0%)
+
+Total basepairs processed:   159,887,096 bp
+Quality-trimmed:               1,096,432 bp (0.7%)
+Total written (filtered):    158,055,776 bp (98.9%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 448816 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 28.6%
+  C: 21.8%
+  G: 14.6%
+  T: 35.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	307852	397267.8	0	307852
+2	90882	99316.9	0	90882
+3	28481	24829.2	0	28481
+4	18583	6207.3	0	18583
+5	1068	1551.8	0	1068
+6	429	388.0	0	429
+7	133	97.0	0	133
+8	55	24.2	0	55
+9	33	6.1	0	14 19
+10	58	1.5	1	1 57
+11	20	0.4	1	0 20
+12	15	0.1	1	0 15
+13	5	0.1	1	0 5
+14	4	0.1	1	0 4
+15	15	0.1	1	1 14
+16	14	0.1	1	0 14
+17	6	0.1	1	0 6
+18	10	0.1	1	0 10
+19	7	0.1	1	0 7
+20	8	0.1	1	0 8
+21	6	0.1	1	0 6
+22	9	0.1	1	0 9
+23	11	0.1	1	0 11
+24	14	0.1	1	0 14
+25	16	0.1	1	0 16
+26	10	0.1	1	0 10
+27	14	0.1	1	0 14
+28	14	0.1	1	0 14
+29	9	0.1	1	0 9
+30	10	0.1	1	0 10
+31	23	0.1	1	0 23
+32	9	0.1	1	0 9
+33	20	0.1	1	0 20
+34	27	0.1	1	0 27
+35	8	0.1	1	0 8
+36	9	0.1	1	0 9
+37	5	0.1	1	0 5
+38	9	0.1	1	0 9
+39	7	0.1	1	0 7
+40	12	0.1	1	1 11
+41	12	0.1	1	0 12
+42	8	0.1	1	2 6
+43	8	0.1	1	0 8
+44	6	0.1	1	0 6
+45	9	0.1	1	0 9
+46	7	0.1	1	0 7
+47	11	0.1	1	0 11
+48	4	0.1	1	0 4
+49	17	0.1	1	0 17
+50	14	0.1	1	0 14
+51	15	0.1	1	0 15
+52	16	0.1	1	0 16
+53	8	0.1	1	0 8
+54	21	0.1	1	1 20
+55	11	0.1	1	0 11
+56	10	0.1	1	0 10
+57	13	0.1	1	3 10
+58	14	0.1	1	0 14
+59	18	0.1	1	0 18
+60	17	0.1	1	0 17
+61	12	0.1	1	0 12
+62	7	0.1	1	1 6
+63	13	0.1	1	0 13
+64	19	0.1	1	0 19
+65	24	0.1	1	0 24
+66	19	0.1	1	0 19
+67	14	0.1	1	0 14
+68	19	0.1	1	0 19
+69	11	0.1	1	0 11
+70	10	0.1	1	0 10
+71	7	0.1	1	0 7
+72	16	0.1	1	1 15
+73	20	0.1	1	2 18
+74	12	0.1	1	1 11
+75	17	0.1	1	0 17
+76	15	0.1	1	0 15
+77	13	0.1	1	0 13
+78	50	0.1	1	0 50
+79	33	0.1	1	0 33
+80	6	0.1	1	0 6
+81	2	0.1	1	0 2
+82	3	0.1	1	0 3
+83	6	0.1	1	0 6
+84	13	0.1	1	0 13
+85	16	0.1	1	0 16
+86	15	0.1	1	0 15
+87	13	0.1	1	0 13
+88	14	0.1	1	0 14
+89	7	0.1	1	0 7
+90	6	0.1	1	0 6
+91	10	0.1	1	0 10
+92	12	0.1	1	1 11
+93	5	0.1	1	0 5
+94	21	0.1	1	0 21
+95	9	0.1	1	0 9
+96	30	0.1	1	0 30
+97	31	0.1	1	0 31
+98	43	0.1	1	0 43
+99	35	0.1	1	4 31
+100	18	0.1	1	0 18
+101	11	0.1	1	0 11
+
+RUN STATISTICS FOR INPUT FILE: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R2_001.fastq.gz
+=============================================
+1589071 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R1_001.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.9.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R2_001.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 71.238 s (43.329 µs/read; 1.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,644,142
+Reads with adapters:                   450,127 (27.4%)
+Reads written (passing filters):     1,644,142 (100.0%)
+
+Total basepairs processed:   165,430,970 bp
+Quality-trimmed:               1,296,989 bp (0.8%)
+Total written (filtered):    163,398,311 bp (98.8%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 450127 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 26.9%
+  C: 22.7%
+  G: 16.6%
+  T: 33.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	311299	411035.5	0	311299
+2	91613	102758.9	0	91613
+3	28653	25689.7	0	28653
+4	15057	6422.4	0	15057
+5	1342	1605.6	0	1342
+6	503	401.4	0	503
+7	159	100.4	0	159
+8	69	25.1	0	69
+9	43	6.3	0	18 25
+10	73	1.6	1	0 73
+11	25	0.4	1	1 24
+12	9	0.1	1	0 9
+13	14	0.1	1	0 14
+14	10	0.1	1	0 10
+15	21	0.1	1	0 21
+16	5	0.1	1	0 5
+17	11	0.1	1	0 11
+18	8	0.1	1	0 8
+19	8	0.1	1	0 8
+20	4	0.1	1	0 4
+21	8	0.1	1	0 8
+22	9	0.1	1	0 9
+23	20	0.1	1	0 20
+24	10	0.1	1	0 10
+25	17	0.1	1	0 17
+26	6	0.1	1	0 6
+27	16	0.1	1	0 16
+28	10	0.1	1	0 10
+29	13	0.1	1	0 13
+30	11	0.1	1	0 11
+31	8	0.1	1	2 6
+32	8	0.1	1	0 8
+33	4	0.1	1	0 4
+34	26	0.1	1	0 26
+35	15	0.1	1	2 13
+36	11	0.1	1	1 10
+37	5	0.1	1	0 5
+38	11	0.1	1	0 11
+39	15	0.1	1	0 15
+40	8	0.1	1	0 8
+41	8	0.1	1	0 8
+42	13	0.1	1	0 13
+43	15	0.1	1	0 15
+44	8	0.1	1	0 8
+45	21	0.1	1	0 21
+46	22	0.1	1	0 22
+47	16	0.1	1	1 15
+48	3	0.1	1	0 3
+49	9	0.1	1	0 9
+50	7	0.1	1	0 7
+51	9	0.1	1	1 8
+52	9	0.1	1	0 9
+53	10	0.1	1	0 10
+54	12	0.1	1	0 12
+55	4	0.1	1	0 4
+56	15	0.1	1	0 15
+57	8	0.1	1	0 8
+58	18	0.1	1	0 18
+59	25	0.1	1	0 25
+60	14	0.1	1	0 14
+61	10	0.1	1	0 10
+62	9	0.1	1	1 8
+63	9	0.1	1	0 9
+64	7	0.1	1	0 7
+65	12	0.1	1	1 11
+66	6	0.1	1	0 6
+67	19	0.1	1	0 19
+68	5	0.1	1	0 5
+69	8	0.1	1	0 8
+70	23	0.1	1	0 23
+71	13	0.1	1	0 13
+72	17	0.1	1	0 17
+73	9	0.1	1	0 9
+74	16	0.1	1	0 16
+75	15	0.1	1	0 15
+76	23	0.1	1	0 23
+77	22	0.1	1	0 22
+78	33	0.1	1	0 33
+79	49	0.1	1	3 46
+80	12	0.1	1	0 12
+81	15	0.1	1	0 15
+82	19	0.1	1	0 19
+83	13	0.1	1	0 13
+84	12	0.1	1	0 12
+85	10	0.1	1	0 10
+86	9	0.1	1	0 9
+87	12	0.1	1	1 11
+88	8	0.1	1	0 8
+89	14	0.1	1	0 14
+90	5	0.1	1	0 5
+91	10	0.1	1	0 10
+92	11	0.1	1	0 11
+93	12	0.1	1	0 12
+94	11	0.1	1	0 11
+95	14	0.1	1	0 14
+96	24	0.1	1	2 22
+97	44	0.1	1	4 40
+98	54	0.1	1	0 54
+99	42	0.1	1	0 42
+100	39	0.1	1	1 38
+101	29	0.1	1	0 29
+
+RUN STATISTICS FOR INPUT FILE: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R2_001.fastq.gz
+=============================================
+1644142 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R1_001.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.9.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R2_001.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 72.669 s (43.800 µs/read; 1.37 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,659,088
+Reads with adapters:                   479,916 (28.9%)
+Reads written (passing filters):     1,659,088 (100.0%)
+
+Total basepairs processed:   166,920,916 bp
+Quality-trimmed:               1,243,293 bp (0.7%)
+Total written (filtered):    164,893,406 bp (98.8%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 479916 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 27.7%
+  C: 22.6%
+  G: 15.1%
+  T: 34.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	331976	414772.0	0	331976
+2	97151	103693.0	0	97151
+3	29435	25923.2	0	29435
+4	17898	6480.8	0	17898
+5	1228	1620.2	0	1228
+6	485	405.1	0	485
+7	144	101.3	0	144
+8	58	25.3	0	58
+9	33	6.3	0	16 17
+10	62	1.6	1	1 61
+11	32	0.4	1	0 32
+12	17	0.1	1	0 17
+13	8	0.1	1	0 8
+14	9	0.1	1	0 9
+15	10	0.1	1	0 10
+16	18	0.1	1	0 18
+17	4	0.1	1	0 4
+18	12	0.1	1	0 12
+19	16	0.1	1	0 16
+20	8	0.1	1	0 8
+21	9	0.1	1	0 9
+22	13	0.1	1	0 13
+23	16	0.1	1	0 16
+24	7	0.1	1	0 7
+25	19	0.1	1	0 19
+26	19	0.1	1	0 19
+27	11	0.1	1	0 11
+28	5	0.1	1	1 4
+29	10	0.1	1	0 10
+30	16	0.1	1	0 16
+31	15	0.1	1	0 15
+32	15	0.1	1	0 15
+33	20	0.1	1	0 20
+34	29	0.1	1	0 29
+35	15	0.1	1	0 15
+36	15	0.1	1	0 15
+37	9	0.1	1	0 9
+38	18	0.1	1	0 18
+39	27	0.1	1	0 27
+40	17	0.1	1	0 17
+41	7	0.1	1	0 7
+42	12	0.1	1	0 12
+43	16	0.1	1	0 16
+44	10	0.1	1	0 10
+45	6	0.1	1	0 6
+46	8	0.1	1	0 8
+47	12	0.1	1	0 12
+48	14	0.1	1	0 14
+49	8	0.1	1	0 8
+50	14	0.1	1	0 14
+51	13	0.1	1	0 13
+52	12	0.1	1	0 12
+53	26	0.1	1	3 23
+54	14	0.1	1	0 14
+55	16	0.1	1	1 15
+56	12	0.1	1	0 12
+57	14	0.1	1	1 13
+58	21	0.1	1	1 20
+59	16	0.1	1	0 16
+60	9	0.1	1	0 9
+61	10	0.1	1	0 10
+62	7	0.1	1	0 7
+63	10	0.1	1	0 10
+64	14	0.1	1	0 14
+65	21	0.1	1	0 21
+66	13	0.1	1	0 13
+67	30	0.1	1	0 30
+68	19	0.1	1	0 19
+69	22	0.1	1	0 22
+70	11	0.1	1	0 11
+71	10	0.1	1	0 10
+72	9	0.1	1	0 9
+73	20	0.1	1	2 18
+74	20	0.1	1	0 20
+75	20	0.1	1	0 20
+76	14	0.1	1	0 14
+77	37	0.1	1	0 37
+78	33	0.1	1	0 33
+79	44	0.1	1	0 44
+80	12	0.1	1	0 12
+81	26	0.1	1	0 26
+82	15	0.1	1	0 15
+83	10	0.1	1	0 10
+84	5	0.1	1	0 5
+85	5	0.1	1	0 5
+86	8	0.1	1	0 8
+87	12	0.1	1	0 12
+88	16	0.1	1	0 16
+89	6	0.1	1	0 6
+90	20	0.1	1	0 20
+91	20	0.1	1	0 20
+92	9	0.1	1	0 9
+93	8	0.1	1	0 8
+94	9	0.1	1	0 9
+95	17	0.1	1	0 17
+96	29	0.1	1	0 29
+97	26	0.1	1	0 26
+98	27	0.1	1	1 26
+99	42	0.1	1	1 41
+100	33	0.1	1	0 33
+101	28	0.1	1	0 28
+
+RUN STATISTICS FOR INPUT FILE: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R2_001.fastq.gz
+=============================================
+1659088 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R1_001.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.9.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a TGGAATTCTCGG /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R1_001.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 72.742 s (36.509 µs/read; 1.64 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,992,477
+Reads with adapters:                 1,333,294 (66.9%)
+Reads written (passing filters):     1,992,477 (100.0%)
+
+Total basepairs processed:   200,478,871 bp
+Quality-trimmed:               1,923,429 bp (1.0%)
+Total written (filtered):    152,505,221 bp (76.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGGAATTCTCGG; Type: regular 3'; Length: 12; Trimmed: 1333294 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 24.8%
+  C: 17.7%
+  G: 20.7%
+  T: 36.7%
+  none/other: 0.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	445113	498119.2	0	445113
+2	114960	124529.8	0	114960
+3	39749	31132.5	0	39749
+4	9877	7783.1	0	9877
+5	3310	1945.8	0	3310
+6	9207	486.4	0	9207
+7	1846	121.6	0	1846
+8	4802	30.4	0	4802
+9	2040	7.6	0	1976 64
+10	3803	1.9	1	3462 341
+11	3639	0.5	1	3461 178
+12	3564	0.1	1	3378 186
+13	3450	0.1	1	3298 152
+14	3548	0.1	1	3386 162
+15	3190	0.1	1	3071 119
+16	3545	0.1	1	3346 199
+17	6815	0.1	1	6519 296
+18	6579	0.1	1	6272 307
+19	250	0.1	1	122 128
+20	735	0.1	1	635 100
+21	6067	0.1	1	5895 172
+22	3171	0.1	1	3006 165
+23	398	0.1	1	206 192
+24	4227	0.1	1	4054 173
+25	2069	0.1	1	1938 131
+26	3658	0.1	1	3331 327
+27	9461	0.1	1	8913 548
+28	332	0.1	1	191 141
+29	953	0.1	1	885 68
+30	2770	0.1	1	2398 372
+31	6215	0.1	1	5926 289
+32	178	0.1	1	96 82
+33	3668	0.1	1	3340 328
+34	4094	0.1	1	3646 448
+35	6530	0.1	1	6041 489
+36	3652	0.1	1	3301 351
+37	1175	0.1	1	690 485
+38	6641	0.1	1	6353 288
+39	3819	0.1	1	3434 385
+40	2345	0.1	1	1525 820
+41	9032	0.1	1	7994 1038
+42	6164	0.1	1	5930 234
+43	5143	0.1	1	4593 550
+44	740	0.1	1	542 198
+45	10641	0.1	1	9803 838
+46	6160	0.1	1	5687 473
+47	4276	0.1	1	3420 856
+48	19686	0.1	1	16964 2722
+49	13682	0.1	1	10586 3096
+50	1570	0.1	1	1040 530
+51	2886	0.1	1	2537 349
+52	3203	0.1	1	2704 499
+53	8500	0.1	1	7620 880
+54	913	0.1	1	656 257
+55	9168	0.1	1	7812 1356
+56	21520	0.1	1	18682 2838
+57	4068	0.1	1	2799 1269
+58	25757	0.1	1	22487 3270
+59	4751	0.1	1	3865 886
+60	1034	0.1	1	747 287
+61	8166	0.1	1	7102 1064
+62	29056	0.1	1	26768 2288
+63	6548	0.1	1	5267 1281
+64	16215	0.1	1	13705 2510
+65	7612	0.1	1	6561 1051
+66	12753	0.1	1	11124 1629
+67	25033	0.1	1	22728 2305
+68	15684	0.1	1	13794 1890
+69	6546	0.1	1	5438 1108
+70	9723	0.1	1	8675 1048
+71	4275	0.1	1	3628 647
+72	9286	0.1	1	8384 902
+73	12546	0.1	1	11628 918
+74	12290	0.1	1	11489 801
+75	10974	0.1	1	10351 623
+76	9671	0.1	1	9216 455
+77	8336	0.1	1	7993 343
+78	7805	0.1	1	7570 235
+79	7172	0.1	1	6967 205
+80	7533	0.1	1	7388 145
+81	7427	0.1	1	7303 124
+82	8491	0.1	1	8311 180
+83	7648	0.1	1	7483 165
+84	8305	0.1	1	8181 124
+85	9008	0.1	1	8900 108
+86	11774	0.1	1	11613 161
+87	11880	0.1	1	11701 179
+88	16891	0.1	1	16591 300
+89	16123	0.1	1	15873 250
+90	16753	0.1	1	16519 234
+91	29186	0.1	1	28836 350
+92	7133	0.1	1	7023 110
+93	8847	0.1	1	8735 112
+94	16580	0.1	1	16364 216
+95	8588	0.1	1	8463 125
+96	7059	0.1	1	6965 94
+97	3468	0.1	1	3402 66
+98	2918	0.1	1	2865 53
+99	2266	0.1	1	2238 28
+100	3528	0.1	1	3463 65
+101	1858	0.1	1	1821 37
+
+RUN STATISTICS FOR INPUT FILE: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R1_001.fastq.gz
+=============================================
+1992477 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'GATCGTCGGACT' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R2_001.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.9.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a TGGAATTCTCGG /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R1_001.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 80.420 s (40.300 µs/read; 1.49 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,995,552
+Reads with adapters:                 1,246,064 (62.4%)
+Reads written (passing filters):     1,995,552 (100.0%)
+
+Total basepairs processed:   200,711,381 bp
+Quality-trimmed:               1,582,491 bp (0.8%)
+Total written (filtered):    165,234,949 bp (82.3%)
+
+=== Adapter 1 ===
+
+Sequence: TGGAATTCTCGG; Type: regular 3'; Length: 12; Trimmed: 1246064 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 25.2%
+  C: 19.4%
+  G: 21.8%
+  T: 33.6%
+  none/other: 0.1%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	476845	498888.0	0	476845
+2	130366	124722.0	0	130366
+3	44621	31180.5	0	44621
+4	9745	7795.1	0	9745
+5	1737	1948.8	0	1737
+6	8204	487.2	0	8204
+7	3855	121.8	0	3855
+8	5516	30.4	0	5516
+9	4265	7.6	0	4168 97
+10	5112	1.9	1	4866 246
+11	4892	0.5	1	4750 142
+12	4924	0.1	1	4727 197
+13	4550	0.1	1	4389 161
+14	5102	0.1	1	4898 204
+15	4317	0.1	1	4203 114
+16	4618	0.1	1	4404 214
+17	8794	0.1	1	8519 275
+18	8490	0.1	1	8185 305
+19	176	0.1	1	85 91
+20	836	0.1	1	740 96
+21	7593	0.1	1	7407 186
+22	4136	0.1	1	3982 154
+23	460	0.1	1	229 231
+24	5669	0.1	1	5485 184
+25	2507	0.1	1	2344 163
+26	4328	0.1	1	4003 325
+27	11809	0.1	1	11267 542
+28	306	0.1	1	194 112
+29	1345	0.1	1	1263 82
+30	2900	0.1	1	2609 291
+31	7339	0.1	1	7073 266
+32	1033	0.1	1	637 396
+33	8132	0.1	1	7836 296
+34	3165	0.1	1	2923 242
+35	1249	0.1	1	913 336
+36	10205	0.1	1	9962 243
+37	1156	0.1	1	782 374
+38	583	0.1	1	481 102
+39	6945	0.1	1	6687 258
+40	756	0.1	1	557 199
+41	9754	0.1	1	9080 674
+42	6331	0.1	1	6170 161
+43	3863	0.1	1	3583 280
+44	645	0.1	1	455 190
+45	10385	0.1	1	9806 579
+46	2925	0.1	1	2634 291
+47	4284	0.1	1	3708 576
+48	19254	0.1	1	17552 1702
+49	11508	0.1	1	9769 1739
+50	1252	0.1	1	869 383
+51	1619	0.1	1	1422 197
+52	2489	0.1	1	2131 358
+53	6439	0.1	1	5955 484
+54	669	0.1	1	481 188
+55	6754	0.1	1	5965 789
+56	16287	0.1	1	14792 1495
+57	3070	0.1	1	2339 731
+58	21062	0.1	1	19327 1735
+59	3363	0.1	1	2904 459
+60	768	0.1	1	581 187
+61	5990	0.1	1	5359 631
+62	23692	0.1	1	22403 1289
+63	4611	0.1	1	3838 773
+64	15367	0.1	1	13820 1547
+65	4946	0.1	1	4352 594
+66	8107	0.1	1	7260 847
+67	15868	0.1	1	14602 1266
+68	9847	0.1	1	8793 1054
+69	4360	0.1	1	3714 646
+70	7036	0.1	1	6413 623
+71	2959	0.1	1	2573 386
+72	5845	0.1	1	5401 444
+73	8586	0.1	1	8098 488
+74	8995	0.1	1	8508 487
+75	8369	0.1	1	7999 370
+76	7420	0.1	1	7094 326
+77	6805	0.1	1	6568 237
+78	5993	0.1	1	5808 185
+79	5900	0.1	1	5756 144
+80	6686	0.1	1	6530 156
+81	7704	0.1	1	7582 122
+82	10658	0.1	1	10434 224
+83	8457	0.1	1	8280 177
+84	7984	0.1	1	7869 115
+85	6882	0.1	1	6782 100
+86	6617	0.1	1	6472 145
+87	5582	0.1	1	5494 88
+88	8619	0.1	1	8430 189
+89	8537	0.1	1	8397 140
+90	8347	0.1	1	8200 147
+91	12805	0.1	1	12657 148
+92	4117	0.1	1	4047 70
+93	4651	0.1	1	4574 77
+94	9077	0.1	1	8926 151
+95	4636	0.1	1	4564 72
+96	3834	0.1	1	3781 53
+97	2194	0.1	1	2155 39
+98	1937	0.1	1	1902 35
+99	1400	0.1	1	1384 16
+100	2171	0.1	1	2138 33
+101	1171	0.1	1	1157 14
+
+RUN STATISTICS FOR INPUT FILE: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R1_001.fastq.gz
+=============================================
+1995552 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R2_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R2_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'TGGAATTCTCGG' (Illumina small RNA adapter; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'GATCGTCGGACT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 18 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R2_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'GATCGTCGGACT' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R2_001.fastq.gz <<< 
+This is cutadapt 4.2 with Python 3.9.15
+Command line parameters: -j 1 -e 0.1 -q 20 -O 1 -a CTGTCTCTTATA /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R2_001.fastq.gz
+Processing single-end reads on 1 core ...
+Finished in 93.505 s (43.612 µs/read; 1.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,144,003
+Reads with adapters:                   601,652 (28.1%)
+Reads written (passing filters):     2,144,003 (100.0%)
+
+Total basepairs processed:   215,715,887 bp
+Quality-trimmed:               1,658,230 bp (0.8%)
+Total written (filtered):    213,059,579 bp (98.8%)
+
+=== Adapter 1 ===
+
+Sequence: CTGTCTCTTATA; Type: regular 3'; Length: 12; Trimmed: 601652 times
+
+Minimum overlap: 1
+No. of allowed errors:
+1-9 bp: 0; 10-12 bp: 1
+
+Bases preceding removed adapters:
+  A: 28.4%
+  C: 21.9%
+  G: 14.8%
+  T: 35.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	411684	536000.8	0	411684
+2	121677	134000.2	0	121677
+3	38939	33500.0	0	38939
+4	24974	8375.0	0	24974
+5	1535	2093.8	0	1535
+6	587	523.4	0	587
+7	192	130.9	0	192
+8	90	32.7	0	90
+9	26	8.2	0	13 13
+10	93	2.0	1	1 92
+11	35	0.5	1	1 34
+12	28	0.1	1	0 28
+13	5	0.1	1	0 5
+14	9	0.1	1	0 9
+15	19	0.1	1	0 19
+16	16	0.1	1	0 16
+17	11	0.1	1	0 11
+18	2	0.1	1	0 2
+19	12	0.1	1	0 12
+20	4	0.1	1	0 4
+21	19	0.1	1	0 19
+22	9	0.1	1	0 9
+23	11	0.1	1	0 11
+24	19	0.1	1	1 18
+25	26	0.1	1	2 24
+26	36	0.1	1	0 36
+27	23	0.1	1	2 21
+28	19	0.1	1	0 19
+29	22	0.1	1	0 22
+30	18	0.1	1	0 18
+31	25	0.1	1	0 25
+32	35	0.1	1	0 35
+33	30	0.1	1	0 30
+34	40	0.1	1	0 40
+35	18	0.1	1	0 18
+36	17	0.1	1	0 17
+37	8	0.1	1	0 8
+38	9	0.1	1	0 9
+39	12	0.1	1	0 12
+40	20	0.1	1	0 20
+41	15	0.1	1	0 15
+42	16	0.1	1	1 15
+43	21	0.1	1	0 21
+44	19	0.1	1	1 18
+45	19	0.1	1	0 19
+46	9	0.1	1	0 9
+47	15	0.1	1	0 15
+48	19	0.1	1	0 19
+49	22	0.1	1	0 22
+50	17	0.1	1	0 17
+51	17	0.1	1	0 17
+52	13	0.1	1	0 13
+53	11	0.1	1	5 6
+54	9	0.1	1	0 9
+55	8	0.1	1	0 8
+56	19	0.1	1	0 19
+57	31	0.1	1	0 31
+58	14	0.1	1	0 14
+59	16	0.1	1	0 16
+60	31	0.1	1	0 31
+61	14	0.1	1	0 14
+62	16	0.1	1	0 16
+63	19	0.1	1	0 19
+64	22	0.1	1	0 22
+65	20	0.1	1	2 18
+66	8	0.1	1	0 8
+67	32	0.1	1	0 32
+68	14	0.1	1	0 14
+69	22	0.1	1	2 20
+70	13	0.1	1	1 12
+71	17	0.1	1	5 12
+72	9	0.1	1	0 9
+73	23	0.1	1	0 23
+74	11	0.1	1	0 11
+75	26	0.1	1	0 26
+76	24	0.1	1	1 23
+77	32	0.1	1	0 32
+78	44	0.1	1	0 44
+79	54	0.1	1	0 54
+80	9	0.1	1	0 9
+81	17	0.1	1	0 17
+82	8	0.1	1	0 8
+83	12	0.1	1	0 12
+84	19	0.1	1	0 19
+85	38	0.1	1	0 38
+86	16	0.1	1	0 16
+87	8	0.1	1	0 8
+88	15	0.1	1	0 15
+89	21	0.1	1	0 21
+90	23	0.1	1	3 20
+91	17	0.1	1	0 17
+92	22	0.1	1	0 22
+93	19	0.1	1	0 19
+94	31	0.1	1	0 31
+95	25	0.1	1	0 25
+96	36	0.1	1	0 36
+97	30	0.1	1	0 30
+98	42	0.1	1	0 42
+99	58	0.1	1	0 58
+100	52	0.1	1	1 51
+101	19	0.1	1	0 19
+
+RUN STATISTICS FOR INPUT FILE: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R2_001.fastq.gz
+=============================================
+2144003 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R1_001.fastq.gz_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R1_001.fastq.gz
+Trimming mode: paired-end
+Trim Galore version: 0.6.10
+Cutadapt version: 4.2
+Number of cores used for trimming: 1
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'CTGTCTCTTATA' (Nextera Transposase sequence; auto-detected)
+Maximum trimming error rate: 0.1 (default)
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+Running FastQC on the data once trimming has completed
+Output file(s) will be GZIP compressed
+
+Cutadapt seems to be fairly up-to-date (version 4.2). Setting -j -j 1
+Writing final adapter and quality trimmed output to SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R1_001_trimmed.fq.gz
+
+
+  >>> Now performing quality (cutoff '-q 20') and adapter trimming in a single pass for the adapter sequence: 'CTGTCTCTTATA' from file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R1_001.fastq.gz <<< 
