@@ -1,2 +1,536 @@
--------------------step 4. running filtering-------------------------
-all done
+-----------running 1 out of 18 samples---------------------- 
+-----------running 2 out of 18 samples---------------------- 
+-----------running 3 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-011
+-----------running 4 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-012
+-----------running 5 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-013
+-----------running 6 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-014
+bulkChIC-PMC-DRO-015
+-----------running 7 out of 18 samples---------------------- 
+-----------running 8 out of 18 samples---------------------- 
+bulkChIC-PMC-DRO-016
+SCC-bulkChIC-PMC-DRO-002
+-----------running 9 out of 18 samples---------------------- 
+-----------running 10 out of 18 samples---------------------- 
+SCC-bulkChIC-PMC-DRO-008
+SCC-bulkChIC-PMC-DRO-005
+-----------running 11 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-L5
+-----------running 12 out of 18 samples---------------------- 
+-----------running 13 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-LH
+-----------running 14 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-F1
+-----------running 15 out of 18 samples---------------------- 
+-----------running 16 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-T1
+SCC-ChIC-PMC-DRO-FH
+SCC-ChIC-PMC-DRO-F5
+-----------running 17 out of 18 samples---------------------- 
+-----------running 18 out of 18 samples---------------------- 
+SCC-ChIC-PMC-DRO-T5
+SCC-ChIC-PMC-DRO-TH
+SCC-ChIC-PMC-DRO-L1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+start sorting and remove dup for bulkChIC-PMC-DRO-012 at Tue Mar 21 13:00:36 CET 2023
+1
+1
+1
+start sorting and remove dup for bulkChIC-PMC-DRO-013 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-014 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-011 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-016 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for bulkChIC-PMC-DRO-015 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-008 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-005 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-LH at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-002 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-FH at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-TH at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 13:00:36 CET 2023
+start sorting and remove dup for SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 13:00:36 CET 2023
+13:00:41.866 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:41.868 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:41.897 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:41.893 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:41.889 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:41.902 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:41.896 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:41.905 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:41.977 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:42.012 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:42.015 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:42.038 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:00:42.039 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+13:00:42.055 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+13:00:42.095 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+13:00:42.112 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+13:00:42.114 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+13:00:42.249 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:00:42 CET 2023] SortSam --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_sorted.bam --SORT_ORDER coordinate --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:00:42 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 13:00:42	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:42	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:42	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:42	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:42	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:42	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:42	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:42	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:42	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:43	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:43	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:43	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:43	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:43	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:43	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:43	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:43	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:00:43	SortSam	Seen many non-increasing record positions. Printing Read-names as well.
+INFO	2023-03-21 13:01:54	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:01:55	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:01:56	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:01:56	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:01:58	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:02:05	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:02:09	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:02:12	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:02:37	SortSam	Finished reading inputs, merging and writing to output now.
+[Tue Mar 21 13:03:14 CET 2023] picard.sam.SortSam done. Elapsed time: 2.54 minutes.
+Runtime.totalMemory()=1089470464
+finsh sorting SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 13:03:15 CET 2023
+start mark dup and remove for SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 13:03:15 CET 2023
+13:03:20.230 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:03:20 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_marked_dup_metrics.txt --REMOVE_DUPLICATES true --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:03:20 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 13:03:20	MarkDuplicates	Start of doWork freeMemory: 19137256; totalMemory: 25165824; maxMemory: 2147483648
+INFO	2023-03-21 13:03:20	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-03-21 13:03:20	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+[Tue Mar 21 13:03:27 CET 2023] picard.sam.SortSam done. Elapsed time: 2.75 minutes.
+Runtime.totalMemory()=1089470464
+[Tue Mar 21 13:03:27 CET 2023] picard.sam.SortSam done. Elapsed time: 2.77 minutes.
+Runtime.totalMemory()=1089470464
+finsh sorting SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 13:03:27 CET 2023
+start mark dup and remove for SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 13:03:27 CET 2023
+finsh sorting SCC-ChIC-PMC-DRO-FH at Tue Mar 21 13:03:28 CET 2023
+start mark dup and remove for SCC-ChIC-PMC-DRO-FH at Tue Mar 21 13:03:28 CET 2023
+[Tue Mar 21 13:03:29 CET 2023] picard.sam.SortSam done. Elapsed time: 2.79 minutes.
+Runtime.totalMemory()=1091567616
+finsh sorting SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 13:03:29 CET 2023
+start mark dup and remove for SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 13:03:29 CET 2023
+[Tue Mar 21 13:03:31 CET 2023] picard.sam.SortSam done. Elapsed time: 2.82 minutes.
+Runtime.totalMemory()=1093664768
+finsh sorting SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 13:03:31 CET 2023
+start mark dup and remove for SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 13:03:31 CET 2023
+13:03:32.623 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+13:03:32.760 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:03:32 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_marked_dup_metrics.txt --REMOVE_DUPLICATES true --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:03:32 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+[Tue Mar 21 13:03:33 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_marked_dup_metrics.txt --REMOVE_DUPLICATES true --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:03:33 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 13:03:33	MarkDuplicates	Start of doWork freeMemory: 22277712; totalMemory: 28311552; maxMemory: 2147483648
+INFO	2023-03-21 13:03:33	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-03-21 13:03:33	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+INFO	2023-03-21 13:03:33	MarkDuplicates	Start of doWork freeMemory: 22271600; totalMemory: 28311552; maxMemory: 2147483648
+INFO	2023-03-21 13:03:33	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-03-21 13:03:33	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+13:03:35.148 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:03:35 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_marked_dup_metrics.txt --REMOVE_DUPLICATES true --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:03:35 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 13:03:35	MarkDuplicates	Start of doWork freeMemory: 19132184; totalMemory: 25165824; maxMemory: 2147483648
+INFO	2023-03-21 13:03:35	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-03-21 13:03:35	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+13:03:37.538 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:03:37 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_marked_dup_metrics.txt --REMOVE_DUPLICATES true --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:03:37 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 13:03:37	MarkDuplicates	Start of doWork freeMemory: 19131728; totalMemory: 25165824; maxMemory: 2147483648
+INFO	2023-03-21 13:03:37	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-03-21 13:03:37	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+INFO	2023-03-21 13:03:40	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:19s.  Time for last 1,000,000:   19s.  Last read position: chr9:18,565,245
+INFO	2023-03-21 13:03:40	MarkDuplicates	Tracking 3604 as yet unmatched pairs. 251 records in RAM.
+[Tue Mar 21 13:03:42 CET 2023] picard.sam.SortSam done. Elapsed time: 3.01 minutes.
+Runtime.totalMemory()=1089470464
+finsh sorting SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 13:03:42 CET 2023
+start mark dup and remove for SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 13:03:42 CET 2023
+13:03:48.204 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:03:48 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_marked_dup_metrics.txt --REMOVE_DUPLICATES true --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:03:48 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 13:03:48	MarkDuplicates	Start of doWork freeMemory: 25413088; totalMemory: 31457280; maxMemory: 2147483648
+INFO	2023-03-21 13:03:48	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-03-21 13:03:48	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+INFO	2023-03-21 13:03:51	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:18s.  Time for last 1,000,000:   18s.  Last read position: chr7:51,750,035
+INFO	2023-03-21 13:03:51	MarkDuplicates	Tracking 3354 as yet unmatched pairs. 201 records in RAM.
+INFO	2023-03-21 13:03:52	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:19s.  Time for last 1,000,000:   19s.  Last read position: chr10:48,020,149
+INFO	2023-03-21 13:03:52	MarkDuplicates	Tracking 3512 as yet unmatched pairs. 180 records in RAM.
+INFO	2023-03-21 13:03:54	MarkDuplicates	Read 1964200 records. 0 pairs never matched.
+INFO	2023-03-21 13:03:55	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:19s.  Time for last 1,000,000:   19s.  Last read position: chr11:107,600,396
+INFO	2023-03-21 13:03:55	MarkDuplicates	Tracking 2628 as yet unmatched pairs. 48 records in RAM.
+INFO	2023-03-21 13:03:55	MarkDuplicates	After buildSortedReadEndLists freeMemory: 654418208; totalMemory: 926941184; maxMemory: 2147483648
+INFO	2023-03-21 13:03:55	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2023-03-21 13:03:55	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:17s.  Time for last 1,000,000:   17s.  Last read position: chr10:79,111,765
+INFO	2023-03-21 13:03:55	MarkDuplicates	Tracking 3448 as yet unmatched pairs. 119 records in RAM.
+INFO	2023-03-21 13:03:56	MarkDuplicates	Traversing read pair information and detecting duplicates.
+[Tue Mar 21 13:03:56 CET 2023] picard.sam.SortSam done. Elapsed time: 3.24 minutes.
+Runtime.totalMemory()=1091567616
+finsh sorting SCC-ChIC-PMC-DRO-TH at Tue Mar 21 13:03:56 CET 2023
+start mark dup and remove for SCC-ChIC-PMC-DRO-TH at Tue Mar 21 13:03:56 CET 2023
+INFO	2023-03-21 13:03:58	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:15s.  Time for last 10,000,000:  195s.  Last read position: chr6:144,656,459.  Last read name: VH00208:13:AAC22FNM5:1:1401:20598:54897
+INFO	2023-03-21 13:03:58	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-03-21 13:03:59	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-03-21 13:04:00	MarkDuplicates	After generateDuplicateIndexes freeMemory: 919530544; totalMemory: 1464860672; maxMemory: 2147483648
+INFO	2023-03-21 13:04:00	MarkDuplicates	Marking 731106 records as duplicates.
+INFO	2023-03-21 13:04:00	MarkDuplicates	Found 84837 optical duplicate clusters.
+INFO	2023-03-21 13:04:00	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2023-03-21 13:04:00	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:17s.  Time for last 10,000,000:  197s.  Last read position: chrY:10,473,016.  Last read name: VH00208:1:AAALH7CM5:1:1107:38966:2155
+INFO	2023-03-21 13:04:01	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:19s.  Time for last 10,000,000:  199s.  Last read position: chr12:94,754,846.  Last read name: VH00208:13:AAC22FNM5:1:1502:72122:44731
+13:04:02.191 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:04:02 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_marked_dup_metrics.txt --REMOVE_DUPLICATES true --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:04:02 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 13:04:02	MarkDuplicates	Start of doWork freeMemory: 29596640; totalMemory: 35651584; maxMemory: 2147483648
+INFO	2023-03-21 13:04:02	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-03-21 13:04:02	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+INFO	2023-03-21 13:04:02	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:19s.  Time for last 10,000,000:  199s.  Last read position: chr14:45,797,598.  Last read name: VH00208:1:AAALH7CM5:1:1107:32887:29284
+INFO	2023-03-21 13:04:03	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:21s.  Time for last 10,000,000:  201s.  Last read position: chr20:14,711,206.  Last read name: VH00208:13:AAC22FNM5:1:1404:64491:19269
+INFO	2023-03-21 13:04:03	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:21s.  Time for last 10,000,000:  201s.  Last read position: chr1:154,271,368.  Last read name: VH00208:13:AAC22FNM5:1:1401:33399:10939
+INFO	2023-03-21 13:04:05	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:23s.  Time for last 10,000,000:  203s.  Last read position: chr12:94,695,281.  Last read name: VH00208:13:AAC22FNM5:1:1501:70247:19761
+INFO	2023-03-21 13:04:06	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:23s.  Time for last 10,000,000:  203s.  Last read position: chr11:100,829,831.  Last read name: VH00208:1:AAALH7CM5:1:1107:49304:19231
+INFO	2023-03-21 13:04:06	SortSam	Read    10,000,000 records.  Elapsed time: 00:03:23s.  Time for last 10,000,000:  203s.  Last read position: chr7:152,760,893.  Last read name: VH00208:13:AAC22FNM5:1:1402:28456:47495
+INFO	2023-03-21 13:04:06	MarkDuplicates	Read 1853420 records. 0 pairs never matched.
+INFO	2023-03-21 13:04:06	MarkDuplicates	After buildSortedReadEndLists freeMemory: 639821752; totalMemory: 901775360; maxMemory: 2147483648
+INFO	2023-03-21 13:04:06	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2023-03-21 13:04:06	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:17s.  Time for last 1,000,000:   17s.  Last read position: chr7:153,174,922
+INFO	2023-03-21 13:04:06	MarkDuplicates	Tracking 4224 as yet unmatched pairs. 18 records in RAM.
+INFO	2023-03-21 13:04:07	MarkDuplicates	Read 1702400 records. 0 pairs never matched.
+INFO	2023-03-21 13:04:07	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:34s.  Time for last 1,000,000:   15s.  Last read position: chr18:43,470,683
+INFO	2023-03-21 13:04:07	MarkDuplicates	Tracking 1630 as yet unmatched pairs. 95 records in RAM.
+INFO	2023-03-21 13:04:07	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-03-21 13:04:07	MarkDuplicates	After buildSortedReadEndLists freeMemory: 596725792; totalMemory: 843055104; maxMemory: 2147483648
+INFO	2023-03-21 13:04:07	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2023-03-21 13:04:08	MarkDuplicates	Read 1733258 records. 0 pairs never matched.
+INFO	2023-03-21 13:04:09	MarkDuplicates	After buildSortedReadEndLists freeMemory: 603515480; totalMemory: 853540864; maxMemory: 2147483648
+INFO	2023-03-21 13:04:09	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2023-03-21 13:04:09	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-03-21 13:04:09	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-03-21 13:04:10	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-03-21 13:04:10	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-03-21 13:04:11	MarkDuplicates	After generateDuplicateIndexes freeMemory: 894367608; totalMemory: 1439694848; maxMemory: 2147483648
+INFO	2023-03-21 13:04:11	MarkDuplicates	Marking 708082 records as duplicates.
+INFO	2023-03-21 13:04:11	MarkDuplicates	Found 85251 optical duplicate clusters.
+INFO	2023-03-21 13:04:11	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-03-21 13:04:11	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2023-03-21 13:04:12	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-03-21 13:04:12	MarkDuplicates	Read 2301604 records. 0 pairs never matched.
+INFO	2023-03-21 13:04:12	MarkDuplicates	After generateDuplicateIndexes freeMemory: 835647696; totalMemory: 1380974592; maxMemory: 2147483648
+INFO	2023-03-21 13:04:12	MarkDuplicates	Marking 617599 records as duplicates.
+INFO	2023-03-21 13:04:12	MarkDuplicates	Found 70156 optical duplicate clusters.
+INFO	2023-03-21 13:04:12	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2023-03-21 13:04:12	MarkDuplicates	After buildSortedReadEndLists freeMemory: 739382320; totalMemory: 1048576000; maxMemory: 2147483648
+INFO	2023-03-21 13:04:12	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2023-03-21 13:04:13	MarkDuplicates	Traversing fragment information and detecting duplicates.
+[Tue Mar 21 13:04:14 CET 2023] picard.sam.SortSam done. Elapsed time: 3.54 minutes.
+Runtime.totalMemory()=1089470464
+INFO	2023-03-21 13:04:14	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-03-21 13:04:14	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-03-21 13:04:14	MarkDuplicates	After generateDuplicateIndexes freeMemory: 846138544; totalMemory: 1391460352; maxMemory: 2147483648
+INFO	2023-03-21 13:04:14	MarkDuplicates	Marking 668385 records as duplicates.
+INFO	2023-03-21 13:04:14	MarkDuplicates	Found 90781 optical duplicate clusters.
+INFO	2023-03-21 13:04:14	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+finsh sorting SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 13:04:14 CET 2023
+start mark dup and remove for SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 13:04:14 CET 2023
+INFO	2023-03-21 13:04:16	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-03-21 13:04:17	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-03-21 13:04:18	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1041167672; totalMemory: 1586495488; maxMemory: 2147483648
+INFO	2023-03-21 13:04:18	MarkDuplicates	Marking 848269 records as duplicates.
+INFO	2023-03-21 13:04:18	MarkDuplicates	Found 98255 optical duplicate clusters.
+INFO	2023-03-21 13:04:18	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+13:04:19.885 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:04:19 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_marked_dup_metrics.txt --REMOVE_DUPLICATES true --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:04:19 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 13:04:20	MarkDuplicates	Start of doWork freeMemory: 19130896; totalMemory: 25165824; maxMemory: 2147483648
+INFO	2023-03-21 13:04:20	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-03-21 13:04:20	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+INFO	2023-03-21 13:04:22	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:20s.  Time for last 1,000,000:   20s.  Last read position: chr6:18,282,647
+INFO	2023-03-21 13:04:22	MarkDuplicates	Tracking 2924 as yet unmatched pairs. 228 records in RAM.
+INFO	2023-03-21 13:04:23	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:34s.  Time for last 1,000,000:   16s.  Last read position: chrX:18,099,957
+INFO	2023-03-21 13:04:23	MarkDuplicates	Tracking 1388 as yet unmatched pairs. 343 records in RAM.
+INFO	2023-03-21 13:04:28	MarkDuplicates	Read 2283872 records. 0 pairs never matched.
+INFO	2023-03-21 13:04:28	MarkDuplicates	After buildSortedReadEndLists freeMemory: 727955152; totalMemory: 1031798784; maxMemory: 2147483648
+INFO	2023-03-21 13:04:28	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2023-03-21 13:04:29	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-03-21 13:04:31	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-03-21 13:04:32	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-03-21 13:04:33	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1024383600; totalMemory: 1569718272; maxMemory: 2147483648
+INFO	2023-03-21 13:04:33	MarkDuplicates	Marking 852664 records as duplicates.
+INFO	2023-03-21 13:04:33	MarkDuplicates	Found 99298 optical duplicate clusters.
+INFO	2023-03-21 13:04:33	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2023-03-21 13:04:34	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:32s.  Time for last 1,000,000:   11s.  Last read position: chr13:83,720,914
+INFO	2023-03-21 13:04:34	MarkDuplicates	Tracking 2490 as yet unmatched pairs. 56 records in RAM.
+INFO	2023-03-21 13:04:38	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:17s.  Time for last 1,000,000:   17s.  Last read position: chr8:15,917,780
+INFO	2023-03-21 13:04:38	MarkDuplicates	Tracking 3982 as yet unmatched pairs. 179 records in RAM.
+INFO	2023-03-21 13:04:45	MarkDuplicates	Read 2805046 records. 0 pairs never matched.
+INFO	2023-03-21 13:04:46	MarkDuplicates	After buildSortedReadEndLists freeMemory: 870524664; totalMemory: 1234173952; maxMemory: 2147483648
+INFO	2023-03-21 13:04:46	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2023-03-21 13:04:47	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-03-21 13:04:50	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-03-21 13:04:51	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-03-21 13:04:51	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1226765984; totalMemory: 1772093440; maxMemory: 2147483648
+INFO	2023-03-21 13:04:51	MarkDuplicates	Marking 1093603 records as duplicates.
+INFO	2023-03-21 13:04:51	MarkDuplicates	Found 119690 optical duplicate clusters.
+INFO	2023-03-21 13:04:51	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2023-03-21 13:04:52	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:32s.  Time for last 1,000,000:   14s.  Last read position: chrX:143,554,182
+INFO	2023-03-21 13:04:52	MarkDuplicates	Tracking 1484 as yet unmatched pairs. 16 records in RAM.
+INFO	2023-03-21 13:04:56	MarkDuplicates	Read 2260464 records. 0 pairs never matched.
+INFO	2023-03-21 13:04:57	MarkDuplicates	After buildSortedReadEndLists freeMemory: 720742824; totalMemory: 1024458752; maxMemory: 2147483648
+INFO	2023-03-21 13:04:57	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+INFO	2023-03-21 13:04:58	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2023-03-21 13:05:00	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-03-21 13:05:01	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-03-21 13:05:02	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1017049568; totalMemory: 1562378240; maxMemory: 2147483648
+INFO	2023-03-21 13:05:02	MarkDuplicates	Marking 941389 records as duplicates.
+INFO	2023-03-21 13:05:02	MarkDuplicates	Found 117690 optical duplicate clusters.
+INFO	2023-03-21 13:05:02	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+[Tue Mar 21 13:05:13 CET 2023] picard.sam.SortSam done. Elapsed time: 4.52 minutes.
+Runtime.totalMemory()=1089470464
+finsh sorting SCC-ChIC-PMC-DRO-LH at Tue Mar 21 13:05:13 CET 2023
+start mark dup and remove for SCC-ChIC-PMC-DRO-LH at Tue Mar 21 13:05:13 CET 2023
+13:05:18.415 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Mar 21 13:05:18 CET 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_marked_dup_metrics.txt --REMOVE_DUPLICATES true --TMP_DIR /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Mar 21 13:05:18 CET 2023] Executing as npham@n0069.compute.hpc on Linux 3.10.0-1160.76.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-03-21 13:05:18	MarkDuplicates	Start of doWork freeMemory: 25412312; totalMemory: 31457280; maxMemory: 2147483648
+INFO	2023-03-21 13:05:18	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-03-21 13:05:18	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+INFO	2023-03-21 13:05:31	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-03-21 13:05:31	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-03-21 13:05:31	MarkDuplicates	Getting Memory Stats.
+INFO	2023-03-21 13:05:32	MarkDuplicates	Before output close freeMemory: 23829256; totalMemory: 31457280; maxMemory: 2147483648
+INFO	2023-03-21 13:05:32	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-03-21 13:05:32	MarkDuplicates	After output close freeMemory: 17600568; totalMemory: 25165824; maxMemory: 2147483648
+[Tue Mar 21 13:05:32 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 2.21 minutes.
+Runtime.totalMemory()=25165824
+finish mark and remove dup for SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 13:05:33 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 13:05:33 CET 2023
+INFO	2023-03-21 13:05:35	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:16s.  Time for last 1,000,000:   16s.  Last read position: chr3:190,700,620
+INFO	2023-03-21 13:05:35	MarkDuplicates	Tracking 3884 as yet unmatched pairs. 22 records in RAM.
+INFO	2023-03-21 13:05:49	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:30s.  Time for last 1,000,000:   13s.  Last read position: chr8:32,338,494
+INFO	2023-03-21 13:05:49	MarkDuplicates	Tracking 4652 as yet unmatched pairs. 264 records in RAM.
+start indexing for SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 13:05:53 CET 2023
+INFO	2023-03-21 13:05:54	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-03-21 13:05:54	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-03-21 13:05:54	MarkDuplicates	Getting Memory Stats.
+INFO	2023-03-21 13:05:54	MarkDuplicates	Before output close freeMemory: 23810256; totalMemory: 31457280; maxMemory: 2147483648
+INFO	2023-03-21 13:05:54	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-03-21 13:05:55	MarkDuplicates	After output close freeMemory: 17602528; totalMemory: 25165824; maxMemory: 2147483648
+[Tue Mar 21 13:05:55 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 2.37 minutes.
+Runtime.totalMemory()=25165824
+finish mark and remove dup for SCC-ChIC-PMC-DRO-FH at Tue Mar 21 13:05:55 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-FH at Tue Mar 21 13:05:55 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 13:05:55 CET 2023
+INFO	2023-03-21 13:05:55	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-03-21 13:05:55	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-03-21 13:05:55	MarkDuplicates	Getting Memory Stats.
+INFO	2023-03-21 13:05:56	MarkDuplicates	Before output close freeMemory: 20706120; totalMemory: 28311552; maxMemory: 2147483648
+INFO	2023-03-21 13:05:56	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-03-21 13:05:56	MarkDuplicates	After output close freeMemory: 17602240; totalMemory: 25165824; maxMemory: 2147483648
+[Tue Mar 21 13:05:56 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 2.36 minutes.
+Runtime.totalMemory()=25165824
+finish mark and remove dup for SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 13:05:56 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 13:05:56 CET 2023
+INFO	2023-03-21 13:06:02	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-03-21 13:06:02	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-03-21 13:06:02	MarkDuplicates	Getting Memory Stats.
+INFO	2023-03-21 13:06:03	MarkDuplicates	Read     3,000,000 records.  Elapsed time: 00:00:43s.  Time for last 1,000,000:   13s.  Last read position: chr13:101,416,955
+INFO	2023-03-21 13:06:03	MarkDuplicates	Tracking 3770 as yet unmatched pairs. 77 records in RAM.
+INFO	2023-03-21 13:06:03	MarkDuplicates	Before output close freeMemory: 20706488; totalMemory: 28311552; maxMemory: 2147483648
+INFO	2023-03-21 13:06:03	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-03-21 13:06:03	MarkDuplicates	After output close freeMemory: 20706488; totalMemory: 28311552; maxMemory: 2147483648
+[Tue Mar 21 13:06:03 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 2.51 minutes.
+Runtime.totalMemory()=28311552
+finish mark and remove dup for SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 13:06:03 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 13:06:03 CET 2023
+INFO	2023-03-21 13:06:06	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-03-21 13:06:06	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-03-21 13:06:06	MarkDuplicates	Getting Memory Stats.
+INFO	2023-03-21 13:06:08	MarkDuplicates	Before output close freeMemory: 20712752; totalMemory: 28311552; maxMemory: 2147483648
+INFO	2023-03-21 13:06:08	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-03-21 13:06:08	MarkDuplicates	After output close freeMemory: 17608872; totalMemory: 25165824; maxMemory: 2147483648
+[Tue Mar 21 13:06:08 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 2.51 minutes.
+Runtime.totalMemory()=25165824
+finish mark and remove dup for SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 13:06:08 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 13:06:08 CET 2023
+INFO	2023-03-21 13:06:16	MarkDuplicates	Read     4,000,000 records.  Elapsed time: 00:00:57s.  Time for last 1,000,000:   13s.  Last read position: chr22:33,335,921
+INFO	2023-03-21 13:06:16	MarkDuplicates	Tracking 672 as yet unmatched pairs. 110 records in RAM.
+start indexing for SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 13:06:19 CET 2023
+INFO	2023-03-21 13:06:19	MarkDuplicates	Read 4177576 records. 0 pairs never matched.
+start indexing for SCC-ChIC-PMC-DRO-FH at Tue Mar 21 13:06:19 CET 2023
+INFO	2023-03-21 13:06:19	MarkDuplicates	After buildSortedReadEndLists freeMemory: 614330664; totalMemory: 1120927744; maxMemory: 2147483648
+INFO	2023-03-21 13:06:19	MarkDuplicates	Will retain up to 67108864 duplicate indices before spilling to disk.
+finish indexing for SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 13:06:20 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 13:06:21 CET 2023
+INFO	2023-03-21 13:06:21	MarkDuplicates	Traversing read pair information and detecting duplicates.
+finish indexing for SCC-ChIC-PMC-DRO-FH at Tue Mar 21 13:06:21 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 13:06:23 CET 2023
+INFO	2023-03-21 13:06:24	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-03-21 13:06:24	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-03-21 13:06:24	MarkDuplicates	Getting Memory Stats.
+INFO	2023-03-21 13:06:24	MarkDuplicates	Traversing fragment information and detecting duplicates.
+INFO	2023-03-21 13:06:25	MarkDuplicates	Before output close freeMemory: 23802528; totalMemory: 31457280; maxMemory: 2147483648
+INFO	2023-03-21 13:06:25	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-03-21 13:06:25	MarkDuplicates	After output close freeMemory: 20698640; totalMemory: 28311552; maxMemory: 2147483648
+[Tue Mar 21 13:06:25 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 2.63 minutes.
+Runtime.totalMemory()=28311552
+finish mark and remove dup for SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 13:06:25 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 13:06:25 CET 2023
+INFO	2023-03-21 13:06:25	MarkDuplicates	Sorting list of duplicate records.
+INFO	2023-03-21 13:06:26	MarkDuplicates	After generateDuplicateIndexes freeMemory: 1113515320; totalMemory: 1658847232; maxMemory: 2147483648
+INFO	2023-03-21 13:06:26	MarkDuplicates	Marking 1677783 records as duplicates.
+INFO	2023-03-21 13:06:26	MarkDuplicates	Found 183964 optical duplicate clusters.
+INFO	2023-03-21 13:06:26	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+start indexing for SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 13:06:30 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 13:06:31 CET 2023
+INFO	2023-03-21 13:06:41	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-03-21 13:06:41	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-03-21 13:06:41	MarkDuplicates	Getting Memory Stats.
+INFO	2023-03-21 13:06:42	MarkDuplicates	Before output close freeMemory: 23810344; totalMemory: 31457280; maxMemory: 2147483648
+INFO	2023-03-21 13:06:42	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-03-21 13:06:42	MarkDuplicates	After output close freeMemory: 17602608; totalMemory: 25165824; maxMemory: 2147483648
+[Tue Mar 21 13:06:42 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 2.67 minutes.
+Runtime.totalMemory()=25165824
+finish mark and remove dup for SCC-ChIC-PMC-DRO-TH at Tue Mar 21 13:06:42 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-TH at Tue Mar 21 13:06:42 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 13:06:43 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 13:06:44 CET 2023
+INFO	2023-03-21 13:06:45	SortSam	Read    20,000,000 records.  Elapsed time: 00:06:03s.  Time for last 10,000,000:  167s.  Last read position: chr6:109,102,950.  Last read name: VH00208:13:AAC22FNM5:1:2102:27491:8440
+INFO	2023-03-21 13:06:46	SortSam	Read    20,000,000 records.  Elapsed time: 00:06:04s.  Time for last 10,000,000:  160s.  Last read position: chr2:29,748,100.  Last read name: VH00208:1:AAALH7CM5:1:1202:21810:32218
+INFO	2023-03-21 13:06:46	SortSam	Read    20,000,000 records.  Elapsed time: 00:06:04s.  Time for last 10,000,000:  166s.  Last read position: chr2:120,738,227.  Last read name: VH00208:1:AAALH7CM5:1:1202:19046:3594
+INFO	2023-03-21 13:06:48	SortSam	Read    20,000,000 records.  Elapsed time: 00:06:06s.  Time for last 10,000,000:  164s.  Last read position: chr2:59,308,805.  Last read name: VH00208:13:AAC22FNM5:1:2108:71970:40566
+INFO	2023-03-21 13:06:50	SortSam	Read    20,000,000 records.  Elapsed time: 00:06:07s.  Time for last 10,000,000:  167s.  Last read position: chr7:37,488,952.  Last read name: VH00208:1:AAALH7CM5:1:1202:26487:54878
+INFO	2023-03-21 13:06:51	SortSam	Read    20,000,000 records.  Elapsed time: 00:06:09s.  Time for last 10,000,000:  170s.  Last read position: chr16:68,174,170.  Last read name: VH00208:13:AAC22FNM5:1:2304:50251:33467
+INFO	2023-03-21 13:06:54	SortSam	Read    20,000,000 records.  Elapsed time: 00:06:11s.  Time for last 10,000,000:  170s.  Last read position: chr5:177,194,169.  Last read name: VH00208:13:AAC22FNM5:1:1610:21431:53155
+INFO	2023-03-21 13:06:56	SortSam	Read    20,000,000 records.  Elapsed time: 00:06:14s.  Time for last 10,000,000:  170s.  Last read position: chr9:96,854,535.  Last read name: VH00208:13:AAC22FNM5:1:2105:23628:34603
+INFO	2023-03-21 13:06:57	SortSam	Read    20,000,000 records.  Elapsed time: 00:06:14s.  Time for last 10,000,000:  171s.  Last read position: chr7:63,657,943.  Last read name: VH00208:13:AAC22FNM5:1:2210:30653:19932
+start indexing for SCC-ChIC-PMC-DRO-TH at Tue Mar 21 13:07:05 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-TH at Tue Mar 21 13:07:06 CET 2023
+INFO	2023-03-21 13:07:08	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-03-21 13:07:08	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-03-21 13:07:08	MarkDuplicates	Getting Memory Stats.
+INFO	2023-03-21 13:07:08	MarkDuplicates	Before output close freeMemory: 27995680; totalMemory: 35651584; maxMemory: 2147483648
+INFO	2023-03-21 13:07:08	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-03-21 13:07:08	MarkDuplicates	After output close freeMemory: 20739384; totalMemory: 28311552; maxMemory: 2147483648
+[Tue Mar 21 13:07:08 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 2.82 minutes.
+Runtime.totalMemory()=28311552
+finish mark and remove dup for SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 13:07:09 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 13:07:09 CET 2023
+start indexing for SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 13:07:28 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 13:07:29 CET 2023
+INFO	2023-03-21 13:08:30	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2023-03-21 13:08:30	MarkDuplicates	Duplicate Index cleanup.
+INFO	2023-03-21 13:08:30	MarkDuplicates	Getting Memory Stats.
+INFO	2023-03-21 13:08:31	MarkDuplicates	Before output close freeMemory: 23839736; totalMemory: 31457280; maxMemory: 2147483648
+INFO	2023-03-21 13:08:31	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2023-03-21 13:08:31	MarkDuplicates	After output close freeMemory: 17632000; totalMemory: 25165824; maxMemory: 2147483648
+[Tue Mar 21 13:08:31 CET 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 3.22 minutes.
+Runtime.totalMemory()=25165824
+finish mark and remove dup for SCC-ChIC-PMC-DRO-LH at Tue Mar 21 13:08:31 CET 2023
+start sorting with samtools for SCC-ChIC-PMC-DRO-LH at Tue Mar 21 13:08:31 CET 2023
+INFO	2023-03-21 13:08:44	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:08:45	SortSam	Read    30,000,000 records.  Elapsed time: 00:08:02s.  Time for last 10,000,000:  118s.  Last read position: chr2:160,348,745.  Last read name: VH00208:1:AAALH7CM5:1:1208:41067:5051
+INFO	2023-03-21 13:08:48	SortSam	Read    30,000,000 records.  Elapsed time: 00:08:06s.  Time for last 10,000,000:  121s.  Last read position: chr16:85,878,735.  Last read name: VH00208:1:AAALH7CM5:1:1208:28040:46246
+INFO	2023-03-21 13:08:50	SortSam	Read    30,000,000 records.  Elapsed time: 00:08:07s.  Time for last 10,000,000:  124s.  Last read position: chr16:59,838,405.  Last read name: VH00208:13:AAC22FNM5:1:2401:37318:47306
+INFO	2023-03-21 13:08:53	SortSam	Read    30,000,000 records.  Elapsed time: 00:08:11s.  Time for last 10,000,000:  125s.  Last read position: chr20:25,954,182.  Last read name: VH00208:13:AAC22FNM5:1:2502:22530:38806
+INFO	2023-03-21 13:08:55	SortSam	Read    30,000,000 records.  Elapsed time: 00:08:12s.  Time for last 10,000,000:  124s.  Last read position: chrX:117,163,574.  Last read name: VH00208:1:AAALH7CM5:1:1209:70474:24949
+INFO	2023-03-21 13:08:56	SortSam	Read    30,000,000 records.  Elapsed time: 00:08:14s.  Time for last 10,000,000:  122s.  Last read position: chr11:33,260,293.  Last read name: VH00208:13:AAC22FNM5:1:2309:76628:18266
+INFO	2023-03-21 13:08:58	SortSam	Read    30,000,000 records.  Elapsed time: 00:08:15s.  Time for last 10,000,000:  121s.  Last read position: chr15:21,561,824.  Last read name: VH00208:13:AAC22FNM5:1:2606:67142:32748
+INFO	2023-03-21 13:08:59	SortSam	Read    30,000,000 records.  Elapsed time: 00:08:16s.  Time for last 10,000,000:  122s.  Last read position: chr19:51,986,742.  Last read name: VH00208:13:AAC22FNM5:1:2407:10771:38560
+start indexing for SCC-ChIC-PMC-DRO-LH at Tue Mar 21 13:08:59 CET 2023
+finish indexing for SCC-ChIC-PMC-DRO-LH at Tue Mar 21 13:09:01 CET 2023
+INFO	2023-03-21 13:09:12	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:09:52	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:10:16	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:10:24	SortSam	Read    40,000,000 records.  Elapsed time: 00:09:42s.  Time for last 10,000,000:   99s.  Last read position: chr2:59,420,447.  Last read name: VH00208:1:AAALH7CM5:1:1303:50857:7229
+INFO	2023-03-21 13:10:27	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:10:28	SortSam	Read    40,000,000 records.  Elapsed time: 00:09:45s.  Time for last 10,000,000:   99s.  Last read position: chr1:9,441,393.  Last read name: VH00208:1:AAALH7CM5:1:1304:15618:6604
+INFO	2023-03-21 13:10:30	SortSam	Read    40,000,000 records.  Elapsed time: 00:09:47s.  Time for last 10,000,000:   95s.  Last read position: chr13:89,186,621.  Last read name: VH00208:1:AAALH7CM5:1:1304:14425:49823
+INFO	2023-03-21 13:10:34	SortSam	Read    40,000,000 records.  Elapsed time: 00:09:52s.  Time for last 10,000,000:   97s.  Last read position: chr2:201,781,431.  Last read name: VH00208:13:AAC22FNM5:1:2607:55591:5222
+INFO	2023-03-21 13:10:48	SortSam	Finished reading inputs, merging and writing to output now.
+INFO	2023-03-21 13:11:38	SortSam	Read    50,000,000 records.  Elapsed time: 00:10:55s.  Time for last 10,000,000:   73s.  Last read position: chrY:56,711,621.  Last read name: VH00208:1:AAALH7CM5:1:1309:32831:8327
+INFO	2023-03-21 13:11:41	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:10:59s.  Time for last 10,000,000:  175s.  Last read position: chr6:3,263,263
+INFO	2023-03-21 13:11:43	SortSam	Read    50,000,000 records.  Elapsed time: 00:11:00s.  Time for last 10,000,000:   75s.  Last read position: chr9:133,148,313.  Last read name: VH00208:1:AAALH7CM5:1:1310:17247:20765
+INFO	2023-03-21 13:11:44	SortSam	Read    50,000,000 records.  Elapsed time: 00:11:02s.  Time for last 10,000,000:   74s.  Last read position: chr7:51,608,732.  Last read name: VH00208:1:AAALH7CM5:1:1311:21450:20765
+INFO	2023-03-21 13:12:00	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:11:18s.  Time for last 10,000,000:  165s.  Last read position: chr5:166,899,006
+INFO	2023-03-21 13:12:23	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:11:41s.  Time for last 10,000,000:  150s.  Last read position: chr5:4,976,892
+INFO	2023-03-21 13:12:37	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:11:54s.  Time for last 10,000,000:  139s.  Last read position: chr4:103,409,277
+INFO	2023-03-21 13:12:49	SortSam	Read    60,000,000 records.  Elapsed time: 00:12:06s.  Time for last 10,000,000:   71s.  Last read position: chr4:49,102,038.  Last read name: VH00208:1:AAALH7CM5:1:1404:72765:9595
+INFO	2023-03-21 13:12:53	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:12:11s.  Time for last 10,000,000:  144s.  Last read position: chr4:107,251,255
+INFO	2023-03-21 13:12:54	SortSam	Read    60,000,000 records.  Elapsed time: 00:12:12s.  Time for last 10,000,000:   71s.  Last read position: chr10:122,245,243.  Last read name: VH00208:1:AAALH7CM5:1:1405:58829:36515
+INFO	2023-03-21 13:12:55	SortSam	Read    60,000,000 records.  Elapsed time: 00:12:13s.  Time for last 10,000,000:   71s.  Last read position: chr19:16,450,433.  Last read name: VH00208:1:AAALH7CM5:1:1406:34535:47060
+INFO	2023-03-21 13:13:02	SortSam	Wrote    10,000,000 records from a sorting collection.  Elapsed time: 00:12:20s.  Time for last 10,000,000:  133s.  Last read position: chr4:20,239,249
+INFO	2023-03-21 13:13:58	SortSam	Read    70,000,000 records.  Elapsed time: 00:13:16s.  Time for last 10,000,000:   69s.  Last read position: chr11:50,806,048.  Last read name: VH00208:1:AAALH7CM5:1:1410:73106:9633
+INFO	2023-03-21 13:14:03	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:13:20s.  Time for last 10,000,000:  141s.  Last read position: chr13:46,051,987
+INFO	2023-03-21 13:14:04	SortSam	Read    70,000,000 records.  Elapsed time: 00:13:22s.  Time for last 10,000,000:   68s.  Last read position: chr4:177,442,643.  Last read name: VH00208:1:AAALH7CM5:1:1502:22208:20045
+INFO	2023-03-21 13:14:05	SortSam	Read    70,000,000 records.  Elapsed time: 00:13:23s.  Time for last 10,000,000:   70s.  Last read position: chr13:112,592,023.  Last read name: VH00208:1:AAALH7CM5:1:1411:47941:52587
+INFO	2023-03-21 13:14:27	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:13:44s.  Time for last 10,000,000:  146s.  Last read position: chr13:99,181,503
+INFO	2023-03-21 13:14:44	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:14:02s.  Time for last 10,000,000:  140s.  Last read position: chr10:116,424,330
+INFO	2023-03-21 13:14:57	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:14:14s.  Time for last 10,000,000:  139s.  Last read position: chr9:122,943,421
+INFO	2023-03-21 13:15:05	SortSam	Read    80,000,000 records.  Elapsed time: 00:14:22s.  Time for last 10,000,000:   66s.  Last read position: chr13:95,625,300.  Last read name: VH00208:1:AAALH7CM5:1:1505:58128:7721
+INFO	2023-03-21 13:15:12	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:14:30s.  Time for last 10,000,000:  129s.  Last read position: chr8:85,305,461
+INFO	2023-03-21 13:15:15	SortSam	Read    80,000,000 records.  Elapsed time: 00:14:33s.  Time for last 10,000,000:   70s.  Last read position: chr10:6,391,854.  Last read name: VH00208:1:AAALH7CM5:1:1508:35974:40964
+INFO	2023-03-21 13:15:16	SortSam	Read    80,000,000 records.  Elapsed time: 00:14:33s.  Time for last 10,000,000:   70s.  Last read position: chr8:33,044,705.  Last read name: VH00208:1:AAALH7CM5:1:1507:58772:12795
+INFO	2023-03-21 13:15:16	SortSam	Wrote    20,000,000 records from a sorting collection.  Elapsed time: 00:14:34s.  Time for last 10,000,000:  143s.  Last read position: chr9:107,117,768
+[Tue Mar 21 13:16:06 CET 2023] picard.sam.SortSam done. Elapsed time: 15.42 minutes.
+Runtime.totalMemory()=38797312
+finsh sorting bulkChIC-PMC-DRO-011 at Tue Mar 21 13:16:07 CET 2023
