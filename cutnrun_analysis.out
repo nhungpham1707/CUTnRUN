@@ -1198,3 +1198,21 @@ finish indexing for bulkChIC-PMC-DRO-013 at Tue Mar 21 10:02:47 CET 2023
 INFO	2023-03-21 10:03:09	SortSam	Wrote    30,000,000 records from a sorting collection.  Elapsed time: 00:28:37s.  Time for last 10,000,000:   77s.  Last read position: chr2:194,926,245
 INFO	2023-03-21 10:03:22	SortSam	Wrote    40,000,000 records from a sorting collection.  Elapsed time: 00:28:50s.  Time for last 10,000,000:   79s.  Last read position: chr3:157,081,357
 INFO	2023-03-21 10:03:29	SortSam	Wrote    40,000,000 records from a sorting collection.  Elapsed time: 00:28:57s.  Time for last 10,000,000:   80s.  Last read position: chr3:106,978,682
+INFO	2023-03-21 10:04:28	SortSam	Wrote    40,000,000 records from a sorting collection.  Elapsed time: 00:29:56s.  Time for last 10,000,000:   79s.  Last read position: chr3:112,219,137
+start indexing for bulkChIC-PMC-DRO-012 at Tue Mar 21 10:04:36 CET 2023
+finish indexing for bulkChIC-PMC-DRO-012 at Tue Mar 21 10:04:41 CET 2023
+INFO	2023-03-21 10:04:41	SortSam	Wrote    50,000,000 records from a sorting collection.  Elapsed time: 00:30:10s.  Time for last 10,000,000:   79s.  Last read position: chr4:124,741,096
+start indexing for bulkChIC-PMC-DRO-016 at Tue Mar 21 10:04:42 CET 2023
+finish indexing for bulkChIC-PMC-DRO-016 at Tue Mar 21 10:04:46 CET 2023
+INFO	2023-03-21 10:04:50	SortSam	Wrote    50,000,000 records from a sorting collection.  Elapsed time: 00:30:18s.  Time for last 10,000,000:   81s.  Last read position: chr4:74,375,883
+INFO	2023-03-21 10:05:44	SortSam	Wrote    50,000,000 records from a sorting collection.  Elapsed time: 00:31:12s.  Time for last 10,000,000:   76s.  Last read position: chr4:70,583,844
+INFO	2023-03-21 10:05:56	SortSam	Wrote    60,000,000 records from a sorting collection.  Elapsed time: 00:31:24s.  Time for last 10,000,000:   74s.  Last read position: chr5:104,696,669
+INFO	2023-03-21 10:06:06	SortSam	Wrote    60,000,000 records from a sorting collection.  Elapsed time: 00:31:34s.  Time for last 10,000,000:   76s.  Last read position: chr5:74,687,158
+INFO	2023-03-21 10:06:59	SortSam	Wrote    60,000,000 records from a sorting collection.  Elapsed time: 00:32:27s.  Time for last 10,000,000:   74s.  Last read position: chr5:40,074,877
+INFO	2023-03-21 10:07:15	SortSam	Wrote    70,000,000 records from a sorting collection.  Elapsed time: 00:32:43s.  Time for last 10,000,000:   79s.  Last read position: chr6:90,550,846
+INFO	2023-03-21 10:07:26	SortSam	Wrote    70,000,000 records from a sorting collection.  Elapsed time: 00:32:54s.  Time for last 10,000,000:   79s.  Last read position: chr6:36,820,705
+INFO	2023-03-21 10:08:15	SortSam	Wrote    70,000,000 records from a sorting collection.  Elapsed time: 00:33:44s.  Time for last 10,000,000:   76s.  Last read position: chr6:15,036,821
+INFO	2023-03-21 10:08:31	SortSam	Wrote    80,000,000 records from a sorting collection.  Elapsed time: 00:34:00s.  Time for last 10,000,000:   76s.  Last read position: chr7:90,760,975
+INFO	2023-03-21 10:08:46	SortSam	Wrote    80,000,000 records from a sorting collection.  Elapsed time: 00:34:14s.  Time for last 10,000,000:   80s.  Last read position: chr7:25,683,880
+INFO	2023-03-21 10:09:47	SortSam	Wrote    80,000,000 records from a sorting collection.  Elapsed time: 00:35:15s.  Time for last 10,000,000:   91s.  Last read position: chr6:170,543,311
+INFO	2023-03-21 10:10:11	SortSam	Wrote    90,000,000 records from a sorting collection.  Elapsed time: 00:35:40s.  Time for last 10,000,000:   99s.  Last read position: chr8:101,638,999
