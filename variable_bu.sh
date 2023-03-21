@@ -63,7 +63,12 @@ tfe3C=$rm_dup_dir/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$rm_dup_dir/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
 fusionC=$rm_dup_dir/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 
-
+# source variables to other scripts in the pipeline 
+. ./1-qualityCheck.sh
+. ./2-trimming.sh
+. ./3-alignment.sh
+. ./4-filtering.sh
+. ./5-peakCalling.sh
 
 
 

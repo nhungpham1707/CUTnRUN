@@ -10,7 +10,7 @@
 
 
 # This is a master script to analyze cut and run data 
-# Nhung, 20 03 2023
+# Nhung, 21 03 2023
 
 ################## Tools ###########################
 # Quality check:

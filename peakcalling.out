@@ -1,0 +1,379 @@
+-----------running 1 out of 18 samples---------------------- 
+-----------running 2 out of 18 samples---------------------- 
+-----------running 3 out of 18 samples---------------------- 
+-----------running 4 out of 18 samples---------------------- 
+-----------running 5 out of 18 samples---------------------- 
+-----------running 6 out of 18 samples---------------------- 
+-----------running 7 out of 18 samples---------------------- 
+-----------running 8 out of 18 samples---------------------- 
+-----------running 9 out of 18 samples---------------------- 
+-----------running 10 out of 18 samples---------------------- 
+-----------running 11 out of 18 samples---------------------- 
+-----------running 12 out of 18 samples---------------------- 
+-----------running 13 out of 18 samples---------------------- 
+-----------running 14 out of 18 samples---------------------- 
+-----------running 15 out of 18 samples---------------------- 
+-----------running 16 out of 18 samples---------------------- 
+-----------running 17 out of 18 samples---------------------- 
+-----------running 18 out of 18 samples---------------------- 
+-----------running 1 out of 18 samples---------------------- 
+-----------running 2 out of 18 samples---------------------- 
+-----------running 3 out of 18 samples---------------------- 
+-----------running 4 out of 18 samples---------------------- 
+-----------running 5 out of 18 samples---------------------- 
+-----------running 6 out of 18 samples---------------------- 
+-----------running 7 out of 18 samples---------------------- 
+-----------running 8 out of 18 samples---------------------- 
+-----------running 9 out of 18 samples---------------------- 
+-----------running 10 out of 18 samples---------------------- 
+-----------running 11 out of 18 samples---------------------- 
+-----------running 12 out of 18 samples---------------------- 
+-----------running 13 out of 18 samples---------------------- 
+-----------running 14 out of 18 samples---------------------- 
+-----------running 15 out of 18 samples---------------------- 
+-----------running 16 out of 18 samples---------------------- 
+-----------running 17 out of 18 samples---------------------- 
+-----------running 18 out of 18 samples---------------------- 
+2
+2
+2
+2
+2
+2
+start trim_galore for bulkChIC-PMC-DRO-011 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-TH at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for bulkChIC-PMC-DRO-012 at Tue Mar 21 14:10:23 CET 2023
+2
+start trim_galore for bulkChIC-PMC-DRO-013 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-LH at Tue Mar 21 14:10:23 CET 2023
+2
+2
+2
+2
+2
+2
+2
+2
+2
+start trim_galore for SCC-ChIC-PMC-DRO-FH at Tue Mar 21 14:10:23 CET 2023
+2
+start trim_galore for bulkChIC-PMC-DRO-014 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-bulkChIC-PMC-DRO-002 at Tue Mar 21 14:10:23 CET 2023
+2
+start trim_galore for bulkChIC-PMC-DRO-015 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-bulkChIC-PMC-DRO-008 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for bulkChIC-PMC-DRO-016 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-F1 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-L1 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-F5 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-L5 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-bulkChIC-PMC-DRO-005 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-T1 at Tue Mar 21 14:10:23 CET 2023
+start trim_galore for SCC-ChIC-PMC-DRO-T5 at Tue Mar 21 14:10:23 CET 2023
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Multicore support not enabled. Proceeding with single-core trimming.
+Multicore support not enabled. Proceeding with single-core trimming.
+Path to Cutadapt set as: 'cutadapt' (default)
+Path to Cutadapt set as: 'cutadapt' (default)
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt seems to be working fine (tested command 'cutadapt --version')
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Cutadapt version: 4.2
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-011/
+single-core operation.
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-bulkChIC-PMC-DRO-002/
+igzip command line interface 2.30.0
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+single-core operation.
+single-core operation.
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-bulkChIC-PMC-DRO-005/
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+single-core operation.
+single-core operation.
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+igzip command line interface 2.30.0
+single-core operation.
+Cutadapt version: 4.2
+single-core operation.
+single-core operation.
+Cutadapt version: 4.2
+Cutadapt version: 4.2
+single-core operation.
+igzip command line interface 2.30.0
+single-core operation.
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_AAALH7CM5_S9_L001_R2_001.fastq.gz <<)
+
+igzip detected. Using igzip for decompressing
+
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+Cutadapt version: 4.2
+igzip command line interface 2.30.0
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+single-core operation.
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_AAC22FNM5_S3_L001_R1_001.fastq.gz <<)
+
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-T1/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_AAALH7CM5_S8_L001_R1_001.fastq.gz <<)
+
+igzip detected. Using igzip for decompressing
+
+igzip command line interface 2.30.0
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip command line interface 2.30.0
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-TH/
+igzip command line interface 2.30.0
+Cutadapt version: 4.2
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+single-core operation.
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-F5/
+igzip command line interface 2.30.0
+igzip command line interface 2.30.0
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-012/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-FH/
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-L1/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-bulkChIC-PMC-DRO-008/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-015/
+igzip command line interface 2.30.0
+igzip detected. Using igzip for decompressing
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-L5/
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-013/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-T5/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-LH/
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-016/
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+igzip command line interface 2.30.0
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/SCC-ChIC-PMC-DRO-F1/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_AAAKGV5M5_S32_L001_R1_001.fastq.gz <<)
+
+igzip detected. Using igzip for decompressing
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-TH/SCC-ChIC-PMC-DRO-TH_AAAKGV5M5_S38_L001_R1_001.fastq.gz <<)
+
+Output will be written into the directory: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-014/
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_AAAKGV5M5_S34_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L5/SCC-ChIC-PMC-DRO-L5_AAAKGV5M5_S33_L001_R2_001.fastq.gz <<)
+
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-FH/SCC-ChIC-PMC-DRO-FH_AAAKGV5M5_S37_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_AAALH7CM5_S10_L001_R1_001.fastq.gz <<)
+
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_AAAKGV5M5_S35_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_AAC22FNM5_S4_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-L1/SCC-ChIC-PMC-DRO-L1_AAAKGV5M5_S30_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-LH/SCC-ChIC-PMC-DRO-LH_AAAKGV5M5_S36_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_AAC22FNM5_S5_L001_R1_001.fastq.gz <<)
+
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_AAC22FNM5_S7_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_AAC22FNM5_S8_L001_R2_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_AAAKGV5M5_S31_L001_R1_001.fastq.gz <<)
+
+
+
+AUTO-DETECTING ADAPTER TYPE
+===========================
+Attempting to auto-detect adapter type from the first 1 million sequences of the first file (>> /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_AAC22FNM5_S6_L001_R1_001.fastq.gz <<)
+
+slurmstepd: error: *** JOB 23243214 ON n0090 CANCELLED AT 2023-03-21T14:10:24 ***

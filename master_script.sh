@@ -89,8 +89,8 @@ sh ./variable.sh
 
 ############### steps #######################
 # step 1. quality check: inspect sequencing quality with fastqc
-echo "-------------------step 1. running quality check-------------------------"
-sh ./1-qualityCheck.sh
+#echo "-------------------step 1. running quality check-------------------------"
+#sh ./1-qualityCheck.sh
 
 # step 2. adapter and bad reads trimming 
 
@@ -105,8 +105,8 @@ sh ./1-qualityCheck.sh
 #sh ./4-filtering.sh
 
 # step 5. peak calling with macs2
-#echo "-------------------step 5. running peak calling----------------------"
-#sh ./5-peakCalling.sh
+echo "-------------------step 5. running peak calling----------------------"
+sh ./5-peakCalling.sh
 
 # step 5. differential peak cutnrun_analysis
 
