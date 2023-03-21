@@ -13,7 +13,7 @@ conda env create -f environment.yaml
 
 The cut and run data were analyzed based on published protocol with modification [add ref]. The running time was calculated with the current setup in each script. 
 
-|Steps | Description | Run time (hours)| Script name|
+|Steps | Description | Run time (with current set up, 16 threads, parallel)| Script name|
 |------|-------------|-----------------|------------|
 |1. Quality checking  | check reads quality with fastQC | 3-4| before_trimming_fastqc_all_samples.sh|
 |2. Trimming| remove adapter and conduct fastQC after with trim_galore | | all_samples_trim_galore.sh |
