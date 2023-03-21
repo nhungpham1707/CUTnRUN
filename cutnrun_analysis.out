@@ -1216,3 +1216,7 @@ INFO	2023-03-21 10:08:31	SortSam	Wrote    80,000,000 records from a sorting coll
 INFO	2023-03-21 10:08:46	SortSam	Wrote    80,000,000 records from a sorting collection.  Elapsed time: 00:34:14s.  Time for last 10,000,000:   80s.  Last read position: chr7:25,683,880
 INFO	2023-03-21 10:09:47	SortSam	Wrote    80,000,000 records from a sorting collection.  Elapsed time: 00:35:15s.  Time for last 10,000,000:   91s.  Last read position: chr6:170,543,311
 INFO	2023-03-21 10:10:11	SortSam	Wrote    90,000,000 records from a sorting collection.  Elapsed time: 00:35:40s.  Time for last 10,000,000:   99s.  Last read position: chr8:101,638,999
+INFO	2023-03-21 10:10:22	SortSam	Wrote    90,000,000 records from a sorting collection.  Elapsed time: 00:35:51s.  Time for last 10,000,000:   96s.  Last read position: chr8:28,678,300
+INFO	2023-03-21 10:11:30	SortSam	Wrote    90,000,000 records from a sorting collection.  Elapsed time: 00:36:58s.  Time for last 10,000,000:  102s.  Last read position: chr8:2,225,523
+INFO	2023-03-21 10:11:47	SortSam	Wrote   100,000,000 records from a sorting collection.  Elapsed time: 00:37:15s.  Time for last 10,000,000:   95s.  Last read position: chr10:8,308,398
+INFO	2023-03-21 10:11:59	SortSam	Wrote   100,000,000 records from a sorting collection.  Elapsed time: 00:37:27s.  Time for last 10,000,000:   96s.  Last read position: chr9:62,842,225
