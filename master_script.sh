@@ -1,6 +1,11 @@
 #!/bin/bash
+<<<<<<< HEAD
 #SBATCH --job-name=3_1st_step
 #SBATCH --output=3_first_steps.out
+=======
+#SBATCH --job-name=bam2big
+#SBATCH --output=bam2big.out
+>>>>>>> 1655972d911fe8d53ba752658f49c55269d1a020
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -111,6 +116,10 @@ mkdir -p ${peak_no_control_dir}
 
 motif_dir=${res_dir}/motif
 mkdir -p ${motif_dir}
+
+merged_bigwig=${res_dir}/merged_bigwig
+mkdir -p ${merged_bigwig}
+
 # tool dir
 
 
@@ -121,6 +130,8 @@ new_tmp_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp # to solve the 
 
 homer_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/homer
 findMotif_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/findMotifsGenome.pl
+
+bamCoverage_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/bamCoverage
 
 # sample_Ids was generated as text file from ls filename.txt from the data_dir
 
@@ -157,6 +168,7 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 
 ############### steps #######################
 # step 1. quality check: inspect sequencing quality with fastqc
+<<<<<<< HEAD
 echo "------------------step1. running quality check----------------------"
 . ./1-qualityCheck.sh
 
@@ -167,6 +179,18 @@ echo "-------------------step 2. running trimming--------------------------"
 # step 3. alignment- map to hg38 genome 
 echo "-------------------step 3. running alignment-------------------------"
 . ./3-alignment.sh
+=======
+#echo "------------------step1. running quality check----------------------"
+# . ./1-qualityCheck.sh
+
+# step 2. adapter and bad reads trimming 
+#echo "-------------------step 2. running trimming--------------------------"
+# . ./2-trimming.sh 
+
+# step 3. alignment- map to hg38 genome 
+#echo "-------------------step 3. running alignment-------------------------"
+# . ./3-alignment.sh
+>>>>>>> 1655972d911fe8d53ba752658f49c55269d1a020
 
 # step 4. filtering: remove duplciates and reads < 20bp
 # echo "-------------------step 4. running filtering-------------------------"
@@ -179,6 +203,10 @@ echo "-------------------step 3. running alignment-------------------------"
 # step 6. motif finding 
 # echo "-------------------step 6. running motif finding----------------------"
 # . ./6-motifFinding.sh 
+
+# step 7. merge and transform bam file to bigwig
+echo "-------------------step 7. running transform bam to bigwig---------------"
+. ./7-bam2bigwig.sh
 
 # step 6. differential peak cutnrun_analysis
 
