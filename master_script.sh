@@ -109,7 +109,7 @@ mkdir -p ${peak_dir}
 peak_no_control_dir=${res_dir}/peakCalling_nocontrol
 mkdir -p ${peak_no_control_dir}
 
-motif_dir= ${res_dir}/motif
+motif_dir=${res_dir}/motif
 mkdir -p ${motif_dir}
 # tool dir
 
