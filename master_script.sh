@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=peak_callingg
-#SBATCH --output=peakcalling.out
+#SBATCH --job-name=peak_calling
+#SBATCH --output=peakCalling.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -85,7 +85,7 @@
 
 ######### Define global variables ################
 
-sh ./variable.sh
+#sh ./variable.sh
 
 ############### steps #######################
 # step 1. quality check: inspect sequencing quality with fastqc
@@ -103,7 +103,7 @@ sh ./variable.sh
 # step 4. filtering: remove duplciates and reads < 20bp
 #echo "-------------------step 4. running filtering-------------------------"
 #sh ./4-filtering.sh
-
+#
 # step 5. peak calling with macs2
 echo "-------------------step 5. running peak calling----------------------"
 sh ./5-peakCalling.sh
