@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=peak_calling
-#SBATCH --output=peakCalling.out
+#SBATCH --job-name=motif
+#SBATCH --output=motif_findingg.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
