@@ -21,7 +21,7 @@ echo "----------------finish-motif-finding-for $sample_ID at $(date)----------" 
 
 total_sample=${#allT[@]}
 n=0
-for sample in $allT; do
+for sample_ID in $allT; do
 
 n=$((n+1))
   echo "-----------running $n out of $total_sample  samples---------------"
@@ -32,4 +32,4 @@ done
 
 wait
 
-echo "all done for no control"
+echo "all done"
