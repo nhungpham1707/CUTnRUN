@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=motif
-#SBATCH --output=motif_findingg.out
+#SBATCH --job-name=3_1st_step
+#SBATCH --output=3_first_steps.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -149,23 +149,23 @@ total_sample=${#sample_IDs[@]}
 tfe3=("SCC-ChIC-PMC-DRO-T1" "SCC-ChIC-PMC-DRO-T5" "bulkChIC-PMC-DRO-016" "SCC-bulkChIC-PMC-DRO-008")
 luciferase=("SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5" "bulkChIC-PMC-DRO-014" "SCC-bulkChIC-PMC-DRO-005")
 fusion=("SCC-ChIC-PMC-DRO-F1" "SCC-ChIC-PMC-DRO-F5" "bulkChIC-PMC-DRO-015" "SCC-bulkChIC-PMC-DRO-002")
-#allT="$tfe3 $luciferase $fusion"
-allT=( "SCC-ChIC-PMC-DRO-F1")
+allT="$tfe3 $luciferase $fusion"
+#allT=( "SCC-ChIC-PMC-DRO-F1")
 tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$res_dir/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
 fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 
 ############### steps #######################
 # step 1. quality check: inspect sequencing quality with fastqc
-#echo "------------------step1. running quality check----------------------"
+echo "------------------step1. running quality check----------------------"
 . ./1-qualityCheck.sh
 
 # step 2. adapter and bad reads trimming 
-#echo "-------------------step 2. running trimming--------------------------"
+echo "-------------------step 2. running trimming--------------------------"
 . ./2-trimming.sh 
 
 # step 3. alignment- map to hg38 genome 
-#echo "-------------------step 3. running alignment-------------------------"
+echo "-------------------step 3. running alignment-------------------------"
 . ./3-alignment.sh
 
 # step 4. filtering: remove duplciates and reads < 20bp
