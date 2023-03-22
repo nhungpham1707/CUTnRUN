@@ -23,7 +23,6 @@
 
 
 task () {
-  source ./variable.sh
 
   fastq_IDs=( $(find ${data_dir}/$sample_ID -name "*.fastq.gz") )
   #declare -p fastq_IDs
@@ -40,8 +39,6 @@ task () {
 
   echo "----------finish fastqc for $sample_ID at $(date)---------" ;
 }
-
-source ./variable.sh
 
 n=0
 for str in ${sample_IDs[@]}; do

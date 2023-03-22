@@ -158,15 +158,15 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 ############### steps #######################
 # step 1. quality check: inspect sequencing quality with fastqc
 #echo "------------------step1. running quality check----------------------"
-#. ./1-qualityCheck.sh
+. ./1-qualityCheck.sh
 
 # step 2. adapter and bad reads trimming 
 #echo "-------------------step 2. running trimming--------------------------"
-#. ./2-trimming.sh 
+. ./2-trimming.sh 
 
 # step 3. alignment- map to hg38 genome 
 #echo "-------------------step 3. running alignment-------------------------"
-#. ./3-alignment.sh
+. ./3-alignment.sh
 
 # step 4. filtering: remove duplciates and reads < 20bp
 # echo "-------------------step 4. running filtering-------------------------"
@@ -177,8 +177,8 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 #. ./5-peakCalling.sh
 
 # step 6. motif finding 
-echo "-------------------step 6. running motif finding----------------------"
-. ./6-motifFinding.sh 
+# echo "-------------------step 6. running motif finding----------------------"
+# . ./6-motifFinding.sh 
 
 # step 6. differential peak cutnrun_analysis
 

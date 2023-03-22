@@ -17,7 +17,7 @@ $findMotif_dir $sample_dir hg38 $_out_dir
 
 echo "----------------finish-motif-finding-for $sample_ID at $(date)----------" ;
 }
-
+# cannot read file it seems. check solution here https://www.biostars.org/p/269709/
 
 total_sample=${#allT[@]}
 n=0
