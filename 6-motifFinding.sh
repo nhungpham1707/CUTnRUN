@@ -9,7 +9,7 @@ task () {
 ${out_dir}=${motif_dir}/${sample_ID}
 mkdir -p ${out_dir}
 
-$sample_dir=( $(find ${peak_dir}/${sample_ID}/narrow -name "*paired_control_summits.bed")) 
+$sample_dir=( $(find ${peak_dir}/${sample_ID}/narrow -name "*paired_control_summits.bed") ) 
 
 echo "----------------start-motif-finding-for $sample_ID at $(date)----------"
 
