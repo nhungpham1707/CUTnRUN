@@ -31,19 +31,19 @@ do
 done
 
 ##transform to bigwig
-$bamCoverage -b tfe3_merged.bam \
+$bamCoverage_dir -b tfe3_merged.bam \
     --normalizeUsing CPM \
     --effectiveGenomeSize 2913022398 \
     --ignoreForNormalization chrX \
     -o tfe3_merged.bw
 
-$bamCoverage -b luciferase_merged.bam \
+$bamCoverage_dir -b luciferase_merged.bam \
     --normalizeUsing CPM \
     --effectiveGenomeSize 2913022398 \
     --ignoreForNormalization chrX \
     -o luciferase_merged.bw
 
-$bamCoverage -b fusion_merged.bam \
+$bamCoverage_dir -b fusion_merged.bam \
     --normalizeUsing CPM \
     --effectiveGenomeSize 2913022398 \
     --ignoreForNormalization chrX \
