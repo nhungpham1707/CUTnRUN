@@ -1,13 +1,4 @@
 #!/bin/bash
-#SBATCH --job-name=fastqc_all_samples
-#SBATCH --output=before_trimming_fastqc_all_samples.out
-#SBATCH --time=96:0:0
-#SBATCH --ntasks=1
-#SBATCH --mem=90G
-#SBATCH --cpus-per-task=32
-#SBATCH --mail-type=FAIL,END
-#SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
-
 
 # this script is to conduct fastqc prior to trimming for all samples
 
@@ -41,9 +32,11 @@ task () {
 }
 
 n=0
-for str in ${sample_IDs[@]}; do
+for sample_ID in ${sample_IDs[@]}; do
   n=$((n+1))
   echo "-----------running $n out of $total_sample samples---------------------- "
-  
+  task "$sample_ID" &
 done
 
+wait
+echo "all done"

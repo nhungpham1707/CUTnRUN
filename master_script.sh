@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=bam2big
-#SBATCH --output=bam2big.out
+#SBATCH --job-name=fix_bam2big
+#SBATCH --output=fix_bam2big.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
