@@ -15,14 +15,14 @@ The cut and run data were analyzed based on published protocol with modification
 
 |Steps | Description | Run time (with current set up, 16 threads, parallel)| Script name|
 |------|-------------|-----------------|------------|
-|1. Quality checking  | check reads quality with fastQC | 3-4 hours (18 samples) [check parallel]| before_trimming_fastqc_all_samples.sh|
-|2. Trimming| remove adapter and conduct fastQC after with trim_galore | | all_samples_trim_galore.sh |
+|1. Quality checking  | check reads quality with fastQC | 3-4 hours (18 samples) [check parallel]| 1-qualityCheck.sh [before_trimming_fastqc_all_samples.sh]|
+|2. Trimming| remove adapter and conduct fastQC after with trim_galore | ~40 mins (1 sample) |2-trimming.sh |
 |3. Alignment| map reads to human genome g38| 30 mins - 2 hours (1 sample), 8 hours (18 samples) | 3-alignment.sh |
 |4. Remove duplicate | remove duplicate, reads < 20 |20 mins (1 sample) | 4-filtering.sh |
 |5. Call peak| broad and narrow peak calling with and without control | 1 hour (18 samples) | 5-peakCalling.sh |
 |6. Peak annotation | | | |
 |7. Find motif | | | |
-|8. Transform bam file to bigwig | | | |
+|8. Transform bam file to bigwig | merge bam files of the same condition and convert to bigwig | |7-bam2bigwig.sh|
 |9. Analyze motif | | | | 
 
 
