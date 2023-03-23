@@ -26,3 +26,85 @@ smoothLength: None
 save_data: False
 out_file_for_raw_data: None
 maxPairedFragmentLength: 1000
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/bamCoverage", line 12, in <module>
+    main(args)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/bamCoverage.py", line 256, in main
+    wr.run(writeBedGraph.scaleCoverage, func_args, args.outFileName,
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/writeBedGraph.py", line 145, in run
+    res = mapReduce.mapReduce([func_to_call, func_args],
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/mapReduce.py", line 146, in mapReduce
+    res = list(map(func, TASKS))
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/writeBedGraph.py", line 27, in writeBedGraph_wrapper
+    return WriteBedGraph.writeBedGraph_worker(*args)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/writeBedGraph.py", line 270, in writeBedGraph_worker
+    _file.write(
+OSError: [Errno 28] No space left on device
+normalization: CPM
+bamFilesList: ['luciferase_merged.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: ['chrX']
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/bamCoverage", line 12, in <module>
+    main(args)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/bamCoverage.py", line 256, in main
+    wr.run(writeBedGraph.scaleCoverage, func_args, args.outFileName,
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/writeBedGraph.py", line 145, in run
+    res = mapReduce.mapReduce([func_to_call, func_args],
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/mapReduce.py", line 146, in mapReduce
+    res = list(map(func, TASKS))
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/writeBedGraph.py", line 27, in writeBedGraph_wrapper
+    return WriteBedGraph.writeBedGraph_worker(*args)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/writeBedGraph.py", line 270, in writeBedGraph_worker
+    _file.write(
+OSError: [Errno 122] Disk quota exceeded
+normalization: CPM
+bamFilesList: ['fusion_merged.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: ['chrX']
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
