@@ -1,10 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=fix_bam2big
-#SBATCH --output=fix_bam2big.out
+#SBATCH --job-name=prep_motif
+#SBATCH --output=motif_prepare.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
 #SBATCH --cpus-per-task=16
+#SBATCH --gres=tmpspace:10G
 #SBATCH --mail-type=FAIL,END
 #SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
 
@@ -112,11 +113,10 @@ mkdir -p ${peak_no_control_dir}
 motif_dir=${res_dir}/motif
 mkdir -p ${motif_dir}
 
-merged_bigwig=${res_dir}/merged_bigwig
-mkdir -p ${merged_bigwig}
-
+merged_bigwig_dir=${res_dir}/merged_bigwig
+mkdir -p ${merged_bigwig_dir}
+   
 # tool dir
-
 
 bowtie2Index=/hpc/pmc_drost/SOURCES/Genomes/human/bowtie2/human_gencode37_hg38
 
@@ -128,6 +128,7 @@ findMotif_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/findMot
 
 bamCoverage_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/bamCoverage
 
+fasta_genome_dir=/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
 # sample_Ids was generated as text file from ls filename.txt from the data_dir
 
 sample_IDs=( "bulkChIC-PMC-DRO-011" \
@@ -187,10 +188,13 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 # . ./6-motifFinding.sh 
 
 # step 7. merge and transform bam file to bigwig
-echo "-------------------step 7. running transform bam to bigwig---------------"
-. ./7-bam2bigwig.sh
+#echo "-------------------step 7. running transform bam to bigwig---------------"
+#. ./7-bam2bigwig.sh
 
-# step 6. differential peak cutnrun_analysis
+# step 8. prepare for motif analysis
+echo "--------------------step 8. running motif finding preparation"
+. ./8-prepareMotifAnalysis.sh
+# step . differential peak cutnrun_analysis
 
 #Rscript diffBind.r
 

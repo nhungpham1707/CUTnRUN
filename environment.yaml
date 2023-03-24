@@ -33,3 +33,4 @@ dependencies:
 - bioconda::homer
 - bioconda::meme
 - bioconda::ucsc-bedgraphtobigwig
+- bioconda::bedops
