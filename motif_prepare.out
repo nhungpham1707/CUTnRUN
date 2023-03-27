@@ -1,5 +1,5 @@
 --------------------step 8. running motif finding preparation
----start merging overlap peak in tfe3 at Fri Mar 24 12:47:27 CET 2023-------
-/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling
-/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig
----finish merging overlap peak in tfe3 at Fri Mar 24 12:48:03 CET 2023-------
+---start merging overlap peak in luciferase at Mon Mar 27 11:50:08 CEST 2023-------
+---finish merging and convert fasta from luciferase at Mon Mar 27 11:50:55 CEST 2023-------
+---start merging overlap peak in fusion at Mon Mar 27 11:50:55 CEST 2023-------
+---finish merging and convert fasta from fusion at Mon Mar 27 11:50:56 CEST 2023-------

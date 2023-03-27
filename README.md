@@ -21,9 +21,10 @@ The cut and run data were analyzed based on published protocol with modification
 |4. Remove duplicate | remove duplicate, reads < 20 |~ 20 mins (1 sample) | 4-filtering.sh |
 |5. Call peak| broad and narrow peak calling with and without control | ~ 1 hour (18 samples) | 5-peakCalling.sh |
 |6. Peak annotation | | | |
-|7. Find motif | | | |
-|8. Transform bam file to bigwig | merge bam files of the same condition and convert to bigwig | ~ 2-3 hours |7-bam2bigwig.sh|
-|9. Analyze motif | | | | 
+|7. Transform bam file to bigwig | merge bam files of the same condition and convert to bigwig | ~ 2-3 hours |7-bam2bigwig.sh|
+|8. Prepare for motif finding| merge narrow peak files from the same condition and extract the fasta sequence for STREME meme suit | a few seconds |8-prepareMotifAnalysis.sh |
+|9. Find motif | | | |
+|10. Analyze motif | | | | 
 
 
 
