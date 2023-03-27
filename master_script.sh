@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=prep_motif
-#SBATCH --output=motif_prepare.out
+#SBATCH --job-name=heatmap
+#SBATCH --output=heatmap.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -192,11 +192,14 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 #. ./7-bam2bigwig.sh
 
 # step 8. prepare for motif analysis
-echo "--------------------step 8. running motif finding preparation"
-. ./8-prepareMotifAnalysis.sh
+# echo "--------------------step 8. running motif finding preparation"
+# . ./8-prepareMotifAnalysis.sh
 # step . differential peak cutnrun_analysis
 
 #Rscript diffBind.r
 
 # step 7. motif finding 
 # step 7. super enhancer finding 
+# step 9. heatmap generation
+echo "---------------step 9. running heatmap generation---------------"
+. ./9-heatmap.sh
