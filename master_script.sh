@@ -154,7 +154,7 @@ total_sample=${#sample_IDs[@]}
 
 # classify sample for peakcalling
 tfe3=("SCC-ChIC-PMC-DRO-T1" "SCC-ChIC-PMC-DRO-T5" "bulkChIC-PMC-DRO-016" "SCC-bulkChIC-PMC-DRO-008")
-luciferase=("SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5" "bulkChIC-PMC-DRO-014" "SCC-bulkChIC-PMC-DRO-005")
+luciferase=("SCC-ChIC-PMC-DRO-L1" "SCC-ChIC-PMC-DRO-L5" "bulkChIC-PMC-DRO-014" "SCC-bulkChIC-PMC-DRO-005")
 fusion=("SCC-ChIC-PMC-DRO-F1" "SCC-ChIC-PMC-DRO-F5" "bulkChIC-PMC-DRO-015" "SCC-bulkChIC-PMC-DRO-002")
 allT="$tfe3 $luciferase $fusion"
 #allT=( "SCC-ChIC-PMC-DRO-F1")
