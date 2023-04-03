@@ -10,7 +10,7 @@
 #SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
 
 
-# This is a master script to analyze cut and run data 
+# This is a master script to analyze cut and run data. The script can also be used for ATAC, ChiPSeq or data that required similar steps. 
 # Nhung, 20 03 2023
 
 ################## Tools ###########################
@@ -31,7 +31,7 @@
 # - samtools, ver 1.16.1, input flags:
 # 	(https://wikis.utexas.edu/display/CoreNGSTools/Filtering+with+)
 # 	(http://www.htslib.org/doc/samtools-view.html)
-# 		-b to get output in bam file
+# 		-b to get output in bam file format
 # 		-q 20 skip alignment smaller than 20
 # 		-F do not output alignment with any bit set in flag (1024 mean from pcr or optical dups)
 # 		-h keep header
@@ -41,7 +41,7 @@
 # - macs2 ver 2.2.7.1, input flags:
 #        -t: The IP data file (this is the only REQUIRED parameter for MACS)
 #        -c: The control or mock data file
-#        -f: format of input file; Default is “AUTO” which will allow MACS to decide the format automatically. In BAMPE mode, there is no need to estimate fragment lengths since the actual insertion length for each read pair will be considered. That's why there is no model.R generated. https://github.com/macs3-project/MACS/issues/281
+#        -f: format of input file; Default is “AUTO” which will allow MACS to decide the format automatically. In BAMPE mode, there is no need to estimate fragment lengths since the actual insertion length for each read pair will be considered. Therefore no model.R will be generated. https://github.com/macs3-project/MACS/issues/281
 #        -g: mappable genome size which is defined as the genome size which can be sequenced; some precompiled values provided.
 #       Output arguments
 #       --outdir: MACS2 will save all output files into speficied folder for this option
@@ -82,8 +82,8 @@
 #       - per group: 1 bam file for the test, 1 bam file for the control (after removing duplicate and filtering)
 #   Output:
 # -  broad: .broadPeak (most important), .gappedPeak, .xls 
-# -  narrow: .narrowPeak (most important), .xls, summits.bed 
-# summits.bed has information of a peak where the score (protein binding intensity) is maximum in the peak whereas the narrowPeak file has complete peak boundary. The summits.bed reports a peak with width/distance 1bp. That means this is the region (of peak) where the protein binding intensity rich it's maximum. Therefore every peak should have its own summit. ref. https://www.biostars.org/p/9470414/
+# -  narrow: .narrowPeak (most important), .xls, summits.bed (input for diffBind and heatmap) 
+# summits.bed has information of a peak where the score (protein binding intensity) is maximum in the peak whereas the narrowPeak file has complete peak boundary. The summits.bed reports a peak with width/distance 1bp. That means this is the region (of peak) where the protein binding intensity reach its maximum. Therefore every peak should have its own summit. ref. https://www.biostars.org/p/9470414/
 # more about summit and extraction of seq can be found here https://notebook.community/ssjunnebo/pathogen-informatics-training/Notebooks/ChIP-Seq/motif-analysis
 ######### Define global variables ################
 
@@ -157,7 +157,6 @@ tfe3=("SCC-ChIC-PMC-DRO-T1" "SCC-ChIC-PMC-DRO-T5" "bulkChIC-PMC-DRO-016" "SCC-bu
 luciferase=("SCC-ChIC-PMC-DRO-L1" "SCC-ChIC-PMC-DRO-L5" "bulkChIC-PMC-DRO-014" "SCC-bulkChIC-PMC-DRO-005")
 fusion=("SCC-ChIC-PMC-DRO-F1" "SCC-ChIC-PMC-DRO-F5" "bulkChIC-PMC-DRO-015" "SCC-bulkChIC-PMC-DRO-002")
 allT="$tfe3 $luciferase $fusion"
-#allT=( "SCC-ChIC-PMC-DRO-F1")
 tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$res_dir/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
 fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
