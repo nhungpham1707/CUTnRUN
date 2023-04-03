@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=bam2big
-#SBATCH --output=bam2big.out
+#SBATCH --job-name=peak
+#SBATCH --output=peak_calling.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -10,7 +10,7 @@
 
 
 # This is a master script to analyze cut and run data 
-# Nhung, 20 03 2023
+# Nhung, 21 03 2023
 
 ################## Tools ###########################
 # Quality check:
@@ -40,7 +40,7 @@
 # - macs2 ver 2.2.7.1, input flags:
 #        -t: The IP data file (this is the only REQUIRED parameter for MACS)
 #        -c: The control or mock data file
-#        -f: format of input file; Default is “AUTO” which will allow MACS to decide the format automatically. In BAMPE mode, there is no need to estimate fragment lengths since the actual insertion length for each read pair will be considered. That's why there is no model.R generated. https://github.com/macs3-project/MACS/issues/281
+#        -f: format of input file; Default is “AUTO” which will allow MACS to decide the format automatically.
 #        -g: mappable genome size which is defined as the genome size which can be sequenced; some precompiled values provided.
 #       Output arguments
 #       --outdir: MACS2 will save all output files into speficied folder for this option
@@ -81,11 +81,9 @@
 #       - per group: 1 bam file for the test, 1 bam file for the control (after removing duplicate and filtering)
 #   Output:
 # -  broad: .broadPeak (most important), .gappedPeak, .xls 
-# -  narrow: .narrowPeak (most important), .xls, summits.bed 
-# summits.bed has information of a peak where the score (protein binding intensity) is maximum in the peak whereas the narrowPeak file has complete peak boundary. The summits.bed reports a peak with width/distance 1bp. That means this is the region (of peak) where the protein binding intensity rich it's maximum. Therefore every peak should have its own summit. ref. https://www.biostars.org/p/9470414/
-# more about summit and extraction of seq can be found here https://notebook.community/ssjunnebo/pathogen-informatics-training/Notebooks/ChIP-Seq/motif-analysis
-######### Define global variables ################
+# -  narrow: .narrowPeak (most important), .xls, .bed
 
+######### Define global variables ################
 data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1
 
 # result dir
@@ -103,33 +101,19 @@ mkdir -p $align_dir
 rm_dup_dir=$res_dir/rm_dup
 mkdir -p $rm_dup_dir
 
-peak_dir=${res_dir}/peakCalling
+peak_dir=${res_dir}/peakCalling/${sample_ID}
 mkdir -p ${peak_dir}
 
 peak_no_control_dir=${res_dir}/peakCalling_nocontrol
 mkdir -p ${peak_no_control_dir}
 
-motif_dir=${res_dir}/motif
-mkdir -p ${motif_dir}
-
-merged_bigwig=${res_dir}/merged_bigwig
-mkdir -p ${merged_bigwig}
-
 # tool dir
-
-
 bowtie2Index=/hpc/pmc_drost/SOURCES/Genomes/human/bowtie2/human_gencode37_hg38
 
 picardTool=/hpc/pmc_drost/PROJECTS/swang/software/picard.jar
 new_tmp_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp # to solve the out of space with the temporary output from picard
 
-homer_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/homer
-findMotif_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/findMotifsGenome.pl
-
-bamCoverage_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/bamCoverage
-
 # sample_Ids was generated as text file from ls filename.txt from the data_dir
-
 sample_IDs=( "bulkChIC-PMC-DRO-011" \
             "bulkChIC-PMC-DRO-012"\
             "bulkChIC-PMC-DRO-013"\
@@ -152,47 +136,42 @@ sample_IDs=( "bulkChIC-PMC-DRO-011" \
 total_sample=${#sample_IDs[@]}
 
 # classify sample for peakcalling
-tfe3=("SCC-ChIC-PMC-DRO-T1" "SCC-ChIC-PMC-DRO-T5" "bulkChIC-PMC-DRO-016" "SCC-bulkChIC-PMC-DRO-008")
-luciferase=("SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5" "bulkChIC-PMC-DRO-014" "SCC-bulkChIC-PMC-DRO-005")
-fusion=("SCC-ChIC-PMC-DRO-F1" "SCC-ChIC-PMC-DRO-F5" "bulkChIC-PMC-DRO-015" "SCC-bulkChIC-PMC-DRO-002")
-allT="$tfe3 $luciferase $fusion"
-#allT=( "SCC-ChIC-PMC-DRO-F1")
+tfe3=( "SCC-ChIC-PMC-DRO-T1 SCC-ChIC-PMC-DRO-T5 bulkChIC-PMC-DRO-016 SCC-bulkChIC-PMC-DRO-008")
+luciferase=( "SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5 bulkChIC-PMC-DRO-014 SCC-bulkChIC-PMC-DRO-005")
+fusion=( "SCC-ChIC-PMC-DRO-F1 SCC-ChIC-PMC-DRO-F5 bulkChIC-PMC-DRO-015 SCC-bulkChIC-PMC-DRO-002")
+allT=( "$tfe3 $luciferase $fusion")
 tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$res_dir/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
 fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 
 ############### steps #######################
 
-#echo "------------------step1. running quality check----------------------"
-# . ./1-qualityCheck.sh
+# step 1. quality check: inspect sequencing quality with fastqc
+
+#sh ./1-qualityCheck.sh
 
 # step 2. adapter and bad reads trimming 
-#echo "-------------------step 2. running trimming--------------------------"
-# . ./2-trimming.sh 
+
+#trimming.sh 
 
 # step 3. alignment- map to hg38 genome 
 #echo "-------------------step 3. running alignment-------------------------"
-# . ./3-alignment.sh
+# sh ./3-alignment.sh
 
 # step 4. filtering: remove duplciates and reads < 20bp
-# echo "-------------------step 4. running filtering-------------------------"
-# . ./4-filtering.sh
+#echo "-------------------step 4. running filtering-------------------------"
+#sh ./4-filtering.sh
 
 # step 5. peak calling with macs2
-#echo "-------------------step 5. running peak calling----------------------"
-#. ./5-peakCalling.sh
+echo "-------------------step 5. running peak calling----------------------"
+. ./5-peakCalling.sh
 
-# step 6. motif finding 
-# echo "-------------------step 6. running motif finding----------------------"
-# . ./6-motifFinding.sh 
-
-# step 7. merge and transform bam file to bigwig
-echo "-------------------step 7. running transform bam to bigwig---------------"
-. ./7-bam2bigwig.sh
-
-# step 6. differential peak cutnrun_analysis
+# step 5. differential peak cutnrun_analysis
 
 #Rscript diffBind.r
 
-# step 7. motif finding 
+# step 6. motif finding 
 # step 7. super enhancer finding 
+      
+
+

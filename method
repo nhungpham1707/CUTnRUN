@@ -19,3 +19,8 @@ Peak regions were annotated using the ChIPSeeker (v. 1.34.0) package.
 Enrichment analyses were performed with the ClusterProfiler (v. 4.6.0) package.
 
 Finally, motifs were identified by converting the peak regions to .fasta format and uploaded into the STREME tool available in the MEME suite to identify enriched motifs in each condition. To identify which transcription factors may bind to these motifs, the Tomtom tool, also available in the MEME suite, was used.
+
+# check this paper https://doi.org/10.1002/dvdy.430  https://github.com/klduval/CutNRun_2021/blob/main/Akdogan-Ozdilek_Duval_etal_final.sh  
+
+# more code here https://hemtools.readthedocs.io/en/latest/content/NGS_pipelines/cut_run_footprint.html 
+useful review https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-1929-3#Sec6 
