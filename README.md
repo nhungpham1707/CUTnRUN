@@ -20,11 +20,12 @@ The cut and run data were analyzed based on published protocol with modification
 |3. Alignment| map reads to human genome g38| ~ 30 mins - 2 hours (1 sample), 8 hours (18 samples) | 3-alignment.sh |
 |4. Remove duplicate | remove duplicate, reads < 20 |~ 20 mins (1 sample) | 4-filtering.sh |
 |5. Call peak| broad and narrow peak calling with and without control | ~ 1 hour (18 samples) | 5-peakCalling.sh |
-|6. Peak annotation | | | |
-|7. Transform bam file to bigwig | merge bam files of the same condition and convert to bigwig | ~ 2-3 hours |7-bam2bigwig.sh|
-|8. Prepare for motif finding| merge narrow peak files from the same condition and extract the fasta sequence for STREME meme suit | a few seconds |8-prepareMotifAnalysis.sh |
-|9. Find motif | | | |
-|10. Analyze motif | | | | 
+|6. Peak analysis| identify differential binding peaks between groups| | 7-DiffBind.R  |
+|8. Peak annotation | | | |
+|9. Transform bam file to bigwig | merge bam files of the same condition and convert to bigwig to use for heatmap generation | ~ 2-3 hours |7-bam2bigwig.sh|
+|10. Prepare for motif finding| merge narrow peak files from the same condition and extract the fasta sequence for STREME meme suit | a few seconds |8-prepareMotifAnalysis.sh |
+|11. Find motif | | | |
+|12. Analyze motif | | | | 
 
 
 
