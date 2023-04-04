@@ -23,9 +23,10 @@ The cut and run data were analyzed based on published protocol with modification
 |6. Peak analysis| identify differential binding peaks between groups| | 6-DiffBind.R  |
 |7. Peak annotation | | | |
 |8. Transform bam file to bigwig | merge bam files of the same condition and convert to bigwig to use for heatmap generation | ~ 2-3 hours |8-bam2bigwig.sh|
-|9. Prepare for motif finding| merge narrow peak files from the same condition and extract the fasta sequence for STREME meme suit | a few seconds |8-prepareMotifAnalysis.sh |
-|10. Find motif | | | |
-|11. Analyze motif | | | | 
+|9. Heatmap generation| Generate heatmap for peaks |~30 minutes |9-heatmap.sh |
+|10. Prepare for motif finding| merge narrow peak files from the same condition and extract the fasta sequence for STREME meme suit | a few seconds |10-prepareMotifAnalysis.sh |
+|11. Find motif | | | |
+|12. Analyze motif | | | | 
 
 
 
