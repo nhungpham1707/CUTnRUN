@@ -11,8 +11,8 @@ computeMatrix reference-point --referencePoint TSS \
   -b 1000 -a 1000 \
   -R ${data_dir}/merged_bigwig/nonDB_peaks_Luc_TFE3.bed \
 -S ${merged_bigwig_dir}/fusion_merged.bw\
-${merged_bigwig_dir}/tfe3_merged.bw\
-${merged_bigwig_dir}/luciferase_merged.bw\
---skipZeros -o ${merged_bigwig_dir}/matrix_gene.mat.gz -p $cores
+ ${merged_bigwig_dir}/tfe3_merged.bw\
+ ${merged_bigwig_dir}/luciferase_merged.bw\
+ --skipZeros -o ${merged_bigwig_dir}/matrix_gene.mat.gz -p $cores
 
 plotHeatmap -m ${merged_bigwig_dir}/matrix_gene.mat.gz -out ${merged_bigwig_dir}/transcript.png --sortUsing sum

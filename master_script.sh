@@ -86,6 +86,8 @@
 # summits.bed has information of a peak where the score (protein binding intensity) is maximum in the peak whereas the narrowPeak file has complete peak boundary. The summits.bed reports a peak with width/distance 1bp. That means this is the region (of peak) where the protein binding intensity reach its maximum. Therefore every peak should have its own summit. ref. https://www.biostars.org/p/9470414/
 # more about summit and extraction of seq can be found here https://notebook.community/ssjunnebo/pathogen-informatics-training/Notebooks/ChIP-Seq/motif-analysis
 ######### Define global variables ################
+# source /hpc/pmc_drost/nhung/anaconda3/ect/profile.d/conda.sh
+# conda activate cutnrun_trimgalore
 
 data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1
 
@@ -202,3 +204,11 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 # step 9. heatmap generation
 echo "---------------step 9. running heatmap generation---------------"
 . ./9-heatmap.sh
+
+# computeMatrix reference-point --referencePoint TSS \
+#   -b 1000 -a 1000 \
+#   -R ${data_dir}/merged_bigwig/nonDB_peaks_Luc_TFE3.bed \
+# -S ${merged_bigwig_dir}/fusion_merged.bw\
+#  --skipZeros -o ${merged_bigwig_dir}/matrix_gene.mat.gz -p 8
+
+#  plotHeatmap -m ${merged_bigwig_dir}/matrix_gene.mat.gz -out ${merged_bigwig_dir}/transcript.png --sortUsing sum
