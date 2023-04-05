@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# this script is to conduct fastqc prior to trimming for all samples
+# this script is to conduct fastqc prior to trimming for all samples. The code is designed to run many samples in parallel
 
 # Nhung, 21 03 2023
 

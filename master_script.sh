@@ -10,10 +10,14 @@
 #SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
 
 
-# This is a master script to analyze cut and run data. The script can also be used for ATAC, ChiPSeq or data that required similar steps. 
+# This is a master script to analyze cut and run data. The script can also be adapted for ATAC, ChiPSeq or data that required similar steps. 
+
 # Nhung, 20 03 2023
 
+####################################################
 ################## Tools ###########################
+####################################################
+
 # Quality check:
 # - fastqc v0.12.1
 
@@ -47,7 +51,9 @@
 #       --outdir: MACS2 will save all output files into speficied folder for this option
 #       -n: The prefix string for output files
 
+######################################################################
 ################### Input and output data ############################
+######################################################################
 
 # Quality check 
 #   Input: R1 and R2 fastq sequences for each sample
@@ -85,7 +91,11 @@
 # -  narrow: .narrowPeak (most important), .xls, summits.bed (input for diffBind and heatmap) 
 # summits.bed has information of a peak where the score (protein binding intensity) is maximum in the peak whereas the narrowPeak file has complete peak boundary. The summits.bed reports a peak with width/distance 1bp. That means this is the region (of peak) where the protein binding intensity reach its maximum. Therefore every peak should have its own summit. ref. https://www.biostars.org/p/9470414/
 # more about summit and extraction of seq can be found here https://notebook.community/ssjunnebo/pathogen-informatics-training/Notebooks/ChIP-Seq/motif-analysis
-######### Define global variables ################
+
+######################################################################
+######### Define global variables ####################################
+######################################################################
+
 # source /hpc/pmc_drost/nhung/anaconda3/ect/profile.d/conda.sh
 # conda activate cutnrun_trimgalore
 
@@ -163,7 +173,9 @@ tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$res_dir/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
 fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 
-############### steps #######################
+######################################################################
+############### steps ################################################
+######################################################################
 
 #echo "------------------step1. running quality check----------------------"
 # . ./1-qualityCheck.sh
@@ -205,10 +217,3 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 echo "---------------step 9. running heatmap generation---------------"
 . ./9-heatmap.sh
 
-# computeMatrix reference-point --referencePoint TSS \
-#   -b 1000 -a 1000 \
-#   -R ${data_dir}/merged_bigwig/nonDB_peaks_Luc_TFE3.bed \
-# -S ${merged_bigwig_dir}/fusion_merged.bw\
-#  --skipZeros -o ${merged_bigwig_dir}/matrix_gene.mat.gz -p 8
-
-#  plotHeatmap -m ${merged_bigwig_dir}/matrix_gene.mat.gz -out ${merged_bigwig_dir}/transcript.png --sortUsing sum
