@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=all_step
-#SBATCH --output=all_step.out
+#SBATCH --job-name=bowtie_test
+#SBATCH --output=bowtie_test.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -10,9 +10,8 @@
 #SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
 
 
-# This is a master script to analyze cut and run data. The script can also be adapted for ATAC, ChiPSeq or data that required similar steps. 
-
-# Nhung, 20 03 2023
+# test bowtie report
+# Nhung, 05 04 2023
 
 ####################################################
 ################## Tools ###########################
@@ -143,31 +142,14 @@ bamCoverage_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/bamCo
 fasta_genome_dir=/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
 # sample_Ids was generated as text file from ls filename.txt from the data_dir
 
-sample_IDs=( "bulkChIC-PMC-DRO-011" \
-            "bulkChIC-PMC-DRO-012"\
-            "bulkChIC-PMC-DRO-013"\
-            "bulkChIC-PMC-DRO-014"\
-            "bulkChIC-PMC-DRO-015"\
-            "bulkChIC-PMC-DRO-016"\
-            "SCC-bulkChIC-PMC-DRO-002"\
-            "SCC-bulkChIC-PMC-DRO-005"\
-            "SCC-bulkChIC-PMC-DRO-008"\
-            "SCC-ChIC-PMC-DRO-L5"\
-            "SCC-ChIC-PMC-DRO-LH"\
-            "SCC-ChIC-PMC-DRO-F1"\
-            "SCC-ChIC-PMC-DRO-F5"\
-            "SCC-ChIC-PMC-DRO-FH"\
-            "SCC-ChIC-PMC-DRO-T1"\
-            "SCC-ChIC-PMC-DRO-T5"\
-            "SCC-ChIC-PMC-DRO-TH"\ 
-            "SCC-ChIC-PMC-DRO-L1")
+sample_IDs=( "bulkChIC-PMC-DRO-011" )
 
 total_sample=${#sample_IDs[@]}
 
 # classify sample for peakcalling
-tfe3="SCC-ChIC-PMC-DRO-T1 SCC-ChIC-PMC-DRO-T5 bulkChIC-PMC-DRO-016 SCC-bulkChIC-PMC-DRO-008"
-luciferase="SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5 bulkChIC-PMC-DRO-014 SCC-bulkChIC-PMC-DRO-005"
-fusion="SCC-ChIC-PMC-DRO-F1 SCC-ChIC-PMC-DRO-F5 bulkChIC-PMC-DRO-015 SCC-bulkChIC-PMC-DRO-002"
+tfe3=("SCC-ChIC-PMC-DRO-T1" "SCC-ChIC-PMC-DRO-T5" "bulkChIC-PMC-DRO-016" "SCC-bulkChIC-PMC-DRO-008")
+luciferase=("SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5" "bulkChIC-PMC-DRO-014" "SCC-bulkChIC-PMC-DRO-005")
+fusion=("SCC-ChIC-PMC-DRO-F1" "SCC-ChIC-PMC-DRO-F5" "bulkChIC-PMC-DRO-015" "SCC-bulkChIC-PMC-DRO-002")
 allT="$tfe3 $luciferase $fusion"
 tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$res_dir/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
@@ -177,36 +159,36 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 ############### steps ################################################
 ######################################################################
 
-# echo "------------------step1. running quality check----------------------"
+#echo "------------------step1. running quality check----------------------"
 # . ./1-qualityCheck.sh
 
 # step 2. adapter and bad reads trimming 
-# echo "-------------------step 2. running trimming--------------------------"
+#echo "-------------------step 2. running trimming--------------------------"
 # . ./2-trimming.sh 
 
 # step 3. alignment- map to hg38 genome 
-# echo "-------------------step 3. running alignment-------------------------"
+echo "-------------------step 3. running alignment-------------------------"
 # . ./3-alignment.sh
-
+. ./test_align.sh
 # step 4. filtering: remove duplciates and reads < 20bp
 # echo "-------------------step 4. running filtering-------------------------"
 # . ./4-filtering.sh
 
 # step 5. peak calling with macs2
-echo "-------------------step 5. running peak calling----------------------"
-. ./5-peakCalling.sh
+#echo "-------------------step 5. running peak calling----------------------"
+#. ./5-peakCalling.sh
 
-# step 11. motif finding 
-echo "-------------------step 11. running motif finding----------------------"
-. ./11-motifFinding.sh 
+# step 6. motif finding 
+# echo "-------------------step 6. running motif finding----------------------"
+# . ./6-motifFinding.sh 
 
-# step 8. merge and transform bam file to bigwig
-echo "-------------------step 8. running transform bam to bigwig---------------"
-. ./8-bam2bigwig.sh
+# step 7. merge and transform bam file to bigwig
+#echo "-------------------step 7. running transform bam to bigwig---------------"
+#. ./7-bam2bigwig.sh
 
-# step 10. prepare for motif analysis
-echo "--------------------step 10. running motif finding preparation"
-. ./8-prepareMotifAnalysis.sh
+# step 8. prepare for motif analysis
+# echo "--------------------step 8. running motif finding preparation"
+# . ./8-prepareMotifAnalysis.sh
 # step . differential peak cutnrun_analysis
 
 #Rscript diffBind.r
@@ -214,6 +196,6 @@ echo "--------------------step 10. running motif finding preparation"
 # step 7. motif finding 
 # step 7. super enhancer finding 
 # step 9. heatmap generation
-echo "---------------step 9. running heatmap generation---------------"
-. ./9-heatmap.sh
+# echo "---------------step 9. running heatmap generation---------------"
+# . ./9-heatmap.sh
 
