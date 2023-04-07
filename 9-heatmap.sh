@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script is to generate heatmap visualization for transcription unit and peaks.
+# This script is to generate heatmap visualization for peaks comparing with non differential binding and differential binding sites between groups.
 # ref. https://www.protocols.io/view/cut-amp-tag-data-processing-and-analysis-tutorial-e6nvw93x7gmk/v1?step=25
 
 # Nhung Pham 27 03 2023

@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=all_step
-#SBATCH --output=all_step.out
+#SBATCH --job-name=heatmap
+#SBATCH --output=heatmap.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -177,6 +177,7 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 ############### steps ################################################
 ######################################################################
 
+echo "start running cut and run analysis at $(date)"
 # echo "------------------step1. running quality check----------------------"
 # . ./1-qualityCheck.sh
 
@@ -193,20 +194,20 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 # . ./4-filtering.sh
 
 # step 5. peak calling with macs2
-echo "-------------------step 5. running peak calling----------------------"
-. ./5-peakCalling.sh
+# echo "-------------------step 5. running peak calling----------------------"
+# . ./5-peakCalling.sh
 
 # step 11. motif finding 
-echo "-------------------step 11. running motif finding----------------------"
-. ./11-motifFinding.sh 
+# echo "-------------------step 11. running motif finding----------------------"
+# . ./11-motifFinding.sh 
 
 # step 8. merge and transform bam file to bigwig
-echo "-------------------step 8. running transform bam to bigwig---------------"
-. ./8-bam2bigwig.sh
+# echo "-------------------step 8. running transform bam to bigwig---------------"
+# . ./8-bam2bigwig.sh
 
 # step 10. prepare for motif analysis
 echo "--------------------step 10. running motif finding preparation"
-. ./8-prepareMotifAnalysis.sh
+. ./10-prepareMotifAnalysis.sh
 # step . differential peak cutnrun_analysis
 
 #Rscript diffBind.r
@@ -217,3 +218,4 @@ echo "--------------------step 10. running motif finding preparation"
 echo "---------------step 9. running heatmap generation---------------"
 . ./9-heatmap.sh
 
+echo "finish cut and run analysis at $(date)"

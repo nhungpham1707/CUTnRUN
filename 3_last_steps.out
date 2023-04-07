@@ -1,0 +1,19 @@
+-------------------step 8. running transform bam to bigwig---------------
+[E::hts_open_format] Failed to open file "/tfe3_merged.bam" : Permission denied
+samtools merge: failed to create "/tfe3_merged.bam": Permission denied
+[E::hts_open_format] Failed to open file "/luciferase_merged.bam" : Permission denied
+samtools merge: failed to create "/luciferase_merged.bam": Permission denied
+[E::hts_open_format] Failed to open file "/fusion_merged.bam" : Permission denied
+samtools merge: failed to create "/fusion_merged.bam": Permission denied
+[E::hts_open_format] Failed to open file "*.bam" : No such file or directory
+samtools index: failed to open "*.bam": No such file or directory
+usage: An example usage is:$ bamCoverage -b reads.bam -o coverage.bw
+bamCoverage: error: argument --outFileName/-o: /tfe3_merged.bw file can't be opened for writing
+usage: An example usage is:$ bamCoverage -b reads.bam -o coverage.bw
+bamCoverage: error: argument --outFileName/-o: /luciferase_merged.bw file can't be opened for writing
+usage: An example usage is:$ bamCoverage -b reads.bam -o coverage.bw
+bamCoverage: error: argument --outFileName/-o: /fusion_merged.bw file can't be opened for writing
+--------------------step 10. running motif finding preparation
+/var/spool/slurmd/job207552/slurm_script: line 209: ./10-prepareMotifAnalysis.sh: No such file or directory
+---------------step 9. running heatmap generation---------------
+/var/spool/slurmd/job207552/slurm_script: line 218: ./9-heatmap.sh: No such file or directory
