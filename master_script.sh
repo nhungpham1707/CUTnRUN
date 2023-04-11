@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=heatmap
-#SBATCH --output=heatmap.out
+#SBATCH --job-name=hg38heatmap
+#SBATCH --output=hg38heatmap.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -140,7 +140,9 @@ findMotif_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/findMot
 
 bamCoverage_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/bamCoverage
 
+# fasta genome directory for motif finding. It has to be the same with the reference genome that was used for alignment
 fasta_genome_dir=/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+
 # sample_Ids was generated as text file from ls filename.txt from the data_dir
 
 sample_IDs=( "bulkChIC-PMC-DRO-011" \
@@ -168,7 +170,7 @@ total_sample=${#sample_IDs[@]}
 tfe3="SCC-ChIC-PMC-DRO-T1 SCC-ChIC-PMC-DRO-T5 bulkChIC-PMC-DRO-016 SCC-bulkChIC-PMC-DRO-008"
 luciferase="SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5 bulkChIC-PMC-DRO-014 SCC-bulkChIC-PMC-DRO-005"
 fusion="SCC-ChIC-PMC-DRO-F1 SCC-ChIC-PMC-DRO-F5 bulkChIC-PMC-DRO-015 SCC-bulkChIC-PMC-DRO-002"
-allT="$tfe3 $luciferase $fusion"
+#allT="$tfe3 $luciferase $fusion"
 tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$res_dir/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
 fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
@@ -193,7 +195,7 @@ echo "start running cut and run analysis at $(date)"
 # echo "-------------------step 4. running filtering-------------------------"
 # . ./4-filtering.sh
 
-# step 5. peak calling with macs2
+# # step 5. peak calling with macs2
 # echo "-------------------step 5. running peak calling----------------------"
 # . ./5-peakCalling.sh
 
@@ -206,8 +208,8 @@ echo "start running cut and run analysis at $(date)"
 # . ./8-bam2bigwig.sh
 
 # step 10. prepare for motif analysis
-echo "--------------------step 10. running motif finding preparation"
-. ./10-prepareMotifAnalysis.sh
+# echo "--------------------step 10. running motif finding preparation"
+# . ./10-prepareMotifAnalysis.sh
 # step . differential peak cutnrun_analysis
 
 #Rscript diffBind.r

@@ -1,7 +1,7 @@
 # all self-defined files
 .zip
 .gz
-
+.out
 # History files
 .Rhistory
 .Rapp.history

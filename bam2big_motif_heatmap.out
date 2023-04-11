@@ -1,0 +1,280 @@
+start running cut and run analysis at Fri Apr  7 09:41:34 CEST 2023
+-------------------step 11. running motif finding----------------------
+-----------running 1 out of 1  samples---------------
+-----------running 2 out of 1  samples---------------
+-----------running 3 out of 1  samples---------------
+-----------running 4 out of 1  samples---------------
+-----------running 5 out of 1  samples---------------
+-----------running 6 out of 1  samples---------------
+-----------running 7 out of 1  samples---------------
+-----------running 8 out of 1  samples---------------
+-----------running 9 out of 1  samples---------------
+-----------running 10 out of 1  samples---------------
+-----------running 11 out of 1  samples---------------
+-----------running 12 out of 1  samples---------------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/narrow/SCC-ChIC-PMC-DRO-T1_paired_control_summits.bed
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_control_summits.bed
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/narrow/SCC-bulkChIC-PMC-DRO-008_paired_control_summits.bed
+----------------start-motif-finding-for SCC-ChIC-PMC-DRO-T1 at Fri Apr  7 09:41:34 CEST 2023----------
+----------------start-motif-finding-for SCC-ChIC-PMC-DRO-T5 at Fri Apr  7 09:41:34 CEST 2023----------
+----------------start-motif-finding-for SCC-bulkChIC-PMC-DRO-008 at Fri Apr  7 09:41:34 CEST 2023----------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-L1/narrow/SCC-ChIC-PMC-DRO-L1_paired_control_summits.bed
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/narrow/bulkChIC-PMC-DRO-016_paired_control_summits.bed
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-L5/narrow/SCC-ChIC-PMC-DRO-L5_paired_control_summits.bed
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-005/narrow/SCC-bulkChIC-PMC-DRO-005_paired_control_summits.bed
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-015/narrow/bulkChIC-PMC-DRO-015_paired_control_summits.bed
+----------------start-motif-finding-for SCC-ChIC-PMC-DRO-L5 at Fri Apr  7 09:41:34 CEST 2023----------
+----------------start-motif-finding-for SCC-ChIC-PMC-DRO-L1 at Fri Apr  7 09:41:34 CEST 2023----------
+----------------start-motif-finding-for bulkChIC-PMC-DRO-016 at Fri Apr  7 09:41:34 CEST 2023----------
+----------------start-motif-finding-for SCC-bulkChIC-PMC-DRO-005 at Fri Apr  7 09:41:34 CEST 2023----------
+----------------start-motif-finding-for bulkChIC-PMC-DRO-015 at Fri Apr  7 09:41:34 CEST 2023----------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-002/narrow/SCC-bulkChIC-PMC-DRO-002_paired_control_summits.bed
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-F5/narrow/SCC-ChIC-PMC-DRO-F5_paired_control_summits.bed
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/narrow/bulkChIC-PMC-DRO-014_paired_control_summits.bed
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-F1/narrow/SCC-ChIC-PMC-DRO-F1_paired_control_summits.bed
+----------------start-motif-finding-for SCC-bulkChIC-PMC-DRO-002 at Fri Apr  7 09:41:34 CEST 2023----------
+----------------start-motif-finding-for SCC-ChIC-PMC-DRO-F5 at Fri Apr  7 09:41:34 CEST 2023----------
+----------------start-motif-finding-for SCC-ChIC-PMC-DRO-F1 at Fri Apr  7 09:41:34 CEST 2023----------
+----------------start-motif-finding-for bulkChIC-PMC-DRO-014 at Fri Apr  7 09:41:34 CEST 2023----------
+
+
+
+
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-F1/narrow/SCC-ChIC-PMC-DRO-F1_paired_control_summits.bed
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-008/narrow/SCC-bulkChIC-PMC-DRO-008_paired_control_summits.bed
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-014/narrow/bulkChIC-PMC-DRO-014_paired_control_summits.bed
+	Genome = hg38
+	Genome = hg38
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_control_summits.bed
+	Genome = hg38
+	Output Directory = peakAnalysis
+	Output Directory = peakAnalysis
+	Genome = hg38
+	Output Directory = peakAnalysis
+	Output Directory = peakAnalysis
+	Fragment size set to 200
+	Fragment size set to 200
+	Motif length set at 	Motif length set at 8,	Fragment size set to 200
+	Fragment size set to 200
+8,
+	Motif length set at 	Motif length set at 
+8,8,
+
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+
+
+
+
+
+
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-F5/narrow/SCC-ChIC-PMC-DRO-F5_paired_control_summits.bed
+	Genome = hg38
+
+	Output Directory = peakAnalysis
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-016/narrow/bulkChIC-PMC-DRO-016_paired_control_summits.bed
+	Genome = hg38
+	Output Directory = peakAnalysis
+
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-L1/narrow/SCC-ChIC-PMC-DRO-L1_paired_control_summits.bed
+
+	Genome = hg38
+	Fragment size set to 200
+	Output Directory = peakAnalysis
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-015/narrow/bulkChIC-PMC-DRO-015_paired_control_summits.bed
+	Motif length set at 	Genome = hg38
+	Fragment size set to 200
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-002/narrow/SCC-bulkChIC-PMC-DRO-002_paired_control_summits.bed
+8,	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-L5/narrow/SCC-ChIC-PMC-DRO-L5_paired_control_summits.bed
+	Output Directory = peakAnalysis
+	Motif length set at 	Fragment size set to 200
+
+	Genome = hg38
+8,
+	Output Directory = peakAnalysis
+	Motif length set at 
+	Genome = hg38
+
+8,	Output Directory = peakAnalysis
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/narrow/SCC-ChIC-PMC-DRO-T1_paired_control_summits.bed
+	Fragment size set to 200
+	Genome = hg38
+
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-bulkChIC-PMC-DRO-005/narrow/SCC-bulkChIC-PMC-DRO-005_paired_control_summits.bed
+	Output Directory = peakAnalysis
+	Fragment size set to 200
+	Motif length set at 	Genome = hg38
+8,	Output Directory = peakAnalysis
+	Motif length set at 
+8,
+	Fragment size set to 200
+	Fragment size set to 200
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+	Fragment size set to 200
+	Motif length set at 	Motif length set at 	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+8,8,	Motif length set at 	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+
+
+8,
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+
+
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+
+!!!!Genome hg38 not found in /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//config.txt
+
+
+	To check if is available, run "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -list"
+	If so, add it by typing "perl /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/share/homer/.//configureHomer.pl -install hg38"
+
+----------------finish-motif-finding-for SCC-bulkChIC-PMC-DRO-008 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for bulkChIC-PMC-DRO-014 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for SCC-ChIC-PMC-DRO-T5 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for SCC-ChIC-PMC-DRO-F1 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for SCC-ChIC-PMC-DRO-L5 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for bulkChIC-PMC-DRO-015 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for SCC-bulkChIC-PMC-DRO-005 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for SCC-ChIC-PMC-DRO-T1 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for SCC-ChIC-PMC-DRO-F5 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for SCC-bulkChIC-PMC-DRO-002 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for SCC-ChIC-PMC-DRO-L1 at Fri Apr  7 09:41:35 CEST 2023----------
+----------------finish-motif-finding-for bulkChIC-PMC-DRO-016 at Fri Apr  7 09:41:35 CEST 2023----------
+all done
+-------------------step 8. running transform bam to bigwig---------------
+normalization: CPM
+bamFilesList: ['tfe3_merged.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: ['chrX']
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+normalization: CPM
+bamFilesList: ['luciferase_merged.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: ['chrX']
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+normalization: CPM
+bamFilesList: ['fusion_merged.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: ['chrX']
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+---------------step 9. running heatmap generation---------------
+/var/spool/slurmd/job207561/slurm_script: line 219: ./9-heatmap.sh: No such file or directory
+finish cut and run analysis at Fri Apr  7 10:47:40 CEST 2023

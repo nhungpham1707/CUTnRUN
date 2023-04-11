@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=align
-#SBATCH --output=alignment.out
+#SBATCH --job-name=alignfrag
+#SBATCH --output=alignment_fragment.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
