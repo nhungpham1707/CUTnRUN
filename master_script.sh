@@ -235,8 +235,8 @@ echo "-------------------step 5. running transform bam to bigwig---------------"
 # step 8. generate plots from histone samples to check the reliability of the cut and run experiment
 
 # step 9. Extract overlap peak from replicates in the same condition. Manual change for sample IDs is required prior to run for new set up/ samples 
-echo "-------------------step 9. running peak processing---------------"
-. ./9-peakProcessing.sh 
+# echo "-------------------step 9. running peak processing---------------"
+# . ./9-peakProcessing.sh 
 
 # step 10. Extract peak overlap statistic
 #  echo "-------------------step 10. running peak statistic ---------------"

@@ -222,7 +222,7 @@ echo "start running cut and run analysis at $(date)"
 
 # step 5. merge and transform bam file to bigwig
 # echo "-------------------step 5. running transform bam to bigwig---------------"
-# . ./6-bam2bigwig.sh
+# . ./5-bam2bigwig.sh
 
 # # step 6. peak calling with macs2
 # echo "-------------------step 6. running peak calling----------------------"
