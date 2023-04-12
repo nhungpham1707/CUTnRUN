@@ -230,7 +230,7 @@ echo "start running cut and run analysis at $(date)"
 
 # step 7. Generate overview plots to access number of reads, duplicate and peaks in each condition 
 # echo "-------------------step 7. running report plots----------------------"
-# Rscript Report_plots.R
+# Rscript 7-Report_plots.R
 
 # step 8. generate plots from histone samples to check the reliability of the cut and run experiment
 

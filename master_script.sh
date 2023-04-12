@@ -222,7 +222,7 @@ echo "start running cut and run analysis at $(date)"
 
 # step 5. merge and transform bam file to bigwig
 echo "-------------------step 5. running transform bam to bigwig---------------"
-. ./6-bam2bigwig.sh
+. ./5-bam2bigwig.sh
 
 # # step 6. peak calling with macs2
 # echo "-------------------step 6. running peak calling----------------------"
@@ -230,7 +230,7 @@ echo "-------------------step 5. running transform bam to bigwig---------------"
 
 # step 7. Generate overview plots to access number of reads, duplicate and peaks in each condition 
 # echo "-------------------step 7. running report plots----------------------"
-# Rscript Report_plots.R
+# Rscript 7-Report_plots.R
 
 # step 8. generate plots from histone samples to check the reliability of the cut and run experiment
 
@@ -240,11 +240,11 @@ echo "-------------------step 9. running peak processing---------------"
 
 # step 10. Extract peak overlap statistic
 #  echo "-------------------step 10. running peak statistic ---------------"
-#  Rscript Peak_statistic.R
+#  Rscript 10-Peak_statistic.R
 
 # step 11. Identify peaks that are differentially enriched between two conditions
 # echo "---------------step 11. running peak differential analysis---------------"
-#Rscript diffBind.r
+#Rscript 11-diffBind.r
 
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"
