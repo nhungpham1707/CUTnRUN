@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=bam2big
-#SBATCH --output=bam2big.out
+#SBATCH --job-name=analyzepeak
+#SBATCH --output=analyzepeak.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
 #SBATCH --cpus-per-task=16
-#SBATCH --gres=tmpspace:30G
+#SBATCH --gres=tmpspace:10G
 #SBATCH --mail-type=FAIL,END
 #SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
 
@@ -218,8 +218,8 @@ echo "start running cut and run analysis at $(date)"
 # . ./5-peakCalling.sh
 
 # step 6. merge and transform bam file to bigwig
-echo "-------------------step 8. running transform bam to bigwig---------------"
-. ./6-bam2bigwig.sh
+# echo "-------------------step 8. running transform bam to bigwig---------------"
+# . ./6-bam2bigwig.sh
 
 # step 7. differential peak cutnrun_analysis
 #Rscript diffBind.r
@@ -241,5 +241,6 @@ echo "-------------------step 8. running transform bam to bigwig---------------"
 # step 7. motif finding 
 # step 7. super enhancer finding 
 
+. ./AnalyzePeaks.sh
 # step . generate plots to check the reliability of the cut and run experiment
 echo "finish cut and run analysis at $(date)"

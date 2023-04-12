@@ -1,0 +1,173 @@
+-----------running 1 out of 1 samples---------------------- 
+SCC-bulkChIC-PMC-DRO-020
+1
+start sorting and remove dup for SCC-bulkChIC-PMC-DRO-020 at Tue Apr 11 19:17:38 CEST 2023
+USAGE: SortSam [arguments]
+
+This tool sorts the input SAM or BAM file by coordinate, queryname (QNAME), or some other property of the SAM record.
+The SortOrder of a SAM/BAM/CRAM file is found in the SAM file header tag @HD in the field labeled SO.  <p> For a
+coordinate sorted SAM/BAM/CRAM file, read alignments are sorted first by the reference sequence name (RNAME) field using
+the reference sequence dictionary (@SQ tag).  Alignments within these subgroups are secondarily sorted using the
+left-most mapping position of the read (POS).  Subsequent to this sorting scheme, alignments are listed
+arbitrarily.</p><p> For queryname-sorted alignments, the tool orders records deterministically by queryname field
+followed by record strand orientation flag, primary record flag, and secondary alignment flag. This ordering may change
+in future versions. </p><hr /><hr /><h4>Usage example:</h4><pre>java -jar picard.jar SortSam \<br />      I=input.bam
+\<br />      O=sorted.bam \<br />      SORT_ORDER=coordinate</pre><hr />
+Version:2.27.2
+
+
+Required Arguments:
+
+--INPUT,-I <File>             The SAM, BAM or CRAM file to sort.  Required. 
+
+--OUTPUT,-O <File>            The sorted SAM, BAM or CRAM output file.   Required. 
+
+--SORT_ORDER,-SO <SortOrder>  Sort order of output file.   Required. queryname (Sorts according to the readname. This
+                              will place read-pairs and other derived reads (secondary and supplementary) adjacent to
+                              each other. Note that the readnames are compared lexicographically, even though they may
+                              include numbers. In paired reads, Read1 sorts before Read2.)
+                              coordinate (Sorts primarily according to the SEQ and POS fields of the record. The
+                              sequence will sorted according to the order in the sequence dictionary, taken from from
+                              the header of the file. Within each reference sequence, the reads are sorted by the
+                              position. Unmapped reads whose mates are mapped will be placed near their mates. Unmapped
+                              read-pairs are placed after all the mapped reads and their mates.)
+                              duplicate (Sorts the reads so that duplicates reads are adjacent. Required that the
+                              mate-cigar (MC) tag is present. The resulting will be sorted by library, unclipped 5-prime
+                              position, orientation, and mate's unclipped 5-prime position.)
+
+
+Optional Arguments:
+
+--arguments_file <File>       read one or more arguments files and add them to the command line  This argument may be
+                              specified 0 or more times. Default value: null. 
+
+--COMPRESSION_LEVEL <Integer> Compression level for all compressed files created (e.g. BAM and VCF).  Default value: 5. 
+
+--CREATE_INDEX <Boolean>      Whether to create an index when writing VCF or coordinate sorted BAM output.  Default
+                              value: false. Possible values: {true, false} 
+
+--CREATE_MD5_FILE <Boolean>   Whether to create an MD5 digest for any BAM or FASTQ files created.    Default value:
+                              false. Possible values: {true, false} 
+
+--GA4GH_CLIENT_SECRETS <String>
+                              Google Genomics API client_secrets.json file path.  Default value: client_secrets.json. 
+
+--help,-h <Boolean>           display the help message  Default value: false. Possible values: {true, false} 
+
+--MAX_RECORDS_IN_RAM <Integer>When writing files that need to be sorted, this will specify the number of records stored
+                              in RAM before spilling to disk. Increasing this number reduces the number of file handles
+                              needed to sort the file, and increases the amount of RAM needed.  Default value: 500000. 
+
+--QUIET <Boolean>             Whether to suppress job-summary info on System.err.  Default value: false. Possible
+                              values: {true, false} 
+
+--REFERENCE_SEQUENCE,-R <File>Reference sequence file.  Default value: null. 
+
+--TMP_DIR <File>              One or more directories with space available to be used by this program for temporary
+                              storage of working files  This argument may be specified 0 or more times. Default value:
+                              null. 
+
+--USE_JDK_DEFLATER,-use_jdk_deflater <Boolean>
+                              Use the JDK Deflater instead of the Intel Deflater for writing compressed output  Default
+                              value: false. Possible values: {true, false} 
+
+--USE_JDK_INFLATER,-use_jdk_inflater <Boolean>
+                              Use the JDK Inflater instead of the Intel Inflater for reading compressed input  Default
+                              value: false. Possible values: {true, false} 
+
+--VALIDATION_STRINGENCY <ValidationStringency>
+                              Validation stringency for all SAM files read by this program.  Setting stringency to
+                              SILENT can improve performance when processing a BAM file in which variable-length data
+                              (read, qualities, tags) do not otherwise need to be decoded.  Default value: STRICT.
+                              Possible values: {STRICT, LENIENT, SILENT} 
+
+--VERBOSITY <LogLevel>        Control verbosity of logging.  Default value: INFO. Possible values: {ERROR, WARNING,
+                              INFO, DEBUG} 
+
+--version <Boolean>           display the version number for this tool  Default value: false. Possible values: {true,
+                              false} 
+
+
+Advanced Arguments:
+
+--showHidden <Boolean>        display hidden arguments  Default value: false. Possible values: {true, false} 
+
+
+Illegal argument value: Positional arguments were provided ',echo{finsh sorting SCC-bulkChIC-PMC-DRO-020 at Tue Apr 11 19:17:38 CEST 2023}' but no positional argument is defined for this tool.
+start mark dup and remove for SCC-bulkChIC-PMC-DRO-020 at Tue Apr 11 19:17:46 CEST 2023
+19:17:47.330 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/hpc/pmc_drost/PROJECTS/swang/software/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Tue Apr 11 19:17:47 CEST 2023] MarkDuplicates --INPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-020/SCC-bulkChIC-PMC-DRO-020_sorted.bam --OUTPUT /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-020/SCC-bulkChIC-PMC-DRO-020_mkrmdup.bam --METRICS_FILE /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-020/SCC-bulkChIC-PMC-DRO-020_marked_dup_metrics.txt --REMOVE_DUPLICATES true --VALIDATION_STRINGENCY LENIENT --MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP 50000 --MAX_FILE_HANDLES_FOR_READ_ENDS_MAP 8000 --SORTING_COLLECTION_SIZE_RATIO 0.25 --TAG_DUPLICATE_SET_MEMBERS false --REMOVE_SEQUENCING_DUPLICATES false --TAGGING_POLICY DontTag --CLEAR_DT true --DUPLEX_UMI false --ADD_PG_TAG_TO_READS true --ASSUME_SORTED false --DUPLICATE_SCORING_STRATEGY SUM_OF_BASE_QUALITIES --PROGRAM_RECORD_ID MarkDuplicates --PROGRAM_GROUP_NAME MarkDuplicates --READ_NAME_REGEX <optimized capture of last three ':' separated fields as numeric values> --OPTICAL_DUPLICATE_PIXEL_DISTANCE 100 --MAX_OPTICAL_DUPLICATE_SET_SIZE 300000 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Tue Apr 11 19:17:47 CEST 2023] Executing as npham@n0081.compute.hpc on Linux 3.10.0-1160.83.1.el7.x86_64 amd64; OpenJDK 64-Bit Server VM 11.0.1+13-LTS; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.2
+INFO	2023-04-11 19:17:47	MarkDuplicates	Start of doWork freeMemory: 35870104; totalMemory: 41943040; maxMemory: 2147483648
+INFO	2023-04-11 19:17:47	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2023-04-11 19:17:47	MarkDuplicates	Will retain up to 7780737 data points before spilling to disk.
+INFO	2023-04-11 19:17:50	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:03s.  Time for last 1,000,000:    3s.  Last read position: chr1:96,417,056
+INFO	2023-04-11 19:17:50	MarkDuplicates	Tracking 12492 as yet unmatched pairs. 577 records in RAM.
+INFO	2023-04-11 19:17:53	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:05s.  Time for last 1,000,000:    2s.  Last read position: chr1:178,208,909
+INFO	2023-04-11 19:17:53	MarkDuplicates	Tracking 29598 as yet unmatched pairs. 574 records in RAM.
+INFO	2023-04-11 19:17:56	MarkDuplicates	Read     3,000,000 records.  Elapsed time: 00:00:08s.  Time for last 1,000,000:    2s.  Last read position: chr2:19,839,154
+INFO	2023-04-11 19:17:56	MarkDuplicates	Tracking 39930 as yet unmatched pairs. 3975 records in RAM.
+INFO	2023-04-11 19:17:58	MarkDuplicates	Read     4,000,000 records.  Elapsed time: 00:00:11s.  Time for last 1,000,000:    2s.  Last read position: chr2:109,679,756
+INFO	2023-04-11 19:17:58	MarkDuplicates	Tracking 59906 as yet unmatched pairs. 2581 records in RAM.
+INFO	2023-04-11 19:18:01	MarkDuplicates	Read     5,000,000 records.  Elapsed time: 00:00:13s.  Time for last 1,000,000:    2s.  Last read position: chr2:204,084,162
+INFO	2023-04-11 19:18:01	MarkDuplicates	Tracking 68662 as yet unmatched pairs. 869 records in RAM.
+INFO	2023-04-11 19:18:04	MarkDuplicates	Read     6,000,000 records.  Elapsed time: 00:00:16s.  Time for last 1,000,000:    2s.  Last read position: chr3:53,575,234
+INFO	2023-04-11 19:18:04	MarkDuplicates	Tracking 75550 as yet unmatched pairs. 3935 records in RAM.
+INFO	2023-04-11 19:18:07	MarkDuplicates	Read     7,000,000 records.  Elapsed time: 00:00:19s.  Time for last 1,000,000:    2s.  Last read position: chr3:147,274,628
+INFO	2023-04-11 19:18:07	MarkDuplicates	Tracking 82488 as yet unmatched pairs. 1652 records in RAM.
+[Tue Apr 11 19:18:12 CEST 2023] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 0.42 minutes.
+Runtime.totalMemory()=1171259392
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" picard.PicardException: Exception writing ReadEnds to file.
+	at picard.sam.markduplicates.util.ReadEndsForMarkDuplicatesCodec.encode(ReadEndsForMarkDuplicatesCodec.java:74)
+	at picard.sam.markduplicates.util.ReadEndsForMarkDuplicatesCodec.encode(ReadEndsForMarkDuplicatesCodec.java:32)
+	at htsjdk.samtools.util.SortingCollection.spillToDisk(SortingCollection.java:254)
+	at htsjdk.samtools.util.SortingCollection.add(SortingCollection.java:182)
+	at picard.sam.markduplicates.MarkDuplicates.buildSortedReadEndLists(MarkDuplicates.java:552)
+	at picard.sam.markduplicates.MarkDuplicates.doWork(MarkDuplicates.java:258)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+	Suppressed: java.io.IOException: Disk quota exceeded
+		at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+		at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+		at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+		at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+		at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+		at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+		at java.base/java.nio.channels.Channels.writeFully(Channels.java:97)
+		at java.base/java.nio.channels.Channels$1.write(Channels.java:172)
+		at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+		at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:127)
+		at org.xerial.snappy.SnappyOutputStream.dumpOutput(SnappyOutputStream.java:360)
+		at org.xerial.snappy.SnappyOutputStream.compressInput(SnappyOutputStream.java:377)
+		at org.xerial.snappy.SnappyOutputStream.flush(SnappyOutputStream.java:334)
+		at org.xerial.snappy.SnappyOutputStream.close(SnappyOutputStream.java:419)
+		at htsjdk.samtools.util.SortingCollection.spillToDisk(SortingCollection.java:259)
+		... 6 more
+Caused by: java.io.IOException: Disk quota exceeded
+	at java.base/sun.nio.ch.FileDispatcherImpl.write0(Native Method)
+	at java.base/sun.nio.ch.FileDispatcherImpl.write(FileDispatcherImpl.java:62)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.FileChannelImpl.write(FileChannelImpl.java:280)
+	at java.base/java.nio.channels.Channels.writeFullyImpl(Channels.java:74)
+	at java.base/java.nio.channels.Channels.writeFully(Channels.java:97)
+	at java.base/java.nio.channels.Channels$1.write(Channels.java:172)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.write(BufferedOutputStream.java:127)
+	at org.xerial.snappy.SnappyOutputStream.dumpOutput(SnappyOutputStream.java:360)
+	at org.xerial.snappy.SnappyOutputStream.compressInput(SnappyOutputStream.java:377)
+	at org.xerial.snappy.SnappyOutputStream.write(SnappyOutputStream.java:130)
+	at java.base/java.io.DataOutputStream.writeLong(DataOutputStream.java:224)
+	at picard.sam.markduplicates.util.ReadEndsForMarkDuplicatesCodec.encode(ReadEndsForMarkDuplicatesCodec.java:59)
+	... 8 more
+finish mark and remove dup for SCC-bulkChIC-PMC-DRO-020 at Tue Apr 11 19:18:12 CEST 2023
+start sorting with samtools for SCC-bulkChIC-PMC-DRO-020 at Tue Apr 11 19:18:12 CEST 2023
+[E::hts_open_format] Failed to open file "/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-020/SCC-bulkChIC-PMC-DRO-020_mkrmdup.bam" : No such file or directory
+samtools view: failed to open "/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-020/SCC-bulkChIC-PMC-DRO-020_mkrmdup.bam" for reading: No such file or directory
+start indexing for SCC-bulkChIC-PMC-DRO-020 at Tue Apr 11 19:18:12 CEST 2023
+[E::hts_open_format] Failed to open file "/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-020/SCC-bulkChIC-PMC-DRO-020_rmdup_filt.bam" : No such file or directory
+samtools index: failed to open "/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-020/SCC-bulkChIC-PMC-DRO-020_rmdup_filt.bam": No such file or directory
+finish indexing for SCC-bulkChIC-PMC-DRO-020 at Tue Apr 11 19:18:12 CEST 2023
+all done

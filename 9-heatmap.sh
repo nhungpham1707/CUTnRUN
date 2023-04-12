@@ -78,12 +78,12 @@ cores=8
 # plotHeatmap -m ${merged_bigwig_dir}/matrix_gene_db.mat.gz -out ${merged_bigwig_dir}/transcript_db.png --sortUsing sum
 cores=8
 
-res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
-merged_bigwig_dir=${res_dir}/merged_bigwig
-
+# res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
+# merged_bigwig_dir=${res_dir}/merged_bigwig
+hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed
 computeMatrix reference-point --referencePoint TSS \
   -b 1000 -a 1000 \
-  -R hg38_gene \
+  -R ${hg38_dir} \
 -S ${merged_bigwig_dir}/fusion_merged.bw\
  ${merged_bigwig_dir}/tfe3_merged.bw\
  ${merged_bigwig_dir}/luciferase_merged.bw\

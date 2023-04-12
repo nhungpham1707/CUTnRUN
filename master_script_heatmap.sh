@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=bam2big
-#SBATCH --output=bam2big.out
+#SBATCH --job-name=heatmap
+#SBATCH --output=heatmap.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
 #SBATCH --cpus-per-task=16
-#SBATCH --gres=tmpspace:30G
+#SBATCH --gres=tmpspace:10G
 #SBATCH --mail-type=FAIL,END
 #SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
 
@@ -129,12 +129,7 @@ mkdir -p ${motif_dir}
 
 merged_bigwig_dir=${res_dir}/merged_bigwig
 mkdir -p ${merged_bigwig_dir}
-
-bigwig_dir=${res_dir}/bigwig
-mkdir -p $bigwig_dir
-
-peak_analysis_dir=${res_dir}/peak_analysis
-mkdir -p $peak_analysis_dir
+   
 # tool dir
 
 bowtie2Index=/hpc/pmc_drost/SOURCES/Genomes/human/bowtie2/human_gencode37_hg38
@@ -187,10 +182,9 @@ fusion="SCC-ChIC-PMC-DRO-F1 SCC-ChIC-PMC-DRO-F5 bulkChIC-PMC-DRO-015 SCC-bulkChI
 tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$res_dir/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
 fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
-h3k4me3=( "SCC-ChIC-PMC-DRO-FH" "SCC-ChIC-PMC-DRO-LH" "SCC-ChIC-PMC-DRO-TH" )
-h3k4me3_2=( "bulkChIC-PMC-DRO-011" "bulkChIC-PMC-DRO-012" "bulkChIC-PMC-DRO-013") 
-# save global variables into files to read in R
 
+# save global variables into files to read in R
+var = 
 
 ######################################################################
 ############### steps ################################################
@@ -205,7 +199,7 @@ echo "start running cut and run analysis at $(date)"
 # echo "-------------------step 2. running trimming--------------------------"
 # . ./2-trimming.sh 
 
-# # step 3. alignment- map to hg38 genome 
+# step 3. alignment- map to hg38 genome 
 # echo "-------------------step 3. running alignment-------------------------"
 # . ./3-alignment.sh
 
@@ -218,8 +212,8 @@ echo "start running cut and run analysis at $(date)"
 # . ./5-peakCalling.sh
 
 # step 6. merge and transform bam file to bigwig
-echo "-------------------step 8. running transform bam to bigwig---------------"
-. ./6-bam2bigwig.sh
+# echo "-------------------step 8. running transform bam to bigwig---------------"
+# . ./8-bam2bigwig.sh
 
 # step 7. differential peak cutnrun_analysis
 #Rscript diffBind.r
@@ -228,8 +222,8 @@ echo "-------------------step 8. running transform bam to bigwig---------------"
 #Rscript Report_plots.R
 
 # step 9. heatmap generation
-# echo "---------------step 9. running heatmap generation---------------"
-# . ./9-heatmap.sh
+echo "---------------step 9. running heatmap generation---------------"
+. ./9-heatmap.sh
 
 # step 10. prepare for motif analysis
 # echo "--------------------step 10. running motif finding preparation"

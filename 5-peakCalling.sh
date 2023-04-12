@@ -96,6 +96,23 @@
 
 # Run for all samples without control
 
+# task () {
+#   output_dir=${peak_no_control_dir}/${sample_ID}
+#   mkdir -p ${output_dir}
+
+#   sample_dir=( $(find ${rm_dup_dir}/${sample_ID} -name "*rmdup_filt.bam") )
+  
+#   echo "----------------start-narrow-peak-calling-no-control-for $sample_ID at $(date)----------"
+#   macs2 callpeak --tempdir $new_tmp_dir -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --outdir $output_dir/narrow
+
+#   echo "----------------start-broad-peak-calling-for $sample_ID at $(date)----------"
+
+#   macs2 callpeak --tempdir $new_tmp_dir -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --broad --outdir $output_dir/broad
+
+#   echo "----------------finish-broad-peak-calling-no-control-for $sample_ID at $(date)----------" ;
+
+# }
+
 task () {
   output_dir=${peak_no_control_dir}/${sample_ID}
   mkdir -p ${output_dir}
@@ -103,11 +120,11 @@ task () {
   sample_dir=( $(find ${rm_dup_dir}/${sample_ID} -name "*rmdup_filt.bam") )
   
   echo "----------------start-narrow-peak-calling-no-control-for $sample_ID at $(date)----------"
-  macs2 callpeak --tempdir $new_tmp_dir -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --outdir $output_dir/narrow
+  macs2 callpeak -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --outdir $output_dir/narrow
 
   echo "----------------start-broad-peak-calling-for $sample_ID at $(date)----------"
 
-  macs2 callpeak --tempdir $new_tmp_dir -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --broad --outdir $output_dir/broad
+  macs2 callpeak -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --broad --outdir $output_dir/broad
 
   echo "----------------finish-broad-peak-calling-no-control-for $sample_ID at $(date)----------" ;
 
