@@ -80,7 +80,7 @@ cores=8
 
 # res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
 # merged_bigwig_dir=${res_dir}/merged_bigwig
-hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed
+
 computeMatrix reference-point --referencePoint TSS \
   -b 1000 -a 1000 \
   -R ${hg38_dir} \
