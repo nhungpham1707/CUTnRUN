@@ -47,10 +47,12 @@ Lengths of trimmed sequences
 
 Tool: bowtie2, reference genome: hg38
 Alignment 
-<img src=https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_length_report.png alt="Alt text", title = "Alignment length">
+![Alignment reads](Figures/alignment_report.png)
 ![Alignment length](Figures/alignment_length_report.png)
 ## 4. Remove duplicate: remove duplicate, reads < 20 
+![Duplicate](Figures/dup_w_new_sample.png)
 ## 5. Call peak: broad and narrow peak calling with and without control
+![Peak numbers](Figures/peaks_number_with_nocontrol_report.png)
 ## 6. Peak analysis: identify differential binding peaks between groups
 ## 7. Peak annotation
 ## 8. Transform bam file to bigwig: merge bam files of the same condition and convert to bigwig to use for heatmap generation
