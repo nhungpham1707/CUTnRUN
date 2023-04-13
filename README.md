@@ -11,7 +11,7 @@ conda env create -f environment.yaml
 ```
 # Scripts and running time overview
 
-The cut and run data were analyzed based on published protocol with modification [add ref]. The running time was calculated with the current setup in each script. 
+The cut and run data were analyzed based on published protocol with modification [add ref]. The running time was calculated with the current setup in the master_script.sh. 
 
 |Steps | Run time (with current set up, 16 threads, parallel)| Script name|
 |------|-----------------|------------|
