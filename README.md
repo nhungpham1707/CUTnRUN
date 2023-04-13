@@ -1,15 +1,15 @@
-## Author:
+# Author:
 Nhung Pham, 14-03-2023
 
-## Data description
+# Data description
 
-## Set up
+# Set up
 All scripts were run on HPC with slurm in a conda environment. A similar environment can be created from environment.yaml. The file is arranged to have trim_galore installed before other packages to prevent version conflict. 
 
 ```
 conda env create -f environment.yaml
 ```
-## Scripts and running time overview
+# Scripts and running time overview
 
 The cut and run data were analyzed based on published protocol with modification [add ref]. The running time was calculated with the current setup in each script. 
 
@@ -28,6 +28,17 @@ The cut and run data were analyzed based on published protocol with modification
 |11. Find motif | | | |
 |12. Analyze motif | | | | 
 
-## Steps description
+# Steps description
 
-# 1. Quality checking: check reads quality with fastQC
+## 1. Quality checking: check reads quality with fastQC
+## 2. Trimming: remove adapter and conduct fastQC after with trim_galore
+## 3. Alignment: map reads to human genome g38
+## 4. Remove duplicate: remove duplicate, reads < 20 
+## 5. Call peak: broad and narrow peak calling with and without control
+## 6. Peak analysis: identify differential binding peaks between groups
+## 7. Peak annotation
+## 8. Transform bam file to bigwig: merge bam files of the same condition and convert to bigwig to use for heatmap generation
+## 9. Heatmap generation: Generate heatmap for peaks
+## 10. Prepare for motif finding: merge narrow peak files from the same condition and extract the fasta sequence for STREME meme suit
+## 11. Find motif 
+## 12. Analyze motif 
