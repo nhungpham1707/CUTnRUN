@@ -47,6 +47,7 @@ Lengths of trimmed sequences
 
 Tool: bowtie2, reference genome: hg38
 Alignment 
+![alt text] (https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_length_report.png?raw=true)
 
 ## 4. Remove duplicate: remove duplicate, reads < 20 
 ## 5. Call peak: broad and narrow peak calling with and without control
