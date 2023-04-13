@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=peakcalling
-#SBATCH --output=peakcalling.out
+#SBATCH --job-name=mergeP
+#SBATCH --output=peakIntersecting.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -225,8 +225,8 @@ echo "start running cut and run analysis at $(date)"
 # . ./5-bam2bigwig.sh
 
 # # step 6. peak calling with macs2
-echo "-------------------step 6. running peak calling----------------------"
-. ./6-peakCalling.sh
+# echo "-------------------step 6. running peak calling----------------------"
+# . ./6-peakCalling.sh
 
 # step 7. Generate overview plots to access number of reads, duplicate and peaks in each condition 
 # echo "-------------------step 7. running report plots----------------------"
@@ -235,8 +235,8 @@ echo "-------------------step 6. running peak calling----------------------"
 # step 8. generate plots from histone samples to check the reliability of the cut and run experiment
 
 # step 9. Extract overlap peak from replicates in the same condition. Manual change for sample IDs is required prior to run for new set up/ samples 
-# echo "-------------------step 9. running peak processing---------------"
-# . ./9-peakProcessing.sh 
+echo "-------------------step 9. running peak processing---------------"
+. ./9-peakProcessing.sh 
 
 # step 10. Extract peak overlap statistic
 #  echo "-------------------step 10. running peak statistic ---------------"
