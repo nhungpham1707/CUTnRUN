@@ -55,6 +55,7 @@ Alignment
 ## 5. Call peak: broad and narrow peak calling with and without control
 ![Peak numbers](Figures/peaks_number_with_nocontrol_report.png)
 ## 6. Peak analysis: identify differential binding peaks between groups
+![histone](Figures/H3k4me3_samples_peak_counts.png)
 ## 7. Peak annotation
 ## 8. Transform bam file to bigwig: merge bam files of the same condition and convert to bigwig to use for heatmap generation
 ## 9. Heatmap generation: Generate heatmap for peaks
