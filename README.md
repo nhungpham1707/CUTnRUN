@@ -9,7 +9,7 @@ All scripts were run on HPC with slurm in a conda environment. A similar environ
 ```
 conda env create -f environment.yaml
 ```
-## Steps description
+## Scripts and running time overview
 
 The cut and run data were analyzed based on published protocol with modification [add ref]. The running time was calculated with the current setup in each script. 
 
@@ -28,6 +28,6 @@ The cut and run data were analyzed based on published protocol with modification
 |11. Find motif | | | |
 |12. Analyze motif | | | | 
 
+## Steps description
 
-
-
+# 1. Quality checking: check reads quality with fastQC
