@@ -30,6 +30,7 @@ The cut and run data were analyzed based on published protocol with modification
 
 # Steps description
 
+Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignment-post-processing [https://github.com/nf-core/cutandrun]
 ## 1. Quality checking: check reads quality with fastQC
 
 FastQC read count
