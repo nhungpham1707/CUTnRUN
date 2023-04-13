@@ -47,7 +47,7 @@ Lengths of trimmed sequences
 
 Tool: bowtie2, reference genome: hg38
 Alignment 
-![Alignment reads](Figures/alignment_report.png)
+![Alignment reads](Figures/alignment_report_w_new_samples.png)
 ![Alignment length](Figures/alignment_length_report.png)
 ## 4. Remove duplicate: remove duplicate, reads < 20 
 ![Duplicate](Figures/dup_w_new_sample.png)
