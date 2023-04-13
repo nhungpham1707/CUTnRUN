@@ -78,15 +78,25 @@ cores=8
 # plotHeatmap -m ${merged_bigwig_dir}/matrix_gene_db.mat.gz -out ${merged_bigwig_dir}/transcript_db.png --sortUsing sum
 cores=8
 
-# res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
-# merged_bigwig_dir=${res_dir}/merged_bigwig
+## plot against hg38 gene list
 
+# computeMatrix reference-point --referencePoint TSS \
+#   -b 1000 -a 1000 \
+#   -R ${hg38_dir} \
+# -S ${merged_bigwig_dir}/fusion_merged.bw\
+#  ${merged_bigwig_dir}/tfe3_merged.bw\
+#  ${merged_bigwig_dir}/luciferase_merged.bw\
+#  --skipZeros -o ${merged_bigwig_dir}/matrix_gene_hg38.mat.gz -p $cores
+
+# plotHeatmap -m ${merged_bigwig_dir}/matrix_gene_hg38.mat.gz -out ${merged_bigwig_dir}/transcript_hg38.png --sortUsing sum
+
+# plot for histone samples
 computeMatrix reference-point --referencePoint TSS \
   -b 1000 -a 1000 \
   -R ${hg38_dir} \
--S ${merged_bigwig_dir}/fusion_merged.bw\
- ${merged_bigwig_dir}/tfe3_merged.bw\
- ${merged_bigwig_dir}/luciferase_merged.bw\
- --skipZeros -o ${merged_bigwig_dir}/matrix_gene_hg38.mat.gz -p $cores
+-S ${bigwig_dir}/SCC-ChIC-PMC-DRO-FH.bw\
+ ${bigwig_dir}/SCC-ChIC-PMC-DRO-LH.bw\
+ ${bigwig_dir}/SCC-ChIC-PMC-DRO-TH.bw\
+ --skipZeros -o ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -p $cores
 
-plotHeatmap -m ${merged_bigwig_dir}/matrix_gene_hg38.mat.gz -out ${merged_bigwig_dir}/transcript_hg38.png --sortUsing sum
+plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -out ${bigwig_dir}/histone_hg38.png --sortUsing sum

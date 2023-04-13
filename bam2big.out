@@ -1,4 +1,91 @@
-start running cut and run analysis at Wed Apr 12 17:16:21 CEST 2023
--------------------step 8. running transform bam to bigwig---------------
-/var/spool/slurmd/job208591/slurm_script: line 229: ./6-bam2bigwig.sh: No such file or directory
-finish cut and run analysis at Wed Apr 12 17:16:21 CEST 2023
+start running cut and run analysis at Thu Apr 13 09:25:05 CEST 2023
+-------------------step 5. running transform bam to bigwig---------------
+-----------running 1 out of bulkChIC-PMC-DRO-011 bulkChIC-PMC-DRO-012 bulkChIC-PMC-DRO-013 samples---------------------- 
+-----------running 2 out of bulkChIC-PMC-DRO-011 bulkChIC-PMC-DRO-012 bulkChIC-PMC-DRO-013 samples---------------------- 
+-----------running 3 out of bulkChIC-PMC-DRO-011 bulkChIC-PMC-DRO-012 bulkChIC-PMC-DRO-013 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
+normalization: CPM
+normalization: CPM
+bamFilesList: ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: ['chrX']
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+bamFilesList: ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: ['chrX']
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+normalization: CPM
+bamFilesList: ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam']
+binLength: 50
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 1
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: ['chrX']
+stepSize: 50
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+all done
+finish cut and run analysis at Thu Apr 13 09:31:48 CEST 2023

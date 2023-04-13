@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=bam2big
-#SBATCH --output=bam2big.out
+#SBATCH --job-name=peakcalling
+#SBATCH --output=peakcalling.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -193,7 +193,7 @@ h3k4me3=( "SCC-ChIC-PMC-DRO-FH" "SCC-ChIC-PMC-DRO-LH" "SCC-ChIC-PMC-DRO-TH" )
 h3k4me3_2=( "bulkChIC-PMC-DRO-011" "bulkChIC-PMC-DRO-012" "bulkChIC-PMC-DRO-013") 
 
 # define what samples to convert to bigwig
-bam2big_samples=("${h3k4me3[@]}")
+bam2big_samples=("${h3k4me3_2[@]}")
 # define what samples to find motif 
 motif_samples=$allT
 # save global variables into files to read in R
@@ -221,12 +221,12 @@ echo "start running cut and run analysis at $(date)"
 # . ./4-filtering.sh
 
 # step 5. merge and transform bam file to bigwig
-echo "-------------------step 5. running transform bam to bigwig---------------"
-. ./5-bam2bigwig.sh
+# echo "-------------------step 5. running transform bam to bigwig---------------"
+# . ./5-bam2bigwig.sh
 
 # # step 6. peak calling with macs2
-# echo "-------------------step 6. running peak calling----------------------"
-# . ./6-peakCalling.sh
+echo "-------------------step 6. running peak calling----------------------"
+. ./6-peakCalling.sh
 
 # step 7. Generate overview plots to access number of reads, duplicate and peaks in each condition 
 # echo "-------------------step 7. running report plots----------------------"
