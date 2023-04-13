@@ -15,7 +15,7 @@ The cut and run data were analyzed based on published protocol with modification
 
 |Steps | Run time (with current set up, 16 threads, parallel)| Script name|
 |------|-----------------|------------|
-|1. Quality checking | ~ 30 mins (1 sample) | 1-qualityCheck.sh [before_trimming_fastqc_all_samples.sh]|
+|1. Quality checking | ~ 30 mins (1 sample) | 1-qualityCheck.sh |
 |2. Trimming|  ~40 mins (1 sample) |2-trimming.sh |
 |3. Alignment|  ~ 30 mins - 2 hours (1 sample), 8 hours (18 samples) | 3-alignment.sh |
 |4. Remove duplicate | ~ 20 mins (1 sample) | 4-filtering.sh |
