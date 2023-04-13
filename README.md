@@ -31,8 +31,18 @@ The cut and run data were analyzed based on published protocol with modification
 # Steps description
 
 ## 1. Quality checking: check reads quality with fastQC
+FastQC read count
+FastQC mean quality scores
+FastQC per sequence quality scores
+FastQC mean GC content
+FastQC per sequence GC content
 ## 2. Trimming: remove adapter and conduct fastQC after with trim_galore
+Lengths of trimmed sequences
 ## 3. Alignment: map reads to human genome g38
+### 3.1. alignment 
+Tool: bowtie2, reference genome: hg38
+Alignment 
+
 ## 4. Remove duplicate: remove duplicate, reads < 20 
 ## 5. Call peak: broad and narrow peak calling with and without control
 ## 6. Peak analysis: identify differential binding peaks between groups
