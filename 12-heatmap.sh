@@ -91,12 +91,22 @@ cores=8
 # plotHeatmap -m ${merged_bigwig_dir}/matrix_gene_hg38.mat.gz -out ${merged_bigwig_dir}/transcript_hg38.png --sortUsing sum
 
 # plot for histone samples
+# computeMatrix reference-point --referencePoint TSS \
+#   -b 1000 -a 1000 \
+#   -R ${hg38_dir} \
+# -S ${bigwig_dir}/SCC-ChIC-PMC-DRO-FH.bw\
+#  ${bigwig_dir}/SCC-ChIC-PMC-DRO-LH.bw\
+#  ${bigwig_dir}/SCC-ChIC-PMC-DRO-TH.bw\
+#  --skipZeros -o ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -p $cores
+
+# plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -out ${bigwig_dir}/histone_hg38.png --sortUsing sum
+
 computeMatrix reference-point --referencePoint TSS \
   -b 1000 -a 1000 \
   -R ${hg38_dir} \
--S ${bigwig_dir}/SCC-ChIC-PMC-DRO-FH.bw\
- ${bigwig_dir}/SCC-ChIC-PMC-DRO-LH.bw\
- ${bigwig_dir}/SCC-ChIC-PMC-DRO-TH.bw\
- --skipZeros -o ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -p $cores
+-S ${bigwig_dir}/bulkChIC-PMC-DRO-011.bw\
+ ${bigwig_dir}/bulkChIC-PMC-DRO-012.bw\
+ ${bigwig_dir}/bulkChIC-PMC-DRO-013.bw\
+ --skipZeros -o ${bigwig_dir}/matrix_gene_histone_2_hg38.mat.gz -p $cores
 
-plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -out ${bigwig_dir}/histone_hg38.png --sortUsing sum
+plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_2_hg38.mat.gz -out ${bigwig_dir}/histone_2_hg38.png --sortUsing sum

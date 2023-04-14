@@ -39,4 +39,4 @@ done
 
 wait
 
-echo "all done"
+echo "all done motif finding"

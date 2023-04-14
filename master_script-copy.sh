@@ -1,11 +1,11 @@
 #!/bin/bash
-#SBATCH --job-name=correlate
-#SBATCH --output=correlation.out
+#SBATCH --job-name=heatmap
+#SBATCH --output=heatmap_histone2.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
 #SBATCH --cpus-per-task=16
-#SBATCH --gres=tmpspace:30G
+#SBATCH --gres=tmpspace:10G
 #SBATCH --mail-type=FAIL,END
 #SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
 
@@ -216,7 +216,7 @@ tfe3="SCC-ChIC-PMC-DRO-T1 SCC-ChIC-PMC-DRO-T5 bulkChIC-PMC-DRO-016 SCC-bulkChIC-
 #fusion="SCC-ChIC-PMC-DRO-F1 SCC-ChIC-PMC-DRO-F5 bulkChIC-PMC-DRO-015 SCC-bulkChIC-PMC-DRO-002"
 # new luc and fusion samples
 luciferase="SCC-bulkChIC-PMC-DRO-020 SCC-bulkChIC-PMC-DRO-021 SCC-bulkChIC-PMC-DRO-022"
-fusion="SCC-bulkChIC-PMC-DRO-023 SCC-bulkChIC-PMC-DRO-024 SCC-bulkChIC-PMC-DRO-025"
+fusion=( "SCC-bulkChIC-PMC-DRO-023" "SCC-bulkChIC-PMC-DRO-024" "SCC-bulkChIC-PMC-DRO-025" )
 
 #allT="$tfe3 $luciferase $fusion"
 tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
@@ -280,8 +280,8 @@ echo "start running cut and run analysis at $(date)"
 #Rscript 11-diffBind.r
 
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
-# echo "---------------step 12. running heatmap generation---------------"
-# . ./12-heatmap.sh
+echo "---------------step 12. running heatmap generation---------------"
+. ./12-heatmap.sh
 
 # step 13. prepare for motif analysis. Prior to run change sample paths in 10-prepareMotifAnalysis.sh if needed. 
 # echo "--------------------step 13. running motif finding preparation"
@@ -295,6 +295,6 @@ echo "start running cut and run analysis at $(date)"
 # step 16. peak annnotation
 # step 17. super enhancer finding 
 # step. check sample correlation
-. ./SamplesCorrelation.sh
+# . ./SamplesCorrelation.sh
 
 echo "finish cut and run analysis at $(date)"

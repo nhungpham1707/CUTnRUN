@@ -3,9 +3,9 @@
 #SBATCH --output=intersect.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
-#SBATCH --mem=90G
+#SBATCH --mem=20G
 #SBATCH --cpus-per-task=16
-#SBATCH --gres=tmpspace:30G
+#SBATCH --gres=tmpspace:10G
 #SBATCH --mail-type=FAIL,END
 #SBATCH --mail-user=t.t.n.pham-3a@prinsesmaximacentrum.nl
 
@@ -98,7 +98,7 @@
 
 # source /hpc/pmc_drost/nhung/anaconda3/ect/profile.d/conda.sh
 # conda activate cutnrun_trimgalore
-
+# adap data_dir and res_dir before running
 data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1
 
 # dir for new data 
