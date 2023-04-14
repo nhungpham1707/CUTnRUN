@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=mergeP
-#SBATCH --output=peakIntersecting.out
+#SBATCH --job-name=intersect
+#SBATCH --output=intersect.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -135,6 +135,9 @@ mkdir -p $bigwig_dir
 
 peak_analysis_dir=${res_dir}/peak_analysis
 mkdir -p $peak_analysis_dir
+
+figure_dir=${res_dir}/figures
+mkdir -p $figure_dir
 # tool dir
 
 bowtie2Index=/hpc/pmc_drost/SOURCES/Genomes/human/bowtie2/human_gencode37_hg38
@@ -145,7 +148,7 @@ new_tmp_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/tmp # to solve the 
 homer_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/homer
 findMotif_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/findMotifsGenome.pl
 
-bamCoverage_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/bamCoverage
+bamCoverage_dir=/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/bamCoverage # to merge 
 effectiveGenomeSize=2913022398 # input for bamcoverage to convert bam2bigwig. change if using different reference genome than hg38. for other genomes can be found here ref. https://deeptools.readthedocs.io/en/develop/content/feature/effectiveGenomeSize.html
 # fasta genome directory for motif finding. It has to be the same with the reference genome that was used for alignment
 fasta_genome_dir=/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
@@ -173,25 +176,55 @@ hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed
 #             "SCC-ChIC-PMC-DRO-TH"\ 
 #             "SCC-ChIC-PMC-DRO-L1")
 
-sample_IDs=( "SCC-bulkChIC-PMC-DRO-020"\
-               "SCC-bulkChIC-PMC-DRO-021"\
-               "SCC-bulkChIC-PMC-DRO-022"\
-               "SCC-bulkChIC-PMC-DRO-023"\
-               "SCC-bulkChIC-PMC-DRO-024"\
-               "SCC-bulkChIC-PMC-DRO-025")
+# new_sample_IDs=( "SCC-bulkChIC-PMC-DRO-020"\
+#                "SCC-bulkChIC-PMC-DRO-021"\
+#                "SCC-bulkChIC-PMC-DRO-022"\
+#                "SCC-bulkChIC-PMC-DRO-023"\
+#                "SCC-bulkChIC-PMC-DRO-024"\
+#                "SCC-bulkChIC-PMC-DRO-025")
+
+sample_IDs=( "bulkChIC-PMC-DRO-011" \
+            "bulkChIC-PMC-DRO-012"\
+            "bulkChIC-PMC-DRO-013"\
+            "bulkChIC-PMC-DRO-014"\
+            "bulkChIC-PMC-DRO-015"\
+            "bulkChIC-PMC-DRO-016"\
+            "SCC-bulkChIC-PMC-DRO-002"\
+            "SCC-bulkChIC-PMC-DRO-005"\
+            "SCC-bulkChIC-PMC-DRO-008"\
+            "SCC-ChIC-PMC-DRO-L5"\
+            "SCC-ChIC-PMC-DRO-LH"\
+            "SCC-ChIC-PMC-DRO-F1"\
+            "SCC-ChIC-PMC-DRO-F5"\
+            "SCC-ChIC-PMC-DRO-FH"\
+            "SCC-ChIC-PMC-DRO-T1"\
+            "SCC-ChIC-PMC-DRO-T5"\
+            "SCC-ChIC-PMC-DRO-TH"\ 
+            "SCC-ChIC-PMC-DRO-L1"\ 
+            "SCC-bulkChIC-PMC-DRO-020"\
+            "SCC-bulkChIC-PMC-DRO-021"\
+            "SCC-bulkChIC-PMC-DRO-022"\
+            "SCC-bulkChIC-PMC-DRO-023"\
+            "SCC-bulkChIC-PMC-DRO-024"\
+            "SCC-bulkChIC-PMC-DRO-025")
+
 total_sample=${#sample_IDs[@]}
 
 # classify sample for peakcalling
 tfe3="SCC-ChIC-PMC-DRO-T1 SCC-ChIC-PMC-DRO-T5 bulkChIC-PMC-DRO-016 SCC-bulkChIC-PMC-DRO-008"
-luciferase="SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5 bulkChIC-PMC-DRO-014 SCC-bulkChIC-PMC-DRO-005"
-fusion="SCC-ChIC-PMC-DRO-F1 SCC-ChIC-PMC-DRO-F5 bulkChIC-PMC-DRO-015 SCC-bulkChIC-PMC-DRO-002"
+#luciferase="SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5 bulkChIC-PMC-DRO-014 SCC-bulkChIC-PMC-DRO-005"
+#fusion="SCC-ChIC-PMC-DRO-F1 SCC-ChIC-PMC-DRO-F5 bulkChIC-PMC-DRO-015 SCC-bulkChIC-PMC-DRO-002"
+# new luc and fusion samples
+luciferase="SCC-bulkChIC-PMC-DRO-020 SCC-bulkChIC-PMC-DRO-021 SCC-bulkChIC-PMC-DRO-022"
+fusion="SCC-bulkChIC-PMC-DRO-023 SCC-bulkChIC-PMC-DRO-024 SCC-bulkChIC-PMC-DRO-025"
+
 #allT="$tfe3 $luciferase $fusion"
 tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
 luciferaseC=$res_dir/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam
 fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 h3k4me3=( "SCC-ChIC-PMC-DRO-FH" "SCC-ChIC-PMC-DRO-LH" "SCC-ChIC-PMC-DRO-TH" )
 h3k4me3_2=( "bulkChIC-PMC-DRO-011" "bulkChIC-PMC-DRO-012" "bulkChIC-PMC-DRO-013") 
-
+h3k4me3_all=( "SCC-ChIC-PMC-DRO-FH" "SCC-ChIC-PMC-DRO-LH" "SCC-ChIC-PMC-DRO-TH" "bulkChIC-PMC-DRO-011" "bulkChIC-PMC-DRO-012" "bulkChIC-PMC-DRO-013")
 # define what samples to convert to bigwig
 bam2big_samples=("${h3k4me3_2[@]}")
 # define what samples to find motif 
@@ -261,6 +294,7 @@ echo "-------------------step 9. running peak processing---------------"
 # step 15. motif annotation 
 # step 16. peak annnotation
 # step 17. super enhancer finding 
-
+# step. check sample correlation
+# . ./SamplesCorrelation.sh
 
 echo "finish cut and run analysis at $(date)"

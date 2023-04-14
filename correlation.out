@@ -1,0 +1,55 @@
+start running cut and run analysis at Fri Apr 14 10:33:55 CEST 2023
+-----------running 1 out of 24 samples---------------------- 
+-----------running 2 out of 24 samples---------------------- 
+-----------running 3 out of 24 samples---------------------- 
+-----------running 4 out of 24 samples---------------------- 
+-----------running 5 out of 24 samples---------------------- 
+-----------running 6 out of 24 samples---------------------- 
+-----------running 7 out of 24 samples---------------------- 
+-----------running 8 out of 24 samples---------------------- 
+-----------running 9 out of 24 samples---------------------- 
+-----------running 10 out of 24 samples---------------------- 
+-----------running 11 out of 24 samples---------------------- 
+-----------running 12 out of 24 samples---------------------- 
+-----------running 13 out of 24 samples---------------------- 
+-----------running 14 out of 24 samples---------------------- 
+-----------running 15 out of 24 samples---------------------- 
+-----------running 16 out of 24 samples---------------------- 
+-----------running 17 out of 24 samples---------------------- 
+-----------running 18 out of 24 samples---------------------- 
+-----------running 19 out of 24 samples---------------------- 
+-----------running 20 out of 24 samples---------------------- 
+-----------running 21 out of 24 samples---------------------- 
+-----------running 22 out of 24 samples---------------------- 
+-----------running 23 out of 24 samples---------------------- 
+-----------running 24 out of 24 samples---------------------- 
+[E::hts_hopen] Failed to open file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/bulkChIC-PMC-DRO-011.bw
+[E::hts_open_format] Failed to open file "/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/bulkChIC-PMC-DRO-011.bw" : Exec format error
+[E::hts_hopen] Failed to open file /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/bulkChIC-PMC-DRO-011.bw
+[E::hts_open_format] Failed to open file "/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/bulkChIC-PMC-DRO-011.bw" : Exec format error
+The file '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/bulkChIC-PMC-DRO-011.bw' does not exist
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/plotCorrelation", line 12, in <module>
+    main(args)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/plotCorrelation.py", line 210, in main
+    corr = Correlation(args.corData,
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/correlation.py", line 43, in __init__
+    self.load_matrix(matrix_file)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/correlation.py", line 85, in load_matrix
+    _ma = np.load(matrix_file)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/figures/bamsummary_results.npz'
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/plotCorrelation", line 12, in <module>
+    main(args)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/plotCorrelation.py", line 210, in main
+    corr = Correlation(args.corData,
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/correlation.py", line 43, in __init__
+    self.load_matrix(matrix_file)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/correlation.py", line 85, in load_matrix
+    _ma = np.load(matrix_file)
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/numpy/lib/npyio.py", line 405, in load
+    fid = stack.enter_context(open(os_fspath(file), "rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/figures/bamsummary_results.npz'
+finish cut and run analysis at Fri Apr 14 10:34:10 CEST 2023

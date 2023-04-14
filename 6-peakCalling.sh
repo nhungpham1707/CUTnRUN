@@ -26,22 +26,22 @@
 # -  narrow: .narrowPeak (most important), .xls, .bed
 
 # Run per group using appropriate controls 
-# task () {
-#   output_dir=${peak_dir}/${sample_ID}
-#   mkdir -p ${output_dir}
+task () {
+  output_dir=${peak_dir}/${sample_ID}
+  mkdir -p ${output_dir}
 
-#   sample_dir=( $(find ${rm_dup_dir}/${sample_ID} -name "*rmdup_filt.bam") )
+  sample_dir=( $(find ${rm_dup_dir}/${sample_ID} -name "*rmdup_filt.bam") )
   
-#   echo "----------------start-narrow-peak-calling-for $sample_ID at $(date)----------"
-#   macs2 callpeak --tempdir $new_tmp_dir -t ${sample_dir} -c ${control} -f BAMPE -g hs -n ${sample_ID}_paired_control -q 0.01 --outdir $output_dir/narrow
+  echo "----------------start-narrow-peak-calling-for $sample_ID at $(date)----------"
+  macs2 callpeak --tempdir $new_tmp_dir -t ${sample_dir} -c ${control} -f BAMPE -g hs -n ${sample_ID}_paired_control -q 0.01 --outdir $output_dir/narrow
 
-#   echo "----------------start-broad-peak-calling-for $sample_ID at $(date)----------"
+  echo "----------------start-broad-peak-calling-for $sample_ID at $(date)----------"
 
-#   macs2 callpeak --tempdir $new_tmp_dir -t ${sample_dir} -c ${control} -f BAMPE -g hs -n ${sample_ID}_paired_control -q 0.01 --broad --outdir $output_dir/broad
+  macs2 callpeak --tempdir $new_tmp_dir -t ${sample_dir} -c ${control} -f BAMPE -g hs -n ${sample_ID}_paired_control -q 0.01 --broad --outdir $output_dir/broad
 
-#   echo "----------------finish-broad-peak-calling-for $sample_ID at $(date)----------" ;
+  echo "----------------finish-broad-peak-calling-for $sample_ID at $(date)----------" ;
 
-# }
+}
 
 # run for tfe3
 # total_sample=${#tfe3[@]}
@@ -60,39 +60,39 @@
 # echo "all done for tfe3"
 
 # run for luciferase
-# total_sample=${#luciferase[@]}
-# n=0
-# for sample_ID in $luciferase;do
-#   n=$((n+1))
-#   echo "-----------running $n out of $total_sample luciferase samples---------------"
+total_sample=${#luciferase[@]}
+n=0
+for sample_ID in $luciferase;do
+  n=$((n+1))
+  echo "-----------running $n out of $total_sample luciferase samples---------------"
 
-#   control=$luciferaseC
+  control=$luciferaseC
 
-#   task "$sample_ID" &
+  task "$sample_ID" &
 
-# done
+done
 
-# wait
+wait
 
-# echo "all done for luciferase"
+echo "all done for luciferase"
 
 # run for fusion
 
-# total_sample=${#fusion[@]}
-# n=0
-# for sample_ID in $fusion;do
-#   n=$((n+1))
-#   echo "-----------running $n out of $total_sample fusion samples---------------"
+total_sample=${#fusion[@]}
+n=0
+for sample_ID in $fusion;do
+  n=$((n+1))
+  echo "-----------running $n out of $total_sample fusion samples---------------"
 
-#   control=$fusionC
+  control=$fusionC
 
-#   task "$sample_ID" &
+  task "$sample_ID" &
 
-# done
+done
 
-# wait
+wait
 
-# echo "all done for fusion"
+echo "all done for fusion"
 
 # Run for all samples without control
 
@@ -113,40 +113,40 @@
 
 # }
 
-task () {
-  output_dir=${peak_no_control_dir}/${sample_ID}
-  mkdir -p ${output_dir}
+# task () {
+#   output_dir=${peak_no_control_dir}/${sample_ID}
+#   mkdir -p ${output_dir}
 
-  sample_dir=( $(find ${rm_dup_dir}/${sample_ID} -name "*rmdup_filt.bam") )
+#   sample_dir=( $(find ${rm_dup_dir}/${sample_ID} -name "*rmdup_filt.bam") )
   
-  echo "----------------start-narrow-peak-calling-no-control-for $sample_ID at $(date)----------"
-  macs2 callpeak -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --outdir $output_dir/narrow
+#   echo "----------------start-narrow-peak-calling-no-control-for $sample_ID at $(date)----------"
+#   macs2 callpeak -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --outdir $output_dir/narrow
 
-  echo "----------------start-broad-peak-calling-for $sample_ID at $(date)----------"
+#   echo "----------------start-broad-peak-calling-for $sample_ID at $(date)----------"
 
-  macs2 callpeak -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --broad --outdir $output_dir/broad
+#   macs2 callpeak -t ${sample_dir} -f BAMPE -g hs -n ${sample_ID}_paired -q 0.01 --broad --outdir $output_dir/broad
 
-  echo "----------------finish-broad-peak-calling-no-control-for $sample_ID at $(date)----------" ;
+#   echo "----------------finish-broad-peak-calling-no-control-for $sample_ID at $(date)----------" ;
 
-}
+# }
 
 
 # total_sample=${#allT[@]}
-total_sample=${#sample_IDs[@]}
+# total_sample=${#sample_IDs[@]}
 
-n=0
-for sample_ID in ${sample_IDs[@]};do
-  n=$((n+1))
-  echo "-----------running $n out of $total_sample all samples---------------"
+# n=0
+# for sample_ID in ${sample_IDs[@]};do
+#   n=$((n+1))
+#   echo "-----------running $n out of $total_sample all samples---------------"
 
-  #control=$fusionC
+#   #control=$fusionC
 
-  task "$sample_ID" &
+#   task "$sample_ID" &
 
-done
+# done
 
-wait
+# wait
 
-echo "all done for no control"
+# echo "all done for no control"
 
 

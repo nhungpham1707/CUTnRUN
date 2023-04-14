@@ -25,21 +25,19 @@
 #     --ignoreForNormalization chrX \
 #     -o ${bigwig_dir}/SCC-ChIC-PMC-DRO-TH.bw
 
-
 task () {
-    bam_ID=( $(find ${rm_dup_dir}/${sample_ID} -name "*_rmdup_filt.bam") )
-    echo $bam_ID
-    $bamCoverage_dir -b $bam_ID \
+    $bamCoverage_dir -b ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam \
         --normalizeUsing CPM \
         --effectiveGenomeSize $effectiveGenomeSize \
         --ignoreForNormalization chrX \
-        -o ${bigwig_dir}/$sample_ID.bw ;
+        -o ${bigwig_dir}/${sample_ID}.bw ;
 }
+
 #run loop
 
 n=0
-total_sample=${bam2big_samples[@]}
-for sample_ID in ${bam2big_samples[@]}; do
+total_sample=${#sample_IDs[@]}
+for sample_ID in ${sample_IDs[@]}; do
     n=$((n+1))
     echo "-----------running $n out of $total_sample samples---------------------- "
 
