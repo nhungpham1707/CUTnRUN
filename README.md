@@ -55,10 +55,13 @@ Alignment
 
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png">
 
+<p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/heatmap_PearsonCorr_readCounts.png" width="200", height="200" alt>
+</p>
+<p>
+    <em>Replicate correlation: overall most replicates from the same condition are highly correlated indicate that data from replicate are reliable.</em>
+</p>
 
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/heatmap_PearsonCorr_readCounts.png" width="200", height="200">
-
-    <em>Replicate correlation: overall most replicates from the same condition are highly correlated indicate that data from replicate are reliable. </em>
 
 ## Peak calling and downstream analysis 
 ## 5. Call peak: broad and narrow peak calling with and without control
