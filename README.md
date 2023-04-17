@@ -33,25 +33,44 @@ The cut and run data were analyzed based on published protocol with modification
 Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignment-post-processing [https://github.com/nf-core/cutandrun]
 ## Initial data quality checking: sequence reads, duplication rate, trimming, replicate correlation 
 
-## 1. Quality checking: check reads quality with fastQC
+## 1. Quality checking 
+Reads quality for each sequence in each sample is checked with fastQC in order to identify poor quality sequencing sample(s). 
 
-FastQC read count
+## 2. Trimming
+Remove adapter and conduct fastQC after with trim_galore
 
-## 2. Trimming: remove adapter and conduct fastQC after with trim_galore
-
-Sequence quality before and after trimming
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/QC_figure.png">
+<p>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/QC_figure.png" width="600" height="500" alt>
+</p>
+<p>
+    <em>Sequence quality before and after trimming. Before trimming all samples already have good quality sequences with most in q30 region (< 0.01% probablility for error). After trimming the quality is more even among sample<em>.
+        </p>
 
 ## 3. Alignment: map reads to human genome g38
 ### 3.1. alignment 
-
-Tool: bowtie2, reference genome: hg38
-Alignment 
-![Alignment reads](Figures/alignment_report_w_new_samples.png)
-![Alignment length](Figures/alignment_length_report.png)
-## 4. Remove duplicate: remove duplicate and reads < 20bp 
+Reads were aligned to hg38 genome.
+ <p>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_report_w_new_samples.png" width="600" height="500" alt>
+</p>
+<p>
+    <em>Alignment report<em>.
+        </p>  
+        
+  <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_length_report.png" width="600" height="500" alt>
+</p>
+<p>
+    <em>Alignment length report<em>.
+        </p>   
+        
+## 4. Remove duplicate: 
+ Sequence duplicates and reads < 20bp were removed
+<p>
+        </p>
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/picard_deduplication.png" width="400" height="300">
-
+<p>
+    <em> Duplication report<em>
+        </p>
+        
 <p>
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="400" height = "300" alt>
     </p>
@@ -59,6 +78,8 @@ Alignment
     <em>Duplication rate report</em>
 </p>
 
+## Replicates correlation
+        To check the correlation between replicates from the same group. A good experiment should have high correlation between replicates.
 <p>
     <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/heatmap_PearsonCorr_readCounts.png" width="400", height="400" alt>
 </p>
@@ -68,14 +89,35 @@ Alignment
 
 
 ## Peak calling and downstream analysis 
-## 5. Call peak: broad and narrow peak calling with and without control
-![Peak numbers](Figures/peaks_number_with_nocontrol_report.png)
-## 6. Peak analysis: identify differential binding peaks between groups
-H3k4me3 samples
-![histone](Figures/H3k4me3_samples_peak_counts.png)
+## 5. Call peak: 
+Broad and narrow peak calling with and without control
+<p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/peaks_number_with_nocontrol_report.png" width="400", height="400" alt>
+</p>
+<p>
+    <em>Number of peak per sample without control</em>
+</p>
 
-Tfe3, luc and fusion samples
-![Rep](Figures/tfe3_fusion_luc_samples_peak_counts.png)
+ ## Peak reproducibility
+ Compare peaks from replicates in the same group. In a good experiment replicates from the same group should generate the same peaks. 
+ <p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/H3k4me3_samples_peak_counts.png" width="400", height="400" alt>
+</p>
+<p>
+    <em>Peaks reproducibility in H3k4me3 samples. These samples have the same antibody (anti-H3K4me3) however the seq depth are varied among them hence some samples generate more peaks than others. Most peaks from less depth samples are present in the depth samples, therefore the difference in peaks are not a problem</em>
+</p>
+ 
+ <p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/tfe3_fusion_luc_samples_peak_counts.png" width="400", height="400" alt>
+</p>
+<p>
+    <em>Peaks reproducibility in Tfe3, luc and fusion samples. Samples in the same group have the same antibody but different seq depth. However, only less than 40% of peak are overlapped among replicates. </em>
+</p>
+ 
+## 6. Peak analysis: identify differential binding peaks between groups
+        
+        
+
 
 ## 7. Peak annotation
 ## 8. Transform bam file to bigwig: merge bam files of the same condition and convert to bigwig to use for heatmap generation
