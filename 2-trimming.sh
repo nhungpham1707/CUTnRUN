@@ -55,6 +55,6 @@ done
 wait
 
 # generate report
-multiqc ${trim_dir}
+multiqc ${trim_dir} -n trim_report -o ${trim_dir}
 echo "all done trimming"
 

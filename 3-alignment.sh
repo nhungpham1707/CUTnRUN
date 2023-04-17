@@ -65,7 +65,7 @@ done
 wait
 
 # generate report for alignment result 
-multiqc ${align_dir}
+multiqc ${align_dir} -n alignment_report -o ${align_dir}
 echo "all done alignment"
 
 

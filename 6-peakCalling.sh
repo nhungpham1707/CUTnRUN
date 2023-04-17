@@ -151,7 +151,7 @@ echo "all done for fusion"
 
 # generate report
 
-multiqc ${peak_dir}
-multiqc ${peak_no_control_dir}
+multiqc ${peak_dir} -n peak_control_report -o ${peak_dir}
+multiqc ${peak_no_control_dir} -n peak_no_control_report -o ${peak_no_control_dir}
 
 echo ("all done for peak calling")

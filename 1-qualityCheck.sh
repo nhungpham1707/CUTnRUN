@@ -41,5 +41,5 @@ done
 wait
 
 # generate report
-multiqc ${qc_dir}
+multiqc ${qc_dir} -n quality_check_report -o ${qc_dir}
 echo "all done quality check"

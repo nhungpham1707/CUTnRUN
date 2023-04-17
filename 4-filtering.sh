@@ -111,7 +111,7 @@ done
 wait
 
 # generate report 
-multiqc ${rm_dup_dir}
+multiqc ${rm_dup_dir} -n rm_dup_report -o ${rm_dup_dir}
 echo "all done filtering"
 
 
