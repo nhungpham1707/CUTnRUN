@@ -34,23 +34,33 @@ Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignmen
 ## 1. Quality checking: check reads quality with fastQC
 
 FastQC read count
+
+![](Figures/fastqc_sequence_counts_plot.png =250x250)
 FastQC mean quality scores
+![](Figures/fastqc_per_base_sequence_quality_plot.png =250x250)
 FastQC per sequence quality scores
-FastQC mean GC content
-FastQC per sequence GC content
+![](Figrues/fastqc_per_sequence_quality_scores_plot.png =250x250)
+
 
 ## 2. Trimming: remove adapter and conduct fastQC after with trim_galore
 
-Lengths of trimmed sequences
+FastQC mean quality scores after trimming
+![](Figures/fastqc_per_base_sequence_quality_plot_after_trimming.png =250x250)
+
+FastQC per sequence quality scores after trimming
+![](Figures/fastqc_per_sequence_quality_scores_plot_after_trimming.png =250x250)
 
 ## 3. Alignment: map reads to human genome g38
 ### 3.1. alignment 
 
 Tool: bowtie2, reference genome: hg38
 Alignment 
+![](Figures/bowtie2_pre_plot.png)
 ![Alignment reads](Figures/alignment_report_w_new_samples.png)
 ![Alignment length](Figures/alignment_length_report.png)
 ## 4. Remove duplicate: remove duplicate and reads < 20bp 
+![](Figures/picard_deduplication.png)
+
 ![Duplicate](Figures/duplication_rate_report.png)
 
 ## 5. Call peak: broad and narrow peak calling with and without control
