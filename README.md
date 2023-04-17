@@ -31,6 +31,8 @@ The cut and run data were analyzed based on published protocol with modification
 # Steps description
 
 Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignment-post-processing [https://github.com/nf-core/cutandrun]
+## Initial data quality checking: sequence reads, duplication rate, trimming, replicate correlation 
+
 ## 1. Quality checking: check reads quality with fastQC
 
 FastQC read count
@@ -50,7 +52,15 @@ Alignment
 ## 4. Remove duplicate: remove duplicate and reads < 20bp 
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/picard_deduplication.png" width="400" height="300">
 
+
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png">
+
+
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/heatmap_PearsonCorr_readCounts.png" width="200", height="200">
+    <em>Replicate correlation: overall most replicates from the same condition are highly correlated indicate that data from replicate are reliable. 
+</em>
+
+## Peak calling and downstream analysis 
 ## 5. Call peak: broad and narrow peak calling with and without control
 ![Peak numbers](Figures/peaks_number_with_nocontrol_report.png)
 ## 6. Peak analysis: identify differential binding peaks between groups
