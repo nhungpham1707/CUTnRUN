@@ -40,7 +40,7 @@ FastQC mean quality scores
 ![](Figures/fastqc_per_base_sequence_quality_plot.png =250x250)
 FastQC per sequence quality scores
 ![](Figrues/fastqc_per_sequence_quality_scores_plot.png =250x250)
-
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="150" height="280">
 
 ## 2. Trimming: remove adapter and conduct fastQC after with trim_galore
 
