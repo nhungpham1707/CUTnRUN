@@ -101,7 +101,7 @@ Broad and narrow peak calling with and without control
  ## Peak reproducibility
  Compare peaks from replicates in the same group. In a good experiment replicates from the same group should generate the same peaks. 
  <p>
-    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/H3k4me3_samples_peak_counts.png" width="400", height="400" alt>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/H3k4me3_samples_peak_counts.png" width="500", height="700" alt>
 </p>
 <p>
     <em>Peaks reproducibility in H3k4me3 samples. These samples have the same antibody (anti-H3K4me3) however the seq depth are varied among them hence some samples generate more peaks than others. Most peaks from less depth samples are present in the depth samples, therefore the difference in peaks are not a problem</em>
