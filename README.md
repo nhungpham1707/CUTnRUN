@@ -48,10 +48,9 @@ Alignment
 ![Alignment reads](Figures/alignment_report_w_new_samples.png)
 ![Alignment length](Figures/alignment_length_report.png)
 ## 4. Remove duplicate: remove duplicate and reads < 20bp 
-![](Figures/picard_deduplication.png)
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/picard_deduplication.png" width="400" height="300">
 
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="400" height="500">
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png">
 ## 5. Call peak: broad and narrow peak calling with and without control
 ![Peak numbers](Figures/peaks_number_with_nocontrol_report.png)
 ## 6. Peak analysis: identify differential binding peaks between groups
