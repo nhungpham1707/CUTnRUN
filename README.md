@@ -45,16 +45,12 @@ Sequence quality before and after trimming
 
 Tool: bowtie2, reference genome: hg38
 Alignment 
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/bowtie2_pre_plot.png" width="250" height="380">
-
-
 ![Alignment reads](Figures/alignment_report_w_new_samples.png)
 ![Alignment length](Figures/alignment_length_report.png)
 ## 4. Remove duplicate: remove duplicate and reads < 20bp 
 ![](Figures/picard_deduplication.png)
 
-![Duplicate](Figures/duplication_rate_report.png)
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="250" height="380">
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="250" height="250">
 ## 5. Call peak: broad and narrow peak calling with and without control
 ![Peak numbers](Figures/peaks_number_with_nocontrol_report.png)
 ## 6. Peak analysis: identify differential binding peaks between groups
