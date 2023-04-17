@@ -35,23 +35,10 @@ Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignmen
 
 FastQC read count
 
-![](Figures/fastqc_sequence_counts_plot.png =250x250)
-FastQC mean quality scores
-![](Figures/fastqc_per_base_sequence_quality_plot.png =250x250)
-FastQC per sequence quality scores
-![](Figrues/fastqc_per_sequence_quality_scores_plot.png =250x250)
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/fastqc_per_sequence_quality_scores_plot.png" width="250" height="380">
-
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="250" height="380">
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/QC_figure.png">
-
 ## 2. Trimming: remove adapter and conduct fastQC after with trim_galore
 
-FastQC mean quality scores after trimming
-![](Figures/fastqc_per_base_sequence_quality_plot_after_trimming.png =250x250)
-
-FastQC per sequence quality scores after trimming
-![](Figures/fastqc_per_sequence_quality_scores_plot_after_trimming.png =250x250)
+Sequence quality before and after trimming
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/QC_figure.png">
 
 ## 3. Alignment: map reads to human genome g38
 ### 3.1. alignment 
@@ -65,7 +52,7 @@ Alignment
 ![](Figures/picard_deduplication.png)
 
 ![Duplicate](Figures/duplication_rate_report.png)
-
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="250" height="380">
 ## 5. Call peak: broad and narrow peak calling with and without control
 ![Peak numbers](Figures/peaks_number_with_nocontrol_report.png)
 ## 6. Peak analysis: identify differential binding peaks between groups
