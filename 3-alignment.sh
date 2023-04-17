@@ -63,7 +63,10 @@ for sample_ID in ${sample_IDs[@]}; do
 done
 
 wait
-echo "all done"
+
+# generate report for alignment result 
+multiqc ${align_dir}
+echo "all done alignment"
 
 
      

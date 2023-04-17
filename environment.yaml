@@ -34,3 +34,4 @@ dependencies:
 - bioconda::meme
 - bioconda::ucsc-bedgraphtobigwig
 - bioconda::bedops
+- bioconda::multiqc

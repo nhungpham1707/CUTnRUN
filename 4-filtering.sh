@@ -109,7 +109,10 @@ for sample_ID in ${sample_IDs[@]}; do
 done
 
 wait
-echo "all done"
+
+# generate report 
+multiqc ${rm_dup_dir}
+echo "all done filtering"
 
 
 

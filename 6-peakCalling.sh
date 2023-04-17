@@ -149,4 +149,9 @@ echo "all done for fusion"
 
 # echo "all done for no control"
 
+# generate report
 
+multiqc ${peak_dir}
+multiqc ${peak_no_control_dir}
+
+echo ("all done for peak calling")

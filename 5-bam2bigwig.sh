@@ -46,4 +46,4 @@ for sample_ID in ${sample_IDs[@]}; do
 done
 
 wait
-echo "all done"
+echo "all done bam2bigwig"

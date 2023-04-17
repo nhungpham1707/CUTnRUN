@@ -53,5 +53,8 @@ for sample_ID in ${sample_IDs[@]}; do
 done
 
 wait
-echo "all done"
+
+# generate report
+multiqc ${trim_dir}
+echo "all done trimming"
 

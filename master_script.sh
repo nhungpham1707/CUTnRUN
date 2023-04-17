@@ -231,7 +231,7 @@ bam2big_samples=("${h3k4me3_2[@]}")
 motif_samples=$allT
 # save global variables into files to read in R
 
-
+ulimit -c 0 # to disable coredump  https://community.hpe.com/t5/system-administration/how-to-disable-or-restrict-core-dumps/td-p/4276097#.ZDzoIpNByDU
 ######################################################################
 ############### steps ################################################
 ######################################################################
