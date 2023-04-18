@@ -35,3 +35,4 @@ dependencies:
 - bioconda::ucsc-bedgraphtobigwig
 - bioconda::bedops
 - bioconda::multiqc
+- bioconda::ceas

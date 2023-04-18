@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=intersect
-#SBATCH --output=intersect.out
+#SBATCH --job-name=heatmap
+#SBATCH --output=heatmap_func.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
-#SBATCH --mem=20G
+#SBATCH --mem=5G
 #SBATCH --cpus-per-task=16
 #SBATCH --gres=tmpspace:10G
 #SBATCH --mail-type=FAIL,END
@@ -268,8 +268,8 @@ echo "start running cut and run analysis at $(date)"
 # step 8. generate plots from histone samples to check the reliability of the cut and run experiment
 
 # step 9. Extract overlap peak from replicates in the same condition. Manual change for sample IDs is required prior to run for new set up/ samples 
-echo "-------------------step 9. running peak processing---------------"
-. ./9-peakProcessing.sh 
+# echo "-------------------step 9. running peak processing---------------"
+# . ./9-peakProcessing.sh 
 
 # step 10. Extract peak overlap statistic
 #  echo "-------------------step 10. running peak statistic ---------------"
@@ -280,8 +280,8 @@ echo "-------------------step 9. running peak processing---------------"
 #Rscript 11-diffBind.r
 
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
-# echo "---------------step 12. running heatmap generation---------------"
-# . ./12-heatmap.sh
+echo "---------------step 12. running heatmap generation---------------"
+. ./12-heatmap.sh
 
 # step 13. prepare for motif analysis. Prior to run change sample paths in 10-prepareMotifAnalysis.sh if needed. 
 # echo "--------------------step 13. running motif finding preparation"
@@ -298,3 +298,4 @@ echo "-------------------step 9. running peak processing---------------"
 # . ./SamplesCorrelation.sh
 
 echo "finish cut and run analysis at $(date)"
+
