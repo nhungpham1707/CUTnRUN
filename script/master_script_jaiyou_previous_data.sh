@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=5step
-#SBATCH --output=five_steps_withufc.out
+#SBATCH --job-name=jy5step
+#SBATCH --output=five_steps_jaiyou_withufc_previous_data_increasejava.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
-#SBATCH --mem=90G
+#SBATCH --mem=40G
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=tmpspace:30G
 #SBATCH --mail-type=FAIL,END
@@ -99,12 +99,12 @@
 # source /hpc/pmc_drost/nhung/anaconda3/ect/profile.d/conda.sh
 # conda activate cutnrun_trimgalore
 # adap data_dir and res_dir before running
-data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1
-
+# data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1
+data_dir=/hpc/pmc_drost/PROJECTS/SMARCB1_reexpression_JH/ATAC/previous_samples
 # dir for new data 
 # data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-020--25/
 # result dir
-res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test2
+res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test_jaiyou_previous_sample
 
 qc_dir=${res_dir}/qualityCheck
 mkdir -p $qc_dir
@@ -207,7 +207,7 @@ hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed
 #             "SCC-bulkChIC-PMC-DRO-023"\
 #             "SCC-bulkChIC-PMC-DRO-024"\
 #             "SCC-bulkChIC-PMC-DRO-025")
-sample_IDs=( "bulkChIC-PMC-DRO-011")
+sample_IDs=( "Myc06_luciferase")
 total_sample=${#sample_IDs[@]}
 
 # classify sample for peakcalling
@@ -240,10 +240,11 @@ echo "start running cut and run analysis at $(date)"
 # step 1. sequencing quality check 
 echo "------------------step1. running quality check----------------------"
 . ./1-qualityCheck.sh
-
+# . ./Jaiyou_fastqc.sh
 # # step 2. adapter and bad reads trimming 
 echo "-------------------step 2. running trimming--------------------------"
-. ./2-trimming.sh 
+# . ./Jaiyou-trimming.sh 
+. ./2-trimming.sh
 
 # # step 3. alignment- map to hg38 genome 
 echo "-------------------step 3. running alignment-------------------------"

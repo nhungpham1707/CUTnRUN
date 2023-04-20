@@ -8,7 +8,7 @@
 task () {
   echo $sample_ID
     
-  bam_ID=( $(find $align_dir/${sample_ID} -name "*.bam") )
+  bam_ID=( $(find $align_dir/${sample_ID} -maxdepth 1 -name "*.bam") )
   
   len=${#bam_ID[@]}
   echo $len
@@ -17,7 +17,7 @@ task () {
 
   echo "start sorting and remove dup for $sample_ID at $(date)"
 # sort
-  java -Xmx2g -Djava.io.tmpdir=$new_tmp_dir -jar $picardTool SortSam \
+  java -Xmx12g -Djava.io.tmpdir=$new_tmp_dir -jar $picardTool SortSam \
 	 -I ${bam_ID} \
 	 -O ${sample_rmdup}/${sample_ID}_sorted.bam \
 	 -VALIDATION_STRINGENCY LENIENT \
@@ -28,7 +28,7 @@ task () {
 # Mark and remove duplicates
   echo "start mark dup and remove for $sample_ID at $(date)"
 
-  java -Xmx2g -Djava.io.tmpdir=$new_tmp_dir -jar $picardTool MarkDuplicates \
+  java -Xmx12g -Djava.io.tmpdir=$new_tmp_dir -jar $picardTool MarkDuplicates \
 	 -I ${sample_rmdup}/${sample_ID}_sorted.bam  \
 	 -O ${sample_rmdup}/${sample_ID}_mkrmdup.bam \
 	 -VALIDATION_STRINGENCY LENIENT \

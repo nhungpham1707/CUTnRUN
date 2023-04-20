@@ -26,7 +26,7 @@
 #########
 task () {
 
-  fastq_IDs=( $(find ${data_dir}/$sample_ID -maxdepth 1 -name "*.fastq.gz") )
+  fastq_IDs=( $(find ${data_dir}/$sample_ID -maxdepth 1 -name "*.fq.gz") )
   #declare -p fastq_IDs
 
   len=${#fastq_IDs[@]}

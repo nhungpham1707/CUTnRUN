@@ -27,7 +27,7 @@
       
 ########### Make task function ##############
 task () {
-trim_IDs=( $(find ${trim_dir}/${sample_ID} -name "*.fq.gz") )
+trim_IDs=( $(find ${trim_dir}/${sample_ID} -maxdepth 1 -name "*.fq.gz") )
 
 len=${#trim_IDs[@]}
   
