@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=testS3
-#SBATCH --output=test_s3norm.out
+#SBATCH --job-name=tabtestS3
+#SBATCH --output=test_s3norm_tab_file.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=20G
@@ -26,11 +26,13 @@
 script_directory='/hpc/pmc_drost/nhung/S3norm'
 ### Setting working directory
 
-working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm
+working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
 
 ## Entering working directory
 cd $working_directory
 ### Run S3norm
 # time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t s3norm_1sample.csv
 
-time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/file_list.txt
+# time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/s3norm_file_list.txt
+
+time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/s3norm_tab_file_list.txt
