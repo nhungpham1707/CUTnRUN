@@ -1,0 +1,18 @@
+start running cut and run analysis at Wed Apr 26 15:15:13 CEST 2023
+make bed file for bin size 50
+make bed file for bin size 100
+make bed file for bin size 150
+-----------running 1 out of 2 samples for bin size 50---------------------- 
+-----------running 2 out of 2 samples for bin size 50---------------------- 
+all done for bin size 50
+-----------running 1 out of 2 samples for bin size 100---------------------- 
+-----------running 2 out of 2 samples for bin size 100---------------------- 
+all done for bin size 100
+-----------running 1 out of 2 samples for bin size 150---------------------- 
+-----------running 2 out of 2 samples for bin size 150---------------------- 
+all done for bin size 150
+./binCount.sh: line 27: 3835416 Killed                  multiBigwigSummary BED-file -b ${bigwig_dir}/${sample_ID}.bw -o ${bincount_dir}/${sample_ID}_${bin_size}.npz --BED ${bincount_dir}/hg38_${bin_size}.bed --outRawCounts ${bincount_dir}/${sample_ID}_${bin_size}_scores_per_transcript.tab
+./binCount.sh: line 27: 3835418 Killed                  multiBigwigSummary BED-file -b ${bigwig_dir}/${sample_ID}.bw -o ${bincount_dir}/${sample_ID}_${bin_size}.npz --BED ${bincount_dir}/hg38_${bin_size}.bed --outRawCounts ${bincount_dir}/${sample_ID}_${bin_size}_scores_per_transcript.tab
+./binCount.sh: line 27: 3835420 Killed                  multiBigwigSummary BED-file -b ${bigwig_dir}/${sample_ID}.bw -o ${bincount_dir}/${sample_ID}_${bin_size}.npz --BED ${bincount_dir}/hg38_${bin_size}.bed --outRawCounts ${bincount_dir}/${sample_ID}_${bin_size}_scores_per_transcript.tab
+Number of bins found: 20588588
+Number of bins found: 20588588

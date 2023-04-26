@@ -1,0 +1,63 @@
+read first file name
+head: cannot open '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm/file_list.txt' for reading: No such file or directory
+get bed file
+get first file signals
+
+get all file signals
+tail: cannot open '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm/file_list.txt' for reading: No such file or directory
+get average_ref
+get reference mean
+get output bedgraph file
+cat: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm/file_list.txt: No such file or directory
+/bin/sh: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm/file_list.txt: No such file or directory
+read first file name
+head: cannot open '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm/file_list.txt' for reading: No such file or directory
+get bed file
+cut: .s3norm.NB.neglog10p.bedgraph: No such file or directory
+get first file signals
+
+get all file signals
+tail: cannot open '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm/file_list.txt' for reading: No such file or directory
+get average_ref
+get reference mean
+get output bedgraph file
+cat: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm/file_list.txt: No such file or directory
+mv: cannot stat '*.NBP.info.txt': No such file or directory
+mv: cannot stat '*.NBP.s3norm.bedgraph': No such file or directory
+mv: cannot stat '*.info.txt': No such file or directory
+mv: cannot stat '*.s3norm.bedgraph': No such file or directory
+mv: cannot stat '*.s3norm.NB.neglog10p.bedgraph': No such file or directory
+User provide script_folder: -s /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s3norm/S3norm/src/
+User provide input_file_list: -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm/file_list.txt
+Default reference_method: -m max1
+Default NTmethod: -m non0mean
+Default B_init: -i 2.0
+Default fdr_thresh: -f 0.05
+Default rank_lim: -l 0.001
+Default upperlim: -a 100000
+Default lowerlim: -b 0
+Default p_method: -p z
+Default common_pk_binary: -k 0
+Default common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+Get average reference......
+Get average reference......Done
+Get S3norm normalized read counts......
+Get S3norm normalized read counts......Done
+Get signal track of negative log10 p-value based on a NB background model......
+Get signal track of negative log10 p-value based on a NB background model......Done
+Get NBP average reference......
+Get NBP average reference......Done
+Get S3norm normalized negative log10 p-value based on NB background model......
+Get S3norm normalized negative log10 p-value based on NB background model......Done
+Organize folder......
+Save S3norm_NBP_bedgraph
+Save S3norm_rc_bedgraph
+Save NBP_bedgraph
+Save average_ref_bedgraph
+Organize folder......Done
+
+real	0m19.787s
+user	0m0.239s
+sys	0m0.284s
