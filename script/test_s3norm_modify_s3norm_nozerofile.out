@@ -1,0 +1,128 @@
+read first file name
+get bed file
+get first file signals
+bulkChIC-PMC-DRO-012_binsize_200_nozeroes.bedgraph
+get all file signals
+get average_ref
+get reference mean
+get output bedgraph file
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t bulkChIC-PMC-DRO-012_binsize_200_nozeroes.bedgraph
+User provide outputname: -o bulkChIC-PMC-DRO-012_binsize_200_nozeroes.bedgraph
+User provide NTmethod: -m non0mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+test
+('sig1_raw[:,1] is', array(['778000', '778200', '778400', ..., '67200', '67400', '67600'],
+      dtype='|S10'), 'sig2_raw[:,1] is', array(['778000', '778200', '778400', ..., '67200', '67400', '67600'],
+      dtype='|S10'), 'bin_num is', 4351259)
+('length sig1', 4351259)
+('length sig2', 4351259)
+check peak number in reference
+reference_pk_num
+60954
+check peak number in target
+target_pk_num
+60954
+reference_pk_num
+60954
+target_pk_num
+60954
+use FDR common peaks
+use FDR common background
+common peaks number:
+60954
+common background number:
+4290305
+check!!!
+4351259
+Iteration 0 | dFB: 0.089844
+[0.0717749872334028, 1.9101556793358787]
+Iteration 10 | dFB: 0.055220
+[0.7171685285235216, 1.1365906404281476]
+Iteration 20 | dFB: 0.000330
+[0.9992246439112288, 1.0003311124396657]
+converged!
+used: [A, B]
+[0.9999878533577327, 1.000005185677603]
+transformation: B: 1.000005185677603; A: 0.9999878533577327
+read first file name
+get bed file
+cut: bulkChIC-PMC-DRO-012_binsize_200_nozeroes.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+get first file signals
+bulkChIC-PMC-DRO-012_binsize_200_nozeroes.bedgraph
+get all file signals
+get average_ref
+get reference mean
+get output bedgraph file
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t bulkChIC-PMC-DRO-012_binsize_200_nozeroes.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o bulkChIC-PMC-DRO-012_binsize_200_nozeroes.bedgraph.NBP
+User provide NTmethod: -m non0mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/S3norm/src//s3norm.py", line 477, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/S3norm/src//s3norm.py", line 474, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'bulkChIC-PMC-DRO-012_binsize_200_nozeroes.bedgraph.s3norm.NB.neglog10p.bedgraph'
+mv: cannot stat '*.NBP.info.txt': No such file or directory
+mv: cannot stat '*.NBP.s3norm.bedgraph': No such file or directory
+mv: cannot stat '*.s3norm.NB.neglog10p.bedgraph': No such file or directory
+User provide script_folder: -s /hpc/pmc_drost/nhung/S3norm/src/
+User provide input_file_list: -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bincount_bamcoverage_fixbinsize//nozeroes_files.txt
+Default reference_method: -m max1
+Default NTmethod: -m non0mean
+Default B_init: -i 2.0
+Default fdr_thresh: -f 0.05
+Default rank_lim: -l 0.001
+Default upperlim: -a 100000
+Default lowerlim: -b 0
+Default p_method: -p z
+Default common_pk_binary: -k 0
+Default common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('Filelist is', '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bincount_bamcoverage_fixbinsize//nozeroes_files.txt')
+('script_folder is', '/hpc/pmc_drost/nhung/S3norm/src/')
+Get average reference......
+Get average reference......Done
+Get S3norm normalized read counts......
+Get S3norm normalized read counts......Done
+Get signal track of negative log10 p-value based on a NB background model......
+Get signal track of negative log10 p-value based on a NB background model......Done
+Get NBP average reference......
+Get NBP average reference......Done
+Get S3norm normalized negative log10 p-value based on NB background model......
+Get S3norm normalized negative log10 p-value based on NB background model......Done
+Organize folder......
+Save S3norm_NBP_bedgraph
+Save S3norm_rc_bedgraph
+Save NBP_bedgraph
+Save average_ref_bedgraph
+Organize folder......Done
+
+real	1m2.072s
+user	1m41.891s
+sys	0m8.120s

@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=tabtestS3
-#SBATCH --output=test_s3norm_tab_file.out
+#SBATCH --job-name=testS3
+#SBATCH --output=test_s3norm_modify_s3norm_nozero4file_with_automatic_python_filtering_augmented2.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
-#SBATCH --mem=20G
+#SBATCH --mem=90G
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=tmpspace:30G
 #SBATCH --mail-type=FAIL,END
@@ -26,13 +26,23 @@
 script_directory='/hpc/pmc_drost/nhung/S3norm'
 ### Setting working directory
 
-working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
-
+# working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm_example_file
+# working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/
+working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bincount_bamcoverage_fixbinsize/
 ## Entering working directory
 cd $working_directory
 ### Run S3norm
 # time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t s3norm_1sample.csv
 
 # time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/s3norm_file_list.txt
+# time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/s3norm_file_list_fix_bin_size.txt
+# time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/s3norm_file_test.txt
+# time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/s3norm_tab_file_list.txt
 
-time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/s3norm_tab_file_list.txt
+# test with nonzeros file
+# time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/nozeroes_files.txt
+time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/nozeros_4file.txt
+
+# test s3norm on their data
+
+# time python $script_directory'/src/s3norm_pipeline.py' -s $script_directory'/src/' -t ${working_directory}/file_list.txt
