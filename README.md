@@ -4,10 +4,23 @@ Nhung Pham, 14-03-2023
 # Data description
 
 # Set up
+## All steps 
 All scripts were run on HPC with slurm in a conda environment. A similar environment can be created from environment.yaml. The file is arranged to have trim_galore installed before other packages to prevent version conflict. 
 
 ```
 conda env create -f environment.yaml
+```
+## Data normalization step
+A different conda environment was used for the data normalization step since the data normalization package s3norm requires python 2.7
+
+```
+conda create --name s3norm --file spec-file-s3norm.txt
+```
+
+To install s3norm 
+
+```
+git clone https://github.com/guanjue/S3norm.git
 ```
 # Scripts and running time overview
 
