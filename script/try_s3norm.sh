@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=testS3
-#SBATCH --output=test_s3norm_modify_s3norm_nozero4file_with_automatic_python_filtering_augmented2.out
+#SBATCH --output=test_s3norm_modify_s3norm_nozero4file_with_automatic_python_filtering_augmented_addone.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -28,7 +28,11 @@ script_directory='/hpc/pmc_drost/nhung/S3norm'
 
 # working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/s3norm_example_file
 # working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/
-working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bincount_bamcoverage_fixbinsize/
+# path on 29-04-2023
+# working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bincount_bamcoverage_fixbinsize/
+
+# dir to modified bedgraph 
+working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/
 ## Entering working directory
 cd $working_directory
 ### Run S3norm

@@ -119,7 +119,7 @@ Get S3norm normalized negative log10 p-value based on NB background model......D
 Organize folder......
 Save S3norm_NBP_bedgraph
 Save S3norm_rc_bedgraph
-Save NBP_bedgraph
+rawave NBP_bedgraph
 Save average_ref_bedgraph
 Organize folder......Done
 

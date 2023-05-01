@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=jy5step
-#SBATCH --output=five_steps_jaiyou_withufc_previous_data_increasejava.out
+#SBATCH --output=five_steps_jaiyou_withufc_previous_data_2ndrun.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=40G

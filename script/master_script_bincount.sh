@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=bincount
-#SBATCH --output=bincount_makewindown.out
+#SBATCH --job-name=s3norm
+#SBATCH --output=s3norm_all_samples.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -302,6 +302,22 @@ echo "start running cut and run analysis at $(date)"
 
 # convert bam file to bed
 # . ./bam2bed.sh
-. ./binCount.sh
+# . ./binCount.sh
+
+
+##### Data normalization ###############
+## prepare bedgraph files with the same bin size for all samples
+# . ./bincount.sh # need to test
+
+## modify bedgraph file to remove rows with 0 count in all samples. If 0 values are more than 10% in the sample, s3norm will fail (log0 is inf), hence add 1 to these 0 values in all samples
+# python modifyBedgraphForS3norm.py # already test - worked!
+
+# start normalization on the modified bedgraph files
+
+s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
+s3norm_working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/
+
+. ./run_s3norm.sh
+
 echo "finish cut and run analysis at $(date)"
 
