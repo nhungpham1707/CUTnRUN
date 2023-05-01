@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=s3norm
-#SBATCH --output=s3norm_all_samples.out
+#SBATCH --output=s3norm_allsamples2.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G

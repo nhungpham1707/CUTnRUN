@@ -16,3 +16,4 @@ cd $s3norm_working_directory
 ### Run S3norm
 time python $s3norm_script_directory'/src/s3norm_pipeline.py' -s $s3norm_script_directory'/src/' -t ${s3norm_working_directory}/nozeros_all_samples.txt
 
+time python $s3norm_script_directory'/src/s3norm_pipeline.py' -s $s3norm_script_directory'/src/' -t ${s3norm_working_directory}/no_zeros_testsamples.txt
