@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=test_FH
-#SBATCH --output=test_FH_normalization.out
+#SBATCH --job-name=frip
+#SBATCH --output=frip.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=20G
@@ -186,31 +186,31 @@ hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed
 #                "SCC-bulkChIC-PMC-DRO-024"\
 #                "SCC-bulkChIC-PMC-DRO-025")
 
-# sample_IDs=( "bulkChIC-PMC-DRO-011" \
-#             "bulkChIC-PMC-DRO-012"\
-#             "bulkChIC-PMC-DRO-013"\
-#             "bulkChIC-PMC-DRO-014"\
-#             "bulkChIC-PMC-DRO-015"\
-#             "bulkChIC-PMC-DRO-016"\
-#             "SCC-bulkChIC-PMC-DRO-002"\
-#             "SCC-bulkChIC-PMC-DRO-005"\
-#             "SCC-bulkChIC-PMC-DRO-008"\
-#             "SCC-ChIC-PMC-DRO-L5"\
-#             "SCC-ChIC-PMC-DRO-LH"\
-#             "SCC-ChIC-PMC-DRO-F1"\
-#             "SCC-ChIC-PMC-DRO-F5"\
-#             "SCC-ChIC-PMC-DRO-FH"\
-#             "SCC-ChIC-PMC-DRO-T1"\
-#             "SCC-ChIC-PMC-DRO-T5"\
-#             "SCC-ChIC-PMC-DRO-TH"\ 
-#             "SCC-ChIC-PMC-DRO-L1"\ 
-#             "SCC-bulkChIC-PMC-DRO-020"\
-#             "SCC-bulkChIC-PMC-DRO-021"\
-#             "SCC-bulkChIC-PMC-DRO-022"\
-#             "SCC-bulkChIC-PMC-DRO-023"\
-#             "SCC-bulkChIC-PMC-DRO-024"\
-#             "SCC-bulkChIC-PMC-DRO-025")
-sample_IDs=( "bulkChIC-PMC-DRO-011" "SCC-ChIC-PMC-DRO-T1")
+sample_IDs=( "bulkChIC-PMC-DRO-011" \
+            "bulkChIC-PMC-DRO-012"\
+            "bulkChIC-PMC-DRO-013"\
+            "bulkChIC-PMC-DRO-014"\
+            "bulkChIC-PMC-DRO-015"\
+            "bulkChIC-PMC-DRO-016"\
+            "SCC-bulkChIC-PMC-DRO-002"\
+            "SCC-bulkChIC-PMC-DRO-005"\
+            "SCC-bulkChIC-PMC-DRO-008"\
+            "SCC-ChIC-PMC-DRO-L5"\
+            "SCC-ChIC-PMC-DRO-LH"\
+            "SCC-ChIC-PMC-DRO-F1"\
+            "SCC-ChIC-PMC-DRO-F5"\
+            "SCC-ChIC-PMC-DRO-FH"\
+            "SCC-ChIC-PMC-DRO-T1"\
+            "SCC-ChIC-PMC-DRO-T5"\
+            "SCC-ChIC-PMC-DRO-TH"\ 
+            "SCC-ChIC-PMC-DRO-L1"\ 
+            "SCC-bulkChIC-PMC-DRO-020"\
+            "SCC-bulkChIC-PMC-DRO-021"\
+            "SCC-bulkChIC-PMC-DRO-022"\
+            "SCC-bulkChIC-PMC-DRO-023"\
+            "SCC-bulkChIC-PMC-DRO-024"\
+            "SCC-bulkChIC-PMC-DRO-025")
+# sample_IDs=( "bulkChIC-PMC-DRO-011" "SCC-ChIC-PMC-DRO-T1")
 total_sample=${#sample_IDs[@]}
 
 # classify sample for peakcalling
@@ -317,10 +317,13 @@ echo "start running cut and run analysis at $(date)"
 s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 # s3norm_working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/
 
-. ./run_s3norm.sh
+# . ./run_s3norm.sh
 
 # calculate frip 
-# . ./Calculate_FRiP.sh
+frip_dir=${res_dir}/FRiP
+mkdir -p $frip_dir
+
+. ./6-Calculate_FRiP.sh
 
 echo "finish cut and run analysis at $(date)"
 

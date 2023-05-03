@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=frip
-#SBATCH --output=frip.out
+#SBATCH --job-name=peak
+#SBATCH --output=peak_analyis.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=20G
@@ -113,8 +113,10 @@
 # 		- 1 metric text file
 #
 #   Data normalization with s3norm 
-#       Input data: bedgraph files with fix bin size and no 0 values. 
+#       Input data: 
+#       - bedgraph files with fix bin size and no 0 values. 
 #       (The input files can be generated from bam file after removing dups in modifybedgraph.sh)
+#       - a sample_info.txt file. Make sure the columns are proper tab delimited and keep an empty line at the end of the file
 #       Outputs: 
 #       - S3norm_rc_bedgraph: normalize counts. Use for EdgeR, DESeq2 or differential peak calling
 #       - NBP_bedgraph: The negative log10 p-value of S3norm normalized read counts based on a negative binomial background model
@@ -268,12 +270,12 @@ sample_IDs=( "bulkChIC-PMC-DRO-014"\
 total_sample=${#sample_IDs[@]}
 
 # classify sample for peakcalling
-tfe3="SCC-ChIC-PMC-DRO-T1 SCC-ChIC-PMC-DRO-T5 bulkChIC-PMC-DRO-016 SCC-bulkChIC-PMC-DRO-008"
-#luciferase="SCC-ChIC-PMC-DRO-L1 SCC-ChIC-PMC-DRO-L5 bulkChIC-PMC-DRO-014 SCC-bulkChIC-PMC-DRO-005"
-#fusion="SCC-ChIC-PMC-DRO-F1 SCC-ChIC-PMC-DRO-F5 bulkChIC-PMC-DRO-015 SCC-bulkChIC-PMC-DRO-002"
+tfe3=( "SCC-ChIC-PMC-DRO-T1" "SCC-ChIC-PMC-DRO-T5" "bulkChIC-PMC-DRO-016" "SCC-bulkChIC-PMC-DRO-008")
+luciferase=( "SCC-ChIC-PMC-DRO-L1" "SCC-ChIC-PMC-DRO-L5" "bulkChIC-PMC-DRO-014" "SCC-bulkChIC-PMC-DRO-005")
+fusion=( "SCC-ChIC-PMC-DRO-F1" "SCC-ChIC-PMC-DRO-F5" "bulkChIC-PMC-DRO-015" "SCC-bulkChIC-PMC-DRO-002")
 # new luc and fusion samples
-luciferase="SCC-bulkChIC-PMC-DRO-020 SCC-bulkChIC-PMC-DRO-021 SCC-bulkChIC-PMC-DRO-022"
-fusion="SCC-bulkChIC-PMC-DRO-023 SCC-bulkChIC-PMC-DRO-024 SCC-bulkChIC-PMC-DRO-025"
+# luciferase="SCC-bulkChIC-PMC-DRO-020 SCC-bulkChIC-PMC-DRO-021 SCC-bulkChIC-PMC-DRO-022"
+# fusion="SCC-bulkChIC-PMC-DRO-023 SCC-bulkChIC-PMC-DRO-024 SCC-bulkChIC-PMC-DRO-025"
 
 #allT="$tfe3 $luciferase $fusion"
 tfe3C=$res_dir/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
@@ -341,8 +343,8 @@ echo "start running cut and run analysis at $(date)"
 #                   AFTER PEAKCALLING
 
 # step 9. Extract overlap peak from replicates in the same condition
-# echo "-------------------step 9. running peak processing---------------"
-# . ./9-peakProcessing.sh 
+echo "-------------------step 9. running peak overlap---------------"
+. ./9-GetPeakOverlap.sh # few minutes
 
 # step 10. Extract peak overlap statistic
 #  echo "-------------------step 10. running peak statistic ---------------"

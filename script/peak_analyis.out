@@ -1,0 +1,45 @@
+start running cut and run analysis at Wed May  3 11:00:41 CEST 2023
+-------------------step 9. running peak processing---------------
+-----------running 1 out of 4 luc samples---------------------- 
+-----------running 2 out of 4 luc samples---------------------- 
+-----------running 3 out of 4 luc samples---------------------- 
+-----------running 4 out of 4 luc samples---------------------- 
+***** WARNING: File /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-L5/narrow/SCC-ChIC-PMC-DRO-L5_paired_control_peaks.narrowPeak has inconsistent naming convention for record:
+KI270736.1	127303	127568	SCC-ChIC-PMC-DRO-L5_paired_control_peak_1	57	.	5.74014	10.9392	5.77649	207
+
+***** WARNING: File /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-L5/narrow/SCC-ChIC-PMC-DRO-L5_paired_control_peaks.narrowPeak has inconsistent naming convention for record:
+KI270736.1	127303	127568	SCC-ChIC-PMC-DRO-L5_paired_control_peak_1	57	.	5.74014	10.9392	5.77649	207
+
+-----------running 1 out of 1 tfe3 samples---------------------- 
+-----------running 2 out of 1 tfe3 samples---------------------- 
+-----------running 3 out of 1 tfe3 samples---------------------- 
+-----------running 4 out of 1 tfe3 samples---------------------- 
+***** WARNING: File /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_control_peaks.narrowPeak has inconsistent naming convention for record:
+chr1	12386123	12386537	SCC-ChIC-PMC-DRO-T5_paired_control_peak_1	33	.	5.2283	7.89767	3.31687	327
+
+***** WARNING: File /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T5/narrow/SCC-ChIC-PMC-DRO-T5_paired_control_peaks.narrowPeak has inconsistent naming convention for record:
+chr1	12386123	12386537	SCC-ChIC-PMC-DRO-T5_paired_control_peak_1	33	.	5.2283	7.89767	3.31687	327
+
+-----------running 1 out of 1 fusion samples---------------------- 
+-----------running 2 out of 1 fusion samples---------------------- 
+-----------running 3 out of 1 fusion samples---------------------- 
+-----------running 4 out of 1 fusion samples---------------------- 
+***** WARNING: File /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-015/narrow/bulkChIC-PMC-DRO-015_paired_control_peaks.narrowPeak has inconsistent naming convention for record:
+GL000008.2	224	999	bulkChIC-PMC-DRO-015_paired_control_peak_1	21	.	2.2341	4.20155	2.13239	292
+
+***** WARNING: File /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/bulkChIC-PMC-DRO-015/narrow/bulkChIC-PMC-DRO-015_paired_control_peaks.narrowPeak has inconsistent naming convention for record:
+GL000008.2	224	999	bulkChIC-PMC-DRO-015_paired_control_peak_1	21	.	2.2341	4.20155	2.13239	292
+
+-----------running 1 out of 6 histone samples---------------------- 
+-----------running 2 out of 6 histone samples---------------------- 
+-----------running 3 out of 6 histone samples---------------------- 
+-----------running 4 out of 6 histone samples---------------------- 
+-----------running 5 out of 6 histone samples---------------------- 
+-----------running 6 out of 6 histone samples---------------------- 
+***** WARNING: File /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-TH/narrow/SCC-ChIC-PMC-DRO-TH_paired_peaks.narrowPeak has inconsistent naming convention for record:
+KI270438.1	104045	104340	SCC-ChIC-PMC-DRO-TH_paired_peak_1	101	.	8.91842	14.5911	10.1583	96
+
+***** WARNING: File /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/SCC-ChIC-PMC-DRO-TH/narrow/SCC-ChIC-PMC-DRO-TH_paired_peaks.narrowPeak has inconsistent naming convention for record:
+KI270438.1	104045	104340	SCC-ChIC-PMC-DRO-TH_paired_peak_1	101	.	8.91842	14.5911	10.1583	96
+
+finish cut and run analysis at Wed May  3 11:00:43 CEST 2023

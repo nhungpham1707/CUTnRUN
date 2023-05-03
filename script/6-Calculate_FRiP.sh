@@ -44,34 +44,31 @@
 # echo ${sample_IDs[@]} > ${frip_dir}/sample_IDs.txt
 
 
-res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
-peak_no_control_dir=${res_dir}/peakCalling_nocontrol
-frip_dir=${res_dir}/FRiP
-mkdir -p $frip_dir
-rm_dup_dir=$res_dir/rm_dup
+# res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
+# peak_no_control_dir=${res_dir}/peakCalling_nocontrol
+# frip_dir=${res_dir}/FRiP
+# mkdir -p $frip_dir
+# rm_dup_dir=$res_dir/rm_dup
 
-task() {
-# reads_in_peaks=$(bedtools sort -i ${peak_no_control_dir}/${sample_ID}/narrow/*.narrowPeak | bedtools merge -i stdin | bedtools intersect -u -nonamecheck -a ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam -b stdin -ubam | samtools view -c)
-# 5407614
-
-total_reads=$(samtools view -c ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam) ;
-# 5407614/18278174
-}
 total_sample=${#sample_IDs[@]}
 n=0
-# read_in_peak_list=()
+read_in_peak_list=()
 total_reads_list=()
 for sample_ID in ${sample_IDs[@]};do
   n=$((n+1))
   echo "-----------running $n out of $total_sample samples---------------"
-    # read_in_peak_list=(${read_in_peak_list[@]} $reads_in_peaks)
-    total_reads=$(samtools view -c ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam) ;
-    total_reads_list=(${total_reads_list[@]} $total_reads) 
+
+  reads_in_peaks=$(bedtools sort -i ${peak_no_control_dir}/${sample_ID}/narrow/*.narrowPeak | bedtools merge -i stdin | bedtools intersect -u -nonamecheck -a ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam -b stdin -ubam | samtools view -c)
+  read_in_peak_list=(${read_in_peak_list[@]} $reads_in_peaks)
+
+  total_reads=$(samtools view -c ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam) 
+  total_reads_list=(${total_reads_list[@]} $total_reads) 
+
 done
 
 echo ${total_reads_list[@]} > ${frip_dir}/total_reads.txt 
-# echo ${read_in_peak_list[@]} > ${frip_dir}/read_in_peak.txt
-# echo ${sample_IDs[@]} > ${frip_dir}/sample_IDs.txt
+echo ${read_in_peak_list[@]} > ${frip_dir}/read_in_peak.txt
+echo ${sample_IDs[@]} > ${frip_dir}/sample_IDs.txt
 echo "all done for FRiP calculation"
 
 
