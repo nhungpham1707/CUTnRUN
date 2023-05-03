@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=peak
-#SBATCH --output=peak_analyis.out
+#SBATCH --job-name=plotR
+#SBATCH --output=plot_frip_in_R.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
-#SBATCH --mem=20G
+#SBATCH --mem=10G
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=tmpspace:30G
 #SBATCH --mail-type=FAIL,END
@@ -320,8 +320,8 @@ echo "start running cut and run analysis at $(date)"
 # . ./5-bam2bigwig.sh
 
 # step 6. Calculate fraction of read in peak (FRiP)
-# echo "-------------------step 6. running frip calculation-------- "
-#. ./6-Calculate_FRiP.sh
+echo "-------------------step 6. running frip calculation-------- "
+. ./6-Calculate_FRiP.sh
 
 # step 7. Normalize data
 # echo "-------------------step 7. running data normalization------ "
@@ -343,8 +343,8 @@ echo "start running cut and run analysis at $(date)"
 #                   AFTER PEAKCALLING
 
 # step 9. Extract overlap peak from replicates in the same condition
-echo "-------------------step 9. running peak overlap---------------"
-. ./9-GetPeakOverlap.sh # few minutes
+# echo "-------------------step 9. running peak overlap---------------"
+# . ./9-GetPeakOverlap.sh # few minutes
 
 # step 10. Extract peak overlap statistic
 #  echo "-------------------step 10. running peak statistic ---------------"

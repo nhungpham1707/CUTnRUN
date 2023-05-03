@@ -3,24 +3,6 @@
 # ref https://www.biostars.org/p/337872/
 # Nhung 02 05 2023
 # conda env cutnrun_trimgalore
-#conda install -c bioconda subread 
-
-# res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
-# peak_no_control_dir=${res_dir}/peakCalling_nocontrol
-# frip_dir=${res_dir}/FRiP
-# mkdir -p $frip_dir
-# rm_dup_dir=$res_dir/rm_dup
-
-# sample_ID="bulkChIC-PMC-DRO-011"
-# sample_IDs=( "bulkChIC-PMC-DRO-011" "SCC-ChIC-PMC-DRO-T1")
-
-# task() {
-# reads_in_peaks=$(bedtools sort -i ${peak_no_control_dir}/${sample_ID}/narrow/*.narrowPeak | bedtools merge -i stdin | bedtools intersect -u -nonamecheck -a ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam -b stdin -ubam | samtools view -c)
-# # 5407614
-
-# total_reads=$(samtools view -c ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam) ;
-# # 5407614/18278174
-# }
 
 # total_sample=${#sample_IDs[@]}
 # n=0
@@ -30,46 +12,20 @@
 #   n=$((n+1))
 #   echo "-----------running $n out of $total_sample samples---------------"
 
-#    task "$sample_ID" 
-#     read_in_peak_list=(${read_in_peak_list[@]} $reads_in_peaks)
-#     total_reads_list=(${total_reads_list[@]} $total_reads) &
+#   reads_in_peaks=$(bedtools sort -i ${peak_no_control_dir}/${sample_ID}/narrow/*.narrowPeak | bedtools merge -i stdin | bedtools intersect -u -nonamecheck -a ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam -b stdin -ubam | samtools view -c)
+#   read_in_peak_list=(${read_in_peak_list[@]} $reads_in_peaks)
+
+#   total_reads=$(samtools view -c ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam) 
+#   total_reads_list=(${total_reads_list[@]} $total_reads) 
+
 # done
 
-# wait
-
-# echo "all done for FRiP calculation"
-
-# echo ${total_reads[@]} > ${frip_dir}/total_reads.txt 
+# echo ${total_reads_list[@]} > ${frip_dir}/total_reads.txt 
 # echo ${read_in_peak_list[@]} > ${frip_dir}/read_in_peak.txt
 # echo ${sample_IDs[@]} > ${frip_dir}/sample_IDs.txt
 
-
-# res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
-# peak_no_control_dir=${res_dir}/peakCalling_nocontrol
-# frip_dir=${res_dir}/FRiP
-# mkdir -p $frip_dir
-# rm_dup_dir=$res_dir/rm_dup
-
-total_sample=${#sample_IDs[@]}
-n=0
-read_in_peak_list=()
-total_reads_list=()
-for sample_ID in ${sample_IDs[@]};do
-  n=$((n+1))
-  echo "-----------running $n out of $total_sample samples---------------"
-
-  reads_in_peaks=$(bedtools sort -i ${peak_no_control_dir}/${sample_ID}/narrow/*.narrowPeak | bedtools merge -i stdin | bedtools intersect -u -nonamecheck -a ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam -b stdin -ubam | samtools view -c)
-  read_in_peak_list=(${read_in_peak_list[@]} $reads_in_peaks)
-
-  total_reads=$(samtools view -c ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam) 
-  total_reads_list=(${total_reads_list[@]} $total_reads) 
-
-done
-
-echo ${total_reads_list[@]} > ${frip_dir}/total_reads.txt 
-echo ${read_in_peak_list[@]} > ${frip_dir}/read_in_peak.txt
-echo ${sample_IDs[@]} > ${frip_dir}/sample_IDs.txt
+# calculate and plot frip in R
+export FIGURE_DIR_VARIABLE=$figure_dir
+export FRIP_DIR_VARIABLE=$frip_dir
+Rscript plot_FRiP.R
 echo "all done for FRiP calculation"
-
-
-
