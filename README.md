@@ -32,6 +32,9 @@ The cut and run data were analyzed based on published protocol with modification
 |2. Trimming|  ~40 mins (1 sample) |2-trimming.sh |
 |3. Alignment|  ~ 30 mins - 2 hours (1 sample), 8 hours (18 samples) | 3-alignment.sh |
 |4. Remove duplicate | ~ 20 mins (1 sample) | 4-filtering.sh |
+|5. Convert bam file to bigwig| | 5-bam2bigwig.sh|
+|6. Calculate FRiP| ~ 40 mins (24 samples) | 6-Calculate_FRiP.sh|
+|7. Data normalization| ~ 4 hours (24 samples) | 7-run_s3norm.sh  |
 |5. Call peak|  ~ 1 hour (18 samples) | 5-peakCalling.sh |
 |6. Peak analysis| | 6-DiffBind.R  |
 |7. Peak annotation | | | |
@@ -40,6 +43,7 @@ The cut and run data were analyzed based on published protocol with modification
 |10. Prepare for motif finding|  a few seconds |10-prepareMotifAnalysis.sh |
 |11. Find motif | | | |
 |12. Analyze motif | | | | 
+
 
 # Steps description
 
