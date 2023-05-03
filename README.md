@@ -101,7 +101,7 @@ Aligned data after removign duplicates and short reads were converted to bigwig 
 FRiP is calculated as the divison of reads in peaks to total reads in a sample.
 
 <p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/FRiP.png" width="400" height = "300" alt>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/FRIP.png" width="400" height = "300" alt>
     </p>
     <p> 
     <em>FRiP and total reads. Samples have various total reads and also various FRiP. These data need to be normalized before conducting any comparison or peak calling.</em>
