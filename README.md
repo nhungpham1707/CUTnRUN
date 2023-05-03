@@ -104,9 +104,10 @@ FRiP is calculated as the divison of reads in peaks to total reads in a sample.
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/FRIP.png" width="400" height = "300" alt>
     </p>
     <p> 
-    <em>FRiP and total reads. Samples have various total reads and also various FRiP. These data need to be normalized before conducting any comparison or peak calling.</em>
+    <em>FRiP and total reads. The total reads range from 726,760 to 101,240,888 reads and FRiP score from 0.02 to 0.4. Data have a large variability in both sequencing depth and signal-to-noise ratio. These data need to be normalized before conducting any comparison or peak calling.</em>
 </p>
 
+## 7. Normalize data using s3norm 
 ## Replicates correlation
         To check the correlation between replicates from the same group. A good experiment should have high correlation between replicates.
 <p>
