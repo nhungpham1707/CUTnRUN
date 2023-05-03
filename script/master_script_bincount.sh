@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=s3norm
-#SBATCH --output=s3norm_allsamples2.out
+#SBATCH --job-name=test_FH
+#SBATCH --output=test_FH_normalization.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
-#SBATCH --mem=90G
+#SBATCH --mem=20G
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=tmpspace:30G
 #SBATCH --mail-type=FAIL,END
@@ -315,9 +315,12 @@ echo "start running cut and run analysis at $(date)"
 # start normalization on the modified bedgraph files
 
 s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
-s3norm_working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/
+# s3norm_working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/
 
 . ./run_s3norm.sh
+
+# calculate frip 
+# . ./Calculate_FRiP.sh
 
 echo "finish cut and run analysis at $(date)"
 

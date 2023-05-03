@@ -47,3 +47,7 @@ df6[3].plot.hist(ax=axes[2,1], bins=np.arange(min_, max_ + binwidth, binwidth), 
 df7[3].plot.hist(ax=axes[3,0], bins=np.arange(min_, max_ + binwidth, binwidth), log=True, ylim=(0,10**4)).set_title('original_counts')
 df8[3].plot.hist(ax=axes[3,1], bins=np.arange(min_, max_ + binwidth, binwidth), log=True, ylim=(0,10**4)).set_title('normalized')
 plt.savefig('/home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/Figures/histograms.png') 
+
+df1 = pd.read_csv('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bincount_bamcoverage_fixbinsize/SCC-ChIC-PMC-DRO-T5_binsize_200_nozeroes_augmented_addone.bedgraph', sep='\t', comment='t', header=None)
+df1[3].plot.hist(ax=axes[1,0], bins=np.arange(min_, max_ + binwidth, binwidth), log=True, ylim=(0,10**7)).set_title('original_counts')
+plt.savefig('/home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/Figures/histograms.png')
