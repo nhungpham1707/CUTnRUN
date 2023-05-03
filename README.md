@@ -64,7 +64,6 @@ Remove adapter and conduct fastQC after with trim_galore
         </p>
 
 ## 3. Alignment: map reads to human genome g38
-### 3.1. alignment 
 Reads were aligned to hg38 genome.
  <p>
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_report_w_new_samples.png" width="600" height="500" alt>
@@ -93,6 +92,19 @@ Reads were aligned to hg38 genome.
     </p>
     <p> 
     <em>Duplication rate report</em>
+</p>
+
+## 5. Convert bam files to bigwig 
+Aligned data after removign duplicates and short reads were converted to bigwig to be used in IGV for visualization
+
+## 6. Calculate fraction of read in peak (FRiP) to check signal to noise ratio among samples
+FRiP is calculated as the divison of reads in peaks to total reads in a sample.
+
+<p>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/FRiP.png" width="400" height = "300" alt>
+    </p>
+    <p> 
+    <em>FRiP and total reads. Samples have various total reads and also various FRiP. These data need to be normalized before conducting any comparison or peak calling.</em>
 </p>
 
 ## Replicates correlation
