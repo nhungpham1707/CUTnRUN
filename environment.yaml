@@ -36,3 +36,4 @@ dependencies:
 - bioconda::bedops
 - bioconda::multiqc
 - bioconda::ceas
+- bioconda::bioconductor-diffBind

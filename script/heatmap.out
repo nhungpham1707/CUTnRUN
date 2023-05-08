@@ -1,0 +1,6 @@
+start running cut and run analysis at Mon May  8 15:50:36 CEST 2023
+-----------running 1 out of 4 fusionvshg38 samples---------------------- 
+-----------running 2 out of 4 fusionvshg38 samples---------------------- 
+-----------running 3 out of 4 fusionvshg38 samples---------------------- 
+-----------running 4 out of 4 fusionvshg38 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/SCC-ChIC-PMC-DRO-F1.bw /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/SCC-ChIC-PMC-DRO-F5.bw /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/bulkChIC-PMC-DRO-015.bw /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/SCC-bulkChIC-PMC-DRO-002.bw

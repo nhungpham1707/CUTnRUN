@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=plotR
-#SBATCH --output=plot_frip_in_R.out
+#SBATCH --job-name=diffbind
+#SBATCH --output=diffbind.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
-#SBATCH --mem=10G
+#SBATCH --mem=90G
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=tmpspace:30G
 #SBATCH --mail-type=FAIL,END
@@ -80,6 +80,9 @@
 #       --outdir: MACS2 will save all output files into speficied folder for this option
 #       -n: The prefix string for output files
 #       -q: The false discovery rate cut-off. default 0.01 
+
+
+# diffBind version 2.28
 #==================================================================
 
 #==================================================================
@@ -199,6 +202,9 @@ mkdir -p $figure_dir
 
 bincount_dir=${res_dir}/bincount_window
 mkdir -p $bincount_dir
+
+diffBind_res_dir=${res_dir}/diffBind_analysis
+mkdir -p $diffBind_res_dir
 # tool dir
 
 bowtie2Index=/hpc/pmc_drost/SOURCES/Genomes/human/bowtie2/human_gencode37_hg38
@@ -216,6 +222,7 @@ fasta_genome_dir=/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_a
 
 # hg38 genes list directory to generate heatmap
 hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed 
+ 
 # sample_Ids was generated as text file from ls filename.txt from the data_dir
 
 # sample_IDs=( "bulkChIC-PMC-DRO-011" \
@@ -291,7 +298,7 @@ motif_samples=$allT
 
 #==================================================================
 #                           RUNNING ANALYSIS
-# turn of core file generation 
+# turn of core file generation to not overload home dir
  ulimit -c 0 # to disable coredump  https://community.hpe.com/t5/system-administration/how-to-disable-or-restrict-core-dumps/td-p/4276097#.ZDzoIpNByDU
 
 echo "start running cut and run analysis at $(date)"
@@ -320,11 +327,12 @@ echo "start running cut and run analysis at $(date)"
 # . ./5-bam2bigwig.sh
 
 # step 6. Calculate fraction of read in peak (FRiP)
-echo "-------------------step 6. running frip calculation-------- "
-. ./6-Calculate_FRiP.sh
+# echo "-------------------step 6. running frip calculation-------- "
+# . ./6-Calculate_FRiP.sh
 
 # step 7. Normalize data
 # echo "-------------------step 7. running data normalization------ "
+# s3norm_sample_file_name='no_zeros_testsamples.txt'
 #. ./7-run_s3norm.sh 
 #==================================================================
 
@@ -342,21 +350,24 @@ echo "-------------------step 6. running frip calculation-------- "
 #==================================================================
 #                   AFTER PEAKCALLING
 
-# step 9. Extract overlap peak from replicates in the same condition
+# step 9. Extract overlap peak from replicates in the same condition. # modify variable names if using for different experiments before run
 # echo "-------------------step 9. running peak overlap---------------"
-# . ./9-GetPeakOverlap.sh # few minutes
+# . ./9-GetPeakOverlap.sh # few minutes 
 
 # step 10. Extract peak overlap statistic
 #  echo "-------------------step 10. running peak statistic ---------------"
 #  Rscript 10-Peak_statistic.R
 
-# step 11. Identify peaks that are differentially enriched between two conditions
-# echo "---------------step 11. running peak differential analysis---------------"
-#Rscript 11-diffBind.r
+# step 11. Identify peaks that are differentially enriched between conditions. Modify variable names if using for different experiments before run
+echo "---------------step 11. running peak differential analysis---------------"
+export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_dir
+export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
+Rscript DiffBind_analysis.R
 
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"
 # . ./12-heatmap.sh
+. ./12-heatmap.sh "fusionvshg38" "$hg38_dir" "${fusion[@]}"
 
 # step 13. prepare for motif analysis. Prior to run change sample paths in 10-prepareMotifAnalysis.sh if needed. 
 # echo "--------------------step 13. running motif finding preparation"

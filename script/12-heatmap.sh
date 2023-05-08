@@ -99,7 +99,7 @@ cores=8
 #  ${bigwig_dir}/SCC-ChIC-PMC-DRO-TH.bw\
 #  --skipZeros -o ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -p $cores
 
-plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -out ${bigwig_dir}/histone_kmean_hg38.png --sortUsing sum --zMin -3 --zMax 3 --kmeans 3
+# plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -out ${bigwig_dir}/histone_kmean_hg38.png --sortUsing sum --zMin -3 --zMax 3 --kmeans 3
 
 # computeMatrix reference-point --referencePoint TSS \
 #   -b 1000 -a 1000 \
@@ -109,19 +109,20 @@ plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_hg38.mat.gz -out ${bigwig_dir}/
 #  ${bigwig_dir}/bulkChIC-PMC-DRO-013.bw\
 #  --skipZeros -o ${bigwig_dir}/matrix_gene_histone_2_hg38.mat.gz -p $cores
 
-plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_2_hg38.mat.gz -out ${bigwig_dir}/histone_2_kmean_hg38.png --sortUsing sum --zMin -3 --zMax 3 --kmeans 3
+# plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_2_hg38.mat.gz -out ${bigwig_dir}/histone_2_kmean_hg38.png --sortUsing sum --zMin -3 --zMax 3 --kmeans 3
 
 # plot heatmap for replicates in the same group
 
 #heatmap function 
-# input: 1. save name of heatmap (i.e. tfe3vshg38), 2. dir path to reference genome and 3. array of sample IDs to plot heatmap
+# input: 1. save name of heatmap (i.e. tfe3vshg38), 2. dir path to the reference genome and 3. array of sample IDs to plot heatmap
 # ref https://askubuntu.com/questions/674333/how-to-pass-an-array-as-function-argument
 
 # heatmap () {
 #   local savename="$1"
 #   local refpath="$2"
-#   shift
+#   shift 2
 #   local sample_IDs=("$@") 
+  
 #   declare -a bw_IDs=()
 #   total_sample=${#sample_IDs[@]}
 #   n=0
@@ -133,6 +134,12 @@ plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_2_hg38.mat.gz -out ${bigwig_dir
 
 #   done
 # echo ${bw_IDs[@]}
+# # computeMatrix reference-point --referencePoint TSS \
+# #   -b 1000 -a 1000 \
+# #   -R $refpath \
+# # -S ${bw_IDs[@]} \
+# #  --skipZeros -o ${figure_dir}/matrix_${savename}.mat.gz -p 8
+
 # computeMatrix reference-point --referencePoint TSS \
 #   -b 1000 -a 1000 \
 #   -R $refpath \
@@ -143,7 +150,38 @@ plotHeatmap -m ${bigwig_dir}/matrix_gene_histone_2_hg38.mat.gz -out ${bigwig_dir
 
 # }
 
-# heatmap "tfe3vshg38" "${hg38_dir}" "${tfe3[@]}"
+# heatmap "tfe3vshg38" "$hg38_dir" "${tfe3[@]}"
+
+  savename="$1"
+  refpath="$2"
+  shift 2
+  sample_IDs=("$@") 
+  
+  declare -a bw_IDs=()
+  total_sample=${#sample_IDs[@]}
+  n=0
+  for sample_ID in ${sample_IDs[@]}; do
+    n=$((n+1))
+    echo "-----------running $n out of $total_sample $savename samples---------------------- "
+
+    bw_IDs+=( "${bigwig_dir}/${sample_ID}.bw" )
+
+  done
+echo ${bw_IDs[@]}
+# computeMatrix reference-point --referencePoint TSS \
+#   -b 1000 -a 1000 \
+#   -R $refpath \
+# -S ${bw_IDs[@]} \
+#  --skipZeros -o ${figure_dir}/matrix_${savename}.mat.gz -p 8
+
+computeMatrix reference-point --referencePoint TSS \
+  -b 1000 -a 1000 \
+  -R $refpath \
+-S ${bw_IDs[@]} \
+ --skipZeros -o ${figure_dir}/matrix_${savename}.mat.gz -p 8
+
+plotHeatmap -m ${figure_dir}/matrix_${savename}.mat.gz -out ${figure_dir}/${savename}.png --sortUsing sum
+
 
 
 # computeMatrix reference-point --referencePoint TSS \

@@ -39,7 +39,7 @@ The cut and run data were analyzed based on published protocol with modification
 |6. Peak analysis| | 6-DiffBind.R  |
 |7. Peak annotation | | | |
 |8. Transform bam file to bigwig | | ~ 2-3 hours |8-bam2bigwig.sh|
-|9. Heatmap generation| ~30 minutes |9-heatmap.sh |
+|9. Heatmap generation| ~30 minutes (4 samples) |9-heatmap.sh |
 |10. Prepare for motif finding|  a few seconds |10-prepareMotifAnalysis.sh |
 |11. Find motif | | | |
 |12. Analyze motif | | | | 
