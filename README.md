@@ -138,12 +138,19 @@ Broad and narrow peak calling with and without control
 </p>
  
  <p>
-    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/tfe3_fusion_luc_samples_peak_counts.png" width="400", height="400" alt>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/peak_counts_after_s3norm_normalize.png" width="400", height="400" alt>
 </p>
 <p>
     <em>Peaks reproducibility in Tfe3, luc and fusion samples. Samples in the same group have the same antibody but different seq depth. However, only less than 40% of peak are overlapped among replicates. </em>
 </p>
  
+        <p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/tfe3_fusion_luc_samples_peak_counts.png" width="400", height="400" alt>
+</p>
+<p>
+    <em>Peaks reproducibility in Tfe3, luc and fusion samples. Peak counts among replicates after normalizing data with s3norm are better than that from raw data. </em>
+</p>
+        
 ## 6. Peak analysis: identify differential binding peaks between groups
         
         
