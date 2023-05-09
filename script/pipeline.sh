@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=diffbind
-#SBATCH --output=diffbind.out
+#SBATCH --job-name=peak_overlap
+#SBATCH --output=peak_overlap.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -174,7 +174,11 @@ frip_dir=${res_dir}/FRiP
 mkdir -p $frip_dir
 
 s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
-s3norm_working_directory=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/
+s3norm_working_directory=${res_dir}/modify_bedgraph
+mkdir -p $s3norm_working_directory
+
+clean_normalize_dir=$s3norm_working_directory/remove_zero
+mkdir -p $clean_normalize_dir
 
 peak_dir=${res_dir}/peakCalling
 mkdir -p ${peak_dir}
@@ -333,7 +337,7 @@ echo "start running cut and run analysis at $(date)"
 # step 7. Normalize data
 # echo "-------------------step 7. running data normalization------ "
 # s3norm_sample_file_name='no_zeros_testsamples.txt'
-#. ./7-run_s3norm.sh 
+# . ./7-run_s3norm.sh 
 #==================================================================
 
 #==================================================================
@@ -351,23 +355,22 @@ echo "start running cut and run analysis at $(date)"
 #                   AFTER PEAKCALLING
 
 # step 9. Extract overlap peak from replicates in the same condition. # modify variable names if using for different experiments before run
-# echo "-------------------step 9. running peak overlap---------------"
-# . ./9-GetPeakOverlap.sh # few minutes 
+echo "-------------------step 9. running peak overlap---------------"
+. ./9-GetPeakOverlap.sh # few minutes 
 
 # step 10. Extract peak overlap statistic
 #  echo "-------------------step 10. running peak statistic ---------------"
 #  Rscript 10-Peak_statistic.R
 
 # step 11. Identify peaks that are differentially enriched between conditions. Modify variable names if using for different experiments before run
-echo "---------------step 11. running peak differential analysis---------------"
-export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_dir
-export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
-Rscript DiffBind_analysis.R
+# echo "---------------step 11. running peak differential analysis---------------"
+# export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_dir
+# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
+# Rscript DiffBind_analysis.R
 
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"
-# . ./12-heatmap.sh
-. ./12-heatmap.sh "fusionvshg38" "$hg38_dir" "${fusion[@]}"
+# . ./12-heatmap.sh "fusionvshg38" "$hg38_dir" "${fusion[@]}"
 
 # step 13. prepare for motif analysis. Prior to run change sample paths in 10-prepareMotifAnalysis.sh if needed. 
 # echo "--------------------step 13. running motif finding preparation"
