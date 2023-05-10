@@ -154,7 +154,8 @@ cores=8
 
   savename="$1"
   refpath="$2"
-  shift 2
+  sample_dir="$3"
+  shift 3
   sample_IDs=("$@") 
   
   declare -a bw_IDs=()
@@ -164,7 +165,7 @@ cores=8
     n=$((n+1))
     echo "-----------running $n out of $total_sample $savename samples---------------------- "
 
-    bw_IDs+=( "${bigwig_dir}/${sample_ID}.bw" )
+    bw_IDs+=( "${sample_dir}/${sample_ID}.bw" )
 
   done
 echo ${bw_IDs[@]}

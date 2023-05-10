@@ -17,11 +17,10 @@ library(dplyr)
 
 # get paths from environment
 res_dir <- Sys.getenv("DIFFBIND_RESULT_DIR_VARIABLE")
+save_name <- Sys.getenv("NAME_VARIABLE")
 sample_sheet_name_dir <- Sys.getenv("SAMPLE_SHEET_DIR_VARIABLE")
 samples <- read.csv(sample_sheet_name_dir, sep = ';')
 head(samples)
-
-try({
 
 # create dba object for further analysis
 print ("start peak")
@@ -32,7 +31,7 @@ peaks  <- dba.blacklist(peaks, greylist = FALSE)
 ## Consensus peaks sets and counting reads
 olap.rate <- dba.overlap(peaks, mode=DBA_OLAP_RATE)
 reso <- 600
-png(paste0(res_dir,'/', Sys.Date() ,'-overlapping_peaks.png'), width = 1200 * reso/72, height = 700 * reso/72, units ="px", res = reso)
+png(paste0(res_dir,'/', Sys.Date(), '-', save_name ,'-overlapping_peaks.png'), width = 1200 * reso/72, height = 700 * reso/72, units ="px", res = reso)
 plot(olap.rate, xlab="Overlapping samples", ylab="Overlapping peaks", type="l", ylim = c(0, max(olap.rate)))
 text(x = seq(1,length(olap.rate), by=1) , y = olap.rate - 500, labels=as.character(olap.rate))
 dev.off()
@@ -40,16 +39,16 @@ dev.off()
 #consensus.peaks[,0] # 47 sequences 
 # counting overlapping peaks
 peak_counts <- dba.count(peaks)
-save.image(paste0(Sys.Date(),"-peak_count_DiffBind.RData"))      
+save.image(paste0(res_dir, '/', Sys.Date(),'-', save_name,"-peak_count_DiffBind.RData"))      
 # plot correlation 
 
 reso <- 1200
-png(filename = paste0(res_dir,'/', Sys.Date() ,'-diffbind_correlation.png') , width = 1200 * reso/72, height = 700 * reso/72, units ="px", res = reso)
+png(filename = paste0(res_dir,'/', Sys.Date() ,'-', save_name,'-diffbind_correlation.png') , width = 1200 * reso/72, height = 700 * reso/72, units ="px", res = reso)
 plot(peak_counts, mode=DBA_ID)
 dev.off()
 
 # plot pca
-png(filename = paste0(res_dir,'/', Sys.Date() ,'-diffbind_PCA.png') , width = 1200 * reso/72, height = 700 * reso/72, units ="px", res = reso)
+png(filename = paste0(res_dir,'/', Sys.Date() , '-', save_name, '-diffbind_PCA.png') , width = 1200 * reso/72, height = 700 * reso/72, units ="px", res = reso)
 dba.plotPCA(peak_counts, label = DBA_TREATMENT)
 dev.off()
 
@@ -158,5 +157,4 @@ bed_contrast3 <- res_deseq_contrast3_df %>%
         dplyr::select(seqnames, start, end)
 write.table(bed_contrast3, file=paste0(res_dir,'/', Sys.Date() ,'-diffBind_contrast3.bed'), sep="\t", quote=F, row.names=F, col.names=F)
 
-})
-save.image(paste0(Sys.Date(),"-DiffBind.RData"))      
+save.image(paste0(res_dir, '/', Sys.Date(),"-DiffBind.RData"))      

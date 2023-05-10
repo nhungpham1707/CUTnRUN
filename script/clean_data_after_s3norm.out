@@ -1,0 +1,87 @@
+start running cut and run analysis at Tue May  9 19:14:21 CEST 2023
+-------------------step 7. running data normalization------ 
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-025_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-bulkChIC-PMC-DRO-025_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-022_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-bulkChIC-PMC-DRO-022_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-TH_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-ChIC-PMC-DRO-TH_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-LH_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-ChIC-PMC-DRO-LH_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-024_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-bulkChIC-PMC-DRO-024_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-021_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-bulkChIC-PMC-DRO-021_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+('/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph', 'bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph.NBP.s3norm.bedgraph')
+                   0       1       2         3
+3               chr1   54600   54800  0.103564
+4               chr1   54800   55000  0.103564
+19              chr1   87000   87200  0.103564
+39              chr1  275600  275800  0.103564
+47              chr1  629400  629600  0.103564
+48              chr1  629600  629800  0.327788
+50              chr1  630000  630200  0.327788
+52              chr1  630400  630600  0.103564
+53              chr1  630600  630800  0.103564
+55              chr1  631000  631200  0.327788
+57              chr1  631400  631600  0.103564
+58              chr1  631600  631800  0.327788
+60              chr1  632000  632200  0.327788
+64              chr1  632800  633000  0.103564
+65              chr1  633000  633200  0.668542
+66              chr1  633200  633400  0.507957
+67              chr1  633400  633600  0.668542
+68              chr1  633600  633800  0.507957
+69              chr1  633800  634000  0.103564
+70              chr1  634000  634200  0.668542
+71              chr1  634200  634400  0.668542
+72              chr1  634400  634600  0.327788
+73              chr1  634600  634800  0.668542
+74              chr1  634800  635000  0.507957
+75              chr1  635000  635200  0.327788
+76              chr1  635200  635400  0.103564
+95              chr1  778000  778200  0.103564
+96              chr1  778200  778400  0.103564
+97              chr1  778400  778600  0.601795
+98              chr1  778600  778800  0.269814
+...              ...     ...     ...       ...
+13784024  KI270757.1   53400   53600  0.103564
+13784041  KI270757.1   60000   60200  0.234002
+13784042  KI270757.1   60200   60400  0.353317
+13784043  KI270757.1   60400   60600  0.396682
+13784044  KI270757.1   60600   60800  0.420587
+13784045  KI270757.1   60800   61000  0.103564
+13784046  KI270757.1   61000   61200  0.103564
+13784047  KI270757.1   61200   61400  0.289728
+13784048  KI270757.1   61400   61600  0.258446
+13784049  KI270757.1   61600   61800  0.592223
+13784050  KI270757.1   61800   62000  0.507957
+13784051  KI270757.1   62000   62200  0.103564
+13784064  KI270757.1   64600   64800  0.192860
+13784065  KI270757.1   64800   65000  0.103564
+13784066  KI270757.1   65000   65200  0.103564
+13784067  KI270757.1   65200   65400  0.103564
+13784068  KI270757.1   65400   65600  0.327788
+13784069  KI270757.1   65600   65800  0.377705
+13784070  KI270757.1   65800   66000  0.651485
+13784071  KI270757.1   66000   66200  0.583772
+13784072  KI270757.1   66200   66400  0.284536
+13784073  KI270757.1   66400   66600  0.316267
+13784074  KI270757.1   66600   66800  0.420587
+13784075  KI270757.1   66800   67000  0.396682
+13784076  KI270757.1   67000   67200  0.728870
+13784077  KI270757.1   67200   67400  0.627619
+13784078  KI270757.1   67400   67600  0.420587
+13784079  KI270757.1   67600   67800  0.103564
+13784083  KI270757.1   68400   68600  0.103564
+13784084  KI270757.1   68600   68800  0.103564
+
+[10362621 rows x 4 columns]
+finish cut and run analysis at Tue May  9 19:26:19 CEST 2023
