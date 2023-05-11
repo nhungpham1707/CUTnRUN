@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=motif
-#SBATCH --output=motif.out
+#SBATCH --job-name=diffBind
+#SBATCH --output=test_diffBind_script.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=10G
@@ -144,6 +144,11 @@
 #       - bedgraph files in S3norm_NBP_bedgraph (change file extension name in 6b-peakCalling_normalize.sh if needed)
 #       Outputs:
 #       - narrow peak files
+
+
+# MOtif
+# faste genome for findmotif , gft genome for peakanotation 
+# ref http://homer.ucsd.edu/homer/introduction/update.html
 #==================================================================
 
 #==================================================================
@@ -362,53 +367,24 @@ echo "start running cut and run analysis at $(date)"
 #  echo "-------------------step 10. running peak statistic ---------------"
 #  Rscript 10-Peak_statistic.R
 
-# step 11. Identify peaks that are differentially enriched between conditions. Modify variable names if using for different experiments before run
+# step 11. Identify peaks that are differentially enriched between conditions. Modify variable names if using for different experiments before run 
 # echo "---------------step 11. running peak differential analysis---------------"
-# export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_dir
-# # export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
+# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
 # export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_sample_sheet_s3norm_data_no_control.csv
-# export NAME_VARIABLE=no_control
-
+# export SAVE_NAME_VARIABLE=no_control
+# diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
+# mkdir -p $diffBind_res_sub_dir
+# export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
 # Rscript DiffBind_analysis.R
 
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"
-# refpath=$diffBind_res_dir/2023-05-10-diffBind_contrast1_s3norm_fold1.bed
-#  . ./12-heatmap.sh "fusionvsDEtfe3vsfusion" "$refpath" "${fusion[@]}"
-#  . ./12-heatmap.sh "tfe3vsDEtfe3vsfusion" "$refpath" "${tfe3[@]}"
-#  . ./12-heatmap.sh "luciferasevsDEtfe3vsfusion" "$refpath" "${luciferase[@]}"
-
-# refpath2=$diffBind_res_dir/2023-05-10-diffBind_contrast3_s3norm_fold1.bed
-# . ./12-heatmap.sh "fusionvsDElucvsfusion" "$refpath2" "${fusion[@]}"
-#  . ./12-heatmap.sh "tfe3vsDElucvsfusion" "$refpath2" "${tfe3[@]}"
-#  . ./12-heatmap.sh "luciferasevsDElucvsfusion" "$refpath2" "${luciferase[@]}"
-
-# refpath3=$diffBind_res_dir/2023-05-10-diffBind_contrast3_s3norm_fold1_without_control.bed
-# . ./12-heatmap.sh "fusionvsDEtfe3vsfusion_wocontrol" "$refpath3" "${fusion[@]}"
-#  . ./12-heatmap.sh "tfe3vsDEtfe3vsfusion_wocontrol" "$refpath3" "${tfe3[@]}"
-#  . ./12-heatmap.sh "luciferasevsDEtfe3vsfusion_wocontrol" "$refpath3" "${luciferase[@]}"
-
-# refpath4=$diffBind_res_dir/2023-05-10-diffBind_contrast3_s3norm_fold1_without_control.bed
-# sample_dir=${bigwig_dir[@]}
-# . ./12-heatmap.sh "fusionvsDElucvsfusion_wocontrol" "$refpath4" "sample_dir" "${fusion[@]}"
-#  . ./12-heatmap.sh "tfe3vsDElucvsfusion_wocontrol" "$refpath4" "sample_dir" "${tfe3[@]}"
-#  . ./12-heatmap.sh "luciferasevsDElucvsfusion_wocontrol" "$refpath4" "sample_dir" "${luciferase[@]}"
-
-samples_list=("fusion_merged" "tfe3_merged" "luciferase_merged" )
-sample_dir=${merged_bigwig_dir[@]}
-# refpath=$diffBind_res_dir/diffBind_luc_vs_fusion_w_control.bed
-refpath=$diffBind_res_dir/diffBind_tfe3_vs_fusion_w_control.bed
-savename=merg_Sample_vsDEtfevsfusion_wcontrol
-. ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
-
-
-# refpath3=$diffBind_res_dir/2023-05-10-diffBind_contrast3_s3norm_fold1_without_control.bed
-# . ./12-heatmap.sh "mergSamplevsDEtfe3vsfusion_wocontrol" "$refpath3" "$sample_dir" "${merge_samples[@]}"
- 
-
-# refpath2=$diffBind_res_dir/2023-05-10-diffBind_contrast3_s3norm_fold1.bed
-# . ./12-heatmap.sh "mergSamplevsDElucvsfusion" "$refpath2" "$sample_dir" "${merge_samples[@]}"
- 
+# samples_list=("fusion_merged" "tfe3_merged" "luciferase_merged" )
+# sample_dir=${merged_bigwig_dir[@]}
+# # refpath=$diffBind_res_dir/diffBind_luc_vs_fusion_w_control.bed
+# refpath=$diffBind_res_dir/diffBind_tfe3_vs_fusion_w_control.bed
+# savename=merg_Sample_vsDEtfevsfusion_wcontrol
+# . ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
 
 # step 13. prepare for motif analysis. Prior to run change sample paths in 10-prepareMotifAnalysis.sh if needed. 
 # echo "--------------------step 13. running motif finding preparation"
@@ -418,11 +394,13 @@ savename=merg_Sample_vsDEtfevsfusion_wcontrol
 # echo "-------------------step 14. running motif finding----------------------"
 # cd ${motif}
 # findMotifsGenome.pl ${diffBind_res_dir}/2023-05-10-diffBind_contrast3_s3norm_fold1.bed $fasta_genome_dir ${motif_dir} -size 200 -len 8 
-findMotifsGenome.pl ${diffBind_res_dir}/diffBind_luc_vs_fusion_w_control.bed $fasta_genome_dir ${motif_dir} -size 200 -len 8  
+# findMotifsGenome.pl ${diffBind_res_dir}/diffBind_luc_vs_fusion_w_control.bed $fasta_genome_dir ${motif_dir} -size 200 -len 8  
+
 # . ./14-motifFinding.sh 
 
 # step 15. motif annotation 
 # step 16. peak annnotation
+# Rscript Peak_annotation.R
 # step 17. super enhancer finding 
 # step. check sample correlation
 # . ./SamplesCorrelation.sh
