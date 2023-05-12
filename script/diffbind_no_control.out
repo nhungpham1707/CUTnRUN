@@ -1,0 +1,185 @@
+start running cut and run analysis at Fri May 12 17:02:12 CEST 2023
+---------------step 11. running peak differential analysis---------------
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+ >>> DiffBind 3.4.11
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+                  SampleID Tissue Factor      Condition Treatment Replicate
+1      SCC-ChIC-PMC-DRO-T1 kidney   tfe3 anti-tfe3-1000    round1         1
+2      SCC-ChIC-PMC-DRO-T5 kidney   tfe3  anti-tfe3-500    round1         2
+3 SCC-bulkChIC-PMC-DRO-008 kidney   tfe3 anti-tfe3-1000    round2         3
+4     bulkChIC-PMC-DRO-016 kidney   tfe3 anti-tfe3-1000    round3         4
+5      SCC-ChIC-PMC-DRO-F1 kidney fusion anti-tfe3-1000    round1         1
+6      SCC-ChIC-PMC-DRO-F5 kidney fusion  anti-tfe3-500    round1         2
+                                                                                                                  bamReads
+1           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam
+2           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam
+3 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam
+4         /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam
+5           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam
+6           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam
+                                                                                                                 Peaks
+1      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-T1_normalize.narrowPeak
+2      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-T5_normalize.narrowPeak
+3 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-bulkChIC-PMC-DRO-008_normalize.narrowPeak
+4     /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/bulkChIC-PMC-DRO-016_normalize.narrowPeak
+5      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-F1_normalize.narrowPeak
+6      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-F5_normalize.narrowPeak
+  PeakCaller
+1        bed
+2        bed
+3        bed
+4        bed
+5        bed
+6        bed
+[1] "start peak"
+SCC-ChIC-PMC-DRO-T1 kidney tfe3 anti-tfe3-1000 round1 1 bed
+SCC-ChIC-PMC-DRO-T5 kidney tfe3 anti-tfe3-500 round1 2 bed
+SCC-bulkChIC-PMC-DRO-008 kidney tfe3 anti-tfe3-1000 round2 3 bed
+bulkChIC-PMC-DRO-016 kidney tfe3 anti-tfe3-1000 round3 4 bed
+SCC-ChIC-PMC-DRO-F1 kidney fusion anti-tfe3-1000 round1 1 bed
+SCC-ChIC-PMC-DRO-F5 kidney fusion anti-tfe3-500 round1 2 bed
+SCC-bulkChIC-PMC-DRO-002 kidney fusion anti-tfe3-1000 round2 3 bed
+bulkChIC-PMC-DRO-015 kidney fusion anti-tfe3-1000 round3 4 bed
+SCC-ChIC-PMC-DRO-L1 kidney luciferase anti-tfe3-1000 round1 1 bed
+SCC-ChIC-PMC-DRO-L5 kidney luciferase anti-tfe3-500 round1 2 bed
+SCC-bulkChIC-PMC-DRO-005 kidney luciferase anti-tfe3-1000 round2 3 bed
+bulkChIC-PMC-DRO-014 kidney luciferase anti-tfe3-1000 round3 4 bed
+SCC-bulkChIC-PMC-DRO-020 kidney luciferase_sfpq anti-SFPQ round4 1 bed
+SCC-bulkChIC-PMC-DRO-021 kidney luciferase_h3k4me1 anti-H3K4Me1 round4 1 bed
+SCC-bulkChIC-PMC-DRO-022 kidney luciferase_h3k27ac anti-H3K27ac round4 1 bed
+SCC-bulkChIC-PMC-DRO-023 kidney fusion_sfpq anti-SFPQ round4 1 bed
+SCC-bulkChIC-PMC-DRO-024 kidney fusion_h3k4me1 anti-H3K4Me1 round4 1 bed
+SCC-bulkChIC-PMC-DRO-025 kidney fusion_h3k27_ac anti-H3K27ac round4 1 bed
+[1] "start applying black list"
+Genome detected: Hsapiens.UCSC.hg38
+Applying blacklist...
+Removed: 554 of 109515 intervals.
+Removed: 363 merged (of 87266) and 64 (of 10420) consensus.
+Computing summits...
+Re-centering peaks...
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.

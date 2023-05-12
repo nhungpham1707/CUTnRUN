@@ -24,8 +24,39 @@
 # echo ${read_in_peak_list[@]} > ${frip_dir}/read_in_peak.txt
 # echo ${sample_IDs[@]} > ${frip_dir}/sample_IDs.txt
 
+
+
+## after normalization
+normalize_sample_count=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_rc_bedgraph/
+# normalize_sample_count_NBP=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/
+normalize_peak_file=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling
+normalize_peak_calling=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling
+total_sample=${#sample_IDs[@]}
+n=0
+read_in_peak_list=()
+total_reads_list=()
+for sample_ID in ${sample_IDs[@]};do
+  n=$((n+1))
+  echo "-----------running $n out of $total_sample samples---------------"
+
+#   reads_in_peaks=$(bedtools sort -i $normalize_peak_file/${sample_ID}*.narrowPeak | bedtools merge -i stdin | bedtools intersect -u -nonamecheck -a $normalize_sample_count/${sample_ID}*.bedgraph -b stdin -ubam | samtools view -c)
+reads_in_peaks=$(awk '{ sum += $5; } END { print sum; }' "$@" $normalize_peak_calling/${sample_ID}*.narrowPeak )
+  read_in_peak_list=(${read_in_peak_list[@]} $reads_in_peaks)
+
+  total_reads=$(awk '{ sum += $4; } END { print sum; }' "$@" $normalize_sample_count/${sample_ID}*.bedgraph)
+  total_reads_list=(${total_reads_list[@]} $total_reads) 
+
+#   total_reads_nbp= $(awk '{ sum += $4; } END { print sum; }' "$@" $normalize_sample_count/${sample_ID}*.bedgraph) 
+done
+save_name=normalize
+echo ${total_reads_list[@]} > ${frip_dir}/${save_name}_total_reads.txt 
+echo ${read_in_peak_list[@]} > ${frip_dir}/${save_name}_read_in_peak.txt
+echo ${sample_IDs[@]} > ${frip_dir}/${save_name}_sample_IDs.txt
+
+
 # calculate and plot frip in R
 export FIGURE_DIR_VARIABLE=$figure_dir
 export FRIP_DIR_VARIABLE=$frip_dir
+export SAVE_NAME_VARIABLE=$save_name
 Rscript plot_FRiP.R
 echo "all done for FRiP calculation"

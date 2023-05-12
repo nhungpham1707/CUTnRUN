@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=diffBind
-#SBATCH --output=test_diffBind_script.out
+#SBATCH --job-name=diffbindC
+#SBATCH --output=diffbind_with_control.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
-#SBATCH --mem=10G
+#SBATCH --mem=20G
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=tmpspace:30G
 #SBATCH --mail-type=FAIL,END
@@ -261,6 +261,29 @@ hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed
 # sample_IDs=( "bulkChIC-PMC-DRO-011" "SCC-ChIC-PMC-DRO-T1")
 #
 # sample IDs for peakCalling after normalization (remove samples that are used as control for data normalization)
+# sample_IDs=( "bulkChIC-PMC-DRO-014"\
+#             "bulkChIC-PMC-DRO-015"\
+#             "bulkChIC-PMC-DRO-016"\
+#             "SCC-bulkChIC-PMC-DRO-002"\
+#             "SCC-bulkChIC-PMC-DRO-005"\
+#             "SCC-bulkChIC-PMC-DRO-008"\
+#             "SCC-ChIC-PMC-DRO-L5"\
+#             "SCC-ChIC-PMC-DRO-LH"\
+#             "SCC-ChIC-PMC-DRO-F1"\
+#             "SCC-ChIC-PMC-DRO-F5"\
+#             "SCC-ChIC-PMC-DRO-FH"\
+#             "SCC-ChIC-PMC-DRO-T1"\
+#             "SCC-ChIC-PMC-DRO-T5"\
+#             "SCC-ChIC-PMC-DRO-TH"\ 
+#             "SCC-ChIC-PMC-DRO-L1"\ 
+#             "SCC-bulkChIC-PMC-DRO-020"\
+#             "SCC-bulkChIC-PMC-DRO-021"\
+#             "SCC-bulkChIC-PMC-DRO-022"\
+#             "SCC-bulkChIC-PMC-DRO-023"\
+#             "SCC-bulkChIC-PMC-DRO-024"\
+#             "SCC-bulkChIC-PMC-DRO-025")
+
+# sample IDs for peakCalling after normalization (remove samples that are used as control for data normalization and "SCC-ChIC-PMC-DRO-FH"\)
 sample_IDs=( "bulkChIC-PMC-DRO-014"\
             "bulkChIC-PMC-DRO-015"\
             "bulkChIC-PMC-DRO-016"\
@@ -271,7 +294,6 @@ sample_IDs=( "bulkChIC-PMC-DRO-014"\
             "SCC-ChIC-PMC-DRO-LH"\
             "SCC-ChIC-PMC-DRO-F1"\
             "SCC-ChIC-PMC-DRO-F5"\
-            "SCC-ChIC-PMC-DRO-FH"\
             "SCC-ChIC-PMC-DRO-T1"\
             "SCC-ChIC-PMC-DRO-T5"\
             "SCC-ChIC-PMC-DRO-TH"\ 
@@ -300,7 +322,7 @@ fusionC=$res_dir/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
 h3k4me3=( "SCC-ChIC-PMC-DRO-FH" "SCC-ChIC-PMC-DRO-LH" "SCC-ChIC-PMC-DRO-TH" )
 h3k4me3_2=( "bulkChIC-PMC-DRO-011" "bulkChIC-PMC-DRO-012" "bulkChIC-PMC-DRO-013") 
 h3k4me3_all=( "SCC-ChIC-PMC-DRO-FH" "SCC-ChIC-PMC-DRO-LH" "SCC-ChIC-PMC-DRO-TH" "bulkChIC-PMC-DRO-011" "bulkChIC-PMC-DRO-012" "bulkChIC-PMC-DRO-013")
-
+h3k4me3_all_after_normalize=(  "SCC-ChIC-PMC-DRO-LH" "SCC-ChIC-PMC-DRO-TH")
 # define what samples to find motif 
 motif_samples=$allT
 #==================================================================
@@ -368,14 +390,14 @@ echo "start running cut and run analysis at $(date)"
 #  Rscript 10-Peak_statistic.R
 
 # step 11. Identify peaks that are differentially enriched between conditions. Modify variable names if using for different experiments before run 
-# echo "---------------step 11. running peak differential analysis---------------"
-# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
+echo "---------------step 11. running peak differential analysis---------------"
+export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
 # export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_sample_sheet_s3norm_data_no_control.csv
-# export SAVE_NAME_VARIABLE=no_control
-# diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
-# mkdir -p $diffBind_res_sub_dir
-# export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
-# Rscript DiffBind_analysis.R
+export SAVE_NAME_VARIABLE=with_control
+diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
+mkdir -p $diffBind_res_sub_dir
+export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
+Rscript DiffBind_analysis.R
 
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"

@@ -72,58 +72,58 @@
 # For data that was normalized with s3norm 
 ## LUCIFERASE
 # get sample paths
-declare -a luc_IDs=()
-total_sample=${#luciferase[@]}
-n=0
-for sample_ID in ${luciferase[@]}; do
-    n=$((n+1))
-    echo "-----------running $n out of $total_sample luc samples---------------------- "
+# declare -a luc_IDs=()
+# total_sample=${#luciferase[@]}
+# n=0
+# for sample_ID in ${luciferase[@]}; do
+#     n=$((n+1))
+#     echo "-----------running $n out of $total_sample luc samples---------------------- "
 
-    luc_IDs+=( "${normalize_peak_dir}/${sample_ID}*.narrowPeak" )
+#     luc_IDs+=( "${normalize_peak_dir}/${sample_ID}*.narrowPeak" )
 
-done
-# generate overlap report
-bedtools intersect -a ${luc_IDs[0]} -b ${luc_IDs[@]:1} -names ${luc_IDs[@]:1} -sorted > ${peak_analysis_dir}/normalize_luciferase_intersect.txt
+# done
+# # generate overlap report
+# bedtools intersect -a ${luc_IDs[0]} -b ${luc_IDs[@]:1} -names ${luc_IDs[@]:1} -sorted > ${peak_analysis_dir}/normalize_luciferase_intersect.txt
 
-bedtools multiinter -i ${luc_IDs[@]} -header > ${peak_analysis_dir}/normalize_luciferase_multiinter.txt
+# bedtools multiinter -i ${luc_IDs[@]} -header > ${peak_analysis_dir}/normalize_luciferase_multiinter.txt
 
-## TFE3
-declare -a tfe3_IDs=()
-total_sample=${#tfe3[@]}
-n=0
-for sample_ID in ${tfe3[@]}; do
-    n=$((n+1))
-    echo "-----------running $n out of $total_sample tfe3 samples---------------------- "
+# ## TFE3
+# declare -a tfe3_IDs=()
+# total_sample=${#tfe3[@]}
+# n=0
+# for sample_ID in ${tfe3[@]}; do
+#     n=$((n+1))
+#     echo "-----------running $n out of $total_sample tfe3 samples---------------------- "
 
-    tfe3_IDs+=( "${normalize_peak_dir}/${sample_ID}*.narrowPeak" )
+#     tfe3_IDs+=( "${normalize_peak_dir}/${sample_ID}*.narrowPeak" )
 
-done
-# generate overlap report
-bedtools intersect -a ${tfe3_IDs[0]} -b ${tfe3_IDs[@]:1} -names ${tfe3_IDs[@]:1} -sorted > ${peak_analysis_dir}/normalize_tfe3_intersect.txt
+# done
+# # generate overlap report
+# bedtools intersect -a ${tfe3_IDs[0]} -b ${tfe3_IDs[@]:1} -names ${tfe3_IDs[@]:1} -sorted > ${peak_analysis_dir}/normalize_tfe3_intersect.txt
 
-bedtools multiinter -i ${tfe3_IDs[@]} -header > ${peak_analysis_dir}/normalize_tfe3_multiinter.txt
+# bedtools multiinter -i ${tfe3_IDs[@]} -header > ${peak_analysis_dir}/normalize_tfe3_multiinter.txt
 
-## FUSION
-declare -a fusion_IDs=()
-total_sample=${#fusion[@]}
-n=0
-for sample_ID in ${fusion[@]}; do
-    n=$((n+1))
-    echo "-----------running $n out of $total_sample fusion samples---------------------- "
+# ## FUSION
+# declare -a fusion_IDs=()
+# total_sample=${#fusion[@]}
+# n=0
+# for sample_ID in ${fusion[@]}; do
+#     n=$((n+1))
+#     echo "-----------running $n out of $total_sample fusion samples---------------------- "
 
-    fusion_IDs+=( "${normalize_peak_dir}/${sample_ID}*.narrowPeak" )
+#     fusion_IDs+=( "${normalize_peak_dir}/${sample_ID}*.narrowPeak" )
 
-done
+# done
 
-bedtools intersect -a ${fusion_IDs[0]} -b ${fusion_IDs[@]:1} -names ${fusion_IDs[@]:1} -sorted > ${peak_analysis_dir}/normalize_fusion_intersect.txt
+# bedtools intersect -a ${fusion_IDs[0]} -b ${fusion_IDs[@]:1} -names ${fusion_IDs[@]:1} -sorted > ${peak_analysis_dir}/normalize_fusion_intersect.txt
 
-bedtools multiinter -i ${fusion_IDs[@]} -header > ${peak_analysis_dir}/normalize_fusion_multiinter.txt
+# bedtools multiinter -i ${fusion_IDs[@]} -header > ${peak_analysis_dir}/normalize_fusion_multiinter.txt
 
 ## HISTONE SAMPLES
 declare -a histone_IDs=()
-total_sample=${#h3k4me3_all[@]}
+total_sample=${#h3k4me3_all_after_normalize[@]}
 n=0
-for sample_ID in ${h3k4me3_all[@]}; do
+for sample_ID in ${h3k4me3_all_after_normalize[@]}; do
     n=$((n+1))
     echo "-----------running $n out of $total_sample histone samples---------------------- "
 
@@ -134,3 +134,4 @@ done
  bedtools intersect -a ${histone_IDs[0]} -b ${histone_IDs[@]:1} -names ${histone_IDs[@]:1} -sorted > ${peak_analysis_dir}/normalize_h3k4me3_intersect.txt
 
 bedtools multiinter -i ${histone_IDs[@]} -header > ${peak_analysis_dir}/normalize_h3k4me3_multiinter.txt
+
