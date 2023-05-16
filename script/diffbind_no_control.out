@@ -183,3 +183,5 @@ Reads will be counted as Paired-end.
 Reads will be counted as Paired-end.
 Reads will be counted as Paired-end.
 Reads will be counted as Paired-end.
+slurmstepd: error: *** JOB 26225564 ON n0087 CANCELLED AT 2023-05-14T11:30:35 ***
+slurmstepd: error: Detected 27 oom-kill event(s) in step 26225564.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

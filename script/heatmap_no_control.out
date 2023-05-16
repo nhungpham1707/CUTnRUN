@@ -1,0 +1,7 @@
+start running cut and run analysis at Sun May 14 16:08:48 CEST 2023
+---------------step 12. running heatmap generation---------------
+-----------running 1 out of 3 merg_Sample_vsDElucvsfusion_without_control samples---------------------- 
+-----------running 2 out of 3 merg_Sample_vsDElucvsfusion_without_control samples---------------------- 
+-----------running 3 out of 3 merg_Sample_vsDElucvsfusion_without_control samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/fusion_merged.bw /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/tfe3_merged.bw /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/luciferase_merged.bw
+finish cut and run analysis at Sun May 14 16:09:31 CEST 2023

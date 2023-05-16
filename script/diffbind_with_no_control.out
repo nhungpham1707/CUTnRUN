@@ -1,4 +1,4 @@
-start running cut and run analysis at Sun May 14 11:35:20 CEST 2023
+start running cut and run analysis at Sun May 14 12:43:51 CEST 2023
 ---------------step 11. running peak differential analysis---------------
 Loading required package: GenomicRanges
 Loading required package: stats4
@@ -125,20 +125,6 @@ The following objects are masked from ‘package:base’:
 4         /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam
 5           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam
 6           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam
-             ControlID
-1 bulkChIC-PMC-DRO-013
-2 bulkChIC-PMC-DRO-013
-3 bulkChIC-PMC-DRO-013
-4 bulkChIC-PMC-DRO-013
-5 bulkChIC-PMC-DRO-012
-6 bulkChIC-PMC-DRO-012
-                                                                                                        bamControl
-1 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
-2 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
-3 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
-4 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-013/bulkChIC-PMC-DRO-013_rmdup_filt.bam
-5 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
-6 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam
                                                                                                                  Peaks
 1      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-T1_normalize.narrowPeak
 2      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-T5_normalize.narrowPeak
@@ -197,9 +183,6 @@ Reads will be counted as Paired-end.
 Reads will be counted as Paired-end.
 Reads will be counted as Paired-end.
 Reads will be counted as Paired-end.
-Reads will be counted as Paired-end.
-Reads will be counted as Paired-end.
-Reads will be counted as Paired-end.
 [1] "the percentage of 0 values after process are 0"
 [1] "start peak model"
 Computing results names...
@@ -211,6 +194,6 @@ mean-dispersion relationship
 final dispersion estimates
 Error: unexpected symbol in:
 "# plot vocanol      
-png"
+reso"
 Execution halted
-finish cut and run analysis at Sun May 14 12:02:23 CEST 2023
+finish cut and run analysis at Sun May 14 13:01:37 CEST 2023

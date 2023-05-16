@@ -14,7 +14,12 @@ library(dplyr)
 # library(ChIPpeakAnno)
 # library(TxDb.Hsapiens.UCSC.hg38.knownGene)
 # library(EnsDb.Hsapiens.v86)
+#
 
+# to test on terminal
+# sample_sheet_name_dir <- '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_sample_sheet_s3norm_data_no_control.csv'
+# save_name <- 'with_no_control_hpc6'
+# res_dir <- '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/with_no_control_hpc6'
 # get paths from environment
 res_dir <- Sys.getenv("DIFFBIND_RESULT_DIR_VARIABLE")
 save_name <- Sys.getenv("SAVE_NAME_VARIABLE")
@@ -95,6 +100,7 @@ write.csv(report,(paste0(res_dir,'/', Sys.Date(),'-', save_name,'-dba-show-repor
 # dev.off()
 
 # plot vocanol      
+reso <- 1000
 png(filename = paste0(res_dir, '/', Sys.Date() ,'-', save_name,'-diffbind_Volcano_contrast1.png') , width = 1200 * reso/72, height = 700 * reso/72, units ="px", res = reso)
 dba.plotVolcano(peak_model, contrast = 1, dotSize = 2, bFlip = TRUE)
 dev.off()

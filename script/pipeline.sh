@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --job-name=diffbindC
-#SBATCH --output=diffbind_with_control.out
+#SBATCH --job-name=motif
+#SBATCH --output=motif100.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
-#SBATCH --mem=20G
+#SBATCH --mem=90G
 #SBATCH --cpus-per-task=8
 #SBATCH --gres=tmpspace:30G
 #SBATCH --mail-type=FAIL,END
@@ -311,7 +311,8 @@ total_sample=${#sample_IDs[@]}
 tfe3=( "SCC-ChIC-PMC-DRO-T1" "SCC-ChIC-PMC-DRO-T5" "bulkChIC-PMC-DRO-016" "SCC-bulkChIC-PMC-DRO-008")
 luciferase=( "SCC-ChIC-PMC-DRO-L1" "SCC-ChIC-PMC-DRO-L5" "bulkChIC-PMC-DRO-014" "SCC-bulkChIC-PMC-DRO-005")
 fusion=( "SCC-ChIC-PMC-DRO-F1" "SCC-ChIC-PMC-DRO-F5" "bulkChIC-PMC-DRO-015" "SCC-bulkChIC-PMC-DRO-002")
-# new luc and fusion samples
+
+# new histone luc and fusion samples
 # luciferase="SCC-bulkChIC-PMC-DRO-020 SCC-bulkChIC-PMC-DRO-021 SCC-bulkChIC-PMC-DRO-022"
 # fusion="SCC-bulkChIC-PMC-DRO-023 SCC-bulkChIC-PMC-DRO-024 SCC-bulkChIC-PMC-DRO-025"
 
@@ -364,6 +365,8 @@ echo "start running cut and run analysis at $(date)"
 # step 7. Normalize data
 # echo "-------------------step 7. running data normalization------ "
 # s3norm_sample_file_name='no_zeros_testsamples.txt'
+# s3norm_sample_file_name=remove_low_depth_samples.csv
+# s3norm_sample_file_name=remove_low_depth_histone_nozeroes_augmented.csv
 # . ./7-run_s3norm.sh 
 #==================================================================
 
@@ -384,20 +387,32 @@ echo "start running cut and run analysis at $(date)"
 # step 9. Extract overlap peak from replicates in the same condition. # modify variable names if using for different experiments before run
 # echo "-------------------step 9. running peak overlap---------------"
 # . ./9-GetPeakOverlap.sh # few minutes 
+# bg_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_rc_bedgraph/
+# res_bedgraph_dir=${s3norm_working_directory[@]}
+# save_name=tfe3_merge.bg
+# sample_list=${tfe3[@]}
+# . ./9-peakProcessing_old.sh
 
+# save_name=fusion_merge.bg
+# sample_list=${fusion[@]}
+# . ./9-peakProcessing_old.sh
+
+# save_name=luc_merge.bg
+# sample_list=${luciferase[@]}
+# . ./9-peakProcessing_old.sh
 # step 10. Extract peak overlap statistic
 #  echo "-------------------step 10. running peak statistic ---------------"
 #  Rscript 10-Peak_statistic.R
 
 # step 11. Identify peaks that are differentially enriched between conditions. Modify variable names if using for different experiments before run 
-echo "---------------step 11. running peak differential analysis---------------"
-export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
+# echo "---------------step 11. running peak differential analysis---------------"
+# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
 # export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_sample_sheet_s3norm_data_no_control.csv
-export SAVE_NAME_VARIABLE=with_control
-diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
-mkdir -p $diffBind_res_sub_dir
-export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
-Rscript DiffBind_analysis.R
+# export SAVE_NAME_VARIABLE=with_no_control_sbatch
+# diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
+# mkdir -p $diffBind_res_sub_dir
+# export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
+# Rscript DiffBind_analysis.R
 
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"
@@ -405,7 +420,8 @@ Rscript DiffBind_analysis.R
 # sample_dir=${merged_bigwig_dir[@]}
 # # refpath=$diffBind_res_dir/diffBind_luc_vs_fusion_w_control.bed
 # refpath=$diffBind_res_dir/diffBind_tfe3_vs_fusion_w_control.bed
-# savename=merg_Sample_vsDEtfevsfusion_wcontrol
+# refpath=$diffBind_res_dir/2023-05-10-diffBind_contrast3_s3norm_fold1_without_control.bed
+# savename=merg_Sample_vsDElucvsfusion_without_control
 # . ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
 
 # step 13. prepare for motif analysis. Prior to run change sample paths in 10-prepareMotifAnalysis.sh if needed. 
@@ -414,9 +430,17 @@ Rscript DiffBind_analysis.R
 
 # step 14. motif finding 
 # echo "-------------------step 14. running motif finding----------------------"
-# cd ${motif}
+## cd ${motif}
 # findMotifsGenome.pl ${diffBind_res_dir}/2023-05-10-diffBind_contrast3_s3norm_fold1.bed $fasta_genome_dir ${motif_dir} -size 200 -len 8 
 # findMotifsGenome.pl ${diffBind_res_dir}/diffBind_luc_vs_fusion_w_control.bed $fasta_genome_dir ${motif_dir} -size 200 -len 8  
+# motif_sub_dir=${motif_dir}/s3norm_no_control
+motif_sub_dir=${motif_dir}/diffBindNORMNATIVE_loss_sites_100
+mkdir -p $motif_sub_dir
+findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/DBA_NORM_NATIVEtest_contrastfusionvsluc_foldnegative.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+
+motif_sub_dir=${motif_dir}/S3norm_all_DE_sites_100
+mkdir -p $motif_sub_dir
+findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/with_no_control_sbatch/2023-05-14no_controlfold_change2-diffBind_contrast3_s3norm.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
 
 # . ./14-motifFinding.sh 
 

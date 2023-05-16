@@ -51,36 +51,36 @@
 # # luc 
 # bedtools intersect -a ${peak_dir}/SCC-ChIC-PMC-DRO-L1/narrow/SCC-ChIC-PMC-DRO-L1_paired_control_peaks.narrowPeak -b ${peak_dir}/SCC-ChIC-PMC-DRO-L5/narrow/SCC-ChIC-PMC-DRO-L5_paired_control_peaks.narrowPeak ${peak_dir}/bulkChIC-PMC-DRO-014/narrow/bulkChIC-PMC-DRO-014_paired_control_peaks.narrowPeak ${peak_dir}/SCC-bulkChIC-PMC-DRO-005/narrow/SCC-bulkChIC-PMC-DRO-005_paired_control_peaks.narrowPeak -names SCC-ChIC-PMC-DRO-L5 bulkChIC-PMC-DRO-014 SCC-bulkChIC-PMC-DRO-005 -sorted > ${peak_analysis_dir}/luc_intersect.txt
 # get luc sample paths
-declare -a luc_IDs=()
-total_sample=${#luciferase[@]}
-n=0
-for sample_ID in ${luciferase[@]}; do
-    n=$((n+1))
-    echo "-----------running $n out of $total_sample luc samples---------------------- "
+# declare -a luc_IDs=()
+# total_sample=${#luciferase[@]}
+# n=0
+# for sample_ID in ${luciferase[@]}; do
+#     n=$((n+1))
+#     echo "-----------running $n out of $total_sample luc samples---------------------- "
 
-    luc_IDs+=( "${peak_dir}/${sample_ID}/narrow/${sample_ID}_paired_control_peaks.narrowPeak" )
+#     luc_IDs+=( "${peak_dir}/${sample_ID}/narrow/${sample_ID}_paired_control_peaks.narrowPeak" )
 
-done
+# done
 
-bedtools intersect -a ${luc_IDs[0]} -b ${luc_IDs[@]:1} -names ${luc_IDs[@]:1} -sorted > ${peak_analysis_dir}/luc_intersect.txt
-# fusion 
+# bedtools intersect -a ${luc_IDs[0]} -b ${luc_IDs[@]:1} -names ${luc_IDs[@]:1} -sorted > ${peak_analysis_dir}/luc_intersect.txt
+# # fusion 
 
 # bedtools intersect -i ${peak_dir}/SCC-ChIC-PMC-DRO-F1/narrow/SCC-ChIC-PMC-DRO-F1_paired_control_peaks.narrowPeak ${peak_dir}/SCC-ChIC-PMC-DRO-F5/narrow/SCC-ChIC-PMC-DRO-F5_paired_control_peaks.narrowPeak ${peak_dir}/bulkChIC-PMC-DRO-015/narrow/bulkChIC-PMC-DRO-015_paired_control_peaks.narrowPeak ${peak_dir}/SCC-bulkChIC-PMC-DRO-002/narrow/SCC-bulkChIC-PMC-DRO-002_paired_control_peaks.narrowPeak -names SCC-ChIC-PMC-DRO-F5 bulkChIC-PMC-DRO-015 SCC-bulkChIC-PMC-DRO-002 -sorted > ${peak_analysis_dir}/fusion_intersect.txt
 # get fusion sample
 
-declare -a fusion_IDs=()
-total_sample=${#fusion[@]}
-n=0
-for sample_ID in ${fusion[@]}; do
-    n=$((n+1))
-    echo "-----------running $n out of $total_sample fusion samples---------------------- "
+# declare -a fusion_IDs=()
+# total_sample=${#fusion[@]}
+# n=0
+# for sample_ID in ${fusion[@]}; do
+#     n=$((n+1))
+#     echo "-----------running $n out of $total_sample fusion samples---------------------- "
 
-    fusion_IDs+=( "${peak_dir}/${sample_ID}/narrow/${sample_ID}_paired_control_peaks.narrowPeak" )
+#     fusion_IDs+=( "${peak_dir}/${sample_ID}/narrow/${sample_ID}_paired_control_peaks.narrowPeak" )
 
-done
+# done
 
-bedtools intersect -a ${fusion_IDs[0]} -b ${fusion_IDs[@]:1} -names ${fusion_IDs[@]:1} -sorted > ${peak_analysis_dir}/fusion_intersect.txt
-## histone samples
+# bedtools intersect -a ${fusion_IDs[0]} -b ${fusion_IDs[@]:1} -names ${fusion_IDs[@]:1} -sorted > ${peak_analysis_dir}/fusion_intersect.txt
+# ## histone samples
 # bedtools intersect -a ${peak_no_control_dir}/SCC-ChIC-PMC-DRO-FH/narrow/SCC-ChIC-PMC-DRO-FH_paired_peaks.narrowPeak -b ${peak_no_control_dir}/SCC-ChIC-PMC-DRO-LH/narrow/SCC-ChIC-PMC-DRO-LH_paired_peaks.narrowPeak ${peak_no_control_dir}/SCC-ChIC-PMC-DRO-TH/narrow/SCC-ChIC-PMC-DRO-TH_paired_peaks.narrowPeak ${peak_no_control_dir}/bulkChIC-PMC-DRO-011/narrow/bulkChIC-PMC-DRO-011_paired_peaks.narrowPeak ${peak_no_control_dir}/bulkChIC-PMC-DRO-012/narrow/bulkChIC-PMC-DRO-012_paired_peaks.narrowPeak ${peak_no_control_dir}/bulkChIC-PMC-DRO-013/narrow/bulkChIC-PMC-DRO-013_paired_peaks.narrowPeak -names SCC-ChIC-PMC-DRO-LH SCC-ChIC-PMC-DRO-TH bulkChIC-PMC-DRO-012 bulkChIC-PMC-DRO-013 bulkChIC-PMC-DRO-011 -sorted > ${peak_analysis_dir}/h3k4me3_multiinter.txt
 
 # get histone file names
@@ -98,3 +98,19 @@ bedtools intersect -a ${fusion_IDs[0]} -b ${fusion_IDs[@]:1} -names ${fusion_IDs
 #  bedtools intersect -a ${histone_IDs[0]} -b ${histone_IDs[@]:1} -names ${histone_IDs[@]:1} -sorted > ${peak_analysis_dir}/h3k4me3_intersect.txt
 
 # bedtools multiinter -i ${histone_IDs[@]} -header > ${peak_analysis_dir}/h3k4me3_multiinter.txt
+
+### Merge bedgraph file 
+# bg_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_rc_bedgraph/
+
+# get file path
+declare -a sample_paths=()
+total_sample=${#sample_list[@]}
+n=0
+for sample_ID in ${sample_list[@]}; do
+    n=$((n+1))
+    echo "-----------running $n out of $total_sample samples---------------------- "
+
+    sample_paths+=( "${bg_dir}/${sample_ID}*.bedgraph" )
+
+done
+bedtools unionbedg -i ${sample_paths[@]} > ${res_bedgraph_dir}/${save_name}
