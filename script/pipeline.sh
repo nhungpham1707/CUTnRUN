@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=motif
-#SBATCH --output=motif100.out
+#SBATCH --job-name=peak
+#SBATCH --output=peakcalling_remove_low_dep_samples.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -31,7 +31,7 @@
 #   Alignment: 
 #	- bowtie ver 2.5.1, input flags:
 #			-end-to-end: for trimmed sequence
-#       (used local if seq is not trimmed before this step)
+#       (used local if seq is not trimmed before this step, sample_ID path will need to be modified to run if no trim was done)
 #			-p 16: 16 threads
 #			-samtools -bS: to save input sam file as bam file
 # 
@@ -98,7 +98,7 @@
 #       Input: R1 and R2 fastq sequences for each sample
 #       Output:
 #           - 2 trimming reports for R1 and R2.
-#           - 2 val_ files for R1 and R2 (inputs for next step)
+#           - 2 val_ files for R1 and R2 (inputs for the next step)
 #           - 2 fastqc html for R1 and R2
 #           - 2 fastqc.zip files for R1 and R2.
 #
@@ -338,7 +338,7 @@ echo "start running cut and run analysis at $(date)"
 
 #==================================================================
 #                          BEFORE PEAK CALLING
-# step 1. sequencing quality check 
+## step 1. sequencing quality check 
 # echo "------------------step1. running quality check--------------"
 # . ./1-qualityCheck.sh
 
@@ -378,6 +378,9 @@ echo "start running cut and run analysis at $(date)"
 
 # step 8b. peak calling with normalize data
 # echo "-------------------step 8. running peak calling after normalization----------------------"
+# clean_normalize_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_remove_low_depth_samples/S3norm_NBP_bedgraph
+# normalize_peak_dir=${res_dir}/normalize_peakCalling_remove_low_depth_samples
+# mkdir -p ${normalize_peak_dir}
 # . ./8b-peakCalling_normalize.sh
 # #==================================================================
 
@@ -434,13 +437,13 @@ echo "start running cut and run analysis at $(date)"
 # findMotifsGenome.pl ${diffBind_res_dir}/2023-05-10-diffBind_contrast3_s3norm_fold1.bed $fasta_genome_dir ${motif_dir} -size 200 -len 8 
 # findMotifsGenome.pl ${diffBind_res_dir}/diffBind_luc_vs_fusion_w_control.bed $fasta_genome_dir ${motif_dir} -size 200 -len 8  
 # motif_sub_dir=${motif_dir}/s3norm_no_control
-motif_sub_dir=${motif_dir}/diffBindNORMNATIVE_loss_sites_100
-mkdir -p $motif_sub_dir
-findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/DBA_NORM_NATIVEtest_contrastfusionvsluc_foldnegative.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+# motif_sub_dir=${motif_dir}/diffBindNORMNATIVE_loss_sites_100
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/DBA_NORM_NATIVEtest_contrastfusionvsluc_foldnegative.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
 
-motif_sub_dir=${motif_dir}/S3norm_all_DE_sites_100
-mkdir -p $motif_sub_dir
-findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/with_no_control_sbatch/2023-05-14no_controlfold_change2-diffBind_contrast3_s3norm.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+# motif_sub_dir=${motif_dir}/S3norm_all_DE_sites_100
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/with_no_control_sbatch/2023-05-14no_controlfold_change2-diffBind_contrast3_s3norm.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
 
 # . ./14-motifFinding.sh 
 
