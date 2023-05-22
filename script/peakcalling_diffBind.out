@@ -1,0 +1,502 @@
+start running cut and run analysis at Sun May 21 20:23:21 CEST 2023
+-----------running 1 out of 20 samples---------------------- 
+-----------running 2 out of 20 samples---------------------- 
+-----------running 3 out of 20 samples---------------------- 
+-----------running 4 out of 20 samples---------------------- 
+-----------running 5 out of 20 samples---------------------- 
+-----------running 6 out of 20 samples---------------------- 
+-----------running 7 out of 20 samples---------------------- 
+-----------running 8 out of 20 samples---------------------- 
+-----------running 9 out of 20 samples---------------------- 
+-----------running 10 out of 20 samples---------------------- 
+-----------running 11 out of 20 samples---------------------- 
+-----------running 12 out of 20 samples---------------------- 
+-----------running 13 out of 20 samples---------------------- 
+-----------running 14 out of 20 samples---------------------- 
+-----------running 15 out of 20 samples---------------------- 
+-----------running 16 out of 20 samples---------------------- 
+-----------running 17 out of 20 samples---------------------- 
+-----------running 18 out of 20 samples---------------------- 
+-----------running 19 out of 20 samples---------------------- 
+-----------running 20 out of 20 samples---------------------- 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+INFO  @ Sun, 21 May 2023 20:23:28: Read and build bedGraph... 
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+    btrack = bio.build_bdgtrack(baseline_value=0)
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+    btrack = bio.build_bdgtrack(baseline_value=0)
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-LH_*.bedgraph'
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-TH_*.bedgraph'
+INFO  @ Sun, 21 May 2023 20:24:22: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:22: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:22: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:24: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:24: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:24: Done 
+INFO  @ Sun, 21 May 2023 20:24:24: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:24: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:24: Done 
+INFO  @ Sun, 21 May 2023 20:24:24: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:24: Done 
+INFO  @ Sun, 21 May 2023 20:24:24: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:25: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:25: Done 
+INFO  @ Sun, 21 May 2023 20:24:25: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:25: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:25: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:25: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:25: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:26: Done 
+INFO  @ Sun, 21 May 2023 20:24:26: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:26: Done 
+INFO  @ Sun, 21 May 2023 20:24:26: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:26: Done 
+INFO  @ Sun, 21 May 2023 20:24:26: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:26: Done 
+INFO  @ Sun, 21 May 2023 20:24:26: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:26: Done 
+INFO  @ Sun, 21 May 2023 20:24:26: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:26: Done 
+INFO  @ Sun, 21 May 2023 20:24:26: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:27: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:27: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:27: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:27: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:28: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:28: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:28: Done 
+INFO  @ Sun, 21 May 2023 20:24:28: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:28: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:28: Done 
+INFO  @ Sun, 21 May 2023 20:24:28: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:28: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:28: Done 
+INFO  @ Sun, 21 May 2023 20:24:28: Done 
+INFO  @ Sun, 21 May 2023 20:24:28: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:28: Done 
+INFO  @ Sun, 21 May 2023 20:24:29: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:29: Done 
+INFO  @ Sun, 21 May 2023 20:24:29: Call peaks from bedGraph... 
+INFO  @ Sun, 21 May 2023 20:24:29: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:29: Done 
+INFO  @ Sun, 21 May 2023 20:24:29: Write peaks... 
+INFO  @ Sun, 21 May 2023 20:24:29: Done 
+all done peak calling after normalization
+---------------step 11. running peak differential analysis---------------
+--------diffbind for remove low depth samples----------
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+ >>> DiffBind 3.4.11
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+                  SampleID Tissue     Factor      Condition Treatment Replicate
+1 SCC-bulkChIC-PMC-DRO-008 kidney       tfe3 anti-tfe3-1000    round2         3
+2     bulkChIC-PMC-DRO-016 kidney       tfe3 anti-tfe3-1000    round3         4
+3 SCC-bulkChIC-PMC-DRO-002 kidney     fusion anti-tfe3-1000    round2         3
+4     bulkChIC-PMC-DRO-015 kidney     fusion anti-tfe3-1000    round3         4
+5 SCC-bulkChIC-PMC-DRO-005 kidney luciferase anti-tfe3-1000    round2         3
+6     bulkChIC-PMC-DRO-014 kidney luciferase anti-tfe3-1000    round3         4
+                                                                                                                  bamReads
+1 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam
+2         /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam
+3 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-002/SCC-bulkChIC-PMC-DRO-002_rmdup_filt.bam
+4         /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-015/bulkChIC-PMC-DRO-015_rmdup_filt.bam
+5 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-005/SCC-bulkChIC-PMC-DRO-005_rmdup_filt.bam
+6         /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-014/bulkChIC-PMC-DRO-014_rmdup_filt.bam
+                                                                                                                                          Peaks
+1 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling_remove_low_depth_samples/SCC-bulkChIC-PMC-DRO-008_normalize.narrowPeak
+2     /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling_remove_low_depth_samples/bulkChIC-PMC-DRO-016_normalize.narrowPeak
+3 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling_remove_low_depth_samples/SCC-bulkChIC-PMC-DRO-002_normalize.narrowPeak
+4     /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling_remove_low_depth_samples/bulkChIC-PMC-DRO-015_normalize.narrowPeak
+5 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling_remove_low_depth_samples/SCC-bulkChIC-PMC-DRO-005_normalize.narrowPeak
+6     /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling_remove_low_depth_samples/bulkChIC-PMC-DRO-014_normalize.narrowPeak
+  PeakCaller
+1        bed
+2        bed
+3        bed
+4        bed
+5        bed
+6        bed
+[1] "start peak"
+SCC-bulkChIC-PMC-DRO-008 kidney tfe3 anti-tfe3-1000 round2 3 bed
+bulkChIC-PMC-DRO-016 kidney tfe3 anti-tfe3-1000 round3 4 bed
+SCC-bulkChIC-PMC-DRO-002 kidney fusion anti-tfe3-1000 round2 3 bed
+bulkChIC-PMC-DRO-015 kidney fusion anti-tfe3-1000 round3 4 bed
+SCC-bulkChIC-PMC-DRO-005 kidney luciferase anti-tfe3-1000 round2 3 bed
+bulkChIC-PMC-DRO-014 kidney luciferase anti-tfe3-1000 round3 4 bed
+SCC-bulkChIC-PMC-DRO-020 kidney luciferase_sfpq anti-SFPQ round4 1 bed
+SCC-bulkChIC-PMC-DRO-021 kidney luciferase_h3k4me1 anti-H3K4Me1 round4 1 bed
+SCC-bulkChIC-PMC-DRO-022 kidney luciferase_h3k27ac anti-H3K27ac round4 1 bed
+SCC-bulkChIC-PMC-DRO-023 kidney fusion_sfpq anti-SFPQ round4 1 bed
+SCC-bulkChIC-PMC-DRO-024 kidney fusion_h3k4me1 anti-H3K4Me1 round4 1 bed
+SCC-bulkChIC-PMC-DRO-025 kidney fusion_h3k27_ac anti-H3K27ac round4 1 bed
+[1] "start applying black list"
+Genome detected: Hsapiens.UCSC.hg38
+Applying blacklist...
+Removed: 4037 of 835095 intervals.
+Removed: 1933 merged (of 536752) and 626 (of 153420) consensus.
+Computing summits...
+Re-centering peaks...
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+[1] "the percentage of 0 values after process are 0"
+[1] "start peak model"
+Computing results names...
+Normalize DESeq2 with defaults...
+Setting default contrast(s)...
+Analyzing...
+Adding contrasts(s)...
+Computing results names...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Warning message:
+No contrasts added. There must be at least two sample groups with at least three replicates. 
+Error: unexpected symbol in:
+"# plot vocanol      
+reso"
+Execution halted
+----------diffBind for remove low depth histone samples---------
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which.max, which.min
+
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+
+Attaching package: ‘Biobase’
+
+The following object is masked from ‘package:MatrixGenerics’:
+
+    rowMedians
+
+The following objects are masked from ‘package:matrixStats’:
+
+    anyMissing, rowMedians
+
+ >>> DiffBind 3.4.11
+
+Attaching package: ‘dplyr’
+
+The following object is masked from ‘package:Biobase’:
+
+    combine
+
+The following object is masked from ‘package:matrixStats’:
+
+    count
+
+The following objects are masked from ‘package:GenomicRanges’:
+
+    intersect, setdiff, union
+
+The following object is masked from ‘package:GenomeInfoDb’:
+
+    intersect
+
+The following objects are masked from ‘package:IRanges’:
+
+    collapse, desc, intersect, setdiff, slice, union
+
+The following objects are masked from ‘package:S4Vectors’:
+
+    first, intersect, rename, setdiff, setequal, union
+
+The following objects are masked from ‘package:BiocGenerics’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+                  SampleID Tissue Factor      Condition Treatment Replicate
+1      SCC-ChIC-PMC-DRO-T1 kidney   tfe3 anti-tfe3-1000    round1         1
+2      SCC-ChIC-PMC-DRO-T5 kidney   tfe3  anti-tfe3-500    round1         2
+3 SCC-bulkChIC-PMC-DRO-008 kidney   tfe3 anti-tfe3-1000    round2         3
+4     bulkChIC-PMC-DRO-016 kidney   tfe3 anti-tfe3-1000    round3         4
+5      SCC-ChIC-PMC-DRO-F1 kidney fusion anti-tfe3-1000    round1         1
+6      SCC-ChIC-PMC-DRO-F5 kidney fusion  anti-tfe3-500    round1         2
+                                                                                                                  bamReads
+1           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T1/SCC-ChIC-PMC-DRO-T1_rmdup_filt.bam
+2           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-T5/SCC-ChIC-PMC-DRO-T5_rmdup_filt.bam
+3 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-bulkChIC-PMC-DRO-008/SCC-bulkChIC-PMC-DRO-008_rmdup_filt.bam
+4         /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-016/bulkChIC-PMC-DRO-016_rmdup_filt.bam
+5           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F1/SCC-ChIC-PMC-DRO-F1_rmdup_filt.bam
+6           /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/SCC-ChIC-PMC-DRO-F5/SCC-ChIC-PMC-DRO-F5_rmdup_filt.bam
+                                                                                                                 Peaks
+1      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-T1_normalize.narrowPeak
+2      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-T5_normalize.narrowPeak
+3 /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-bulkChIC-PMC-DRO-008_normalize.narrowPeak
+4     /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/bulkChIC-PMC-DRO-016_normalize.narrowPeak
+5      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-F1_normalize.narrowPeak
+6      /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling/SCC-ChIC-PMC-DRO-F5_normalize.narrowPeak
+  PeakCaller
+1        bed
+2        bed
+3        bed
+4        bed
+5        bed
+6        bed
+[1] "start peak"
+SCC-ChIC-PMC-DRO-T1 kidney tfe3 anti-tfe3-1000 round1 1 bed
+SCC-ChIC-PMC-DRO-T5 kidney tfe3 anti-tfe3-500 round1 2 bed
+SCC-bulkChIC-PMC-DRO-008 kidney tfe3 anti-tfe3-1000 round2 3 bed
+bulkChIC-PMC-DRO-016 kidney tfe3 anti-tfe3-1000 round3 4 bed
+SCC-ChIC-PMC-DRO-F1 kidney fusion anti-tfe3-1000 round1 1 bed
+SCC-ChIC-PMC-DRO-F5 kidney fusion anti-tfe3-500 round1 2 bed
+SCC-bulkChIC-PMC-DRO-002 kidney fusion anti-tfe3-1000 round2 3 bed
+bulkChIC-PMC-DRO-015 kidney fusion anti-tfe3-1000 round3 4 bed
+SCC-ChIC-PMC-DRO-L1 kidney luciferase anti-tfe3-1000 round1 1 bed
+SCC-ChIC-PMC-DRO-L5 kidney luciferase anti-tfe3-500 round1 2 bed
+SCC-bulkChIC-PMC-DRO-005 kidney luciferase anti-tfe3-1000 round2 3 bed
+bulkChIC-PMC-DRO-014 kidney luciferase anti-tfe3-1000 round3 4 bed
+SCC-bulkChIC-PMC-DRO-020 kidney luciferase_sfpq anti-SFPQ round4 1 bed
+SCC-bulkChIC-PMC-DRO-021 kidney luciferase_h3k4me1 anti-H3K4Me1 round4 1 bed
+SCC-bulkChIC-PMC-DRO-022 kidney luciferase_h3k27ac anti-H3K27ac round4 1 bed
+SCC-bulkChIC-PMC-DRO-023 kidney fusion_sfpq anti-SFPQ round4 1 bed
+SCC-bulkChIC-PMC-DRO-024 kidney fusion_h3k4me1 anti-H3K4Me1 round4 1 bed
+SCC-bulkChIC-PMC-DRO-025 kidney fusion_h3k27_ac anti-H3K27ac round4 1 bed
+[1] "start applying black list"
+Genome detected: Hsapiens.UCSC.hg38
+Applying blacklist...
+Removed: 554 of 109515 intervals.
+Removed: 363 merged (of 87266) and 64 (of 10420) consensus.
+Computing summits...
+Re-centering peaks...
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+Reads will be counted as Paired-end.
+[1] "the percentage of 0 values after process are 0"
+[1] "start peak model"
+Computing results names...
+Normalize DESeq2 with defaults...
+Setting default contrast(s)...
+Analyzing...
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+Error: unexpected symbol in:
+"# plot vocanol      
+reso"
+Execution halted
+finish cut and run analysis at Sun May 21 21:01:47 CEST 2023

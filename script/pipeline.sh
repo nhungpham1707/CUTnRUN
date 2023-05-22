@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=peak
-#SBATCH --output=peakcalling_remove_low_dep_samples.out
+#SBATCH --job-name=diffbind
+#SBATCH --output=test_diffBind_func.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -379,7 +379,8 @@ echo "start running cut and run analysis at $(date)"
 # step 8b. peak calling with normalize data
 # echo "-------------------step 8. running peak calling after normalization----------------------"
 # clean_normalize_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_remove_low_depth_samples/S3norm_NBP_bedgraph
-# normalize_peak_dir=${res_dir}/normalize_peakCalling_remove_low_depth_samples
+# clean_normalize_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/S3norm_NBP_bedgraph
+# normalize_peak_dir=${res_dir}/normalize_peakCalling_remove_low_depth_histone_samples
 # mkdir -p ${normalize_peak_dir}
 # . ./8b-peakCalling_normalize.sh
 # #==================================================================
@@ -409,14 +410,24 @@ echo "start running cut and run analysis at $(date)"
 
 # step 11. Identify peaks that are differentially enriched between conditions. Modify variable names if using for different experiments before run 
 # echo "---------------step 11. running peak differential analysis---------------"
-# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
-# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_sample_sheet_s3norm_data_no_control.csv
-# export SAVE_NAME_VARIABLE=with_no_control_sbatch
+# # # export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
+# # # export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_sample_sheet_s3norm_data_no_control.csv
+# echo "--------diffbind for remove low depth samples----------"
+# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_s3norm_remove_lowdepth_samples.csv
+# export SAVE_NAME_VARIABLE=remove_low_depth_samples
 # diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
 # mkdir -p $diffBind_res_sub_dir
 # export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
 # Rscript DiffBind_analysis.R
 
+# run for remove low depth histone samples
+echo "----------diffBind for remove low depth histone samples---------"
+export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_remove_low_dep_histone_sample.csv
+export SAVE_NAME_VARIABLE=remove_low_depth_histone_samples
+diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
+mkdir -p $diffBind_res_sub_dir
+export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
+Rscript DiffBind_analysis.R
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"
 # samples_list=("fusion_merged" "tfe3_merged" "luciferase_merged" )
