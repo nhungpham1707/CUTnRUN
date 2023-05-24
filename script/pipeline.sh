@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=diffbind
-#SBATCH --output=test_diffBind_func.out
+#SBATCH --job-name=mean_bg
+#SBATCH --output=calculate_mean_merge_bedgraph.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -421,13 +421,13 @@ echo "start running cut and run analysis at $(date)"
 # Rscript DiffBind_analysis.R
 
 # run for remove low depth histone samples
-echo "----------diffBind for remove low depth histone samples---------"
-export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_remove_low_dep_histone_sample.csv
-export SAVE_NAME_VARIABLE=remove_low_depth_histone_samples
-diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
-mkdir -p $diffBind_res_sub_dir
-export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
-Rscript DiffBind_analysis.R
+# echo "----------diffBind for remove low depth histone samples---------"
+# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_remove_low_dep_histone_sample.csv
+# export SAVE_NAME_VARIABLE=remove_low_depth_histone_samples
+# diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
+# mkdir -p $diffBind_res_sub_dir
+# export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
+# Rscript DiffBind_analysis.R
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"
 # samples_list=("fusion_merged" "tfe3_merged" "luciferase_merged" )
@@ -435,7 +435,21 @@ Rscript DiffBind_analysis.R
 # # refpath=$diffBind_res_dir/diffBind_luc_vs_fusion_w_control.bed
 # refpath=$diffBind_res_dir/diffBind_tfe3_vs_fusion_w_control.bed
 # refpath=$diffBind_res_dir/2023-05-10-diffBind_contrast3_s3norm_fold1_without_control.bed
-# savename=merg_Sample_vsDElucvsfusion_without_control
+# refpath=$diffBind_res_dir/remove_low_depth_histone_samples/2023-05-22remove_low_depth_histonefold_change2-diffBind_lucvsfusion.bed
+# savename=DElucvsfusion_remove_low_depth
+# . ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
+
+
+# refpath=$diffBind_res_dir/remove_low_depth_histone_samples/2023-05-23lost_site_raw_data_FDR0.05.bed
+# savename=lost_site_raw_data_fix_scale
+# . ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
+
+# refpath=$diffBind_res_dir/remove_low_depth_histone_samples/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed
+# savename=lost_site_diffbind_norm_native_fix_scale
+# . ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
+
+# refpath=$diffBind_res_dir/remove_low_depth_histone_samples/2023-05-23lost_site_diffbind_norm_lib_FDR0.05.bed
+# savename=lost_site_diffBind_norm_lib_fix_scale
 # . ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
 
 # step 13. prepare for motif analysis. Prior to run change sample paths in 10-prepareMotifAnalysis.sh if needed. 
@@ -456,6 +470,20 @@ Rscript DiffBind_analysis.R
 # mkdir -p $motif_sub_dir
 # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/with_no_control_sbatch/2023-05-14no_controlfold_change2-diffBind_contrast3_s3norm.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
 
+# motif_sub_dir=${motif_dir}/diffBind_norm_lib
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_lib_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+
+
+# motif_sub_dir=${motif_dir}/diffBind_norm_native
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+
+# find motif location
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir  ${motif_dir}/diffBindNORMNATIVE_loss_sites/nownResults -find known1.motif > ${motif_dir}/diffBindNORMNATIVE_loss_sites/motif_location_know_motif1.txt
+
+# find motif location with annotate
+# annotatePeaks.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir -m {motif_dir}/diffBindNORMNATIVE_loss_sites/homerMotifs.all.motifs > ${motif_dir}/diffBindNORMNATIVE_loss_sites/motif_location.txt
 # . ./14-motifFinding.sh 
 
 # step 15. motif annotation 
@@ -469,6 +497,52 @@ Rscript DiffBind_analysis.R
 # . ./bam2bed.sh
 # . ./binCount.sh
 
+############# Generate bw files for data after s3norm to visualize in IGV
+# merge bedgraph files from the same group
+# bg_path=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/NBP_bedgraph/
+# res_bedgraph_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+# mkdir -p $res_bedgraph_dir
+# bg_savename='s3norm_tfe3_merge.bedgraph'
+# . ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${tfe3[@]}
+
+# bg_savename='s3norm_fusion_merge.bedgraph'
+# . ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${fusion[@]}
+
+# bg_savename='s3norm_luciferase_merge.bedgraph'
+# . ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${luciferase[@]}
+
+## calculate mean from merg bedgraph files
+# export FILE_PATH_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/tfe3_merge.bg
+# export RESULT_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+# # export SAVE_NAME_VARIABLE=s3norm_tfe3_merge.bed
+# # Rscript Calculate_mean_bedgraph.R 
+
+# export FILE_PATH_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input/s3norm_fusion_merge.bedgraph
+# export SAVE_NAME_VARIABLE=s3norm_fusion_merge.bed
+# Rscript Calculate_mean_bedgraph.R 
+
+# export FILE_PATH_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input/s3norm_luciferase_merge.bedgraph
+# export SAVE_NAME_VARIABLE=s3norm_luciferase_merge.bed
+# Rscript Calculate_mean_bedgraph.R 
+
+# export FILE_PATH_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input/s3norm_tfe3_merge.bedgraph
+# export SAVE_NAME_VARIABLE=s3norm_tfe3_merge.bed
+# Rscript Calculate_mean_bedgraph.R 
+
+# convert bedgraph to bigwig
+res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+hg38_size_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/
+input_name=2023-05-24s3norm_fusion_merge.bed
+save_name=s3norm_fusion_merge
+. ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
+
+input_name=2023-05-24s3norm_luciferase_merge.bed
+save_name=s3norm_luciferase_merge
+. ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
+
+input_name=2023-05-24s3norm_tfe3_merge.bed
+save_name=s3norm_tfe3_merge
+. ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
 
 ##### Data normalization ###############
 ## prepare bedgraph files with the same bin size for all samples

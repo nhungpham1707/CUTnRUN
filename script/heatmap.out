@@ -1,6 +1,0 @@
-start running cut and run analysis at Wed May 10 15:25:47 CEST 2023
------------running 1 out of 3 mergSamplefusionvsDElucvsfusion_wcontrol samples---------------------- 
------------running 2 out of 3 mergSamplefusionvsDElucvsfusion_wcontrol samples---------------------- 
------------running 3 out of 3 mergSamplefusionvsDElucvsfusion_wcontrol samples---------------------- 
-/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/fusion_merged.bw /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/tfe3_merged.bw /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/luciferase_merged.bw
-finish cut and run analysis at Wed May 10 15:26:31 CEST 2023

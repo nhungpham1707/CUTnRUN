@@ -1,9 +1,0 @@
--------------------step 8. running transform bam to bigwig---------------
-[E::hts_open_format] Failed to open file "*.bam" : No such file or directory
-samtools index: failed to open "*.bam": No such file or directory
-[E::hts_open_format] Failed to open file "tfe3_merged.bam" : No such file or directory
-The file 'tfe3_merged.bam' does not exist
-[E::hts_open_format] Failed to open file "luciferase_merged.bam" : No such file or directory
-The file 'luciferase_merged.bam' does not exist
-[E::hts_open_format] Failed to open file "fusion_merged.bam" : No such file or directory
-The file 'fusion_merged.bam' does not exist
