@@ -19,3 +19,5 @@ wig2bed < tfe3_merged.wig > tfe3_merged.bed
 
 # bigWigToWig luciferase_merged.bw luciferase_merged.wig
 wig2bed < luciferase_merged.wig > luciferase_merged.bed
+
+

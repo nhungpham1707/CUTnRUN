@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=mean_bg
-#SBATCH --output=calculate_mean_merge_bedgraph.out
+#SBATCH --job-name=merg_bg
+#SBATCH --output=merge_bedgraph.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -499,17 +499,17 @@ echo "start running cut and run analysis at $(date)"
 
 ############# Generate bw files for data after s3norm to visualize in IGV
 # merge bedgraph files from the same group
-# bg_path=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/NBP_bedgraph/
-# res_bedgraph_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
-# mkdir -p $res_bedgraph_dir
-# bg_savename='s3norm_tfe3_merge.bedgraph'
-# . ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${tfe3[@]}
+bg_path=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/NBP_bedgraph/
+res_bedgraph_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+mkdir -p $res_bedgraph_dir
+bg_savename='test_s3norm_tfe3_merge.bedgraph'
+. ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${tfe3[@]}
 
-# bg_savename='s3norm_fusion_merge.bedgraph'
-# . ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${fusion[@]}
+bg_savename='test_s3norm_fusion_merge.bedgraph'
+. ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${fusion[@]}
 
-# bg_savename='s3norm_luciferase_merge.bedgraph'
-# . ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${luciferase[@]}
+bg_savename='test_s3norm_luciferase_merge.bedgraph'
+. ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${luciferase[@]}
 
 ## calculate mean from merg bedgraph files
 # export FILE_PATH_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/tfe3_merge.bg
@@ -530,19 +530,19 @@ echo "start running cut and run analysis at $(date)"
 # Rscript Calculate_mean_bedgraph.R 
 
 # convert bedgraph to bigwig
-res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
-hg38_size_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/
-input_name=2023-05-24s3norm_fusion_merge.bed
-save_name=s3norm_fusion_merge
-. ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
+# res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+# hg38_size_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig
+# input_name=2023-05-24s3norm_fusion_merge.bed
+# save_name=s3norm_fusion_merge
+# . ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
 
-input_name=2023-05-24s3norm_luciferase_merge.bed
-save_name=s3norm_luciferase_merge
-. ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
+# input_name=2023-05-24s3norm_luciferase_merge.bed
+# save_name=s3norm_luciferase_merge
+# . ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
 
-input_name=2023-05-24s3norm_tfe3_merge.bed
-save_name=s3norm_tfe3_merge
-. ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
+# input_name=2023-05-24s3norm_tfe3_merge.bed
+# save_name=s3norm_tfe3_merge
+# . ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
 
 ##### Data normalization ###############
 ## prepare bedgraph files with the same bin size for all samples
