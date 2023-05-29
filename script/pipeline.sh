@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=merg_bg
-#SBATCH --output=merge_bedgraph.out
+#SBATCH --job-name=s3norm
+#SBATCH --output=s3norm_tfe3_w_control.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -177,10 +177,6 @@ mkdir -p $rm_dup_dir
 
 frip_dir=${res_dir}/FRiP
 mkdir -p $frip_dir
-
-s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
-s3norm_working_directory=${res_dir}/modify_bedgraph
-mkdir -p $s3norm_working_directory
 
 clean_normalize_dir=$s3norm_working_directory/remove_zero
 mkdir -p $clean_normalize_dir
@@ -364,10 +360,36 @@ echo "start running cut and run analysis at $(date)"
 
 # step 7. Normalize data
 # echo "-------------------step 7. running data normalization------ "
-# s3norm_sample_file_name='no_zeros_testsamples.txt'
+# s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
+s3norm_script_directory='/hpc/pmc_drost/nhung/s3norm_yichao/S3norm'
+s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_antiTFE3_Samples
+# mkdir -p $s3norm_working_directory
+
+# s3norm_sample_file_name='anti_tfe3_samples.csv'
+s3norm_sample_file_name=anti_tfe3_with_control.csv
 # s3norm_sample_file_name=remove_low_depth_samples.csv
 # s3norm_sample_file_name=remove_low_depth_histone_nozeroes_augmented.csv
+
+. ./7-run_s3norm.sh 
+
+
+# s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_SFPQ_Samples
+# s3norm_sample_file_name=anti_sfpq_samples.csv
 # . ./7-run_s3norm.sh 
+
+# s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_H3k4me3_Samples
+# s3norm_sample_file_name=anti_H3k4me3.csv
+# . ./7-run_s3norm.sh 
+
+# s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_H3k1me1_Samples
+# s3norm_sample_file_name=antih3k1me1.csv
+# . ./7-run_s3norm.sh 
+
+# s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_H3k27ac_Samples
+# s3norm_sample_file_name=antiH3k27ac.csv
+# . ./7-run_s3norm.sh 
+
+
 #==================================================================
 
 #==================================================================
@@ -477,8 +499,18 @@ echo "start running cut and run analysis at $(date)"
 
 # motif_sub_dir=${motif_dir}/diffBind_norm_native
 # mkdir -p $motif_sub_dir
-# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+# # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+# motif_sub_dir=${motif_dir}/s3norm_merge_tfe3
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/tfe3_merge.bg $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
 
+# motif_sub_dir=${motif_dir}/s3norm_merge_fusion
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/fusion_merge.bg $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+
+# motif_sub_dir=${motif_dir}/s3norm_merge_luc
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/luc_merge.bg $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
 # find motif location
 # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir  ${motif_dir}/diffBindNORMNATIVE_loss_sites/nownResults -find known1.motif > ${motif_dir}/diffBindNORMNATIVE_loss_sites/motif_location_know_motif1.txt
 
@@ -499,17 +531,17 @@ echo "start running cut and run analysis at $(date)"
 
 ############# Generate bw files for data after s3norm to visualize in IGV
 # merge bedgraph files from the same group
-bg_path=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/NBP_bedgraph/
-res_bedgraph_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
-mkdir -p $res_bedgraph_dir
-bg_savename='test_s3norm_tfe3_merge.bedgraph'
-. ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${tfe3[@]}
+# bg_path=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/NBP_bedgraph/
+# res_bedgraph_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+# mkdir -p $res_bedgraph_dir
+# bg_savename='test_s3norm_tfe3_merge.bedgraph'
+# . ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${tfe3[@]}
 
-bg_savename='test_s3norm_fusion_merge.bedgraph'
-. ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${fusion[@]}
+# bg_savename='test_s3norm_fusion_merge.bedgraph'
+# . ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${fusion[@]}
 
-bg_savename='test_s3norm_luciferase_merge.bedgraph'
-. ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${luciferase[@]}
+# bg_savename='test_s3norm_luciferase_merge.bedgraph'
+# . ./Merge_bedgraphs.sh $bg_savename $bg_path $res_bedgraph_dir ${luciferase[@]}
 
 ## calculate mean from merg bedgraph files
 # export FILE_PATH_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/tfe3_merge.bg
