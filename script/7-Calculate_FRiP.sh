@@ -27,11 +27,14 @@
 
 
 ## after normalization
-normalize_sample_count=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_rc_bedgraph/
+normalize_sample_count=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_rc_bedgraph
 # normalize_sample_count_NBP=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_NBP_bedgraph/
-normalize_peak_file=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling
-normalize_peak_calling=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling
-total_sample=${#sample_IDs[@]}
+# normalize_peak_file=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peak_s3norm_antiTfe3_new_control
+normalize_peak_calling=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peak_s3norm_antiTfe3_new_control
+s3norm_sample_file=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/anti_TFE3_new_control.csv
+sample_list=($(awk -F "\"*\\t\"*" '{print $1}' $s3norm_sample_file)) 
+# sample_list=`awk -F "\"*\\t\"*" '{print $1}' /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/anti_TFE3_new_control.csv`
+total_sample=${#sample_list[@]}
 n=0
 read_in_peak_list=()
 total_reads_list=()
@@ -48,7 +51,7 @@ reads_in_peaks=$(awk '{ sum += $5; } END { print sum; }' "$@" $normalize_peak_ca
 
 #   total_reads_nbp= $(awk '{ sum += $4; } END { print sum; }' "$@" $normalize_sample_count/${sample_ID}*.bedgraph) 
 done
-save_name=normalize
+save_name=normalize_anti_TFE3_new_control
 echo ${total_reads_list[@]} > ${frip_dir}/${save_name}_total_reads.txt 
 echo ${read_in_peak_list[@]} > ${frip_dir}/${save_name}_read_in_peak.txt
 echo ${sample_IDs[@]} > ${frip_dir}/${save_name}_sample_IDs.txt

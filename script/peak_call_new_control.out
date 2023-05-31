@@ -1,0 +1,153 @@
+mkdir: cannot create directory ‘/remove_zero’: Permission denied
+start running cut and run analysis at Wed May 31 17:02:35 CEST 2023
+-------------------step 8. running peak calling after normalization----------------------
+-----------running 1 out of 20 samples---------------------- 
+-----------running 2 out of 20 samples---------------------- 
+-----------running 3 out of 20 samples---------------------- 
+-----------running 4 out of 20 samples---------------------- 
+-----------running 5 out of 20 samples---------------------- 
+-----------running 6 out of 20 samples---------------------- 
+-----------running 7 out of 20 samples---------------------- 
+-----------running 8 out of 20 samples---------------------- 
+-----------running 9 out of 20 samples---------------------- 
+-----------running 10 out of 20 samples---------------------- 
+-----------running 11 out of 20 samples---------------------- 
+-----------running 12 out of 20 samples---------------------- 
+-----------running 13 out of 20 samples---------------------- 
+-----------running 14 out of 20 samples---------------------- 
+-----------running 15 out of 20 samples---------------------- 
+-----------running 16 out of 20 samples---------------------- 
+-----------running 17 out of 20 samples---------------------- 
+-----------running 18 out of 20 samples---------------------- 
+-----------running 19 out of 20 samples---------------------- 
+-----------running 20 out of 20 samples---------------------- 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+INFO  @ Wed, 31 May 2023 17:02:37: Read and build bedGraph... 
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+    main()
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+    run( args )
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 653, in <module>
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+    btrack = bio.build_bdgtrack(baseline_value=0)
+    btrack = bio.build_bdgtrack(baseline_value=0)
+    run( args )
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+    main()
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-022_*.bedgraph'
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+    btrack = bio.build_bdgtrack(baseline_value=0)
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-020_*.bedgraph'
+    btrack = bio.build_bdgtrack(baseline_value=0)
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+    main()
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-023_*.bedgraph'
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/macs2", line 61, in main
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-TH_*.bedgraph'
+    btrack = bio.build_bdgtrack(baseline_value=0)
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-021_*.bedgraph'
+    btrack = bio.build_bdgtrack(baseline_value=0)
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+    btrack = bio.build_bdgtrack(baseline_value=0)
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_NBP_bedgraph/SCC-ChIC-PMC-DRO-LH_*.bedgraph'
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-024_*.bedgraph'
+    run( args )
+  File "/hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/MACS2/bdgpeakcall_cmd.py", line 45, in run
+    btrack = bio.build_bdgtrack(baseline_value=0)
+  File "MACS2/IO/BedGraphIO.pyx", line 92, in MACS2.IO.BedGraphIO.bedGraphIO.build_bdgtrack
+FileNotFoundError: [Errno 2] No such file or directory: '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_NBP_bedgraph/SCC-bulkChIC-PMC-DRO-025_*.bedgraph'
+INFO  @ Wed, 31 May 2023 17:03:23: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:24: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:24: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:24: Done 
+INFO  @ Wed, 31 May 2023 17:03:24: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:25: Done 
+INFO  @ Wed, 31 May 2023 17:03:25: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:25: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:25: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:25: Done 
+INFO  @ Wed, 31 May 2023 17:03:25: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:25: Done 
+INFO  @ Wed, 31 May 2023 17:03:26: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:27: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:27: Done 
+INFO  @ Wed, 31 May 2023 17:03:29: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:29: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:29: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:29: Done 
+INFO  @ Wed, 31 May 2023 17:03:29: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:29: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:29: Done 
+INFO  @ Wed, 31 May 2023 17:03:30: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:30: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:30: Done 
+INFO  @ Wed, 31 May 2023 17:03:30: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:30: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:30: Done 
+INFO  @ Wed, 31 May 2023 17:03:30: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:30: Done 
+INFO  @ Wed, 31 May 2023 17:03:30: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:31: Call peaks from bedGraph... 
+INFO  @ Wed, 31 May 2023 17:03:31: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:31: Done 
+INFO  @ Wed, 31 May 2023 17:03:31: Write peaks... 
+INFO  @ Wed, 31 May 2023 17:03:31: Done 
+all done peak calling after normalization
+finish cut and run analysis at Wed May 31 17:03:31 CEST 2023

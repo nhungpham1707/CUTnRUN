@@ -17,7 +17,11 @@ cd $s3norm_working_directory
 ### old # time python $s3norm_script_directory'/src/s3norm_pipeline.py' -s $s3norm_script_directory'/src/' -t ${s3norm_working_directory}/nozeros_all_samples.txt
 # s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 
-time python $s3norm_script_directory'/src/s3norm_pipeline.py' -s $s3norm_script_directory'/src/' -t ${s3norm_working_directory}/${s3norm_sample_file_name}
+# time python $s3norm_script_directory'/src/s3norm_pipeline.py' -s $s3norm_script_directory'/src/' -t ${s3norm_working_directory}/${s3norm_sample_file_name}
+
+time python $s3norm_script_directory'/src/s3norm_pipeline.py' -s $s3norm_script_directory'/src/' -t ${s3norm_working_directory}/${s3norm_sample_file_name} -r mean -m mean -i 2.0 -f 0.05 -l 0.001 -a 100000 -b 0 -p z -k 0 -g 0
+
+
 
 ## remove line with 0 reads in each sample to prepare for diffBind. data with 0 cause problem in deseq2  # Error in estimateSizeFactorsForMatrix(counts(object), locfunc = locfunc,  : 
 #   every gene contains at least one zero, cannot compute log geometric means # no need to run this. it can be removed in r

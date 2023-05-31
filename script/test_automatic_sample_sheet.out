@@ -1,0 +1,15 @@
+mkdir: cannot create directory ‘/remove_zero’: Permission denied
+start running cut and run analysis at Wed May 31 14:23:18 CEST 2023
+-------------------step 8. running peak calling after normalization----------------------
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+finish cut and run analysis at Wed May 31 14:23:19 CEST 2023

@@ -3,13 +3,9 @@
 # generate bedgraph files with a fix bin size for all samples to use as input for s3norm 
 # nhung 25 04 2023
 
-bin_size="$1"
-sample_dir="$2"
-output_dir="$3"
-shift 3
-sample_list=("$@")
+bin_size=200
 
-for sample_ID in ${sample_list[@]}
+for sample_ID in ${sample_IDs[@]}
 do
 $bamCoverage_dir -b ${rm_dup_dir}/${sample_ID}/${sample_ID}_rmdup_filt.bam \
         --binSize $bin_size \

@@ -1,0 +1,1068 @@
+mkdir: cannot create directory ‘/remove_zero’: Permission denied
+start running cut and run analysis at Wed May 31 09:30:48 CEST 2023
+read first file name
+get bed file
+get first file signals
+SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph
+get all file signals
+SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph
+SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph
+bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph
+SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph
+SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph
+SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph
+bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph
+SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph
+SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph
+SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph
+bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph
+get average_ref
+get reference mean
+get output bedgraph file
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+1428
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+fdr peak number < bin_num * rank_lim
+use rank for target
+4.0
+reference_pk_num
+10178
+target_pk_num
+1428
+use FDR common peaks
+use FDR common background
+common peaks number:
+4967
+common background number:
+13744045
+check!!!
+422589
+242.76230493255488
+3.6244474220238656
+Iteration 0 | dFB: 0.074529
+[2.832562032403491, 1.9254711364320507]
+Iteration 10 | dFB: 0.032304
+[3.079698257373895, 1.3410205965350281]
+Iteration 20 | dFB: 0.000076
+[3.101921109331034, 1.28733561398247]
+converged!
+used: [A, B]
+[3.101948603523403, 1.287269098451931]
+transformation: B: 1.287269098451931; A: 3.101948603523403
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+1430
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+fdr peak number < bin_num * rank_lim
+use rank for target
+4.0
+reference_pk_num
+10178
+target_pk_num
+1430
+use FDR common peaks
+use FDR common background
+common peaks number:
+4893
+common background number:
+13746191
+check!!!
+423072
+243.7759187206213
+3.625965912152686
+Iteration 0 | dFB: 0.075053
+[2.8380814219002524, 1.9249468892584463]
+Iteration 10 | dFB: 0.028586
+[3.079334101207424, 1.3508010690457597]
+Iteration 20 | dFB: 0.000058
+[3.0974724777123246, 1.3067711370063786]
+converged!
+used: [A, B]
+[3.097493375920258, 1.3067203497204882]
+transformation: B: 1.3067203497204882; A: 3.097493375920258
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+5942
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+fdr peak number < bin_num * rank_lim
+use rank for target
+195.0
+reference_pk_num
+10178
+target_pk_num
+5942
+use FDR common peaks
+use FDR common background
+common peaks number:
+9539
+common background number:
+13765979
+check!!!
+484937
+182.02159554460636
+3.6284078089230025
+Iteration 0 | dFB: 0.079224
+[0.023907966440539993, 1.9207764025039369]
+Iteration 10 | dFB: 0.054428
+[0.211509136483288, 1.2322511202999031]
+Iteration 20 | dFB: 0.003986
+[0.4477008159797133, 0.958797869991134]
+converged!
+used: [A, B]
+[0.4528093913906293, 0.9544689809355111]
+transformation: B: 0.9544689809355111; A: 0.4528093913906293
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph
+User provide outputname: -o bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+258
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+fdr peak number < bin_num * rank_lim
+use rank for target
+21.0
+reference_pk_num
+10178
+target_pk_num
+258
+use FDR common peaks
+use FDR common background
+common peaks number:
+6171
+common background number:
+13760877
+check!!!
+560290
+223.44941701507048
+3.632497538882152
+Iteration 0 | dFB: 0.071088
+[0.312376644731923, 1.928912082151397]
+Iteration 10 | dFB: 0.047245
+[0.777859212944235, 1.379311136631567]
+Iteration 20 | dFB: 0.005971
+[1.1868285161429257, 1.0850396196860994]
+Iteration 30 | dFB: 0.000007
+[1.1976472076118767, 1.0783125835292786]
+converged!
+used: [A, B]
+[1.1976472076118767, 1.0783125835292786]
+transformation: B: 1.0783125835292786; A: 1.1976472076118767
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+45653
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+reference_pk_num
+10178
+target_pk_num
+45653
+use FDR common peaks
+use FDR common background
+common peaks number:
+9184
+common background number:
+13733822
+check!!!
+420823
+182.6775008057491
+3.584625933429888
+Iteration 0 | dFB: 0.084865
+[2.830138375522879, 1.9151346543902403]
+Iteration 10 | dFB: 0.004495
+[2.9995149419221736, 1.49732907892474]
+converged!
+used: [A, B]
+[3.001396345672991, 1.49261824386789]
+transformation: B: 1.49261824386789; A: 3.001396345672991
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+48950
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+reference_pk_num
+10178
+target_pk_num
+48950
+use FDR common peaks
+use FDR common background
+common peaks number:
+9575
+common background number:
+13730916
+check!!!
+420918
+179.81639672062664
+3.579340056573071
+Iteration 0 | dFB: 0.086018
+[2.815704924821683, 1.913981777306445]
+Iteration 10 | dFB: 0.004128
+[2.9866351234195703, 1.4998705629869424]
+converged!
+used: [A, B]
+[2.9883827366272038, 1.4955660893429987]
+transformation: B: 1.4955660893429987; A: 2.9883827366272038
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+77117
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+reference_pk_num
+10178
+target_pk_num
+77117
+use FDR common peaks
+use FDR common background
+common peaks number:
+13754
+common background number:
+13706928
+check!!!
+519456
+155.97627259706266
+3.4667139507240416
+Iteration 0 | dFB: 0.072706
+[0.013454909769541045, 1.9272935631554031]
+Iteration 10 | dFB: 0.063967
+[0.188078823555068, 1.2221842794937312]
+Iteration 20 | dFB: 0.006730
+[0.56296482686178, 0.8617164453839171]
+Iteration 30 | dFB: 0.000008
+[0.5749527733489697, 0.854087874039978]
+converged!
+used: [A, B]
+[0.5749527733489697, 0.854087874039978]
+transformation: B: 0.854087874039978; A: 0.5749527733489697
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph
+User provide outputname: -o bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+29069
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+reference_pk_num
+10178
+target_pk_num
+29069
+use FDR common peaks
+use FDR common background
+common peaks number:
+11653
+common background number:
+13752875
+check!!!
+530449
+166.47986694413453
+3.5867784289495854
+Iteration 0 | dFB: 0.091222
+[0.22410406379793923, 1.9087783051501006]
+Iteration 10 | dFB: 0.062546
+[1.1692532413591052, 1.1276060399993564]
+Iteration 20 | dFB: 0.001041
+[1.6186600562821971, 0.9004133504094208]
+converged!
+used: [A, B]
+[1.6208555848041697, 0.8993651426003845]
+transformation: B: 0.8993651426003845; A: 1.6208555848041697
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+578
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+fdr peak number < bin_num * rank_lim
+use rank for target
+4.0
+reference_pk_num
+10178
+target_pk_num
+578
+use FDR common peaks
+use FDR common background
+common peaks number:
+3366
+common background number:
+13749024
+check!!!
+422129
+296.19061963755195
+3.6319325005156675
+Iteration 0 | dFB: 0.073434
+[2.849123503233284, 1.92656592712738]
+Iteration 10 | dFB: 0.034355
+[3.0949410136473126, 1.335019015185991]
+Iteration 20 | dFB: 0.000088
+[3.1192803248710486, 1.2753460540560733]
+converged!
+used: [A, B]
+[3.1193140961919408, 1.2752631455589112]
+transformation: B: 1.2752631455589112; A: 3.1193140961919408
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+596
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+fdr peak number < bin_num * rank_lim
+use rank for target
+4.0
+reference_pk_num
+10178
+target_pk_num
+596
+use FDR common peaks
+use FDR common background
+common peaks number:
+4008
+common background number:
+13740265
+check!!!
+424277
+269.2605563123753
+3.627739625243035
+Iteration 0 | dFB: 0.073225
+[2.814786567355772, 1.9267751900040286]
+Iteration 10 | dFB: 0.035260
+[3.072313997354322, 1.3357349668258014]
+Iteration 20 | dFB: 0.000095
+[3.098991563932344, 1.2730422513298791]
+converged!
+used: [A, B]
+[3.0990294661367765, 1.272953012319989]
+transformation: B: 1.272953012319989; A: 3.0990294661367765
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+3501
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+fdr peak number < bin_num * rank_lim
+use rank for target
+166.0
+reference_pk_num
+10178
+target_pk_num
+3501
+use FDR common peaks
+use FDR common background
+common peaks number:
+9263
+common background number:
+13765741
+check!!!
+476279
+184.1548705387023
+3.6278279766465205
+Iteration 0 | dFB: 0.079423
+[0.02264585721496836, 1.9205772125127956]
+Iteration 10 | dFB: 0.049927
+[0.18356842668982512, 1.2540200925779774]
+Iteration 20 | dFB: 0.004857
+[0.3811017778669731, 0.9933209584417773]
+Iteration 30 | dFB: 0.000006
+[0.38670998235212656, 0.9879106941416335]
+converged!
+used: [A, B]
+[0.38670998235212656, 0.9879106941416335]
+transformation: B: 0.9879106941416335; A: 0.38670998235212656
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph
+User provide outputname: -o bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+('length sig1_raw', 13784097)
+('length_sig2_raw', 13784097)
+check peak number in reference
+reference_pk_num
+10178
+check peak number in target
+target_pk_num
+191
+fdr peak number < bin_num * rank_lim
+use rank for reference
+76.3333
+fdr peak number < bin_num * rank_lim
+use rank for target
+21.0
+reference_pk_num
+10178
+target_pk_num
+191
+use FDR common peaks
+use FDR common background
+common peaks number:
+7743
+common background number:
+13764107
+check!!!
+540515
+200.14357720521758
+3.6292071714292797
+Iteration 0 | dFB: 0.081079
+[0.45835292819654827, 1.9189214406353443]
+Iteration 10 | dFB: 0.049479
+[1.0939176013209755, 1.3200477335533682]
+Iteration 20 | dFB: 0.005921
+[1.569116511237076, 1.0174145656158646]
+Iteration 30 | dFB: 0.000007
+[1.5806452372285729, 1.0107614463339907]
+converged!
+used: [A, B]
+[1.5806452372285729, 1.0107614463339907]
+transformation: B: 1.0107614463339907; A: 1.5806452372285729
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+Error in file(file, "rt") : cannot open the connection
+Calls: read.table -> file
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph': No such file or directory
+Execution halted
+read first file name
+get bed file
+cut: SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+get first file signals
+SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph
+get all file signals
+SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph
+cut: SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph
+cut: SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph
+cut: bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph
+cut: SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph
+cut: SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph
+cut: SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph
+cut: bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph
+cut: SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph
+cut: SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph
+cut: SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph
+cut: bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph: No such file or directory
+get average_ref
+get reference mean
+get output bedgraph file
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'SCC-ChIC-PMC-DRO-T1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'SCC-ChIC-PMC-DRO-T5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'SCC-bulkChIC-PMC-DRO-008_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'bulkChIC-PMC-DRO-016_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'SCC-ChIC-PMC-DRO-F1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'SCC-ChIC-PMC-DRO-F5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'SCC-bulkChIC-PMC-DRO-002_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'bulkChIC-PMC-DRO-015_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'SCC-ChIC-PMC-DRO-L1_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'SCC-ChIC-PMC-DRO-L5_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'SCC-bulkChIC-PMC-DRO-005_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+Traceback (most recent call last):
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 474, in <module>
+    main(sys.argv[1:])
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 471, in main
+    s3norm(sig1_wg_raw, sig2_wg_raw, sig2_output_name, NTmethod, B_init, fdr_thresh, rank_lim, upperlim, lowerlim, p_method, common_pk_binary, common_bg_binary, cross_mark)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 182, in s3norm
+    sig2_raw = read2d_array(sig2_wg_raw, str)
+  File "/hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src//s3norm.py", line 11, in read2d_array
+    data=open(filename,'r')
+IOError: [Errno 2] No such file or directory: 'bulkChIC-PMC-DRO-014_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph'
+mv: cannot stat '*.NBP.info.txt': No such file or directory
+mv: cannot stat '*.NBP.s3norm.bedgraph': No such file or directory
+mv: cannot stat '*.s3norm.NB.neglog10p.bedgraph': No such file or directory
+mv: missing destination file operand after '/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/anti_tfe3_samples.csv'
+Try 'mv --help' for more information.
+User provide script_folder: -s /hpc/pmc_drost/nhung/s3norm_yichao/S3norm/src/
+User provide input_file_list: -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/anti_tfe3_samples.csv
+User provide reference_method: -r mean
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000
+User provide lowerlim: -b 0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+Get average reference......
+Get average reference......Done
+Get S3norm normalized read counts......
+Get S3norm normalized read counts......Done
+Get signal track of negative log10 p-value based on a NB background model......
+Get signal track of negative log10 p-value based on a NB background model......Done
+Get NBP average reference......
+Get NBP average reference......Done
+Get S3norm normalized negative log10 p-value based on NB background model......
+Get S3norm normalized negative log10 p-value based on NB background model......Done
+Organize folder......
+Save S3norm_NBP_bedgraph
+Save S3norm_rc_bedgraph
+Save NBP_bedgraph
+Save average_ref_bedgraph
+Organize folder......Done
+
+real	36m21.724s
+user	42m40.342s
+sys	3m22.907s
+finish cut and run analysis at Wed May 31 10:07:10 CEST 2023

@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=motif
-#SBATCH --output=motif.out
+#SBATCH --job-name=frip
+#SBATCH --output=frip_new_control.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -350,32 +350,44 @@ echo "start running cut and run analysis at $(date)"
 # echo "-------------------step 4. running filtering----------------"
 # . ./4-filtering.sh
 
-# # step 5. merge and transform bam file to bigwig
+# step 5. check sample correlation. To decide if any replicate should be removed
+# . ./5-samplesCorrelation.sh
+
+# # step 6. merge and transform bam file to bigwig
 # echo "-------------------step 5. running transform bam to bigwig--"
-# . ./5-bam2bigwig.sh
+# . ./6-bam2bigwig.sh
 
-# step 6. Calculate fraction of read in peak (FRiP)
-# echo "-------------------step 6. running frip calculation-------- "
-# . ./6-Calculate_FRiP.sh
+# step 7. Calculate fraction of read in peak (FRiP)
+echo "-------------------step 6. running frip calculation-------- "
+. ./7-Calculate_FRiP.sh
 
+##### Data normalization ###############
 # step 7. Normalize data
 # echo "-------------------step 7. running data normalization------ "
+## prepare bedgraph files with the same bin size for all samples
+# . ./8a-bincount.sh # need to test and convert to function
+# . ./8a-s3norm_input_preparation.sh
+
+## modify bedgraph file to remove rows with 0 count in all samples. If 0 values are more than 10% in the sample, s3norm will fail (log0 is inf), hence add 1 to these 0 values in all samples
+
+# python 8b-modifyBedgraphForS3norm.py # already test - worked! --> need to convert to func
+
+# start normalization on the modified bedgraph files
+
 s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
+
+# s3norm_yichao allows without control samples
 # s3norm_script_directory='/hpc/pmc_drost/nhung/s3norm_yichao/S3norm'
-# s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_antiTFE3_Samples
-# mkdir -p $s3norm_working_directory
 
-# s3norm_sample_file_name='anti_tfe3_samples.csv'
-# s3norm_sample_file_name=anti_tfe3_with_control.csv
-# # s3norm_sample_file_name=remove_low_depth_samples.csv
-# # s3norm_sample_file_name=remove_low_depth_histone_nozeroes_augmented.csv
+# sample list csv file and bedgraph files need to be in this working dir. result will be stored in the working dir. 
 
+# s3norm_working_directory=${res_dir}/modify_bedgraph
+# s3norm_sample_file_name=remove_low_depth_histone_nozeroes_augmented.csv 
 # . ./7-run_s3norm.sh 
 
-
 # s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_SFPQ_Samples
-# # s3norm_sample_file_name=anti_sfpq_samples.csv
-# s3norm_sample_file_name=anti_SFPQ_w_control.csv
+# s3norm_sample_file_name=anti_sfpq_samples.csv
+# # s3norm_sample_file_name=anti_SFPQ_w_control.csv
 # . ./7-run_s3norm.sh 
 
 # s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_H3k4me3_Samples
@@ -390,6 +402,9 @@ s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 # s3norm_sample_file_name=antiH3k27ac.csv
 # . ./7-run_s3norm.sh 
 
+# s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_antiTFE3_Samples
+# s3norm_sample_file_name=anti_TFE3_new_control.csv
+# . ./7-run_s3norm.sh 
 
 #==================================================================
 
@@ -400,10 +415,12 @@ s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 # . ./8a-peakCalling.sh
 
 # step 8b. peak calling with normalize data
-# echo "-------------------step 8. running peak calling after normalization----------------------"
-# clean_normalize_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/S3norm_remove_low_depth_samples/S3norm_NBP_bedgraph
+echo "-------------------step 8. running peak calling after normalization----------------------"
+
+# clean_normalize_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_SFPQ_Samples/with_control/S3norm_NBP_bedgraph
 # clean_normalize_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/S3norm_NBP_bedgraph
-# normalize_peak_dir=${res_dir}/normalize_peakCalling_remove_low_depth_histone_samples
+# clean_normalize_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_NBP_bedgraph
+# normalize_peak_dir=${res_dir}/peak_s3norm_antiTfe3_new_control
 # mkdir -p ${normalize_peak_dir}
 # . ./8b-peakCalling_normalize.sh
 # #==================================================================
@@ -433,15 +450,26 @@ s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 
 # step 11. Identify peaks that are differentially enriched between conditions. Modify variable names if using for different experiments before run 
 # echo "---------------step 11. running peak differential analysis---------------"
-# # # export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
-# # # export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_sample_sheet_s3norm_data_no_control.csv
-# echo "--------diffbind for remove low depth samples----------"
-# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_s3norm_remove_lowdepth_samples.csv
+# generate sample sheet file (if there is no)
+# export SAMPLE_SHEET_DIR=$diffBind_res_dir
+# export BAM_DIR=$rm_dup_dir
+# export PEAK_DIR=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/normalize_peakCalling #clean_normalize_peak_dir
+# export SAVE_NAME=test_automatic_sample_sheet
+# Rscript Generate_diffbind_sample_sheet.R
+# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffbind_normalize_samples.csv
 # export SAVE_NAME_VARIABLE=remove_low_depth_samples
 # diffBind_res_sub_dir=$diffBind_res_dir/$SAVE_NAME_VARIABLE
 # mkdir -p $diffBind_res_sub_dir
 # export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
 # Rscript DiffBind_analysis.R
+
+
+
+# # # export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_sample_sheet_s3norm_data_no_control.csv
+# echo "--------diffbind for remove low depth samples----------"
+# export SAMPLE_SHEET_DIR_VARIABLE=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/R/diffBind_s3norm_remove_lowdepth_samples.csv
+# export SAVE_NAME_VARIABLE=remove_low_depth_samples
+
 
 # run for remove low depth histone samples
 # echo "----------diffBind for remove low depth histone samples---------"
@@ -451,6 +479,8 @@ s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 # mkdir -p $diffBind_res_sub_dir
 # export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
 # Rscript DiffBind_analysis.R
+
+
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"
 # samples_list=("fusion_merged" "tfe3_merged" "luciferase_merged" )
@@ -527,17 +557,17 @@ s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/s3norm_merge_remove_noise_fusion.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
 
 
-motif_sub_dir=${motif_dir}/s3norm_merge_bedgraph_sorted_fusion
-mkdir -p $motif_sub_dir
-findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s3norm_fusion_merge_sorted.bedgraph $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
+# motif_sub_dir=${motif_dir}/s3norm_merge_bedgraph_sorted_fusion
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s3norm_fusion_merge_sorted.bedgraph $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
 
-motif_sub_dir=${motif_dir}/s3norm_merge_bedgraph_sorted_luc
-mkdir -p $motif_sub_dir
-findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s3norm_luciferase_merge_sorted.bedgraph $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
+# motif_sub_dir=${motif_dir}/s3norm_merge_bedgraph_sorted_luc
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s3norm_luciferase_merge_sorted.bedgraph $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
 
-motif_sub_dir=${motif_dir}/s3norm_merge_bedgraph_sorted_tfe3
-mkdir -p $motif_sub_dir
-findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s3norm_tfe3_merge_sorted.bedgraph $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
+# motif_sub_dir=${motif_dir}/s3norm_merge_bedgraph_sorted_tfe3
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s3norm_tfe3_merge_sorted.bedgraph $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
 
 
 # find motif location
@@ -551,8 +581,7 @@ findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s
 # step 16. peak annnotation
 # Rscript Peak_annotation.R
 # step 17. super enhancer finding 
-# step. check sample correlation
-# . ./SamplesCorrelation.sh
+
 
 # convert bam file to bed
 # . ./bam2bed.sh
@@ -605,14 +634,6 @@ findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s
 # save_name=s3norm_tfe3_merge
 # . ./Convert_bedgraph_to_bw.sh $input_name $res_dir $save_name $hg38_size_dir
 
-##### Data normalization ###############
-## prepare bedgraph files with the same bin size for all samples
-# . ./bincount.sh # need to test
-
-## modify bedgraph file to remove rows with 0 count in all samples. If 0 values are more than 10% in the sample, s3norm will fail (log0 is inf), hence add 1 to these 0 values in all samples
-# python modifyBedgraphForS3norm.py # already test - worked!
-
-# start normalization on the modified bedgraph files
 
 
 
