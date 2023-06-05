@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=frip
-#SBATCH --output=frip_new_control.out
+#SBATCH --job-name=motif
+#SBATCH --output=motif.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -149,6 +149,8 @@
 # MOtif
 # faste genome for findmotif , gft genome for peakanotation 
 # ref http://homer.ucsd.edu/homer/introduction/update.html
+
+# motif analysis bed file need to be tab separate, no header, no quote, no row names
 #==================================================================
 
 #==================================================================
@@ -178,8 +180,10 @@ mkdir -p $rm_dup_dir
 frip_dir=${res_dir}/FRiP
 mkdir -p $frip_dir
 
-clean_normalize_dir=$s3norm_working_directory/remove_zero
-mkdir -p $clean_normalize_dir
+# clean_normalize_dir=$s3norm_working_directory/remove_zero
+# mkdir -p $clean_normalize_dir
+modify_bedgraph_dir=${res_dir}/modify_bedgraph
+mkdir -p $modify_bedgraph_dir
 
 peak_dir=${res_dir}/peakCalling
 mkdir -p ${peak_dir}
@@ -205,11 +209,13 @@ mkdir -p $peak_analysis_dir
 figure_dir=${res_dir}/figures
 mkdir -p $figure_dir
 
-bincount_dir=${res_dir}/bincount_window
-mkdir -p $bincount_dir
+# bincount_dir=${res_dir}/bincount_window
+# mkdir -p $bincount_dir
 
 diffBind_res_dir=${res_dir}/diffBind_analysis
 mkdir -p $diffBind_res_dir
+IGV_input_dir=${res_dir}/IGV_input
+mkdir -p $IGV_input_dir
 # tool dir
 
 bowtie2Index=/hpc/pmc_drost/SOURCES/Genomes/human/bowtie2/human_gencode37_hg38
@@ -278,7 +284,18 @@ hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed
 #             "SCC-bulkChIC-PMC-DRO-023"\
 #             "SCC-bulkChIC-PMC-DRO-024"\
 #             "SCC-bulkChIC-PMC-DRO-025")
-
+anti_tfe3_sample_IDs=( "bulkChIC-PMC-DRO-014"\
+            "bulkChIC-PMC-DRO-015"\
+            "bulkChIC-PMC-DRO-016"\
+            "SCC-bulkChIC-PMC-DRO-002"\
+            "SCC-bulkChIC-PMC-DRO-005"\
+            "SCC-bulkChIC-PMC-DRO-008"\
+            "SCC-ChIC-PMC-DRO-L5"\
+            "SCC-ChIC-PMC-DRO-F1"\
+            "SCC-ChIC-PMC-DRO-F5"\
+            "SCC-ChIC-PMC-DRO-T1"\
+            "SCC-ChIC-PMC-DRO-T5"\
+            "SCC-ChIC-PMC-DRO-L1" )
 # sample IDs for peakCalling after normalization (remove samples that are used as control for data normalization and "SCC-ChIC-PMC-DRO-FH"\)
 sample_IDs=( "bulkChIC-PMC-DRO-014"\
             "bulkChIC-PMC-DRO-015"\
@@ -358,12 +375,17 @@ echo "start running cut and run analysis at $(date)"
 # . ./6-bam2bigwig.sh
 
 # step 7. Calculate fraction of read in peak (FRiP)
-echo "-------------------step 6. running frip calculation-------- "
-. ./7-Calculate_FRiP.sh
+# echo "-------------------step 6. running frip calculation-------- "
+# normalize_sample_count=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_rc_bedgraph
+# normalize_peak_calling=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peak_s3norm_antiTfe3_new_control
+# save_name=normalize_anti_TFE3_new_control
+# sample_list=${anti_tfe3_sample_IDs[@]}
 
+# . ./7-Calculate_FRiP.sh "$normalize_sample_count" "$normalize_peak_calling" "$save_name" "${anti_tfe3_sample_IDs[@]}" 
+# . ./7-Calculate_FRiP.sh
 ##### Data normalization ###############
 # step 7. Normalize data
-# echo "-------------------step 7. running data normalization------ "
+echo "-------------------step 7. running data normalization------ "
 ## prepare bedgraph files with the same bin size for all samples
 # . ./8a-bincount.sh # need to test and convert to function
 # . ./8a-s3norm_input_preparation.sh
@@ -374,7 +396,7 @@ echo "-------------------step 6. running frip calculation-------- "
 
 # start normalization on the modified bedgraph files
 
-s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
+# s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 
 # s3norm_yichao allows without control samples
 # s3norm_script_directory='/hpc/pmc_drost/nhung/s3norm_yichao/S3norm'
@@ -386,20 +408,20 @@ s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 # . ./7-run_s3norm.sh 
 
 # s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_SFPQ_Samples
-# s3norm_sample_file_name=anti_sfpq_samples.csv
-# # s3norm_sample_file_name=anti_SFPQ_w_control.csv
+# # s3norm_sample_file_name=anti_sfpq_samples.csv
+# s3norm_sample_file_name=anti_SFPQ_w_control.csv
 # . ./7-run_s3norm.sh 
 
 # s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_H3k4me3_Samples
-# s3norm_sample_file_name=anti_H3k4me3.csv
+# s3norm_sample_file_name=anti_H3k4me3_w_control.csv 
 # . ./7-run_s3norm.sh 
 
 # s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_H3k1me1_Samples
-# s3norm_sample_file_name=antih3k1me1.csv
+# s3norm_sample_file_name=anti_H3k1me1_w_control.csv
 # . ./7-run_s3norm.sh 
 
 # s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_anti_H3k27ac_Samples
-# s3norm_sample_file_name=antiH3k27ac.csv
+# s3norm_sample_file_name=anti_H3k27ac_w_control.csv
 # . ./7-run_s3norm.sh 
 
 # s3norm_working_directory=${res_dir}/modify_bedgraph/s3norm_antiTFE3_Samples
@@ -415,7 +437,7 @@ s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 # . ./8a-peakCalling.sh
 
 # step 8b. peak calling with normalize data
-echo "-------------------step 8. running peak calling after normalization----------------------"
+# echo "-------------------step 8. running peak calling after normalization----------------------"
 
 # clean_normalize_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_SFPQ_Samples/with_control/S3norm_NBP_bedgraph
 # clean_normalize_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_remove_low_dept_histone_samples/S3norm_NBP_bedgraph
@@ -519,10 +541,19 @@ echo "-------------------step 8. running peak calling after normalization-------
 # mkdir -p $motif_sub_dir
 # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/DBA_NORM_NATIVEtest_contrastfusionvsluc_foldnegative.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
 
-# motif_sub_dir=${motif_dir}/S3norm_all_DE_sites_100
+# motif_sub_dir=${motif_dir}/luc_top_rpkm20_antitfe3Normalization
 # mkdir -p $motif_sub_dir
-# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/with_no_control_sbatch/2023-05-14no_controlfold_change2-diffBind_contrast3_s3norm.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/antiTFE3_Samples/luc_top_sites_RPKM_thredshold_20.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
 
+motif_sub_dir=${motif_dir}/DE_top_2000_sites_allSamplesNormalization
+mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/antiTFE3_Samples/2023-06-01antiTFE3_Samples_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/top_2000_common_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+
+# motif_sub_dir=${motif_dir}/tfe3_top_rpkm30_antitfe3Normalization
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/antiTFE3_Samples/tfe3_top_sites_RPKM_thredshold_30.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+ 
 # motif_sub_dir=${motif_dir}/diffBind_norm_lib
 # mkdir -p $motif_sub_dir
 # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_lib_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8

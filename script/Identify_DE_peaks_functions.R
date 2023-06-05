@@ -32,10 +32,11 @@ replace_zero_value <- function(peaks, peak_counts, value_to_replace=1) {
 # Output: bed file save in the current dir
 
 
-write_DE_bed <- function(peak_model, contrast_number = 3, fold_change_thredshold = 2, 
+write_DE_bed <- function(peak_model, res_dir, contrast_number = 3, fold_change_thredshold = 2, 
                          FDR_thredshold = 0.05, 
                          column_to_keep = c('Conc_luciferase', 'Conc_fusion'), 
                          save_name ) {
+message('start write to bed file')
 res_deseq_contrast <- dba.report(peak_model, method=DBA_DESEQ2, contrast = contrast_number, th=1)
 res_deseq_contrast_df <- as.data.frame(res_deseq_contrast)
 bed_contrast <- res_deseq_contrast_df %>% 
@@ -43,8 +44,8 @@ bed_contrast <- res_deseq_contrast_df %>%
   dplyr::select(seqnames, start, end, column_to_keep, Fold, p.value, FDR)
 message(paste ('the number of DE sites is:', length(bed_contrast$seqnames) ))
 bed_constrast <- bed_contrast[order(-abs(bed_contrast$Fold)),]
-plot(bed_contrast$Fold)
-write.table(bed_contrast, file=paste0(Sys.Date() ,save_name,
+# plot(bed_contrast$Fold)
+write.table(bed_contrast, file=paste0(res_dir, '/', Sys.Date() ,save_name,
             '_fold_change', fold_change_thredshold, 
             '_FDR',FDR_thredshold ,'.bed'),
             sep="\t", quote=F, row.names=F, col.names=F)
@@ -68,7 +69,7 @@ write.table(bed_contrast, file=paste0(Sys.Date() ,save_name,
 # - volcano plot in png
 # - peak_model 
 
-conduct_diffBind_analysis <- function(peaks, peak_counts, save_name, 
+conduct_diffBind_analysis <- function(peaks, peak_counts, save_name, res_dir,  
                                       column_to_keep = c('Conc_luciferase', 'Conc_fusion'),
                                       reso = 600, contrast_number = 3, 
                                       fold_change_thredshold = 2, 
@@ -88,14 +89,14 @@ message('Analyzing contrast ....')
 peak_model <- dba.analyze(test_contrast,bParallel=FALSE, bGreylist = FALSE)
 return (peak_model)
 
+message('write DE to bed file ...')
+write_DE_bed(peak_model, res_dir, save_name, contrast_number, fold_change_thredshold, FDR_thredshold,column_to_keep)
+
 message('saving volcano plot ...')
-png(filename = paste(Sys.time(), "_", save_name, "_volcano_plot.png") , width = 1200 * reso/72, 
+png(filename = paste(res_dir, '/', Sys.time(), "_", save_name, "_volcano_plot.png") , width = 1200 * reso/72, 
     height = 700 * reso/72, units ="px", res = reso)
 dba.plotVolcano(peak_model, contrast = contrast_number, dotSize = 2)  # bFlip = TRUE
 dev.off()
-
-message('write DE to bed file ...')
-write_DE_bed(peak_model, save_name, contrast_number, fold_change_thredshold, FDR_thredshold,column_to_keep)
 
 message('finished!')
 }
@@ -226,3 +227,32 @@ overlay_peak_start_site <- function(sample_peak, validate_peak){
   return (result) 
   
 }
+
+
+# function to write top peak
+find_thredshold <- function(input_peak, rep_number) {
+  rep <- input_peak[[rep_number]]
+  rpkm_sort_rep <- rep[order(-rep$RPKM),]
+  plot(rpkm_sort_rep$RPKM)
+}
+
+filter_rep <- function(input_peak, rpkm_thredshold, rep_number) {
+  rep <- input_peak[[rep_number]]
+  rpkm_sort_rep <- rep[order(-rep$RPKM),]
+  rpkm_rep_filter <- rpkm_sort_rep[rpkm_sort_rep$RPKM > rpkm_thredshold,]
+  print (rpkm_rep_filter)
+}
+
+# write top peak from diffBind model contrast. apply for sample with 4 replicates 
+write_top_peak <- function(input_peak, rpkm_thredshold, save_name) {
+  rpkm_rep1_filter <- filter_rep(input_peak, rpkm_thredshold, 1)
+  rpkm_rep2_filter <- filter_rep(input_peak, rpkm_thredshold, 2)
+  rpkm_rep3_filter <- filter_rep(input_peak, rpkm_thredshold, 3)
+  rpkm_rep4_filter <- filter_rep(input_peak, rpkm_thredshold, 4)
+  combine_top <- rbind(rpkm_rep1_filter, rpkm_rep2_filter, rpkm_rep3_filter, rpkm_rep4_filter)
+  combine_top_sub <- combine_top[,c(1:3,5)]
+  combine_top_unique <- combine_top_sub[!duplicated(combine_top_sub),]
+  print( paste("there are", length(combine_top_unique$Chr), "sites with RPKM higher than the thredshold"))
+  write.table(combine_top_unique, paste0(save_name,'_top_sites_RPKM_thredshold_', rpkm_thredshold, '.bed'), sep = '\t', quote=F, row.names=F, col.names=F)
+  print (combine_top_unique)
+  }

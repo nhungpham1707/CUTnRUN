@@ -1,0 +1,835 @@
+start running cut and run analysis at Thu Jun  1 17:48:52 CEST 2023
+-------------------step 7. running data normalization------ 
+read first file name
+get bed file
+get first file signals
+SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph
+get all file signals
+SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph
+get average_ref
+get reference mean
+get output bedgraph file
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+test
+sig1_raw[:,1] is ['30600' '30800' '54400' ... '70600' '70800' '71000'] sig2_raw[:,1] is ['30600' '30800' '54400' ... '70600' '70800' '71000'] bin_num is 13784097
+length sig1 13784097
+length sig2 13784097
+check peak number in reference
+reference_pk_num
+19172
+check peak number in target
+target_pk_num
+5698
+fdr peak number < bin_num * rank_lim
+use rank for target
+22.0
+reference_pk_num
+19172
+target_pk_num
+5698
+use FDR common peaks
+use FDR common background
+common peaks number:
+8085
+common background number:
+13758767
+check!!!
+5061807
+39.79226963512679
+2.8132919686771363
+Iteration 0 | dFB: 0.087490
+[0.2169659645537303, 1.91250954257491]
+Iteration 10 | dFB: 0.059216
+[0.70869204971683, 1.211350251149764]
+Iteration 20 | dFB: 0.001030
+[0.9706006109411275, 0.992727241112226]
+converged!
+used: [A, B]
+[0.9719849771978034, 0.9916893774995169]
+transformation: B: 0.9916893774995169; A: 0.9719849771978034
+User provide reference.bedgraph: -r average_ref.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+test
+sig1_raw[:,1] is ['30600' '30800' '54400' ... '70600' '70800' '71000'] sig2_raw[:,1] is ['30600' '30800' '54400' ... '70600' '70800' '71000'] bin_num is 13784097
+length sig1 13784097
+length sig2 13784097
+check peak number in reference
+reference_pk_num
+19172
+check peak number in target
+target_pk_num
+85707
+reference_pk_num
+19172
+target_pk_num
+85707
+use FDR common peaks
+use FDR common background
+common peaks number:
+18233
+common background number:
+13697451
+check!!!
+5061807
+31.129013327483143
+2.7599844744836024
+Iteration 0 | dFB: 0.108030
+[0.26269960381053403, 1.8919700980138576]
+Iteration 10 | dFB: 0.059502
+[0.9772476119348493, 1.0587594298490364]
+Iteration 20 | dFB: 0.000240
+[1.150389272682101, 0.9314088647875476]
+converged!
+used: [A, B]
+[1.1507211029857904, 0.9311759762051068]
+transformation: B: 0.9311759762051068; A: 1.1507211029857904
+[1] "args in R are"
+[1] "SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph.s3norm.bedgraph"             
+[2] "SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph"                             
+[3] "SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph"
+[1] "sig_raw in r script is"
+    V1    V2    V3       V4
+1 chr1 30600 30800 0.971985
+2 chr1 30800 31000 0.971985
+3 chr1 54400 54600 0.971985
+4 chr1 54600 54800 0.971985
+5 chr1 54800 55000 0.971985
+6 chr1 55000 55200 0.971985
+[1] "input_raw in r script is"
+    V1    V2    V3 V4
+1 chr1 30600 30800  1
+2 chr1 30800 31000  1
+3 chr1 54400 54600  1
+4 chr1 54600 54800  1
+5 chr1 54800 55000  1
+6 chr1 55000 55200  1
+[1] "head sig is"
+[1] 0.971985 0.971985 0.971985 0.971985 0.971985 0.971985
+[1] "min_non0 is"
+[1] 1.932804
+[1] "x in get_true_NB_prob_size is"
+[1] "double"
+[1] "numeric"
+ num [1:7586137] 1.93 2.89 1.93 1.93 2.89 ...
+NULL
+[1] "dim is"
+[1] "head is"
+[1] "m in gettrue is 3.95346854340062"
+[1] "m2 in get true is 20.6173468603824"
+[1] "p0 in get true is 0"
+[1] "p in p is 0.792685992269787"
+[1] "1-p0 is 1"
+[1] "m^2 is 15.6299135236582"
+[1] "m2-m^2 is 4.98743333672418"
+[1] "rt is 0.792685992269787" "rt is 15.1164852271398" 
+[3] "rt is 0"                
+[1] "op os p0 before problematic comparison 0.792685992269787 15.1164852271398 0.0298376444602274"
+[1] "p in problematic comparison is 0.724902548072229"
+[1] "1-p0 problematic comparison is 0.970162355539773"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.724902548072229"
+[1] "op os p0 before problematic comparison 0.724902548072229 10.1068487189761 0.0387139353338691"
+[1] "p in problematic comparison is 0.706919657652235"
+[1] "1-p0 problematic comparison is 0.961286064666131"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.706919657652235"
+[1] "op os p0 before problematic comparison 0.706919657652235 9.16672710393966 0.0416117932728693"
+[1] "p in problematic comparison is 0.70124038969604"
+[1] "1-p0 problematic comparison is 0.958388206727131"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.70124038969604"
+[1] "op os p0 before problematic comparison 0.70124038969604 8.89333775961265 0.0425836105331628"
+[1] "p in problematic comparison is 0.699356184323049"
+[1] "1-p0 problematic comparison is 0.957416389466837"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.699356184323049"
+[1] "op os p0 before problematic comparison 0.699356184323049 8.80491748142633 0.0429123600689174"
+[1] "p in problematic comparison is 0.698721079076048"
+[1] "1-p0 problematic comparison is 0.957087639931083"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.698721079076048"
+[1] "op os p0 before problematic comparison 0.698721079076048 8.77536305897243 0.0430238940589418"
+[1] "p in problematic comparison is 0.698505870570184"
+[1] "1-p0 problematic comparison is 0.956976105941058"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.698505870570184"
+[1] "op os p0 before problematic comparison 0.698505870570184 8.76537664366901 0.0430617710668425"
+[1] "p in problematic comparison is 0.698432815788196"
+[1] "1-p0 problematic comparison is 0.956938228933157"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.698432815788196"
+[1] "op os p0 before problematic comparison 0.698432815788196 8.7619898908105 0.0430746384040558"
+[1] "p in problematic comparison is 0.698408001557641"
+[1] "1-p0 problematic comparison is 0.956925361595944"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.698408001557641"
+[1] "op os p0 before problematic comparison 0.698408001557641 8.760839899086 0.0430790101085569"
+[1] "p in problematic comparison is 0.698399571272643"
+[1] "1-p0 problematic comparison is 0.956920989891443"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.698399571272643"
+[1] "op os p0 before problematic comparison 0.698399571272643 8.76044924867526 0.043080495461269"
+[1] "p in problematic comparison is 0.698396707002155"
+[1] "1-p0 problematic comparison is 0.956919504538731"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.698396707002155"
+[1] "op os p0 before problematic comparison 0.698396707002155 8.76031652640777 0.043081000138899"
+[1] "p in problematic comparison is 0.698395733815593"
+[1] "1-p0 problematic comparison is 0.956918999861101"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.698395733815593"
+[1] "op os p0 before problematic comparison 0.698395733815593 8.76027143224356 0.0430811716137529"
+[1] "p in problematic comparison is 0.69839540315558"
+[1] "1-p0 problematic comparison is 0.956918828386247"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.69839540315558"
+[1] "op os p0 before problematic comparison 0.69839540315558 8.76025611064637 0.0430812298760337"
+[1] "p in problematic comparison is 0.698395290806778"
+[1] "1-p0 problematic comparison is 0.956918770123966"
+[1] "m^2  problematic comparison is 15.6299135236582"
+[1] "m2-m^2 problematic comparison problematic comparison is 4.98743333672418"
+[1] "p in  problematic comparison comparison is 0.698395290806778"
+[1] "summary negative log10 NB p-value:"
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.2524  0.2927  0.3496 42.5436 
+[1] "output_name in r script is"
+[1] "SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph"
+[1] "dim neglog10_nb_pval_bedgraph is 13784097"
+[2] "dim neglog10_nb_pval_bedgraph is 4"       
+[1] "head neglog10_nb_pval_bedgraph is"
+    V1    V2    V3 neglog10_nb_pval
+1 chr1 30600 30800                0
+2 chr1 30800 31000                0
+3 chr1 54400 54600                0
+4 chr1 54600 54800                0
+5 chr1 54800 55000                0
+6 chr1 55000 55200                0
+[1] "args in R are"
+[1] "SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph.s3norm.bedgraph"             
+[2] "SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph"                             
+[3] "SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph"
+[1] "sig_raw in r script is"
+    V1    V2    V3       V4
+1 chr1 30600 30800 1.150721
+2 chr1 30800 31000 1.150721
+3 chr1 54400 54600 1.150721
+4 chr1 54600 54800 1.150721
+5 chr1 54800 55000 1.150721
+6 chr1 55000 55200 1.150721
+[1] "input_raw in r script is"
+    V1    V2    V3 V4
+1 chr1 30600 30800  1
+2 chr1 30800 31000  1
+3 chr1 54400 54600  1
+4 chr1 54600 54800  1
+5 chr1 54800 55000  1
+6 chr1 55000 55200  1
+[1] "head sig is"
+[1] 1.150721 1.150721 1.150721 1.150721 1.150721 1.150721
+[1] "min_non0 is"
+[1] 1.150721
+[1] "x in get_true_NB_prob_size is"
+[1] "double"
+[1] "numeric"
+ num [1:13652838] 1.15 1.15 1.15 1.15 1.15 ...
+NULL
+[1] "dim is"
+[1] "head is"
+[1] "m in gettrue is 2.61776199207557"
+[1] "m2 in get true is 11.9867477516286"
+[1] "p0 in get true is 0"
+[1] "p in p is 0.509880473149535"
+[1] "1-p0 is 1"
+[1] "m^2 is 6.85267784715545"
+[1] "m2-m^2 is 5.13406990447317"
+[1] "rt is 0.509880473149535" "rt is 2.72330656093119" 
+[3] "rt is 0"                
+[1] "op os p0 before problematic comparison 0.509880473149535 2.72330656093119 0.1597153731112"
+[1] "p in problematic comparison is 0.420284476024452"
+[1] "1-p0 problematic comparison is 0.8402846268888"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.420284476024452"
+[1] "op os p0 before problematic comparison 0.420284476024452 1.59472203254704 0.250989922286584"
+[1] "p in problematic comparison is 0.381930728549696"
+[1] "1-p0 problematic comparison is 0.749010077713416"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.381930728549696"
+[1] "op os p0 before problematic comparison 0.381930728549696 1.21161674780553 0.311548412105081"
+[1] "p in problematic comparison is 0.360126303535385"
+[1] "1-p0 problematic comparison is 0.688451587894919"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.360126303535385"
+[1] "op os p0 before problematic comparison 0.360126303535385 1.01429468375351 0.354906951225716"
+[1] "p in problematic comparison is 0.345984140679678"
+[1] "1-p0 problematic comparison is 0.645093048774284"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.345984140679678"
+[1] "op os p0 before problematic comparison 0.345984140679678 0.893347511887435 0.387451187181604"
+[1] "p in problematic comparison is 0.336078088125918"
+[1] "1-p0 problematic comparison is 0.612548812818396"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.336078088125918"
+[1] "op os p0 before problematic comparison 0.336078088125918 0.811697215262881 0.412679435117539"
+[1] "p in problematic comparison is 0.328780760552703"
+[1] "1-p0 problematic comparison is 0.587320564882461"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.328780760552703"
+[1] "op os p0 before problematic comparison 0.328780760552703 0.753090839618831 0.432699737735398"
+[1] "p in problematic comparison is 0.323211544630957"
+[1] "1-p0 problematic comparison is 0.567300262264602"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.323211544630957"
+[1] "op os p0 before problematic comparison 0.323211544630957 0.709213616046631 0.448870852787288"
+[1] "p in problematic comparison is 0.318848978538672"
+[1] "1-p0 problematic comparison is 0.551129147212712"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.318848978538672"
+[1] "op os p0 before problematic comparison 0.318848978538672 0.675344170557708 0.462113912682386"
+[1] "p in problematic comparison is 0.315363082879492"
+[1] "1-p0 problematic comparison is 0.537886087317614"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.315363082879492"
+[1] "op os p0 before problematic comparison 0.315363082879492 0.64859113425775 0.473078446852633"
+[1] "p in problematic comparison is 0.312534111066593"
+[1] "1-p0 problematic comparison is 0.526921553147367"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.312534111066593"
+[1] "op os p0 before problematic comparison 0.312534111066593 0.627079194459718 0.482237172176505"
+[1] "p in problematic comparison is 0.310209673139697"
+[1] "1-p0 problematic comparison is 0.517762827823495"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.310209673139697"
+[1] "op os p0 before problematic comparison 0.310209673139697 0.609535860925093 0.489943158538925"
+[1] "p in problematic comparison is 0.308280550420539"
+[1] "1-p0 problematic comparison is 0.510056841461076"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.308280550420539"
+[1] "op os p0 before problematic comparison 0.308280550420539 0.595065639069497 0.496465872081024"
+[1] "p in problematic comparison is 0.306666300980959"
+[1] "1-p0 problematic comparison is 0.503534127918976"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.306666300980959"
+[1] "op os p0 before problematic comparison 0.306666300980959 0.583019142290828 0.502014756853734"
+[1] "p in problematic comparison is 0.305306304790561"
+[1] "1-p0 problematic comparison is 0.497985243146266"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.305306304790561"
+[1] "op os p0 before problematic comparison 0.305306304790561 0.572913487790062 0.506755154101406"
+[1] "p in problematic comparison is 0.304153981938705"
+[1] "1-p0 problematic comparison is 0.493244845898594"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.304153981938705"
+[1] "op os p0 before problematic comparison 0.304153981938705 0.564381895525023 0.51081934212382"
+[1] "p in problematic comparison is 0.303172939284524"
+[1] "1-p0 problematic comparison is 0.48918065787618"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.303172939284524"
+[1] "op os p0 before problematic comparison 0.303172939284524 0.557140668607676 0.514314373889243"
+[1] "p in problematic comparison is 0.302334330929942"
+[1] "1-p0 problematic comparison is 0.485685626110757"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.302334330929942"
+[1] "op os p0 before problematic comparison 0.302334330929942 0.550966915676671 0.517327757256668"
+[1] "p in problematic comparison is 0.301615006259893"
+[1] "1-p0 problematic comparison is 0.482672242743332"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.301615006259893"
+[1] "op os p0 before problematic comparison 0.301615006259893 0.545683130836006 0.519931647816161"
+[1] "p in problematic comparison is 0.300996182731255"
+[1] "1-p0 problematic comparison is 0.480068352183839"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.300996182731255"
+[1] "op os p0 before problematic comparison 0.300996182731255 0.541146276951669 0.522185995038337"
+[1] "p in problematic comparison is 0.30046247659433"
+[1] "1-p0 problematic comparison is 0.477814004961663"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.30046247659433"
+[1] "op os p0 before problematic comparison 0.30046247659433 0.537239900843192 0.524140938197346"
+[1] "p in problematic comparison is 0.30000118291686"
+[1] "1-p0 problematic comparison is 0.475859061802654"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.30000118291686"
+[1] "op os p0 before problematic comparison 0.30000118291686 0.533868335337238 0.525838655564885"
+[1] "p in problematic comparison is 0.299601732538453"
+[1] "1-p0 problematic comparison is 0.474161344435115"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.299601732538453"
+[1] "op os p0 before problematic comparison 0.299601732538453 0.53095236643058 0.52731480911608"
+[1] "p in problematic comparison is 0.299255276742678"
+[1] "1-p0 problematic comparison is 0.47268519088392"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.299255276742678"
+[1] "op os p0 before problematic comparison 0.299255276742678 0.528425947582146 0.528599685819865"
+[1] "p in problematic comparison is 0.298954365558709"
+[1] "1-p0 problematic comparison is 0.471400314180135"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.298954365558709"
+[1] "op os p0 before problematic comparison 0.298954365558709 0.526233674632318 0.52971910841972"
+[1] "p in problematic comparison is 0.29869269568161"
+[1] "1-p0 problematic comparison is 0.47028089158028"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.29869269568161"
+[1] "op os p0 before problematic comparison 0.29869269568161 0.524328821484014 0.53069516902335"
+[1] "p in problematic comparison is 0.298464910837518"
+[1] "1-p0 problematic comparison is 0.46930483097665"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.298464910837518"
+[1] "op os p0 before problematic comparison 0.298464910837518 0.522671794865573 0.531546824994787"
+[1] "p in problematic comparison is 0.298266442136219"
+[1] "1-p0 problematic comparison is 0.468453175005213"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.298266442136219"
+[1] "op os p0 before problematic comparison 0.298266442136219 0.521228906256072 0.53229038675011"
+[1] "p in problematic comparison is 0.298093379256542"
+[1] "1-p0 problematic comparison is 0.46770961324989"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.298093379256542"
+[1] "op os p0 before problematic comparison 0.298093379256542 0.519971386657153 0.532939919889876"
+[1] "p in problematic comparison is 0.297942365655455"
+[1] "1-p0 problematic comparison is 0.467060080110124"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297942365655455"
+[1] "op os p0 before problematic comparison 0.297942365655455 0.518874589339359 0.533507578846077"
+[1] "p in problematic comparison is 0.297810512678992"
+[1] "1-p0 problematic comparison is 0.466492421153923"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297810512678992"
+[1] "op os p0 before problematic comparison 0.297810512678992 0.517917339571849 0.534003885326111"
+[1] "p in problematic comparison is 0.29769532868129"
+[1] "1-p0 problematic comparison is 0.465996114673889"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.29769532868129"
+[1] "op os p0 before problematic comparison 0.29769532868129 0.517081400377549 0.53443796191932"
+[1] "p in problematic comparison is 0.297594660162192"
+[1] "1-p0 problematic comparison is 0.46556203808068"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297594660162192"
+[1] "op os p0 before problematic comparison 0.297594660162192 0.516351030691826 0.534817729026024"
+[1] "p in problematic comparison is 0.297506642606275"
+[1] "1-p0 problematic comparison is 0.465182270973976"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297506642606275"
+[1] "op os p0 before problematic comparison 0.297506642606275 0.51571261772504 0.535150071585968"
+[1] "p in problematic comparison is 0.297429659211407"
+[1] "1-p0 problematic comparison is 0.464849928414032"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297429659211407"
+[1] "op os p0 before problematic comparison 0.297429659211407 0.515154369377668 0.53544098078754"
+[1] "p in problematic comparison is 0.297362306077852"
+[1] "1-p0 problematic comparison is 0.46455901921246"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297362306077852"
+[1] "op os p0 before problematic comparison 0.297362306077852 0.514666055608459 0.535695674933588"
+[1] "p in problematic comparison is 0.297303362721954"
+[1] "1-p0 problematic comparison is 0.464304325066412"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297303362721954"
+[1] "op os p0 before problematic comparison 0.297303362721954 0.514238789977391 0.535918702852863"
+[1] "p in problematic comparison is 0.297251767004379"
+[1] "1-p0 problematic comparison is 0.464081297147137"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297251767004379"
+[1] "op os p0 before problematic comparison 0.297251767004379 0.51386484436631 0.536114032625864"
+[1] "p in problematic comparison is 0.29720659373864"
+[1] "1-p0 problematic comparison is 0.463885967374136"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.29720659373864"
+[1] "op os p0 before problematic comparison 0.29720659373864 0.513537491258032 0.536285127901205"
+[1] "p in problematic comparison is 0.297167036383328"
+[1] "1-p0 problematic comparison is 0.463714872098795"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297167036383328"
+[1] "op os p0 before problematic comparison 0.297167036383328 0.513250869029156 0.536435013684557"
+[1] "p in problematic comparison is 0.297132391330244"
+[1] "1-p0 problematic comparison is 0.463564986315443"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297132391330244"
+[1] "op os p0 before problematic comparison 0.297132391330244 0.512999866556106 0.536566333164932"
+[1] "p in problematic comparison is 0.297102044387046"
+[1] "1-p0 problematic comparison is 0.463433666835068"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297102044387046"
+[1] "op os p0 before problematic comparison 0.297102044387046 0.512780024102148 0.536681396885824"
+[1] "p in problematic comparison is 0.297075459122333"
+[1] "1-p0 problematic comparison is 0.463318603114176"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297075459122333"
+[1] "op os p0 before problematic comparison 0.297075459122333 0.512587447985859 0.536782225358964"
+[1] "p in problematic comparison is 0.297052166796861"
+[1] "1-p0 problematic comparison is 0.463217774641036"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297052166796861"
+[1] "op os p0 before problematic comparison 0.297052166796861 0.512418736959058 0.536870586046314"
+[1] "p in problematic comparison is 0.297031757649893"
+[1] "1-p0 problematic comparison is 0.463129413953686"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297031757649893"
+[1] "op os p0 before problematic comparison 0.297031757649893 0.512270918567612 0.536948025493905"
+[1] "p in problematic comparison is 0.297013873346667"
+[1] "1-p0 problematic comparison is 0.463051974506095"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.297013873346667"
+[1] "op os p0 before problematic comparison 0.297013873346667 0.512141394049321 0.537015897283333"
+[1] "p in problematic comparison is 0.296998200423286"
+[1] "1-p0 problematic comparison is 0.462984102716667"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296998200423286"
+[1] "op os p0 before problematic comparison 0.296998200423286 0.512027890552773 0.537075386368511"
+[1] "p in problematic comparison is 0.296984464590421"
+[1] "1-p0 problematic comparison is 0.462924613631489"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296984464590421"
+[1] "op os p0 before problematic comparison 0.296984464590421 0.511928419649931 0.537127530283031"
+[1] "p in problematic comparison is 0.296972425778014"
+[1] "1-p0 problematic comparison is 0.462872469716969"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296972425778014"
+[1] "op os p0 before problematic comparison 0.296972425778014 0.511841241271494 0.537173237634276"
+[1] "p in problematic comparison is 0.296961873820505"
+[1] "1-p0 problematic comparison is 0.462826762365724"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296961873820505"
+[1] "op os p0 before problematic comparison 0.296961873820505 0.511764832323951 0.537213304241999"
+[1] "p in problematic comparison is 0.296952624696652"
+[1] "1-p0 problematic comparison is 0.462786695758001"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296952624696652"
+[1] "op os p0 before problematic comparison 0.296952624696652 0.511697859355733 0.537248427229502"
+[1] "p in problematic comparison is 0.296944517250252"
+[1] "1-p0 problematic comparison is 0.462751572770498"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296944517250252"
+[1] "op os p0 before problematic comparison 0.296944517250252 0.511639154730949 0.537279217333426"
+[1] "p in problematic comparison is 0.296937410328398"
+[1] "1-p0 problematic comparison is 0.462720782666574"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296937410328398"
+[1] "op os p0 before problematic comparison 0.296937410328398 0.511587695845899 0.537306209662139"
+[1] "p in problematic comparison is 0.296931180282688"
+[1] "1-p0 problematic comparison is 0.462693790337861"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296931180282688"
+[1] "op os p0 before problematic comparison 0.296931180282688 0.511542586988488 0.537329873101963"
+[1] "p in problematic comparison is 0.296925718786251"
+[1] "1-p0 problematic comparison is 0.462670126898037"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296925718786251"
+[1] "op os p0 before problematic comparison 0.296925718786251 0.511503043495754 0.537350618544012"
+[1] "p in problematic comparison is 0.296920930925829"
+[1] "1-p0 problematic comparison is 0.462649381455988"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296920930925829"
+[1] "op os p0 before problematic comparison 0.296920930925829 0.511468377911708 0.537368806081712"
+[1] "p in problematic comparison is 0.296916733533621"
+[1] "1-p0 problematic comparison is 0.462631193918288"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296916733533621"
+[1] "op os p0 before problematic comparison 0.296916733533621 0.511437987887766 0.537384751309462"
+[1] "p in problematic comparison is 0.296913053728238"
+[1] "1-p0 problematic comparison is 0.462615248690538"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296913053728238"
+[1] "op os p0 before problematic comparison 0.296913053728238 0.511411345602451 0.537398730835991"
+[1] "p in problematic comparison is 0.296909827638194"
+[1] "1-p0 problematic comparison is 0.462601269164009"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296909827638194"
+[1] "op os p0 before problematic comparison 0.296909827638194 0.511387988506559 0.537410987111301"
+[1] "p in problematic comparison is 0.296906999284787"
+[1] "1-p0 problematic comparison is 0.462589012888699"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296906999284787"
+[1] "op os p0 before problematic comparison 0.296906999284787 0.511367511225402 0.537421732653433"
+[1] "p in problematic comparison is 0.296904519604248"
+[1] "1-p0 problematic comparison is 0.462578267346567"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296904519604248"
+[1] "op os p0 before problematic comparison 0.296904519604248 0.511349558471656 0.537431153750256"
+[1] "p in problematic comparison is 0.296902345591621"
+[1] "1-p0 problematic comparison is 0.462568846249744"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296902345591621"
+[1] "op os p0 before problematic comparison 0.296902345591621 0.511333818841329 0.537439413701942"
+[1] "p in problematic comparison is 0.296900439551079"
+[1] "1-p0 problematic comparison is 0.462560586298058"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296900439551079"
+[1] "op os p0 before problematic comparison 0.296900439551079 0.511320019381722 0.537446655661465"
+[1] "p in problematic comparison is 0.296898768439349"
+[1] "1-p0 problematic comparison is 0.462553344338535"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296898768439349"
+[1] "op os p0 before problematic comparison 0.296898768439349 0.511307920834511 0.537453005123217"
+[1] "p in problematic comparison is 0.296897303290601"
+[1] "1-p0 problematic comparison is 0.462546994876783"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296897303290601"
+[1] "op os p0 before problematic comparison 0.296897303290601 0.511297313469419 0.537458572103548"
+[1] "p in problematic comparison is 0.296896018712626"
+[1] "1-p0 problematic comparison is 0.462541427896452"
+[1] "m^2  problematic comparison is 6.85267784715545"
+[1] "m2-m^2 problematic comparison problematic comparison is 5.13406990447317"
+[1] "p in  problematic comparison comparison is 0.296896018712626"
+[1] "summary negative log10 NB p-value:"
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+ 0.0000  0.0000  0.0000  0.2884  0.4975 18.9754 
+[1] "output_name in r script is"
+[1] "SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph"
+[1] "dim neglog10_nb_pval_bedgraph is 13784097"
+[2] "dim neglog10_nb_pval_bedgraph is 4"       
+[1] "head neglog10_nb_pval_bedgraph is"
+    V1    V2    V3 neglog10_nb_pval
+1 chr1 30600 30800                0
+2 chr1 30800 31000                0
+3 chr1 54400 54600                0
+4 chr1 54600 54800                0
+5 chr1 54800 55000                0
+6 chr1 55000 55200                0
+read first file name
+get bed file
+get first file signals
+SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph
+get all file signals
+SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph
+get average_ref
+get reference mean
+get output bedgraph file
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-023_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+test
+sig1_raw[:,1] is ['30600' '30800' '54400' ... '70600' '70800' '71000'] sig2_raw[:,1] is ['30600' '30800' '54400' ... '70600' '70800' '71000'] bin_num is 13784097
+length sig1 13784097
+length sig2 13784097
+check peak number in reference
+reference_pk_num
+4069557
+check peak number in target
+target_pk_num
+5431
+fdr peak number < bin_num * rank_lim
+use rank for target
+3.93856050532572
+reference_pk_num
+4069557
+target_pk_num
+5431
+use FDR common peaks
+use FDR common background
+common peaks number:
+14957
+common background number:
+9714540
+check!!!
+0
+9.842238026342178
+0.9573083342447497
+Iteration 0 | dFB: 0.285335
+[10.025703679248494, 1.7146651996500708]
+Iteration 10 | dFB: 0.002289
+[3.122054864197997, 0.7393678320902791]
+converged!
+used: [A, B]
+[3.1120243563190564, 0.7370873024247204]
+transformation: B: 0.7370873024247204; A: 3.1120243563190564
+User provide reference.bedgraph: -r average_ref.bedgraph.NBP.bedgraph
+User provide target.bedgraph: -t SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph.s3norm.NB.neglog10p.bedgraph
+User provide outputname: -o SCC-bulkChIC-PMC-DRO-020_nozeroes_augmented.bedgraph.NBP
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000.0
+User provide lowerlim: -b 0.0
+User provide p_method: -p neglog10p
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+User provide cross_mark: -c F
+start S3norm.......
+test
+sig1_raw[:,1] is ['30600' '30800' '54400' ... '70600' '70800' '71000'] sig2_raw[:,1] is ['30600' '30800' '54400' ... '70600' '70800' '71000'] bin_num is 13784097
+length sig1 13784097
+length sig2 13784097
+check peak number in reference
+reference_pk_num
+4069557
+check peak number in target
+target_pk_num
+168
+fdr peak number < bin_num * rank_lim
+use rank for target
+3.01375573919348
+reference_pk_num
+4069557
+target_pk_num
+168
+use FDR common peaks
+use FDR common background
+common peaks number:
+13831
+common background number:
+9714540
+check!!!
+0
+6.5923898734726345
+0.9573083342447497
+Iteration 0 | dFB: 0.323397
+[4.347119122802309, 1.6766027572474709]
+Iteration 10 | dFB: 0.001803
+[2.5256375835992713, 0.7355839346424653]
+converged!
+used: [A, B]
+[2.5212782693151907, 0.7337886386800968]
+transformation: B: 0.7337886386800968; A: 2.5212782693151907
+User provide script_folder: -s /hpc/pmc_drost/nhung/S3norm/src/
+User provide input_file_list: -t /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_SFPQ_Samples/anti_SFPQ_w_control.csv
+User provide reference_method: -r mean
+User provide NTmethod: -m mean
+User provide B_init: -i 2.0
+User provide fdr_thresh: -f 0.05
+User provide rank_lim: -l 0.001
+User provide upperlim: -a 100000
+User provide lowerlim: -b 0
+User provide p_method: -p z
+User provide common_pk_binary: -k 0
+User provide common_bg_binary: -g 0
+Default cross_mark: -c F
+start S3norm.......
+Filelist is /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_SFPQ_Samples/anti_SFPQ_w_control.csv
+script_folder is /hpc/pmc_drost/nhung/S3norm/src/
+Get average reference......
+Get average reference......Done
+Get S3norm normalized read counts......
+Get S3norm normalized read counts......Done
+Get signal track of negative log10 p-value based on a NB background model......
+Get signal track of negative log10 p-value based on a NB background model......Done
+Get NBP average reference......
+Get NBP average reference......Done
+Get S3norm normalized negative log10 p-value based on NB background model......
+Get S3norm normalized negative log10 p-value based on NB background model......Done
+Organize folder......
+Save S3norm_NBP_bedgraph
+Save S3norm_rc_bedgraph
+Save NBP_bedgraph
+Save average_ref_bedgraph
+Organize folder......Done
+
+real	23m19.507s
+user	21m28.397s
+sys	1m3.333s
+/var/spool/slurmd/job545466/slurm_script: line 415: ./7-run_s3norm.sh: No such file or directory
+/var/spool/slurmd/job545466/slurm_script: line 419: ./7-run_s3norm.sh: No such file or directory
+/var/spool/slurmd/job545466/slurm_script: line 423: ./7-run_s3norm.sh: No such file or directory
+finish cut and run analysis at Thu Jun  1 18:12:11 CEST 2023

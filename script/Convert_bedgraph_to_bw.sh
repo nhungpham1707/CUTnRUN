@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # ref https://www.biostars.org/p/377195/
 
 # 2023-05-24s3norm_merge_fusion.bed is created in r (Peak_annotation_final.R) from join bedgraph files from ..sh
@@ -31,14 +33,14 @@ save_name="$3"
 hg38_size_dir="$4"
 
 cd $result_dir
-bedtools merge -d 1000 -c 4 -o mean -i ${input_name} > ${save_name}_mean.bed
+bedtools merge -d 1000 -c 4 -o mean -i ${input_name} > ${save_name}_merge_nearby_loci_mean.bedgraph
 # convert to bedgraph
-awk '{printf "%s\t%d\t%d\t%2.3f\n" , $1,$2,$3,$4}' ${save_name}_mean.bed > ${save_name}_mean.bedgraph
+# awk '{printf "%s\t%d\t%d\t%2.3f\n" , $1,$2,$3,$4}' ${save_name}_mean.bed > ${save_name}_mean.bedgraph
 
 # LC_COLLATE=C sort -k1,1 -k2,2n s3norm_merge_fusion.bedgraph > s3norm_merge_fusion_sorted_lc_collate.bedgraph
 # sort 
-sort -k1,1 -k2,2n ${save_name}_mean.bedgraph > ${save_name}_sorted.bedgraph
+sort -k1,1 -k2,2n ${save_name}_merge_nearby_loci_mean.bedgraph > ${save_name}_merge_nearby_loci_mean_sorted.bedgraph
 
 # bedSort(s3norm_merge_fusion.bedgraph, threads = getOption("threads", 1L), sortBuffer = "1G",  sortThreads = NULL)
-bedGraphToBigWig ${save_name}_sorted.bedgraph ${hg38_size_dir}/hg38.sizes ${save_name}_sorted.bw
+bedGraphToBigWig ${save_name}_merge_nearby_loci_mean_sorted.bedgraph ${hg38_size_dir}/hg38.sizes ${save_name}_merge_nearby_loci_mean_sorted.bw
 

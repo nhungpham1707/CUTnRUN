@@ -31,4 +31,4 @@ message("the number of seqs that have name does not start with chr is")
 length(setdiff(merge_file_bed$chr, chr_merge_file_bed$chr)) 
 
 # write to file
-write.table(chr_merge_file_bed, file=paste0(res_dir,'/', Sys.Date(), save_name), sep="\t", quote=F, row.names=F, col.names=F)
+write.table(chr_merge_file_bed, file=paste0(res_dir,'/', Sys.Date(), save_name, '_mean_rep.bedgraph'), sep="\t", quote=F, row.names=F, col.names=F)

@@ -1,0 +1,53 @@
+start bedgraph union from samples in the same group
+variables in Merge_bedgraphs.sh are 
+antiH3k4me1
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_H3k4me1_samples/NBP_bedgraph
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+SCC-bulkChIC-PMC-DRO-021 SCC-bulkChIC-PMC-DRO-024
+-----------running 1 out of 2 samples---------------------- 
+-----------running 2 out of 2 samples---------------------- 
+variables in Merge_bedgraphs.sh are 
+antiH3k4me4
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_H3k4me3_samples/NBP_bedgraph
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+bulkChIC-PMC-DRO-011 bulkChIC-PMC-DRO-012 bulkChIC-PMC-DRO-013
+-----------running 1 out of 3 samples---------------------- 
+-----------running 2 out of 3 samples---------------------- 
+-----------running 3 out of 3 samples---------------------- 
+Error: The requested file (/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_H3k4me3_samples/NBP_bedgraph/bulkChIC-PMC-DRO-011*.bedgraph) could not be opened. Error message: (No such file or directory). Exiting!
+variables in Merge_bedgraphs.sh are 
+antiH3k27ac
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_H3k27ac_samples/NBP_bedgraph
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+SCC-bulkChIC-PMC-DRO-022 SCC-bulkChIC-PMC-DRO-025
+-----------running 1 out of 2 samples---------------------- 
+-----------running 2 out of 2 samples---------------------- 
+Error: The requested file (/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_H3k27ac_samples/NBP_bedgraph/SCC-bulkChIC-PMC-DRO-022*.bedgraph) could not be opened. Error message: (No such file or directory). Exiting!
+variables in Merge_bedgraphs.sh are 
+antiSFPQ
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_SFPQ_samples/NBP_bedgraph
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+SCC-bulkChIC-PMC-DRO-020 SCC-bulkChIC-PMC-DRO-023
+-----------running 1 out of 2 samples---------------------- 
+-----------running 2 out of 2 samples---------------------- 
+Error: The requested file (/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_anti_SFPQ_samples/NBP_bedgraph/SCC-bulkChIC-PMC-DRO-020*.bedgraph) could not be opened. Error message: (No such file or directory). Exiting!
+start merging replicates in the bedgraph union files
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted
+Error in names(x) <- value : 
+  'names' attribute [7] must be the same length as the vector [5]
+Calls: colnames<-
+Execution halted
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  no lines available in input
+Calls: read.csv -> read.table
+Execution halted
+finished!
+files that can be visualized in IGV are sorted bedgraph files (mean, merge loci and sort based on chr) in /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
+files for plotting heatmap are bigwig files in /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/IGV_input
