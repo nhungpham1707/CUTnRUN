@@ -389,20 +389,21 @@ echo "-------------------step 7. running data normalization------ "
 ## prepare bedgraph files with the same bin size for all samples
 # . ./8a-bincount.sh # need to test and convert to function
 # . ./8a-s3norm_input_preparation.sh
-
+. ./bincount_Jiayou.sh
 ## modify bedgraph file to remove rows with 0 count in all samples. If 0 values are more than 10% in the sample, s3norm will fail (log0 is inf), hence add 1 to these 0 values in all samples
 
 # python 8b-modifyBedgraphForS3norm.py # already test - worked! --> need to convert to func
-
+python modifyBedgraphForS3norm.py
 # start normalization on the modified bedgraph files
 
-# s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
-
+s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
+s3norm_working_directory=
+s3norm_sample_file_name=
+. ./7-run_s3norm.sh 
 # s3norm_yichao allows without control samples
 # s3norm_script_directory='/hpc/pmc_drost/nhung/s3norm_yichao/S3norm'
 
 # sample list csv file and bedgraph files need to be in this working dir. result will be stored in the working dir. 
-
 # s3norm_working_directory=${res_dir}/modify_bedgraph
 # s3norm_sample_file_name=remove_low_depth_histone_nozeroes_augmented.csv 
 # . ./7-run_s3norm.sh 
@@ -545,10 +546,11 @@ echo "-------------------step 7. running data normalization------ "
 # mkdir -p $motif_sub_dir
 # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/antiTFE3_Samples/luc_top_sites_RPKM_thredshold_20.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
 
-motif_sub_dir=${motif_dir}/DE_top_2000_sites_allSamplesNormalization
-mkdir -p $motif_sub_dir
-# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/antiTFE3_Samples/2023-06-01antiTFE3_Samples_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
-findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/top_2000_common_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+# motif_sub_dir=${motif_dir}/active_enhancer_in_100kb
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/2023-06-07remove_low_depth_histone_samples_active_enhancer_in_DE_overlap_k27ac_100kb.bed $fasta_genome_dir ${motif_sub_dir} -size 100 -len 8
+
+
 
 # motif_sub_dir=${motif_dir}/tfe3_top_rpkm30_antitfe3Normalization
 # mkdir -p $motif_sub_dir
@@ -596,11 +598,13 @@ findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_an
 # mkdir -p $motif_sub_dir
 # findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s3norm_luciferase_merge_sorted.bedgraph $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
 
-# motif_sub_dir=${motif_dir}/s3norm_merge_bedgraph_sorted_tfe3
+# motif_sub_dir=${motif_dir}/common_peak_without_DE_sites_len8
 # mkdir -p $motif_sub_dir
-# findMotifsGenome.pl /home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/s3norm_tfe3_merge_sorted.bedgraph $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/2023-06-08common_peaks_fusion_luc_remove_insignificant_peaks.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
 
-
+# motif_sub_dir=${motif_dir}/DE_sites_len8
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/2023-05-22remove_low_depth_histonefold_change2-diffBind_lucvsfusion.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
 # find motif location
 # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir  ${motif_dir}/diffBindNORMNATIVE_loss_sites/nownResults -find known1.motif > ${motif_dir}/diffBindNORMNATIVE_loss_sites/motif_location_know_motif1.txt
 
