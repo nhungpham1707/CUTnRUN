@@ -37,11 +37,11 @@ The cut and run data were analyzed based on published protocol with modification
 |7. Data normalization| ~ 4 hours (24 samples) | 7-run_s3norm.sh  |
 |5. Call peak|  ~ 1 hour (18 samples) | 5-peakCalling.sh |
 |6. Peak analysis| | 6-DiffBind.R  |
-|7. Peak annotation | | | |
-|8. Transform bam file to bigwig | | ~ 2-3 hours |8-bam2bigwig.sh|
+|7. Peak annotation | |  |
+|8. Transform bam file to bigwig | ~ 2-3 hours| |8-bam2bigwig.sh|
 |9. Heatmap generation| ~30 minutes (4 samples) |9-heatmap.sh |
-|10. Prepare for motif finding|  a few seconds |10-prepareMotifAnalysis.sh |
-|11. Find motif | | | |
+|10. Motif analysis| ~ 30 minutes - 1h ||
+|11. Find motif location | ~ 30 minutes|  |
 |12. Analyze motif | | | | 
 
 
