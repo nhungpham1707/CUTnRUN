@@ -200,7 +200,7 @@ Expression data such as bulkRNA or single cell RNA are integrated to study the e
 
 ## Module 7. Result visualization
 <p>
-    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M7.drawio.png" alt>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M7.png" alt>
 </p>
 <p>
     <em> Module 7. Result visualization. Steps, inputs and outputs.</em>
