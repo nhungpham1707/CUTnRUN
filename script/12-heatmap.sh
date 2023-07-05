@@ -183,7 +183,7 @@ computeMatrix reference-point --referencePoint TSS \
 
 # plotHeatmap -m ${figure_dir}/matrix_${savename}.mat.gz -out ${figure_dir}/${savename}.png --sortUsing sum --zMin 0 --zMax 4
 
-plotHeatmap -m ${figure_dir}/matrix_${savename}.mat.gz -out ${figure_dir}/${savename}.png --sortUsing sum 
+plotHeatmap -m ${figure_dir}/matrix_${savename}.mat.gz -out ${figure_dir}/${savename}.png --sortUsing sum --heatmapHeight 50 --heatmapWidth	12 --samplesLabel Tubfus TubLuc --dpi 100 --plotFileFormat "pdf"
 
 # computeMatrix reference-point --referencePoint TSS \
 #   -b 1000 -a 1000 \

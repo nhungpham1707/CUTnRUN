@@ -1,6 +1,6 @@
 #!/bin/bash
-#SBATCH --job-name=motif
-#SBATCH --output=motif.out
+#SBATCH --job-name=heatmap
+#SBATCH --output=heatmap.out
 #SBATCH --time=96:0:0
 #SBATCH --ntasks=1
 #SBATCH --mem=90G
@@ -155,13 +155,12 @@
 
 #==================================================================
 #                   DEFINE GLOBAL VARIABLES
-#
-# source /hpc/pmc_drost/nhung/anaconda3/ect/profile.d/conda.sh
+
 # conda activate cutnrun_trimgalore
+
+# Define where fastq data is located and where the result will be saved
 # Adap data_dir and res_dir before running
 data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1
-# dir for new data 
-# data_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/SCC_ChIC-PMC-DRO_plates_20210520_run1/SCC-bulkChIC-PMC-DRO-020--25/
 # result dir
 res_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test
 
@@ -216,7 +215,8 @@ diffBind_res_dir=${res_dir}/diffBind_analysis
 mkdir -p $diffBind_res_dir
 IGV_input_dir=${res_dir}/IGV_input
 mkdir -p $IGV_input_dir
-# tool dir
+
+# Define tool dir
 
 bowtie2Index=/hpc/pmc_drost/SOURCES/Genomes/human/bowtie2/human_gencode37_hg38
 
@@ -234,7 +234,8 @@ fasta_genome_dir=/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_a
 # hg38 genes list directory to generate heatmap
 hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed 
  
-# sample_Ids was generated as text file from ls filename.txt from the data_dir
+
+# Define samples and special sample groups to compare
 
 # sample_IDs=( "bulkChIC-PMC-DRO-011" \
 #             "bulkChIC-PMC-DRO-012"\
@@ -260,30 +261,7 @@ hg38_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/hg38_gene_2.bed
 #             "SCC-bulkChIC-PMC-DRO-023"\
 #             "SCC-bulkChIC-PMC-DRO-024"\
 #             "SCC-bulkChIC-PMC-DRO-025")
-# sample_IDs=( "bulkChIC-PMC-DRO-011" "SCC-ChIC-PMC-DRO-T1")
-#
-# sample IDs for peakCalling after normalization (remove samples that are used as control for data normalization)
-# sample_IDs=( "bulkChIC-PMC-DRO-014"\
-#             "bulkChIC-PMC-DRO-015"\
-#             "bulkChIC-PMC-DRO-016"\
-#             "SCC-bulkChIC-PMC-DRO-002"\
-#             "SCC-bulkChIC-PMC-DRO-005"\
-#             "SCC-bulkChIC-PMC-DRO-008"\
-#             "SCC-ChIC-PMC-DRO-L5"\
-#             "SCC-ChIC-PMC-DRO-LH"\
-#             "SCC-ChIC-PMC-DRO-F1"\
-#             "SCC-ChIC-PMC-DRO-F5"\
-#             "SCC-ChIC-PMC-DRO-FH"\
-#             "SCC-ChIC-PMC-DRO-T1"\
-#             "SCC-ChIC-PMC-DRO-T5"\
-#             "SCC-ChIC-PMC-DRO-TH"\ 
-#             "SCC-ChIC-PMC-DRO-L1"\ 
-#             "SCC-bulkChIC-PMC-DRO-020"\
-#             "SCC-bulkChIC-PMC-DRO-021"\
-#             "SCC-bulkChIC-PMC-DRO-022"\
-#             "SCC-bulkChIC-PMC-DRO-023"\
-#             "SCC-bulkChIC-PMC-DRO-024"\
-#             "SCC-bulkChIC-PMC-DRO-025")
+
 anti_tfe3_sample_IDs=( "bulkChIC-PMC-DRO-014"\
             "bulkChIC-PMC-DRO-015"\
             "bulkChIC-PMC-DRO-016"\
@@ -296,28 +274,7 @@ anti_tfe3_sample_IDs=( "bulkChIC-PMC-DRO-014"\
             "SCC-ChIC-PMC-DRO-T1"\
             "SCC-ChIC-PMC-DRO-T5"\
             "SCC-ChIC-PMC-DRO-L1" )
-# sample IDs for peakCalling after normalization (remove samples that are used as control for data normalization and "SCC-ChIC-PMC-DRO-FH"\)
-sample_IDs=( "bulkChIC-PMC-DRO-014"\
-            "bulkChIC-PMC-DRO-015"\
-            "bulkChIC-PMC-DRO-016"\
-            "SCC-bulkChIC-PMC-DRO-002"\
-            "SCC-bulkChIC-PMC-DRO-005"\
-            "SCC-bulkChIC-PMC-DRO-008"\
-            "SCC-ChIC-PMC-DRO-L5"\
-            "SCC-ChIC-PMC-DRO-LH"\
-            "SCC-ChIC-PMC-DRO-F1"\
-            "SCC-ChIC-PMC-DRO-F5"\
-            "SCC-ChIC-PMC-DRO-T1"\
-            "SCC-ChIC-PMC-DRO-T5"\
-            "SCC-ChIC-PMC-DRO-TH"\ 
-            "SCC-ChIC-PMC-DRO-L1"\ 
-            "SCC-bulkChIC-PMC-DRO-020"\
-            "SCC-bulkChIC-PMC-DRO-021"\
-            "SCC-bulkChIC-PMC-DRO-022"\
-            "SCC-bulkChIC-PMC-DRO-023"\
-            "SCC-bulkChIC-PMC-DRO-024"\
-            "SCC-bulkChIC-PMC-DRO-025")
-            
+
 total_sample=${#sample_IDs[@]}
 
 # classify sample for peakcalling
@@ -338,7 +295,7 @@ h3k4me3_2=( "bulkChIC-PMC-DRO-011" "bulkChIC-PMC-DRO-012" "bulkChIC-PMC-DRO-013"
 h3k4me3_all=( "SCC-ChIC-PMC-DRO-FH" "SCC-ChIC-PMC-DRO-LH" "SCC-ChIC-PMC-DRO-TH" "bulkChIC-PMC-DRO-011" "bulkChIC-PMC-DRO-012" "bulkChIC-PMC-DRO-013")
 h3k4me3_all_after_normalize=(  "SCC-ChIC-PMC-DRO-LH" "SCC-ChIC-PMC-DRO-TH")
 # define what samples to find motif 
-motif_samples=$allT
+
 #==================================================================
 
 #==================================================================
@@ -374,6 +331,9 @@ echo "start running cut and run analysis at $(date)"
 # echo "-------------------step 5. running transform bam to bigwig--"
 # . ./6-bam2bigwig.sh
 
+#==================================================================
+#                          DATA NORMALIZATION
+
 # step 7. Calculate fraction of read in peak (FRiP)
 # echo "-------------------step 6. running frip calculation-------- "
 # normalize_sample_count=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/modify_bedgraph/s3norm_antiTFE3_Samples/with_new_control/S3norm_rc_bedgraph
@@ -383,23 +343,24 @@ echo "start running cut and run analysis at $(date)"
 
 # . ./7-Calculate_FRiP.sh "$normalize_sample_count" "$normalize_peak_calling" "$save_name" "${anti_tfe3_sample_IDs[@]}" 
 # . ./7-Calculate_FRiP.sh
-##### Data normalization ###############
+
 # step 7. Normalize data
-echo "-------------------step 7. running data normalization------ "
+# echo "-------------------step 7. running data normalization------ "
 ## prepare bedgraph files with the same bin size for all samples
 # . ./8a-bincount.sh # need to test and convert to function
 # . ./8a-s3norm_input_preparation.sh
-. ./bincount_Jiayou.sh
-## modify bedgraph file to remove rows with 0 count in all samples. If 0 values are more than 10% in the sample, s3norm will fail (log0 is inf), hence add 1 to these 0 values in all samples
+# . ./bincount_Jiayou.sh
+# ## modify bedgraph file to remove rows with 0 count in all samples. If 0 values are more than 10% in the sample, s3norm will fail (log0 is inf), hence add 1 to these 0 values in all samples
 
-# python 8b-modifyBedgraphForS3norm.py # already test - worked! --> need to convert to func
-python modifyBedgraphForS3norm.py
-# start normalization on the modified bedgraph files
+# # python 8b-modifyBedgraphForS3norm.py # already test - worked! --> need to convert to func
+# python modifyBedgraphForS3norm.py
+# # start normalization on the modified bedgraph files
 
-s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
-s3norm_working_directory=
-s3norm_sample_file_name=
-. ./7-run_s3norm.sh 
+# # s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
+# s3norm_script_directory='/hpc/pmc_drost/nhung/s3norm_yichao/S3norm'
+# s3norm_working_directory=
+# s3norm_sample_file_name=
+# . ./7-run_s3norm.sh 
 # s3norm_yichao allows without control samples
 # s3norm_script_directory='/hpc/pmc_drost/nhung/s3norm_yichao/S3norm'
 
@@ -503,17 +464,18 @@ s3norm_sample_file_name=
 # export DIFFBIND_RESULT_DIR_VARIABLE=$diffBind_res_sub_dir
 # Rscript DiffBind_analysis.R
 
-
 # step 12. heatmap generation. prior to run: change sample paths in 9-heatmap.sh to those that one wish to make the heatmap for and if require also the bed file that indicate the desire genome region to plot. 
 # echo "---------------step 12. running heatmap generation---------------"
-# samples_list=("fusion_merged" "tfe3_merged" "luciferase_merged" )
-# sample_dir=${merged_bigwig_dir[@]}
+samples_list=("fusion_merged" "luciferase_merged" )
+sample_dir=${merged_bigwig_dir[@]}
 # # refpath=$diffBind_res_dir/diffBind_luc_vs_fusion_w_control.bed
-# refpath=$diffBind_res_dir/diffBind_tfe3_vs_fusion_w_control.bed
-# refpath=$diffBind_res_dir/2023-05-10-diffBind_contrast3_s3norm_fold1_without_control.bed
-# refpath=$diffBind_res_dir/remove_low_depth_histone_samples/2023-05-22remove_low_depth_histonefold_change2-diffBind_lucvsfusion.bed
-# savename=DElucvsfusion_remove_low_depth
-# . ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
+refpath=$diffBind_res_dir/Rerun_14062023/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed 
+savename=common_peak_wo_tfe3_increase_size.svg
+. ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
+
+refpath=$diffBind_res_dir/Rerun_14062023/2023-06-15rerun_wo_lowdepth_histone_fold_change2_FDR0.05.bed
+savename=DE_peak_wo_tfe3_increase_size.svg
+. ./12-heatmap.sh "$savename" "$refpath" "$sample_dir" "${samples_list[@]}"
 
 
 # refpath=$diffBind_res_dir/remove_low_depth_histone_samples/2023-05-23lost_site_raw_data_FDR0.05.bed
@@ -605,8 +567,164 @@ s3norm_sample_file_name=
 # motif_sub_dir=${motif_dir}/DE_sites_len8
 # mkdir -p $motif_sub_dir
 # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/2023-05-22remove_low_depth_histonefold_change2-diffBind_lucvsfusion.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
-# find motif location
-# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir  ${motif_dir}/diffBindNORMNATIVE_loss_sites/nownResults -find known1.motif > ${motif_dir}/diffBindNORMNATIVE_loss_sites/motif_location_know_motif1.txt
+
+# motif_sub_dir=${motif_dir}/rerun_DE_sites_len81012
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/2023-06-11rerun_wo_low_depth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8,10,12
+
+# motif_sub_dir=${motif_dir}/rerun_DE_sites_len14
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/2023-06-11rerun_wo_low_depth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 14
+
+# motif_sub_dir=${motif_dir}/rerun_common_sites_len12
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/2023-06-11top2000_noRPKM_thred_common_peaks_fusion_luc_remove_insignificant_peaks.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 12
+
+# motif_sub_dir=${motif_dir}/rerun_common_sites_len14
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/2023-06-11top2000_noRPKM_thred_common_peaks_fusion_luc_remove_insignificant_peaks.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 14
+
+# motif_sub_dir=${motif_dir}/common_sites_DEfold2_rpkm10_len81012
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/2023-06-12top2000_10RPKM_thred_common_peaks_DEfold2fusion_luc_remove_insignificant_peaks.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8,10,12
+
+# # motif_sub_dir=${motif_dir}/common_sites_DEfold2_rpkm10_len10
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/2023-06-12top2000_10RPKM_thred_common_peaks_DEfold2fusion_luc_remove_insignificant_peaks.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10
+
+# motif_sub_dir=${motif_dir}/common_sites_DEfold2_rpkm10_len12
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/2023-06-12top2000_10RPKM_thred_common_peaks_DEfold2fusion_luc_remove_insignificant_peaks.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 12
+
+# rerun_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/Rerun_14062023
+
+# motif_sub_dir=${motif_dir}/fusion_TFs_len10
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-21TFs_genes_in_fusion.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10
+
+# motif_sub_dir=${motif_dir}/fusion_TFs_len12
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-21TFs_genes_in_fusion.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 12
+
+# motif_sub_dir=${motif_dir}/fusion_TFs_len8
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-21TFs_genes_in_fusion.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
+
+# motif_sub_dir=${motif_dir}/fusion_TFs_len81012
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-21TFs_genes_in_fusion.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8,10,12
+# motif_sub_dir=${motif_dir}/14062013_common_sites_DEfold2_rpkm10_len12
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 12
+
+# motif_sub_dir=${motif_dir}/14062013_common_sites_DEfold2_rpkm10_len10
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10
+
+# motif_sub_dir=${motif_dir}/14062013_common_sites_DEfold2_rpkm10_len8
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
+
+# motif_sub_dir=${motif_dir}/14062013_common_sites_DEfold2_rpkm10_len81012
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8,10,12
+
+# motif_sub_dir=${motif_dir}/14062013_top1000_DE_sites_len8
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/top1000_fusion_specific_sites.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
+
+# motif_sub_dir=${motif_dir}/14062013_top1000_DE_sites_len10
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/top1000_fusion_specific_sites.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10
+
+# motif_sub_dir=${motif_dir}/14062013_top1000_DE_sites_len12
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/top1000_fusion_specific_sites.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 12
+
+# motif_sub_dir=${motif_dir}/14062013_top1000_DE_sites_len81012
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/top1000_fusion_specific_sites.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8,10,12
+# motif_sub_dir=${motif_dir}/14062013_DE_sites_len8
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-14rerun_wo_lowdepth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8
+
+# motif_sub_dir=${motif_dir}/14062013_DE_sites_len10
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-14rerun_wo_lowdepth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10
+
+# motif_sub_dir=${motif_dir}/14062013_DE_sites_len12
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-14rerun_wo_lowdepth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 12
+
+# step 15. find motif location
+# rerun_dir=/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/Rerun_14062023
+# # motif_sub_dir=${motif_dir}/14062013_common_sites_DEfold2_rpkm10_len81012
+# # mkdir -p $motif_sub_dir
+# # findMotifsGenome.pl $rerun_dir/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8,10,12 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# # motif_sub_dir=${motif_dir}/14062013_common_sites_DEfold2_rpkm10_len81012
+# # mkdir -p $motif_sub_dir
+# # findMotifsGenome.pl $rerun_dir/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8,10,12 -find $motif_sub_dir/knownResults/known29.motif > $motif_sub_dir/know29_location
+
+# # motif_sub_dir=${motif_dir}/14062013_common_sites_DEfold2_rpkm10_len8
+# # mkdir -p $motif_sub_dir
+# # findMotifsGenome.pl $rerun_dir/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# # motif_sub_dir=${motif_dir}/14062013_common_sites_DEfold2_rpkm10_len10
+# # mkdir -p $motif_sub_dir
+# # findMotifsGenome.pl $rerun_dir/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# # motif_sub_dir=${motif_dir}/14062013_common_sites_DEfold2_rpkm10_len12
+# # mkdir -p $motif_sub_dir
+# # findMotifsGenome.pl $rerun_dir/2023-06-14common_peaks_wo_sig_peaks_fusion_luc_s3norm_all_except_low_dephistone.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 12 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# # motif_sub_dir=${motif_dir}/14062013_DE_sites_len12
+# # mkdir -p $motif_sub_dir
+# # findMotifsGenome.pl $rerun_dir/2023-06-15rerun_wo_lowdepth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 12 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# # motif_sub_dir=${motif_dir}/14062013_DE_sites_len8
+# # mkdir -p $motif_sub_dir
+# # findMotifsGenome.pl $rerun_dir/2023-06-15rerun_wo_lowdepth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# # motif_sub_dir=${motif_dir}/14062013_DE_sites_len10
+# # mkdir -p $motif_sub_dir
+# # findMotifsGenome.pl $rerun_dir/2023-06-15rerun_wo_lowdepth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# # motif_sub_dir=${motif_dir}/14062013_DE_sites_len81012
+# # mkdir -p $motif_sub_dir
+# # findMotifsGenome.pl $rerun_dir/2023-06-15rerun_wo_lowdepth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8,10,12 -find $motif_sub_dir/knownResults/known42.motif > $motif_sub_dir/know42_location
+
+# motif_sub_dir=${motif_dir}/14062013_DE_sites_len81012
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl $rerun_dir/2023-06-15rerun_wo_lowdepth_histone_fold_change2_FDR0.05.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8,10,12 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+# motif_sub_dir=${motif_dir}/common_peak_without_DE_sites_len8
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/2023-06-08common_peaks_fusion_luc_remove_insignificant_peaks.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# motif_sub_dir=${motif_dir}/DE_sites_len8
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/2023-05-22remove_low_depth_histonefold_change2-diffBind_lucvsfusion.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location2
+
+# motif_sub_dir=${motif_dir}/DE_sites_len10
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/2023-05-22remove_low_depth_histonefold_change2-diffBind_lucvsfusion.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location2
+
+# motif_sub_dir=${motif_dir}/rerun_DE_sites_len8
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/023-06-11rerun_wo_low_depth_histone_fold_change0_FDR0.05_AddpeakID.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 8 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# motif_sub_dir=${motif_dir}/rerun_DE_sites_len10
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/023-06-11rerun_wo_low_depth_histone_fold_change0_FDR0.05_AddpeakID.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# motif_sub_dir=${motif_dir}/rerun_DE_sites_len12
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/023-06-11rerun_wo_low_depth_histone_fold_change0_FDR0.05_AddpeakID.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 12 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+# motif_sub_dir=${motif_dir}/rerun_common_sites_len10
+# mkdir -p $motif_sub_dir
+# findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/rerun_wo_low_depth_histone/2023-06-11top2000_noRPKM_thred_common_peaks_fusion_luc_remove_insignificant_peaks.bed $fasta_genome_dir ${motif_sub_dir} -size 200 -len 10 -find $motif_sub_dir/homerResults/motif1.motif > $motif_sub_dir/motif1_location
+
+# # findMotifsGenome.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir  ${motif_dir}/diffBindNORMNATIVE_loss_sites/nownResults -find known1.motif > ${motif_dir}/diffBindNORMNATIVE_loss_sites/motif_location_know_motif1.txt
 
 # find motif location with annotate
 # annotatePeaks.pl /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/2023-05-23lost_site_diffbind_norm_native_FDR0.05.bed $fasta_genome_dir -m {motif_dir}/diffBindNORMNATIVE_loss_sites/homerMotifs.all.motifs > ${motif_dir}/diffBindNORMNATIVE_loss_sites/motif_location.txt

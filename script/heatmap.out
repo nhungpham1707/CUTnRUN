@@ -1,0 +1,8 @@
+start running cut and run analysis at Mon Jul  3 13:50:24 CEST 2023
+-----------running 1 out of 2 common_peak_wo_tfe3_increase_size.svg samples---------------------- 
+-----------running 2 out of 2 common_peak_wo_tfe3_increase_size.svg samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/fusion_merged.bw /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/luciferase_merged.bw
+-----------running 1 out of 2 DE_peak_wo_tfe3_increase_size.svg samples---------------------- 
+-----------running 2 out of 2 DE_peak_wo_tfe3_increase_size.svg samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/fusion_merged.bw /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/luciferase_merged.bw
+finish cut and run analysis at Mon Jul  3 13:51:00 CEST 2023

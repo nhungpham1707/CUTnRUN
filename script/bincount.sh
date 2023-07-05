@@ -5,7 +5,7 @@
 
 bin_size="$1"
 sample_dir="$2"
-output_dir="$3"
+bincount_dir="$3"
 shift 3
 sample_list=("$@")
 

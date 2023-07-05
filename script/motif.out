@@ -1,139 +1,97 @@
-start running cut and run analysis at Fri Jun  9 09:11:17 CEST 2023
--------------------step 7. running data normalization------ 
+start running cut and run analysis at Wed Jun 21 13:24:53 CEST 2023
 
-	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/remove_low_depth_histone_samples/2023-05-22remove_low_depth_histonefold_change2-diffBind_lucvsfusion.bed
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/Rerun_14062023/2023-06-21TFs_genes_in_fusion.bed
 	Genome = /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
-	Output Directory = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/DE_sites_len8
+	Output Directory = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/fusion_TFs_len10
 	Fragment size set to 200
-	Motif length set at 8,
+	Motif length set at 10,
 	Using Custom Genome
 	Peak/BED file conversion summary:
-		BED/Header formatted lines: 2653
+		BED/Header formatted lines: 125
 		peakfile formatted lines: 0
 
 	Peak File Statistics:
-		Total Peaks: 2653
-		Redundant Peak IDs: 1036
+		Total Peaks: 125
+		Redundant Peak IDs: 123
 		Peaks lacking information: 0 (need at least 5 columns per peak)
 		Peaks with misformatted coordinates: 0 (should be integer)
 		Peaks with misformatted strand: 0 (should be either +/- or 0/1)
 
 	Redunant Peaks found: Remove or rename these or some programs may have trouble...
 
-	1036 duplicate peak IDs out of 2653 total peaks
+	123 duplicate peak IDs out of 125 total peaks
 	Background files for 200 bp fragments found.
 	Custom genome sequence file: /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
 
 	Extracting sequences from file: /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
 	Looking for peak sequences in a single file (/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa)
-	Extracting 224 sequences from chr1
-	Extracting 267 sequences from chr2
-	Extracting 186 sequences from chr3
-	Extracting 108 sequences from chr4
-	Extracting 151 sequences from chr5
-	Extracting 186 sequences from chr6
-	Extracting 139 sequences from chr7
-	Extracting 149 sequences from chr8
-	Extracting 118 sequences from chr9
-	Extracting 158 sequences from chr10
-	Extracting 133 sequences from chr11
-	Extracting 136 sequences from chr12
-	Extracting 83 sequences from chr13
-	Extracting 55 sequences from chr14
-	Extracting 82 sequences from chr15
-	Extracting 68 sequences from chr16
-	Extracting 87 sequences from chr17
-	Extracting 75 sequences from chr18
-	Extracting 39 sequences from chr19
-	Extracting 82 sequences from chr20
-	Extracting 42 sequences from chr21
-	Extracting 59 sequences from chr22
-	Extracting 25 sequences from chrX
-	Extracting 1 sequences from chrY
 
 	Not removing redundant sequences
 
 
 	Sequences processed:
-		Auto detected maximum sequence length of 201 bp
-		2653 total
+		0 total
 
 	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
 	Freq	Bin	Count
-	0.25	1	7
-	0.3	2	79
-	0.35	3	226
-	0.4	4	528
-	0.45	5	699
-	0.5	6	552
-	0.6	7	486
-	0.7	8	76
 
 	Total sequences set to 50000
 
 	Choosing background that matches in CpG/GC content...
-	Bin	# Targets	# Background	Background Weight
-	1	7	125	0.999
-	2	79	1410	1.000
-	3	226	4033	1.000
-	4	528	9423	1.000
-	5	699	12475	1.000
-	6	552	9851	1.000
-	7	486	8673	1.000
-	8	76	1356	1.000
+Illegal division by zero at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/assignGeneWeights.pl line 63.
 	Assembling sequence file...
 	Normalizing lower order oligos using homer2
 
 	Reading input files...
-	49999 total sequences read
+	0 total sequences read
 	Autonormalization: 1-mers (4 total)
-		A	28.04%	28.06%	0.999
-		C	21.96%	21.94%	1.001
-		G	21.96%	21.94%	1.001
-		T	28.04%	28.06%	0.999
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
 	Autonormalization: 2-mers (16 total)
-		AA	8.79%	8.80%	0.999
-		CA	7.74%	7.54%	1.027
-		GA	6.20%	6.16%	1.007
-		TA	5.31%	5.56%	0.955
-		AC	5.23%	5.12%	1.020
-		CC	5.78%	5.90%	0.980
-		GC	4.74%	4.76%	0.997
-		TC	6.20%	6.16%	1.007
-		AG	7.45%	7.41%	1.005
-		CG	0.99%	1.09%	0.916
-		GG	5.78%	5.90%	0.980
-		TG	7.74%	7.54%	1.027
-		AT	6.57%	6.73%	0.976
-		CT	7.45%	7.41%	1.005
-		GT	5.23%	5.12%	1.020
-		TT	8.79%	8.80%	0.999
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
 	Autonormalization: 3-mers (64 total)
-	Normalization weights can be found in file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/DE_sites_len8/seq.autonorm.tsv
+	Normalization weights can be found in file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/fusion_TFs_len10/seq.autonorm.tsv
 	Converging on autonormalization solution:
 	...............................................................................
 	Final normalization:	Autonormalization: 1-mers (4 total)
-		A	28.04%	28.04%	1.000
-		C	21.96%	21.96%	1.000
-		G	21.96%	21.96%	1.000
-		T	28.04%	28.04%	1.000
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
 	Autonormalization: 2-mers (16 total)
-		AA	8.79%	8.77%	1.002
-		CA	7.74%	7.71%	1.004
-		GA	6.20%	6.21%	0.999
-		TA	5.31%	5.35%	0.993
-		AC	5.23%	5.22%	1.002
-		CC	5.78%	5.80%	0.996
-		GC	4.74%	4.74%	1.001
-		TC	6.20%	6.21%	0.999
-		AG	7.45%	7.45%	1.000
-		CG	0.99%	1.00%	0.997
-		GG	5.78%	5.80%	0.996
-		TG	7.74%	7.71%	1.004
-		AT	6.57%	6.61%	0.995
-		CT	7.45%	7.45%	1.000
-		GT	5.23%	5.22%	1.002
-		TT	8.79%	8.77%	1.002
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
 	Autonormalization: 3-mers (64 total)
 	Finished preparing sequence/group files
 
@@ -141,416 +99,394 @@ start running cut and run analysis at Fri Jun  9 09:11:17 CEST 2023
 	Known motif enrichment
 
 	Reading input files...
-	49999 total sequences read
+	0 total sequences read
 	1006 motifs loaded
 	Cache length = 11180
 	Using binomial scoring
 	Checking enrichment of 1006 motif(s)
 	|0%                                    50%                                  100%|
 	=================================================================================
-	Preparing HTML output with sequence logos...
-		1 of 1006 (1e-62) Fos(bZIP)/TSC-Fos-ChIP-Seq(GSE110950)/Homer
-		2 of 1006 (1e-60) Atf3(bZIP)/GBM-ATF3-ChIP-Seq(GSE33912)/Homer
-		3 of 1006 (1e-59) BATF(bZIP)/Th17-BATF-ChIP-Seq(GSE39756)/Homer
-		4 of 1006 (1e-58) JunB(bZIP)/DendriticCells-Junb-ChIP-Seq(GSE36099)/Homer
-		5 of 1006 (1e-57) Fra1(bZIP)/BT549-Fra1-ChIP-Seq(GSE46166)/Homer
-		6 of 1006 (1e-54) AP-1(bZIP)/ThioMac-PU.1-ChIP-Seq(GSE21512)/Homer
-		7 of 1006 (1e-53) Fra2(bZIP)/Striatum-Fra2-ChIP-Seq(GSE43429)/Homer
-		8 of 1006 (1e-52) MITF(bHLH)/MastCells-MITF-ChIP-Seq(GSE48085)/Homer
-		9 of 1006 (1e-50) Fosl2(bZIP)/3T3L1-Fosl2-ChIP-Seq(GSE56872)/Homer
-		10 of 1006 (1e-47) PIF5ox(bHLH)/Arabidopsis-PIF5ox-ChIP-Seq(GSE35062)/Homer
-		11 of 1006 (1e-45) SPCH(bHLH)/Seedling-SPCH-ChIP-Seq(GSE57497)/Homer
-		12 of 1006 (1e-45) BMAL1(bHLH)/Liver-Bmal1-ChIP-Seq(GSE39860)/Homer
-		13 of 1006 (1e-44) Jun-AP1(bZIP)/K562-cJun-ChIP-Seq(GSE31477)/Homer
-		14 of 1006 (1e-34) PIF4(bHLH)/Seedling-PIF4-ChIP-Seq(GSE35315)/Homer
-		15 of 1006 (1e-31) USF1(bHLH)/GM12878-Usf1-ChIP-Seq(GSE32465)/Homer
-		16 of 1006 (1e-27) BIM2(bHLH)/col-BIM2-DAP-Seq(GSE60143)/Homer
-		17 of 1006 (1e-25) Bach2(bZIP)/OCILy7-Bach2-ChIP-Seq(GSE44420)/Homer
-		18 of 1006 (1e-25) CLOCK(bHLH)/Liver-Clock-ChIP-Seq(GSE39860)/Homer
-		19 of 1006 (1e-23) Usf2(bHLH)/C2C12-Usf2-ChIP-Seq(GSE36030)/Homer
-		20 of 1006 (1e-21) bHLHE41(bHLH)/proB-Bhlhe41-ChIP-Seq(GSE93764)/Homer
-		21 of 1006 (1e-18) NPAS2(bHLH)/Liver-NPAS2-ChIP-Seq(GSE39860)/Homer
-		22 of 1006 (1e-17) Cbf1(bHLH)/Yeast-Cbf1-ChIP-Seq(GSE29506)/Homer
-		23 of 1006 (1e-17) NPAS(bHLH)/Liver-NPAS-ChIP-Seq(GSE39860)/Homer
-		24 of 1006 (1e-16) IBL1(bHLH)/Seedling-IBL1-ChIP-Seq(GSE51120)/Homer
-		25 of 1006 (1e-12) GBF3(bZIP)/Arabidopsis-GBF3-ChIP-Seq(GSE80564)/Homer
-		26 of 1006 (1e-12) MNT(bHLH)/HepG2-MNT-ChIP-Seq(Encode)/Homer
-		27 of 1006 (1e-11) Max(bHLH)/K562-Max-ChIP-Seq(GSE31477)/Homer
-		28 of 1006 (1e-10) TEAD(TEA)/Fibroblast-PU.1-ChIP-Seq(Unpublished)/Homer
-		29 of 1006 (1e-10) Nrf2(bZIP)/Lymphoblast-Nrf2-ChIP-Seq(GSE37589)/Homer
-		30 of 1006 (1e-9) ABF1(bZIP)/Arabidopsis-ABF1-ChIP-Seq(GSE80564)/Homer
-		31 of 1006 (1e-9) NF-E2(bZIP)/K562-NFE2-ChIP-Seq(GSE31477)/Homer
-		32 of 1006 (1e-9) c-Myc(bHLH)/LNCAP-cMyc-ChIP-Seq(Unpublished)/Homer
-		33 of 1006 (1e-9) E-box(bHLH)/Promoter/Homer
-		34 of 1006 (1e-8) TEAD4(TEA)/Tropoblast-Tead4-ChIP-Seq(GSE37350)/Homer
-		35 of 1006 (1e-8) bZIP3(bZIP)/col-bZIP3-DAP-Seq(GSE60143)/Homer
-		36 of 1006 (1e-8) TFE3(bHLH)/MEF-TFE3-ChIP-Seq(GSE75757)/Homer
-		37 of 1006 (1e-8) Pho2(bHLH)/Yeast-Pho2-ChIP-Seq(GSE29506)/Homer
-		38 of 1006 (1e-8) PIF7(bHLH)/col-PIF7-DAP-Seq(GSE60143)/Homer
-		39 of 1006 (1e-7) ABI5(bZIP)/col-ABI5-DAP-Seq(GSE60143)/Homer
-		40 of 1006 (1e-7) n-Myc(bHLH)/mES-nMyc-ChIP-Seq(GSE11431)/Homer
-		41 of 1006 (1e-7) bHLH74(bHLH)/col-bHLH74-DAP-Seq(GSE60143)/Homer
-		42 of 1006 (1e-7) E-box/Arabidopsis-Promoters/Homer
-		43 of 1006 (1e-7) GABPA(ETS)/Jurkat-GABPa-ChIP-Seq(GSE17954)/Homer
-		44 of 1006 (1e-7) c-Myc(bHLH)/mES-cMyc-ChIP-Seq(GSE11431)/Homer
-		45 of 1006 (1e-6) ERG(ETS)/VCaP-ERG-ChIP-Seq(GSE14097)/Homer
-		46 of 1006 (1e-6) ELF1(ETS)/Jurkat-ELF1-ChIP-Seq(SRA014231)/Homer
-		47 of 1006 (1e-6) Pho4(bHLH)/Yeast-Pho4-ChIP-Seq(GSE29506)/Homer
-		48 of 1006 (1e-6) ETS1(ETS)/Jurkat-ETS1-ChIP-Seq(GSE17954)/Homer
-		49 of 1006 (1e-6) MafK(bZIP)/C2C12-MafK-ChIP-Seq(GSE36030)/Homer
-		50 of 1006 (1e-6) TEAD1(TEAD)/HepG2-TEAD1-ChIP-Seq(Encode)/Homer
-		51 of 1006 (1e-6) Elf4(ETS)/BMDM-Elf4-ChIP-Seq(GSE88699)/Homer
-		52 of 1006 (1e-6) NF1-halfsite(CTF)/LNCaP-NF1-ChIP-Seq(Unpublished)/Homer
-		53 of 1006 (1e-6) bZIP48(bZIP)/colamp-bZIP48-DAP-Seq(GSE60143)/Homer
-		54 of 1006 (1e-6) TEAD2(TEA)/Py2T-Tead2-ChIP-Seq(GSE55709)/Homer
-		55 of 1006 (1e-6) Etv2(ETS)/ES-ER71-ChIP-Seq(GSE59402)/Homer
-		56 of 1006 (1e-6) At4g36780(BZR)/col-At4g36780-DAP-Seq(GSE60143)/Homer
-		57 of 1006 (1e-6) Bach1(bZIP)/K562-Bach1-ChIP-Seq(GSE31477)/Homer
-		58 of 1006 (1e-6) At1g78700(BZR)/col-At1g78700-DAP-Seq(GSE60143)/Homer
-		59 of 1006 (1e-5) FoxD3(forkhead)/ZebrafishEmbryo-Foxd3.biotin-ChIP-seq(GSE106676)/Homer
-		60 of 1006 (1e-5) TEAD3(TEA)/HepG2-TEAD3-ChIP-Seq(Encode)/Homer
-		61 of 1006 (1e-5) bZIP28(bZIP)/col-bZIP28-DAP-Seq(GSE60143)/Homer
-		62 of 1006 (1e-5) ETV1(ETS)/GIST48-ETV1-ChIP-Seq(GSE22441)/Homer
-		63 of 1006 (1e-5) Fli1(ETS)/CD8-FLI-ChIP-Seq(GSE20898)/Homer
-		64 of 1006 (1e-5) ABF2(bZIP)/col-ABF2-DAP-Seq(GSE60143)/Homer
-		65 of 1006 (1e-5) Stat3(Stat)/mES-Stat3-ChIP-Seq(GSE11431)/Homer
-		66 of 1006 (1e-5) PAX6(Paired,Homeobox)/Forebrain-Pax6-ChIP-Seq(GSE66961)/Homer
-		67 of 1006 (1e-5) MafA(bZIP)/Islet-MafA-ChIP-Seq(GSE30298)/Homer
-		68 of 1006 (1e-5) ELF5(ETS)/T47D-ELF5-ChIP-Seq(GSE30407)/Homer
-		69 of 1006 (1e-5) EHF(ETS)/LoVo-EHF-ChIP-Seq(GSE49402)/Homer
-		70 of 1006 (1e-5) Stat3+il21(Stat)/CD4-Stat3-ChIP-Seq(GSE19198)/Homer
-		71 of 1006 (1e-5) bZIP68(bZIP)/col-bZIP68-DAP-Seq(GSE60143)/Homer
-		72 of 1006 (1e-5) bHLH34(bHLH)/colamp-bHLH34-DAP-Seq(GSE60143)/Homer
-		73 of 1006 (1e-5) Egr2(Zf)/Thymocytes-Egr2-ChIP-Seq(GSE34254)/Homer
-		74 of 1006 (1e-4) Elk1(ETS)/Hela-Elk1-ChIP-Seq(GSE31477)/Homer
-		75 of 1006 (1e-4) NF1(CTF)/LNCAP-NF1-ChIP-Seq(Unpublished)/Homer
-		76 of 1006 (1e-4) AREB3(bZIP)/col-AREB3-DAP-Seq(GSE60143)/Homer
-		77 of 1006 (1e-4) PAX5(Paired,Homeobox)/GM12878-PAX5-ChIP-Seq(GSE32465)/Homer
-		78 of 1006 (1e-4) Lhx3(Homeobox)/Neuron-Lhx3-ChIP-Seq(GSE31456)/Homer
-		79 of 1006 (1e-4) GBF5(bZIP)/colamp-GBF5-DAP-Seq(GSE60143)/Homer
-		80 of 1006 (1e-4) bHLHE40(bHLH)/HepG2-BHLHE40-ChIP-Seq(GSE31477)/Homer
-		81 of 1006 (1e-4) ELF3(ETS)/PDAC-ELF3-ChIP-Seq(GSE64557)/Homer
-		82 of 1006 (1e-4) Hoxa11(Homeobox)/ChickenMSG-Hoxa11.Flag-ChIP-Seq(GSE86088)/Homer
-		83 of 1006 (1e-4) HNF1b(Homeobox)/PDAC-HNF1B-ChIP-Seq(GSE64557)/Homer
-		84 of 1006 (1e-4) Hoxd13(Homeobox)/ChickenMSG-Hoxd13.Flag-ChIP-Seq(GSE86088)/Homer
-		85 of 1006 (1e-4) ETV4(ETS)/HepG2-ETV4-ChIP-Seq(ENCODE)/Homer
-		86 of 1006 (1e-4) GBF6(bZIP)/colamp-GBF6-DAP-Seq(GSE60143)/Homer
-		87 of 1006 (1e-4) RORgt(NR)/EL4-RORgt.Flag-ChIP-Seq(GSE56019)/Homer
-		88 of 1006 (1e-4) RORgt(NR)/EL4-RORgt.Flag-ChIP-Seq(GSE56019)/Homer
-		89 of 1006 (1e-4) ETS(ETS)/Promoter/Homer
-		90 of 1006 (1e-4) Pax8(Paired,Homeobox)/Thyroid-Pax8-ChIP-Seq(GSE26938)/Homer
-		91 of 1006 (1e-4) Bcl6(Zf)/Liver-Bcl6-ChIP-Seq(GSE31578)/Homer
-		92 of 1006 (1e-4) Tlx?(NR)/NPC-H3K4me1-ChIP-Seq(GSE16256)/Homer
-		93 of 1006 (1e-4) bZIP53(bZIP)/colamp-bZIP53-DAP-Seq(GSE60143)/Homer
-		94 of 1006 (1e-4) Foxa2(Forkhead)/Liver-Foxa2-ChIP-Seq(GSE25694)/Homer
-		95 of 1006 (1e-4) En1(Homeobox)/SUM149-EN1-ChIP-Seq(GSE120957)/Homer
-		96 of 1006 (1e-4) Six1(Homeobox)/Myoblast-Six1-ChIP-Chip(GSE20150)/Homer
-		97 of 1006 (1e-4) RORg(NR)/Liver-Rorc-ChIP-Seq(GSE101115)/Homer
-		98 of 1006 (1e-4) RORa(NR)/Liver-Rora-ChIP-Seq(GSE101115)/Homer
-		99 of 1006 (1e-4) NFE2L2(bZIP)/HepG2-NFE2L2-ChIP-Seq(Encode)/Homer
-		100 of 1006 (1e-3) AP-2gamma(AP2)/MCF7-TFAP2C-ChIP-Seq(GSE21234)/Homer
-		101 of 1006 (1e-3) LHX9(Homeobox)/Hct116-LHX9.V5-ChIP-Seq(GSE116822)/Homer
-		102 of 1006 (1e-3) AT5G05550(Trihelix)/col-AT5G05550-DAP-Seq(GSE60143)/Homer
-		103 of 1006 (1e-3) AP-2alpha(AP2)/Hela-AP2alpha-ChIP-Seq(GSE31477)/Homer
-		104 of 1006 (1e-3) FOXA1(Forkhead)/LNCAP-FOXA1-ChIP-Seq(GSE27824)/Homer
-		105 of 1006 (1e-3) ATHB33(ZFHD)/col-ATHB33-DAP-Seq(GSE60143)/Homer
-		106 of 1006 (1e-3) FOXA1(Forkhead)/MCF7-FOXA1-ChIP-Seq(GSE26831)/Homer
-		107 of 1006 (1e-3) ATHB34(ZFHD)/colamp-ATHB34-DAP-Seq(GSE60143)/Homer
-		108 of 1006 (1e-3) bZIP16(bZIP)/colamp-bZIP16-DAP-Seq(GSE60143)/Homer
-		109 of 1006 (1e-3) NFAT(RHD)/Jurkat-NFATC1-ChIP-Seq(Jolma_et_al.)/Homer
-		110 of 1006 (1e-3) Elk4(ETS)/Hela-Elk4-ChIP-Seq(GSE31477)/Homer
-		111 of 1006 (1e-3) MYB101(MYB)/colamp-MYB101-DAP-Seq(GSE60143)/Homer
-		112 of 1006 (1e-3) Hoxa13(Homeobox)/ChickenMSG-Hoxa13.Flag-ChIP-Seq(GSE86088)/Homer
-		113 of 1006 (1e-3) PHA-4(Forkhead)/cElegans-Embryos-PHA4-ChIP-Seq(modEncode)/Homer
-		114 of 1006 (1e-3) Ets1-distal(ETS)/CD4+-PolII-ChIP-Seq(Barski_et_al.)/Homer
-		115 of 1006 (1e-3) Hnf1(Homeobox)/Liver-Foxa2-Chip-Seq(GSE25694)/Homer
-		116 of 1006 (1e-3) Smad3(MAD)/NPC-Smad3-ChIP-Seq(GSE36673)/Homer
-		117 of 1006 (1e-3) Hoxd11(Homeobox)/ChickenMSG-Hoxd11.Flag-ChIP-Seq(GSE86088)/Homer
-		118 of 1006 (1e-3) MYB(HTH)/ERMYB-Myb-ChIPSeq(GSE22095)/Homer
-		119 of 1006 (1e-3) DLX2(Homeobox)/BasalGanglia-Dlx2-ChIP-seq(GSE124936)/Homer
-		120 of 1006 (1e-3) E-box/Drosophila-Promoters/Homer
-		121 of 1006 (1e-3) FOXP1(Forkhead)/H9-FOXP1-ChIP-Seq(GSE31006)/Homer
-		122 of 1006 (1e-3) FoxL2(Forkhead)/Ovary-FoxL2-ChIP-Seq(GSE60858)/Homer
-		123 of 1006 (1e-3) REB1/SacCer-Promoters/Homer
-		124 of 1006 (1e-3) Egr1(Zf)/K562-Egr1-ChIP-Seq(GSE32465)/Homer
-		125 of 1006 (1e-3) Atf4(bZIP)/MEF-Atf4-ChIP-Seq(GSE35681)/Homer
-		126 of 1006 (1e-3) PPARa(NR),DR1/Liver-Ppara-ChIP-Seq(GSE47954)/Homer
-		127 of 1006 (1e-3) EWS:FLI1-fusion(ETS)/SK_N_MC-EWS:FLI1-ChIP-Seq(SRA014231)/Homer
-		128 of 1006 (1e-3) Lhx1(Homeobox)/EmbryoCarcinoma-Lhx1-ChIP-Seq(GSE70957)/Homer
-		129 of 1006 (1e-3) MYB77(MYB)/col-MYB77-DAP-Seq(GSE60143)/Homer
-		130 of 1006 (1e-3) SPDEF(ETS)/VCaP-SPDEF-ChIP-Seq(SRA014231)/Homer
-		131 of 1006 (1e-3) ZEB2(Zf)/SNU398-ZEB2-ChIP-Seq(GSE103048)/Homer
-		132 of 1006 (1e-3) Rfx1(HTH)/NPC-H3K4me1-ChIP-Seq(GSE16256)/Homer
-		133 of 1006 (1e-3) AMYB(HTH)/Testes-AMYB-ChIP-Seq(GSE44588)/Homer
-		134 of 1006 (1e-3) bZIP18(bZIP)/colamp-bZIP18-DAP-Seq(GSE60143)/Homer
-		135 of 1006 (1e-3) AT3G10030(Trihelix)/colamp-AT3G10030-DAP-Seq(GSE60143)/Homer
-		136 of 1006 (1e-3) ATHB23(ZFHD)/col-ATHB23-DAP-Seq(GSE60143)/Homer
-		137 of 1006 (1e-3) FOXK1(Forkhead)/HEK293-FOXK1-ChIP-Seq(GSE51673)/Homer
-		138 of 1006 (1e-3) Ap4(bHLH)/AML-Tfap4-ChIP-Seq(GSE45738)/Homer
-		139 of 1006 (1e-2) Foxo3(Forkhead)/U2OS-Foxo3-ChIP-Seq(E-MTAB-2701)/Homer
-		140 of 1006 (1e-2) Hoxd10(Homeobox)/ChickenMSG-Hoxd10.Flag-ChIP-Seq(GSE86088)/Homer
-		141 of 1006 (1e-2) Foxf1(Forkhead)/Lung-Foxf1-ChIP-Seq(GSE77951)/Homer
-		142 of 1006 (1e-2) SCL(bHLH)/HPC7-Scl-ChIP-Seq(GSE13511)/Homer
-		143 of 1006 (1e-2) RBFox2(?)/Heart-RBFox2-CLIP-Seq(GSE57926)/Homer
-		144 of 1006 (1e-2) Six2(Homeobox)/NephronProgenitor-Six2-ChIP-Seq(GSE39837)/Homer
-		145 of 1006 (1e-2) CAMTA1(CAMTA)/col-CAMTA1-DAP-Seq(GSE60143)/Homer
-		146 of 1006 (1e-2) Rfx6(HTH)/Min6b1-Rfx6.HA-ChIP-Seq(GSE62844)/Homer
-		147 of 1006 (1e-2) Fox:Ebox(Forkhead,bHLH)/Panc1-Foxa2-ChIP-Seq(GSE47459)/Homer
-		148 of 1006 (1e-2) X-box(HTH)/NPC-H3K4me1-ChIP-Seq(GSE16256)/Homer
-		149 of 1006 (1e-2) ATHB25(ZFHD)/colamp-ATHB25-DAP-Seq(GSE60143)/Homer
-		150 of 1006 (1e-2) NFkB-p65-Rel(RHD)/ThioMac-LPS-Expression(GSE23622)/Homer
-		151 of 1006 (1e-2) RXR(NR),DR1/3T3L1-RXR-ChIP-Seq(GSE13511)/Homer
-		152 of 1006 (1e-2) DEL2(E2FDP)/col-DEL2-DAP-Seq(GSE60143)/Homer
-		153 of 1006 (1e-2) BORIS(Zf)/K562-CTCFL-ChIP-Seq(GSE32465)/Homer
-		154 of 1006 (1e-2) EBF2(EBF)/BrownAdipose-EBF2-ChIP-Seq(GSE97114)/Homer
-		155 of 1006 (1e-2) HRE(HSF)/HepG2-HSF1-ChIP-Seq(GSE31477)/Homer
-		156 of 1006 (1e-2) HIF-1b(HLH)/T47D-HIF1b-ChIP-Seq(GSE59937)/Homer
-		157 of 1006 (1e-2) AT3G25990(Trihelix)/colamp-AT3G25990-DAP-Seq(GSE60143)/Homer
-		158 of 1006 (1e-2) Cdx2(Homeobox)/mES-Cdx2-ChIP-Seq(GSE14586)/Homer
-		159 of 1006 (1e-2) ATHB24(ZFHD)/colamp-ATHB24-DAP-Seq(GSE60143)/Homer
-		160 of 1006 (1e-2) HLH-1(bHLH)/cElegans-Embryo-HLH1-ChIP-Seq(modEncode)/Homer
-		161 of 1006 (1e-2) EWS:ERG-fusion(ETS)/CADO_ES1-EWS:ERG-ChIP-Seq(SRA014231)/Homer
-		162 of 1006 (1e-2) AT3G52440(C2C2dof)/colamp-AT3G52440-DAP-Seq(GSE60143)/Homer
-		163 of 1006 (1e-2) Twist(bHLH)/HMLE-TWIST1-ChIP-Seq(Chang_et_al)/Homer
-		164 of 1006 (1e-2) MYB98(MYB)/col-MYB98-DAP-Seq(GSE60143)/Homer
-		165 of 1006 (1e-2) E2A(bHLH),near_PU.1/Bcell-PU.1-ChIP-Seq(GSE21512)/Homer
-		166 of 1006 (1e-2) AT5G63260(C3H)/col-AT5G63260-DAP-Seq(GSE60143)/Homer
-		167 of 1006 (1e-2) DMRT6(DM)/Testis-DMRT6-ChIP-Seq(GSE60440)/Homer
-		168 of 1006 (1e-2) NLP7(RWPRK)/col-NLP7-DAP-Seq(GSE60143)/Homer
-		169 of 1006 (1e-2) Chop(bZIP)/MEF-Chop-ChIP-Seq(GSE35681)/Homer
-		170 of 1006 (1e-2) AT3G12130(C3H)/colamp-AT3G12130-DAP-Seq(GSE60143)/Homer
-		171 of 1006 (1e-2) HLF(bZIP)/HSC-HLF.Flag-ChIP-Seq(GSE69817)/Homer
-		172 of 1006 (1e-2) BIM1(bHLH)/colamp-BIM1-DAP-Seq(GSE60143)/Homer
-		173 of 1006 (1e-2) WT1(Zf)/Kidney-WT1-ChIP-Seq(GSE90016)/Homer
-		174 of 1006 (1e-2) Lhx2(Homeobox)/HFSC-Lhx2-ChIP-Seq(GSE48068)/Homer
-		175 of 1006 (1e-2) BIM3(bHLH)/col-BIM3-DAP-Seq(GSE60143)/Homer
-		176 of 1006 (1e-2) GT3a(Trihelix)/col-GT3a-DAP-Seq(GSE60143)/Homer
-		177 of 1006 (1e-2) Replumless(BLH)/Arabidopsis-RPL.GFP-ChIP-Seq(GSE78727)/Homer
-		178 of 1006 (1e-2) CAMTA5(CAMTA)/col-CAMTA5-DAP-Seq(GSE60143)/Homer
-		179 of 1006 (1e-2) HOXB13(Homeobox)/ProstateTumor-HOXB13-ChIP-Seq(GSE56288)/Homer
-		180 of 1006 (1e-2) Rfx2(HTH)/LoVo-RFX2-ChIP-Seq(GSE49402)/Homer
-		181 of 1006 (1e-2) NFAT:AP1(RHD,bZIP)/Jurkat-NFATC1-ChIP-Seq(Jolma_et_al.)/Homer
-		182 of 1006 (1e-2) Hoxa9(Homeobox)/ChickenMSG-Hoxa9.Flag-ChIP-Seq(GSE86088)/Homer
-		183 of 1006 (1e-2) STAT1(Stat)/HelaS3-STAT1-ChIP-Seq(GSE12782)/Homer
-		184 of 1006 (1e-2) PPARE(NR),DR1/3T3L1-Pparg-ChIP-Seq(GSE13511)/Homer
-		185 of 1006 (1e-2) RUNX1(Runt)/Jurkat-RUNX1-ChIP-Seq(GSE29180)/Homer
-		186 of 1006 (1e-2) WUS1(Homeobox)/colamp-WUS1-DAP-Seq(GSE60143)/Homer
-		187 of 1006 (1e-2) WRKY47(WRKY)/colamp-WRKY47-DAP-Seq(GSE60143)/Homer
-		188 of 1006 (1e-2) EBF1(EBF)/Near-E2A-ChIP-Seq(GSE21512)/Homer
-		189 of 1006 (1e-2) FOXM1(Forkhead)/MCF7-FOXM1-ChIP-Seq(GSE72977)/Homer
-		190 of 1006 (1e-2) RUNX(Runt)/HPC7-Runx1-ChIP-Seq(GSE22178)/Homer
-		191 of 1006 (1e-2) Foxa3(Forkhead)/Liver-Foxa3-ChIP-Seq(GSE77670)/Homer
-		192 of 1006 (1e-2) PRDM15(Zf)/ESC-Prdm15-ChIP-Seq(GSE73694)/Homer
-		193 of 1006 (1e-2) Ptf1a(bHLH)/Panc1-Ptf1a-ChIP-Seq(GSE47459)/Homer
-		194 of 1006 (1e-2) bZIP52(bZIP)/colamp-bZIP52-DAP-Seq(GSE60143)/Homer
-		195 of 1006 (1e-2) MYB83(MYB)/colamp-MYB83-DAP-Seq(GSE60143)/Homer
-		196 of 1006 (1e-2) RFX(HTH)/K562-RFX3-ChIP-Seq(SRA012198)/Homer
-		197 of 1006 (1e-2) Sp2(Zf)/HEK293-Sp2.eGFP-ChIP-Seq(Encode)/Homer
+Illegal division by zero at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/findKnownMotifs.pl line 152.
 	----------------------------------------------------------
 	De novo motif finding (HOMER)
 
 	Scanning input files...
-	Parsing sequences...
-	|0%                                   50%                                  100%|
-	================================================================================
-	Total number of Oligos: 32884
-	Autoadjustment for sequence coverage in background: 1.00x
-
-	Oligos: 32884 of 34497 max
-	Tree  : 66800 of 172485 max
-	Optimizing memory usage...
-	Cache length = 11180
-	Using binomial scoring
-
-	Global Optimization Phase: Looking for enriched oligos with up to 2 mismatches...
-
-	Screening oligos 32884 (allowing 0 mismatches):
-	|0%                                   50%                                  100%|
-	================================================================================
-		6.56% skipped, 93.44% checked (30726 of 32884), of those checked:
-		6.56% not in target, 0.00% increased p-value, 0.00% high p-value
-
-	Screening oligos 32884 (allowing 1 mismatches):
-	|0%                                   50%                                  100%|
-	================================================================================
-		6.56% skipped, 93.44% checked (30726 of 32884), of those checked:
-		0.00% not in target, 38.51% increased p-value, 47.66% high p-value
-
-	Screening oligos 32884 (allowing 2 mismatches):
-	|0%                                   50%                                  100%|
-	================================================================================
-		66.21% skipped, 33.79% checked (11113 of 32884), of those checked:
-		0.00% not in target, 25.62% increased p-value, 0.00% high p-value
-	Reading input files...
-	49999 total sequences read
-	Cache length = 11180
-	Using binomial scoring
-
-	Local Optimization Phase:
-	1 of 25 Initial Sequence: CACGTGAC... (-114.705)
-		Round 1: -212.42 CACGTGAC T:1235.0(37.22%),B:10534.8(20.02%),P:1e-92
-		Round 2: -212.42 CACGTGAC T:1235.0(37.22%),B:10534.8(20.02%),P:1e-92
-		=Final=: -184.41 CACGTGAC T:472.0(17.79%),B:3201.3(6.79%),P:1e-80
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	2 of 25 Initial Sequence: ATGACTCA... (-84.251)
-		Round 1: -195.84 ATGACTCA T:710.0(23.48%),B:5107.0(10.26%),P:1e-85
-		Round 2: -195.84 ATGACTCA T:710.0(23.48%),B:5107.0(10.26%),P:1e-85
-		=Final=: -129.56 ATGACTCA T:550.0(20.73%),B:4836.8(10.25%),P:1e-56
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	3 of 25 Initial Sequence: AGCACGTG... (-29.105)
-		Round 1: -45.98 AGCACGTG T:396.0(13.87%),B:4147.1(8.42%),P:1e-19
-		Round 2: -45.98 AGCACGTG T:396.0(13.87%),B:4147.1(8.42%),P:1e-19
-		=Final=: -41.81 AGCACGTG T:338.0(12.74%),B:3665.7(7.77%),P:1e-18
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	4 of 25 Initial Sequence: GCAGTCAC... (-25.628)
-		Round 1: -35.86 GCAGTCAC T:1229.0(37.08%),B:16620.9(29.70%),P:1e-15
-		Round 2: -35.86 GCAGTCAC T:1229.0(37.08%),B:16620.9(29.70%),P:1e-15
-		=Final=: -41.60 GCAGTCAC T:967.0(36.45%),B:13468.9(28.55%),P:1e-18
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	5 of 25 Initial Sequence: GAATTCCG... (-26.587)
-		Round 1: -29.30 GAATTCCG T:364.0(12.82%),B:4237.8(8.59%),P:1e-12
-		Round 2: -32.06 GAATTCCG T:314.0(11.16%),B:3452.8(7.06%),P:1e-13
-		Round 3: -32.06 GAATTCCG T:314.0(11.16%),B:3452.8(7.06%),P:1e-13
-		=Final=: -25.27 GAATTCCG T:254.0(9.57%),B:2921.6(6.19%),P:1e-10
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	6 of 25 Initial Sequence: CTTTCCCG... (-20.620)
-		Round 1: -35.79 CTTTCCCG T:1654.0(46.40%),B:23019.5(38.62%),P:1e-15
-		Round 2: -35.79 CTTTCCCG T:1654.0(46.40%),B:23019.5(38.62%),P:1e-15
-		=Final=: -37.67 CTTTCCCG T:1256.0(47.34%),B:18565.9(39.36%),P:1e-16
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	7 of 25 Initial Sequence: ACACGGCC... (-17.956)
-		Round 1: -28.14 ACACGGCC T:410.0(14.32%),B:4923.7(9.91%),P:1e-12
-		Round 2: -28.14 ACACGGCC T:410.0(14.32%),B:4923.7(9.91%),P:1e-12
-		=Final=: -25.93 ACACGGCC T:386.0(14.55%),B:4862.3(10.31%),P:1e-11
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	8 of 25 Initial Sequence: GCCCTGCG... (-15.504)
-		Round 1: -28.25 GCCCTGCG T:1278.0(38.23%),B:17962.0(31.67%),P:1e-12
-		Round 2: -30.50 GSCCTGHG T:1127.0(34.62%),B:15480.0(27.98%),P:1e-13
-		Round 3: -30.50 GSCCTGHG T:1127.0(34.62%),B:15480.0(27.98%),P:1e-13
-		=Final=: -24.86 GSCCTGHG T:857.0(32.30%),B:12492.0(26.48%),P:1e-10
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	9 of 25 Initial Sequence: TGACACGC... (-14.780)
-		Round 1: -34.43 TGACACGC T:256.0(9.20%),B:2609.6(5.38%),P:1e-14
-		Round 2: -34.43 TGACACGC T:256.0(9.20%),B:2609.6(5.38%),P:1e-14
-		=Final=: -34.02 TGACACGC T:219.0(8.25%),B:2208.3(4.68%),P:1e-14
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	10 of 25 Initial Sequence: ATCAGGTG... (-13.574)
-		Round 1: -18.80 ATCAGGTG T:78.0(2.90%),B:657.1(1.38%),P:1e-8
-		Round 2: -25.13 RTCAGCTG T:241.0(8.69%),B:2655.9(5.47%),P:1e-10
-		Round 3: -25.13 RTCAGCTG T:241.0(8.69%),B:2655.9(5.47%),P:1e-10
-		=Final=: -21.66 RTCAGCTG T:208.0(7.84%),B:2367.5(5.02%),P:1e-9
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	11 of 25 Initial Sequence: ATTGCTAA... (-13.427)
-		Round 1: -23.15 ATTGCTAA T:206.0(7.47%),B:2236.9(4.63%),P:1e-10
-		Round 2: -23.15 ATTGCTAA T:206.0(7.47%),B:2236.9(4.63%),P:1e-10
-		=Final=: -27.77 ATTGCTAA T:315.0(11.87%),B:3733.0(7.91%),P:1e-12
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	12 of 25 Initial Sequence: AGTCAACC... (-12.141)
-		Round 1: -13.97 AGTCAACC T:40.0(1.50%),B:287.6(0.61%),P:1e-6
-		Round 2: -16.98 AGTCAGCC T:137.0(5.03%),B:1462.5(3.05%),P:1e-7
-		Round 3: -17.77 AGTCAGCC T:757.0(24.83%),B:10751.5(20.38%),P:1e-7
-		Round 4: -21.34 AGTCAGCC T:559.0(19.00%),B:7467.0(14.64%),P:1e-9
-		Round 5: -22.57 AGTCAGCC T:614.0(20.66%),B:8226.1(16.00%),P:1e-9
-		Round 6: -23.44 ARTCAACC T:1220.0(36.87%),B:17496.5(30.99%),P:1e-10
-		Round 7: -27.13 AGTCANMC T:1042.0(32.49%),B:14425.4(26.35%),P:1e-11
-		Round 8: -28.70 AVTCANMC T:840.0(27.14%),B:11266.4(21.25%),P:1e-12
-		Round 9: -28.70 AVTCANMC T:840.0(27.14%),B:11266.4(21.25%),P:1e-12
-		=Final=: -32.20 AVTCANMC T:741.0(27.93%),B:10194.1(21.61%),P:1e-13
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	13 of 25 Initial Sequence: TGAATGAA... (-10.497)
-		Round 1: -15.57 TGAATGAA T:225.0(8.13%),B:2751.0(5.67%),P:1e-6
-		Round 2: -16.02 TGAATGAM T:266.0(9.54%),B:3344.1(6.84%),P:1e-6
-		Round 3: -16.09 BGAATGAM T:742.0(24.40%),B:10659.2(20.23%),P:1e-6
-		Round 4: -20.86 KGAATGAA T:530.0(18.11%),B:7049.4(13.88%),P:1e-9
-		Round 5: -20.86 KGAATGAA T:530.0(18.11%),B:7049.4(13.88%),P:1e-9
-		=Final=: -18.83 KGAATGAA T:676.0(25.48%),B:9844.7(20.87%),P:1e-8
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	14 of 25 Initial Sequence: ATTAACGT... (-10.542)
-		Round 1: -17.05 ATTAACGT T:153.0(5.60%),B:1677.4(3.49%),P:1e-7
-		Round 2: -19.11 MTTAACDD T:216.0(7.82%),B:2496.2(5.15%),P:1e-8
-		Round 3: -19.11 MTTAACDD T:216.0(7.82%),B:2496.2(5.15%),P:1e-8
-		=Final=: -20.69 MTTAACDD T:208.0(7.84%),B:2396.4(5.08%),P:1e-8
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	15 of 25 Initial Sequence: ACTTCCTG... (-10.558)
-		Round 1: -15.31 ACTTCCTG T:119.0(4.39%),B:1264.5(2.64%),P:1e-6
-		Round 2: -20.57 ACTTCCKT T:157.0(5.75%),B:1639.9(3.42%),P:1e-8
-		Round 3: -20.57 ACTTCCKT T:157.0(5.75%),B:1639.9(3.42%),P:1e-8
-		=Final=: -22.12 ACTTCCKT T:154.0(5.80%),B:1600.2(3.39%),P:1e-9
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	16 of 25 Initial Sequence: TTCCACAT... (-9.856)
-		Round 1: -12.66 TTCCACAT T:100.0(3.70%),B:1080.5(2.26%),P:1e-5
-		Round 2: -12.66 TTCCACAT T:100.0(3.70%),B:1080.5(2.26%),P:1e-5
-		=Final=: -12.58 TTCCACAT T:98.0(3.69%),B:1069.5(2.27%),P:1e-5
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	17 of 25 Initial Sequence: TTTGCCTT... (-9.807)
-		Round 1: -13.55 TTTGCCTT T:187.0(6.81%),B:2280.1(4.72%),P:1e-5
-		Round 2: -13.55 TTTGCCTT T:187.0(6.81%),B:2280.1(4.72%),P:1e-5
-		=Final=: -15.15 TTTGCCTT T:182.0(6.86%),B:2197.6(4.66%),P:1e-6
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	18 of 25 Initial Sequence: AACAAGCT... (-9.616)
-		Round 1: -13.22 AACAAGCT T:82.0(3.04%),B:816.2(1.72%),P:1e-5
-		Round 2: -16.45 AACAAGCT T:98.0(3.63%),B:960.3(2.01%),P:1e-7
-		Round 3: -16.45 AACAAGCT T:98.0(3.63%),B:960.3(2.01%),P:1e-7
-		=Final=: -14.90 AACAAGCT T:93.0(3.51%),B:944.1(2.00%),P:1e-6
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	19 of 25 Initial Sequence: CCCTTCGG... (-9.573)
-		Round 1: -14.51 CCCTTCGG T:390.0(13.67%),B:5283.6(10.60%),P:1e-6
-		Round 2: -16.16 CCCTTGGG T:115.0(4.24%),B:1187.0(2.48%),P:1e-7
-		Round 3: -16.16 CCCTTGGG T:115.0(4.24%),B:1187.0(2.48%),P:1e-7
-		=Final=: -17.49 CCCTTGGG T:129.0(4.86%),B:1371.7(2.91%),P:1e-7
-		Performing exhaustive masking of motif...
-		Reprioritizing potential motifs...
-	Remaining seeds don't look promising (After initial 5 motifs, logp -9.118 > -9.424)
-
-	Finalizing Enrichment Statistics (new in v3.4)
-	Reading input files...
-	49999 total sequences read
-	Cache length = 11180
-	Using binomial scoring
-	Checking enrichment of 19 motif(s)
-	|0%                                    50%                                  100%|
-	=================================================================================
-	Output in file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/DE_sites_len8/homerMotifs.motifs8
-
-	(Motifs in homer2 format)
-	Determining similar motifs... 19 reduced to 14 motifs
-	Outputing HTML and sequence logos for motif comparison...
-	Checking de novo motifs against known motifs...
-	Formatting HTML page...
-		1 of 14 (1e-80) similar to TFE3/MA0831.2/Jaspar(0.981)
-		2 of 14 (1e-62) similar to GCN4(MacIsaac)/Yeast(0.987)
-		3 of 14 (1e-18) similar to vis/MA0252.1/Jaspar(0.788)
-		4 of 14 (1e-17) similar to PCBP1(KH)/Mus_musculus-RNCMPT00239-PBM/HughesRNA(0.914)
-		5 of 14 (1e-14) similar to ARR1/Literature(Harbison)/Yeast(0.829)
-		6 of 14 (1e-14) similar to SKN7/MA0381.1/Jaspar(0.748)
-		7 of 14 (1e-13) similar to POL009.1_DCE_S_II/Jaspar(0.772)
-		8 of 14 (1e-11) similar to Eip74EF/dmmpmm(Bigfoot)/fly(0.917)
-		9 of 14 (1e-11) similar to TARDBP(RRM)/Homo_sapiens-RNCMPT00076-PBM/HughesRNA(0.873)
-		10 of 14 (1e-11) similar to ZCRB1(RRM)/Homo_sapiens-RNCMPT00087-PBM/HughesRNA(0.771)
-		11 of 14 (1e-8) similar to POU5F1/MA1115.1/Jaspar(0.752)
-		12 of 14 (1e-7) similar to MOD(RRM)/Drosophila_melanogaster-RNCMPT00140-PBM/HughesRNA(0.791)
-		13 of 14 (1e-7) similar to EBF3/MA1637.1/Jaspar(0.905)
-		14 of 14 (1e-5) similar to grh/dmmpmm(Bigfoot)/fly(0.771)
+!!! Something is wrong... are you sure you chose the right length for motif finding?
+!!! i.e. also check your sequence file!!!
+Use of uninitialized value in numeric gt (>) at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/compareMotifs.pl line 1394.
+	!!! Filtered out all motifs!!!
 	Job finished - if results look good, please send beer to ..
 
 	Cleaning up tmp files...
 
-finish cut and run analysis at Fri Jun  9 09:37:11 CEST 2023
+
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/Rerun_14062023/2023-06-21TFs_genes_in_fusion.bed
+	Genome = /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+	Output Directory = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/fusion_TFs_len12
+	Fragment size set to 200
+	Motif length set at 12,
+	Using Custom Genome
+	Peak/BED file conversion summary:
+		BED/Header formatted lines: 125
+		peakfile formatted lines: 0
+
+	Peak File Statistics:
+		Total Peaks: 125
+		Redundant Peak IDs: 123
+		Peaks lacking information: 0 (need at least 5 columns per peak)
+		Peaks with misformatted coordinates: 0 (should be integer)
+		Peaks with misformatted strand: 0 (should be either +/- or 0/1)
+
+	Redunant Peaks found: Remove or rename these or some programs may have trouble...
+
+	123 duplicate peak IDs out of 125 total peaks
+	Background files for 200 bp fragments found.
+	Custom genome sequence file: /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+
+	Extracting sequences from file: /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+	Looking for peak sequences in a single file (/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa)
+
+	Not removing redundant sequences
+
+
+	Sequences processed:
+		0 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+
+	Total sequences set to 50000
+
+	Choosing background that matches in CpG/GC content...
+Illegal division by zero at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/assignGeneWeights.pl line 63.
+	Assembling sequence file...
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	0 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
+	Autonormalization: 2-mers (16 total)
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/fusion_TFs_len12/seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
+	Autonormalization: 2-mers (16 total)
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
+	Autonormalization: 3-mers (64 total)
+	Finished preparing sequence/group files
+
+	----------------------------------------------------------
+	Known motif enrichment
+
+	Reading input files...
+	0 total sequences read
+	1006 motifs loaded
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 1006 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+Illegal division by zero at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/findKnownMotifs.pl line 152.
+	----------------------------------------------------------
+	De novo motif finding (HOMER)
+
+	-blen automatically set to 2
+	Scanning input files...
+!!! Something is wrong... are you sure you chose the right length for motif finding?
+!!! i.e. also check your sequence file!!!
+Use of uninitialized value in numeric gt (>) at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/compareMotifs.pl line 1394.
+	!!! Filtered out all motifs!!!
+	Job finished - if results look good, please send beer to ..
+
+	Cleaning up tmp files...
+
+
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/Rerun_14062023/2023-06-21TFs_genes_in_fusion.bed
+	Genome = /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+	Output Directory = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/fusion_TFs_len8
+	Fragment size set to 200
+	Motif length set at 8,
+	Using Custom Genome
+	Peak/BED file conversion summary:
+		BED/Header formatted lines: 125
+		peakfile formatted lines: 0
+
+	Peak File Statistics:
+		Total Peaks: 125
+		Redundant Peak IDs: 123
+		Peaks lacking information: 0 (need at least 5 columns per peak)
+		Peaks with misformatted coordinates: 0 (should be integer)
+		Peaks with misformatted strand: 0 (should be either +/- or 0/1)
+
+	Redunant Peaks found: Remove or rename these or some programs may have trouble...
+
+	123 duplicate peak IDs out of 125 total peaks
+	Background files for 200 bp fragments found.
+	Custom genome sequence file: /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+
+	Extracting sequences from file: /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+	Looking for peak sequences in a single file (/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa)
+
+	Not removing redundant sequences
+
+
+	Sequences processed:
+		0 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+
+	Total sequences set to 50000
+
+	Choosing background that matches in CpG/GC content...
+Illegal division by zero at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/assignGeneWeights.pl line 63.
+	Assembling sequence file...
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	0 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
+	Autonormalization: 2-mers (16 total)
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/fusion_TFs_len8/seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
+	Autonormalization: 2-mers (16 total)
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
+	Autonormalization: 3-mers (64 total)
+	Finished preparing sequence/group files
+
+	----------------------------------------------------------
+	Known motif enrichment
+
+	Reading input files...
+	0 total sequences read
+	1006 motifs loaded
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 1006 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+Illegal division by zero at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/findKnownMotifs.pl line 152.
+	----------------------------------------------------------
+	De novo motif finding (HOMER)
+
+	Scanning input files...
+!!! Something is wrong... are you sure you chose the right length for motif finding?
+!!! i.e. also check your sequence file!!!
+Use of uninitialized value in numeric gt (>) at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/compareMotifs.pl line 1394.
+	!!! Filtered out all motifs!!!
+	Job finished - if results look good, please send beer to ..
+
+	Cleaning up tmp files...
+
+
+	Position file = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/diffBind_analysis/Rerun_14062023/2023-06-21TFs_genes_in_fusion.bed
+	Genome = /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+	Output Directory = /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/fusion_TFs_len81012
+	Fragment size set to 200
+	Motif length set at 8,10,12,
+	Using Custom Genome
+	Peak/BED file conversion summary:
+		BED/Header formatted lines: 125
+		peakfile formatted lines: 0
+
+	Peak File Statistics:
+		Total Peaks: 125
+		Redundant Peak IDs: 123
+		Peaks lacking information: 0 (need at least 5 columns per peak)
+		Peaks with misformatted coordinates: 0 (should be integer)
+		Peaks with misformatted strand: 0 (should be either +/- or 0/1)
+
+	Redunant Peaks found: Remove or rename these or some programs may have trouble...
+
+	123 duplicate peak IDs out of 125 total peaks
+	Background files for 200 bp fragments found.
+	Custom genome sequence file: /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+
+	Extracting sequences from file: /hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa
+	Looking for peak sequences in a single file (/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_assembly_genome.fa)
+
+	Not removing redundant sequences
+
+
+	Sequences processed:
+		0 total
+
+	Frequency Bins: 0.2 0.25 0.3 0.35 0.4 0.45 0.5 0.6 0.7 0.8
+	Freq	Bin	Count
+
+	Total sequences set to 50000
+
+	Choosing background that matches in CpG/GC content...
+Illegal division by zero at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/assignGeneWeights.pl line 63.
+	Assembling sequence file...
+	Normalizing lower order oligos using homer2
+
+	Reading input files...
+	0 total sequences read
+	Autonormalization: 1-mers (4 total)
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
+	Autonormalization: 2-mers (16 total)
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
+	Autonormalization: 3-mers (64 total)
+	Normalization weights can be found in file: /hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/motif/fusion_TFs_len81012/seq.autonorm.tsv
+	Converging on autonormalization solution:
+	...............................................................................
+	Final normalization:	Autonormalization: 1-mers (4 total)
+		A	inf%	inf%	-nan
+		C	inf%	inf%	-nan
+		G	inf%	inf%	-nan
+		T	inf%	inf%	-nan
+	Autonormalization: 2-mers (16 total)
+		AA	inf%	inf%	-nan
+		CA	inf%	inf%	-nan
+		GA	inf%	inf%	-nan
+		TA	inf%	inf%	-nan
+		AC	inf%	inf%	-nan
+		CC	inf%	inf%	-nan
+		GC	inf%	inf%	-nan
+		TC	inf%	inf%	-nan
+		AG	inf%	inf%	-nan
+		CG	inf%	inf%	-nan
+		GG	inf%	inf%	-nan
+		TG	inf%	inf%	-nan
+		AT	inf%	inf%	-nan
+		CT	inf%	inf%	-nan
+		GT	inf%	inf%	-nan
+		TT	inf%	inf%	-nan
+	Autonormalization: 3-mers (64 total)
+	Finished preparing sequence/group files
+
+	----------------------------------------------------------
+	Known motif enrichment
+
+	Reading input files...
+	0 total sequences read
+	1006 motifs loaded
+	Cache length = 11180
+	Using binomial scoring
+	Checking enrichment of 1006 motif(s)
+	|0%                                    50%                                  100%|
+	=================================================================================
+Illegal division by zero at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/findKnownMotifs.pl line 152.
+	----------------------------------------------------------
+	De novo motif finding (HOMER)
+
+	Scanning input files...
+!!! Something is wrong... are you sure you chose the right length for motif finding?
+!!! i.e. also check your sequence file!!!
+
+	Scanning input files...
+!!! Something is wrong... are you sure you chose the right length for motif finding?
+!!! i.e. also check your sequence file!!!
+
+	-blen automatically set to 2
+	Scanning input files...
+!!! Something is wrong... are you sure you chose the right length for motif finding?
+!!! i.e. also check your sequence file!!!
+Use of uninitialized value in numeric gt (>) at /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/bin/compareMotifs.pl line 1394.
+	!!! Filtered out all motifs!!!
+	Job finished - if results look good, please send beer to ..
+
+	Cleaning up tmp files...
+
+finish cut and run analysis at Wed Jun 21 13:28:00 CEST 2023
