@@ -48,7 +48,7 @@ The cut and run data were analyzed based on published protocol with modification
 # Steps description
 
 Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignment-post-processing [https://github.com/nf-core/cutandrun]
-## Module 1. Initial data quality checking: sequence reads, duplication rate, trimming, replicate correlation 
+## Module 1. Data processing: quality checking, trimming, alignment, replicates correlation 
 
 <p>
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M1.png" alt>
@@ -56,54 +56,54 @@ Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignmen
 <p>
     <em>Module 1. Data processing and alignment<em>.
         </p>
-## 1. Quality checking 
+### 1. Quality checking 
 Reads quality for each sequence in each sample is checked with fastQC in order to identify poor quality sequencing sample(s). 
 
-## 2. Trimming
+### 2. Trimming
 Remove adapter and conduct fastQC after with trim_galore
 
 <p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/QC_figure.png" width="600" height="500" alt>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/QC_figure.png" width="300" height="100" alt>
 </p>
 <p>
     <em>Sequence quality before and after trimming. Before trimming all samples already have good quality sequences with most in q30 region (< 0.01% probablility for error). After trimming the quality is more even among sample<em>.
         </p>
 
-## 3. Alignment: map reads to human genome g38
+### 3. Alignment: map reads to human genome g38
 Reads were aligned to hg38 genome.
  <p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_report_w_new_samples.png" width="600" height="500" alt>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_report_w_new_samples.png" width="300" height="100" alt>
 </p>
 <p>
     <em>Alignment report<em>.
         </p>  
         
-  <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_length_report.png" width="600" height="500" alt>
+  <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_length_report.png" width="300" height="100" alt>
 </p>
 <p>
     <em>Alignment length report<em>.
         </p>   
         
-## 4. Remove duplicate: 
+### 4. Remove duplicate: 
  Sequence duplicates and reads < 20bp were removed
 <p>
         </p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/picard_deduplication.png" width="400" height="300">
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/picard_deduplication.png" width="300" height="100">
 <p>
     <em> Duplication report<em>
         </p>
         
 <p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="400" height = "300" alt>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="300" height = "100" alt>
     </p>
     <p> 
     <em>Duplication rate report</em>
 </p>
 
-## 5. Convert bam files to bigwig 
-Aligned data after removign duplicates and short reads were converted to bigwig to be used in IGV for visualization
+### 5. Convert bam files to bigwig 
+Aligned data after removing duplicates and short reads were converted to bigwig to be used in IGV for visualization. Replicates from the same condition are merged.
 
-## 6. Calculate fraction of read in peak (FRiP) to check signal to noise ratio among samples
+### 6. Calculate fraction of read in peak (FRiP) to check signal to noise ratio among samples
 FRiP is calculated as the divison of reads in peaks to total reads in a sample.
 
 <p>
@@ -113,7 +113,7 @@ FRiP is calculated as the divison of reads in peaks to total reads in a sample.
     <em>FRiP and total reads. The total reads range from 726,760 to 101,240,888 reads and FRiP score from 0.02 to 0.4. Data have a large variability in both sequencing depth and signal-to-noise ratio. These data need to be normalized before conducting any comparison or peak calling.</em>
 </p>
 
-## 7. Normalize data using s3norm 
+## Module 2. Normalize data using s3norm 
 ## Replicates correlation
         To check the correlation between replicates from the same group. A good experiment should have high correlation between replicates.
 <p>
