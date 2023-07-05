@@ -135,7 +135,7 @@ To check the correlation between replicates from the same group. A good experime
 ## Module 3. Peak analysis: differential analysis, occupancy analysis and annotation 
 
 <p>
-    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M2.drawio.png" alt>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M3.drawio.png" alt>
 </p>
 <p>
     <em> Module 3. Peak analysis: differential analysis, occupancy analysis and annotation. Steps, inputs and outputs.</em>
@@ -172,14 +172,36 @@ To check the correlation between replicates from the same group. A good experime
 </p>
 
 
-## Module 4.  
+## Module 4. Motif analysis  
 <p>
     <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M4.drawio.png" alt>
 </p>
 <p>
     <em> Module 4. Motif analysis. Steps, inputs and outputs.</em>
 </p>
-## 9. Heatmap generation: Generate heatmap for peaks
-## 10. Prepare for motif finding: merge narrow peak files from the same condition and extract the fasta sequence for STREME meme suit
-## 11. Find motif 
-## 12. Analyze motif 
+
+## Module 5. Enrichment analysis: GO bioprocess, GO molecular function, GSEA
+<p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M5.drawio.png" alt>
+</p>
+<p>
+    <em> Module 5. Enrichment analysis. Steps, inputs and outputs.</em>
+</p>
+
+## Module 6. Data integration
+Expression data such as bulkRNA or single cell RNA are integrated to study the effect of protein bindings on genes in the identified peaks.  
+
+<p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M6.drawio.png" alt>
+</p>
+<p>
+    <em> Module 6. Data integration. Steps, inputs and outputs.</em>
+</p>
+
+## Module 7. Result visualization
+<p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M7.drawio.png" alt>
+</p>
+<p>
+    <em> Module 7. Result visualization. Steps, inputs and outputs.</em>
+</p>
