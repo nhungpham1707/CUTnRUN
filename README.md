@@ -56,6 +56,7 @@ Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignmen
 <p>
     <em>Module 1. Data processing and alignment<em>.
         </p>
+        
 ### 1. Quality checking 
 Reads quality for each sequence in each sample is checked with fastQC in order to identify poor quality sequencing sample(s). 
 
@@ -63,22 +64,22 @@ Reads quality for each sequence in each sample is checked with fastQC in order t
 Remove adapter and conduct fastQC after with trim_galore
 
 <p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/QC_figure.png" width="300" height="100" alt>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/QC_figure.png" width="400" height="300" alt>
 </p>
 <p>
-    <em>Sequence quality before and after trimming. Before trimming all samples already have good quality sequences with most in q30 region (< 0.01% probablility for error). After trimming the quality is more even among sample<em>.
+    <em>Sequence quality before and after trimming. Before trimming all samples already have good quality sequences with most in q30 region (< 0.01% probablility for error). After trimming the quality is more even among samples<em>.
         </p>
 
 ### 3. Alignment: map reads to human genome g38
 Reads were aligned to hg38 genome.
  <p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_report_w_new_samples.png" width="300" height="100" alt>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_report_w_new_samples.png" width="400" height="300" alt>
 </p>
 <p>
     <em>Alignment report<em>.
         </p>  
         
-  <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_length_report.png" width="300" height="100" alt>
+  <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/alignment_length_report.png" width="400" height="300" alt>
 </p>
 <p>
     <em>Alignment length report<em>.
@@ -88,13 +89,13 @@ Reads were aligned to hg38 genome.
  Sequence duplicates and reads < 20bp were removed
 <p>
         </p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/picard_deduplication.png" width="300" height="100">
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/picard_deduplication.png" width="400" height="300">
 <p>
     <em> Duplication report<em>
         </p>
         
 <p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="300" height = "100" alt>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/duplication_rate_report.png" width="400" height = "300" alt>
     </p>
     <p> 
     <em>Duplication rate report</em>
@@ -113,16 +114,23 @@ FRiP is calculated as the divison of reads in peaks to total reads in a sample.
     <em>FRiP and total reads. The total reads range from 726,760 to 101,240,888 reads and FRiP score from 0.02 to 0.4. Data have a large variability in both sequencing depth and signal-to-noise ratio. These data need to be normalized before conducting any comparison or peak calling.</em>
 </p>
 
-## Module 2. Normalize data using s3norm 
-## Replicates correlation
-        To check the correlation between replicates from the same group. A good experiment should have high correlation between replicates.
+### 7. Check replicates correlation
+To check the correlation between replicates from the same group. A good experiment should have high correlation between replicates.
 <p>
     <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/heatmap_PearsonCorr_readCounts.png" width="400", height="400" alt>
 </p>
 <p>
-    <em>Replicate correlation: overall most replicates from the same condition are highly correlated indicate that data from replicate are reliable.</em>
+    <em>Replicate correlation: overall most replicates from the same condition are highly correlated indicate that data from replicates are reliable.</em>
 </p>
 
+## Module 2. Normalize data using s3norm 
+        
+<p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M2.drawio.png" alt>
+</p>
+<p>
+    <em> Module 2. Data normalization. Steps, inputs and outputs.</em>
+</p>
 
 ## Peak calling and downstream analysis 
 ## 5. Call peak: 
