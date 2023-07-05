@@ -123,17 +123,25 @@ To check the correlation between replicates from the same group. A good experime
     <em>Replicate correlation: overall most replicates from the same condition are highly correlated indicate that data from replicates are reliable.</em>
 </p>
 
-## Module 2. Normalize data using s3norm 
+## Module 2. Data normalization and peak calling 
         
 <p>
     <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M2.drawio.png" alt>
 </p>
 <p>
-    <em> Module 2. Data normalization. Steps, inputs and outputs.</em>
+    <em> Module 2. Data normalization and peak calling. Steps, inputs and outputs.</em>
 </p>
 
-## Peak calling and downstream analysis 
-## 5. Call peak: 
+## Module 3. Peak analysis: differential analysis, occupancy analysis and annotation 
+
+<p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M2.drawio.png" alt>
+</p>
+<p>
+    <em> Module 3. Peak analysis: differential analysis, occupancy analysis and annotation. Steps, inputs and outputs.</em>
+</p>
+
+## Module 4.  
 Broad and narrow peak calling with and without control
 <p>
     <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/peaks_number_with_nocontrol_report.png" width="400", height="400" alt>
@@ -163,13 +171,7 @@ Broad and narrow peak calling with and without control
 <p>
     <em>Peaks reproducibility in Tfe3, luc and fusion samples. Peak counts among replicates after normalizing data with s3norm are better than that from raw data.  </em>
 </p>
-## 6. Peak analysis: identify differential binding peaks between groups
-        
-        
 
-
-## 7. Peak annotation
-## 8. Transform bam file to bigwig: merge bam files of the same condition and convert to bigwig to use for heatmap generation
 ## 9. Heatmap generation: Generate heatmap for peaks
 ## 10. Prepare for motif finding: merge narrow peak files from the same condition and extract the fasta sequence for STREME meme suit
 ## 11. Find motif 
