@@ -51,7 +51,7 @@ Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignmen
 ## Module 1. Initial data quality checking: sequence reads, duplication rate, trimming, replicate correlation 
 
 <p>
-<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M1.png" width="600" height="500" alt>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M1.png" alt>
 </p>
 <p>
     <em>Module 1. Data processing and alignment<em>.
