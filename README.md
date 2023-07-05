@@ -50,7 +50,12 @@ The cut and run data were analyzed based on published protocol with modification
 Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignment-post-processing [https://github.com/nf-core/cutandrun]
 ## Module 1. Initial data quality checking: sequence reads, duplication rate, trimming, replicate correlation 
 
-
+<p>
+<img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M1" width="600" height="500" alt>
+</p>
+<p>
+    <em>Module 1. Data processing and alignment<em>.
+        </p>
 ## 1. Quality checking 
 Reads quality for each sequence in each sample is checked with fastQC in order to identify poor quality sequencing sample(s). 
 
