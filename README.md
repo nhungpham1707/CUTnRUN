@@ -141,8 +141,8 @@ To check the correlation between replicates from the same group. A good experime
     <em> Module 3. Peak analysis: differential analysis, occupancy analysis and annotation. Steps, inputs and outputs.</em>
 </p>
 
-## Module 4.  
-Broad and narrow peak calling with and without control
+
+### Broad and narrow peak calling with and without control
 <p>
     <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/peaks_number_with_nocontrol_report.png" width="400", height="400" alt>
 </p>
@@ -150,7 +150,7 @@ Broad and narrow peak calling with and without control
     <em>Number of peak per sample without control</em>
 </p>
 
- ## Peak reproducibility
+ ### Peak reproducibility
  Compare peaks from replicates in the same group. In a good experiment replicates from the same group should generate the same peaks. 
  <p>
     <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/H3k4me3_samples_peak_counts.png" width="500", height="500" alt>
@@ -164,14 +164,21 @@ Broad and narrow peak calling with and without control
 <p>
     <em>Peaks reproducibility in Tfe3, luc and fusion samples. Samples in the same group have the same antibody but different seq depth. However, only less than 40% of peak are overlapped among replicates. </em>
 </p>
-       
-        <p>
+       <p>
     <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/peak_counts_after_s3norm_normalize.png" width="400", height="400" alt>
 </p>
 <p>
     <em>Peaks reproducibility in Tfe3, luc and fusion samples. Peak counts among replicates after normalizing data with s3norm are better than that from raw data.  </em>
 </p>
 
+
+## Module 4.  
+<p>
+    <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M4.drawio.png" alt>
+</p>
+<p>
+    <em> Module 4. Motif analysis. Steps, inputs and outputs.</em>
+</p>
 ## 9. Heatmap generation: Generate heatmap for peaks
 ## 10. Prepare for motif finding: merge narrow peak files from the same condition and extract the fasta sequence for STREME meme suit
 ## 11. Find motif 
