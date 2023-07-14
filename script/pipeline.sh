@@ -154,7 +154,7 @@
 #==================================================================
 
 #==================================================================
-#                   DEFINE GLOBAL VARIABLES
+##                   DEFINE GLOBAL VARIABLES
 
 # conda activate cutnrun_trimgalore
 
