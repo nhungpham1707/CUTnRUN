@@ -24,7 +24,8 @@
 # - 1 bam file per sample stored in its respective folder
 
 
-      
+mkdir -p $align_dir
+
 ########### Make task function ##############
 task () {
 trim_IDs=( $(find ${trim_dir}/${sample_ID} -maxdepth 1 -name "*.fq.gz") )
@@ -52,21 +53,31 @@ echo "-------finish alignment for $sample_ID at $(date)--------" ;
 
 #### run loop
 
-n=0
+    n=0
 
-for sample_ID in ${sample_IDs[@]}; do
+    for sample_ID in ${sample_IDs[@]}; do
     n=$((n+1))
     echo "-----------running $n out of $total_sample samples---------------------- "
-
+    alignment_file=( $(find ${align_dir}/${sample_ID} -maxdepth 1 -name "${sample_ID}_sorted.bam") )
+    if [ -s "$alignment_file" ] 
+    then
+    echo "$alignment_file exists. Skip alignment step for $sample_ID!"
+    else 
     task '$sample_ID' &
+    fi
+  done
 
-done
 
-wait
+    wait
 
-# generate report for alignment result 
-multiqc ${align_dir} -n alignment_report -o ${align_dir}
-echo "all done alignment"
-
+    # generate report for alignment result 
+    multiqc_file=$align_dir/alignment_report.html
+    if [ -s "$multiqc_file" ] 
+    then
+    echo "$multiqc_file exists. Skip generating qc report for alignment step !"
+    else 
+    multiqc ${align_dir} -n alignment_report -o ${align_dir}
+    echo "all done alignment"
+fi
 
      

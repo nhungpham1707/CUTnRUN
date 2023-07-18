@@ -11,11 +11,11 @@
 # Output:
 # - output from each sample will be saved in a subfolder with the respective sample ID
 # - For each sample a zip file and a html file
-
+mkdir -p $qc_dir
 
 task () {
 
-  fastq_IDs=( $(find ${data_dir}/$sample_ID -maxdepth 1 -name "*.fastq.gz") )
+  fastq_IDs=( $(find ${data_dir}/$sample_ID -maxdepth 1 -name "*.$input_extension") )
   #declare -p fastq_IDs
 
   len=${#fastq_IDs[@]}
@@ -31,15 +31,21 @@ task () {
   echo "----------finish fastqc for $sample_ID at $(date)---------" ;
 }
 
-n=0
-for sample_ID in ${sample_IDs[@]}; do
-  n=$((n+1))
-  echo "-----------running $n out of $total_sample samples---------------------- "
-  task "$sample_ID" &
-done
+qc_file=${qc_dir}/quality_check_report.html 
 
-wait
+if [ -s "$qc_file" ] 
+then
+    echo "$qc_file exists. Skip qc step!"
+else 
+  n=0
+  for sample_ID in ${sample_IDs[@]}; do
+    n=$((n+1))
+    echo "-----------running $n out of $total_sample samples---------------------- "
+    task "$sample_ID" &
+  done
 
-# generate report
-multiqc ${qc_dir} -n quality_check_report -o ${qc_dir}
-echo "all done quality check"
+  wait
+  # generate report
+  multiqc ${qc_dir} -n quality_check_report -o ${qc_dir}
+  echo "all done quality check"
+fi

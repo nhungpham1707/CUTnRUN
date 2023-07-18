@@ -3,6 +3,8 @@
 # this script is to sort and remove duplicate
 # Nhung, 21 03 2023
 
+mkdir -p $rm_dup_dir
+
 ########### Make task function ##############
 
 task () {
@@ -98,22 +100,31 @@ task () {
 #   echo "finish indexing for $sample_ID at $(date)" ;
 # }
 ############## run loop #################
-n=0
 
-for sample_ID in ${sample_IDs[@]}; do
+  n=0
+
+  for sample_ID in ${sample_IDs[@]}; do
     n=$((n+1))
     echo "-----------running $n out of $total_sample samples---------------------- "
-
+    rm_dup_file=( $(find ${rm_dup_dir}/${sample_ID} -maxdepth 1 -name "${sample_ID}_rmdup_filt.bam") )
+    if [ -s "$rm_dup_file" ] 
+    then
+    echo "$rm_dup_file exists. Skip filtering step for $sample_ID!"
+    else 
     task '$sample_ID' &
+    fi
+  done
 
-done
-
-wait
-
-# generate report 
-multiqc ${rm_dup_dir} -n rm_dup_report -o ${rm_dup_dir}
-echo "all done filtering"
-
+  wait
+multiqc_file=$rm_dup_dir/rm_dup_report.html
+    if [ -s "$multiqc_file" ] 
+    then
+    echo "$multiqc_file exists. Skip generating qc report for filtering step !"
+    else 
+  # generate report 
+  multiqc ${rm_dup_dir} -n rm_dup_report -o ${rm_dup_dir}
+  echo "all done filtering"
+fi
 
 
 

@@ -1,0 +1,119 @@
+Config.sh: line 100: turn: command not found
+fastq.gz
+start running module 1- data processing for cut and run analysis at Sun Jul 16 12:01:17 CEST 2023
+------------------step1. running quality check--------------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/qualityCheck/quality_check_report.html exists. Skip qc step!
+-------------------step 2. running trimming-----------------
+-----------running 1 out of 2 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_AAC22FNM5_S3_L001_R2_001_val_2.fq.gz exists. Skip trimming step for bulkChIC-PMC-DRO-011!
+-----------running 2 out of 2 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_AAC22FNM5_S4_L001_R1_001_val_2.fq.gz exists. Skip trimming step for bulkChIC-PMC-DRO-012!
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/trimmed/trim_report.html exists. Skip generating qc report for trimming step!
+all done trimming
+-------------------step 3. running alignment----------------
+-----------running 1 out of 2 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_sorted.bam exists. Skip alignment step for bulkChIC-PMC-DRO-011!
+-----------running 2 out of 2 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_sorted.bam exists. Skip alignment step for bulkChIC-PMC-DRO-012!
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/alignment/alignment_report.html exists. Skip generating qc report for alignment step !
+-------------------step 4. running filtering----------------
+-----------running 1 out of 2 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam exists. Skip filtering step for bulkChIC-PMC-DRO-011!
+-----------running 2 out of 2 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam exists. Skip filtering step for bulkChIC-PMC-DRO-012!
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/rm_dup_report.html exists. Skip generating qc report for filtering step !
+-------------------step 5. running sample correlation--
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/figures/heatmap_PearsonCorr_readCounts.png exists. Skip plotting sample correlation step!
+-------------------step 6. running transform bam to bigwig--
+-----------running 1 out of 2 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/bulkChIC-PMC-DRO-011.bw exists. Skip bam2bigwig for bulkChIC-PMC-DRO-011!
+-----------running 2 out of 2 samples---------------------- 
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/bigwig/bulkChIC-PMC-DRO-012.bw exists. Skip bam2bigwig for bulkChIC-PMC-DRO-012!
+all done bam2bigwig
+---------step 7a. running peak calling for raw data tfe3---------
+-----------running 1 out of 4 samples---------------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-T1/narrow/SCC-ChIC-PMC-DRO-T1_paired_control_peaks.narrowPeak exists. Skip peakcalling w control step for SCC-ChIC-PMC-DRO-T1!
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/peak_control_report.html exists. Skip generating qc report for peakcalling w control step!
+all done for peak calling with control
+---------step 7a. running peak calling for raw data luc---------
+-----------running 1 out of 4 samples---------------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-L1/narrow/SCC-ChIC-PMC-DRO-L1_paired_control_peaks.narrowPeak exists. Skip peakcalling w control step for SCC-ChIC-PMC-DRO-L1!
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/peak_control_report.html exists. Skip generating qc report for peakcalling w control step!
+all done for peak calling with control
+---------step 7a. running peak calling for raw data fusion---------
+-----------running 1 out of 4 samples---------------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/SCC-ChIC-PMC-DRO-F1/narrow/SCC-ChIC-PMC-DRO-F1_paired_control_peaks.narrowPeak exists. Skip peakcalling w control step for SCC-ChIC-PMC-DRO-F1!
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling/peak_control_report.html exists. Skip generating qc report for peakcalling w control step!
+all done for peak calling with control
+---------step 7b. running peak calling for raw data without control ---------
+-----------running 1 out of 2 all samples---------------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-011/narrow/bulkChIC-PMC-DRO-011_paired_peaks.narrowPeak exists. Skip peakcalling no control step for bulkChIC-PMC-DRO-011!
+-----------running 2 out of 2 all samples---------------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/bulkChIC-PMC-DRO-012/narrow/bulkChIC-PMC-DRO-012_paired_peaks.narrowPeak exists. Skip peakcalling no control step for bulkChIC-PMC-DRO-012!
+all done for no control
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/peakCalling_nocontrol/peak_no_control_report.html exists. Skip generating qc report for peakcalling no control step!
+all done for peak calling without control
+---------step 8. running FRiP calculation---------
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/FRiP/raw_data_read_in_peak.txt exists. Skip calculating frip step!
+all done for FRiP calculation
+tfe3_test2
+SCC-ChIC-PMC-DRO-T1 SCC-ChIC-PMC-DRO-T5 bulkChIC-PMC-DRO-016 SCC-bulkChIC-PMC-DRO-008
+4
+/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/merged_bigwig/tfe3_test2_merged.bw exists. Skip merging replicates step for tfe3_test2!
+finish merging replicates for tfe3_test2
+bamFilesList: ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-011/bulkChIC-PMC-DRO-011_rmdup_filt.bam']
+binLength: 200
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 16
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 200
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+bamFilesList: ['/hpc/pmc_drost/PROJECTS/swang/CUT_RUN/nhung_test/rm_dup/bulkChIC-PMC-DRO-012/bulkChIC-PMC-DRO-012_rmdup_filt.bam']
+binLength: 200
+numberOfSamples: None
+blackListFileName: None
+skipZeroOverZero: False
+bed_and_bin: False
+genomeChunkSize: None
+defaultFragmentLength: read length
+numberOfProcessors: 16
+verbose: False
+region: None
+bedFile: None
+minMappingQuality: None
+ignoreDuplicates: False
+chrsToSkip: []
+stepSize: 200
+center_read: False
+samFlag_include: None
+samFlag_exclude: None
+minFragmentLength: 0
+maxFragmentLength: 0
+zerosToNans: False
+smoothLength: None
+save_data: False
+out_file_for_raw_data: None
+maxPairedFragmentLength: 1000
+  File "/home/pmc_research/npham/PROJECTS/CUTnRUN_Maroussia/script/modifyBedgraphForS3norm.py", line 15
+    print os.environ["test1"]
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(os.environ["test1"])?

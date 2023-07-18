@@ -59,7 +59,8 @@
 #     -o output 
 #     - extra flag for bedgraph
 #     --outFileFormat bedgraph
-#     --binSize $bin_size # uncomment out lines: L250-L258 writeBedGraph.py 
+#     --binSize $bin_size # uncomment out lines: L250-L258 writeBedGraph.py
+# /hpc/pmc_drost/nhung/anaconda3/envs/cutnrun_trimgalore/lib/python3.9/site-packages/deeptools/writeBedGraph.py 
 #       in deeptools if want to generate files with a fix bin size
 #
 #   Data normalization:
@@ -168,13 +169,10 @@ qc_dir=${res_dir}/qualityCheck
 mkdir -p $qc_dir
 
 trim_dir=${res_dir}/trimmed
-mkdir -p $trim_dir
 
 align_dir=${res_dir}/alignment
-mkdir -p $align_dir
 
 rm_dup_dir=$res_dir/rm_dup
-mkdir -p $rm_dup_dir
 
 frip_dir=${res_dir}/FRiP
 mkdir -p $frip_dir
@@ -185,10 +183,8 @@ modify_bedgraph_dir=${res_dir}/modify_bedgraph
 mkdir -p $modify_bedgraph_dir
 
 peak_dir=${res_dir}/peakCalling
-mkdir -p ${peak_dir}
 
 peak_no_control_dir=${res_dir}/peakCalling_nocontrol
-mkdir -p ${peak_no_control_dir}
 
 normalize_peak_dir=${res_dir}/normalize_peakCalling
 mkdir -p ${normalize_peak_dir}
@@ -200,13 +196,11 @@ merged_bigwig_dir=${res_dir}/merged_bigwig
 mkdir -p ${merged_bigwig_dir}
 
 bigwig_dir=${res_dir}/bigwig
-mkdir -p $bigwig_dir
 
 peak_analysis_dir=${res_dir}/peak_analysis
 mkdir -p $peak_analysis_dir
 
 figure_dir=${res_dir}/figures
-mkdir -p $figure_dir
 
 # bincount_dir=${res_dir}/bincount_window
 # mkdir -p $bincount_dir

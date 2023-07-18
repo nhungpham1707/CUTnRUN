@@ -23,10 +23,12 @@
 # - 2 fastqc html for R1 and R2
 # - 2 fastqc.zip files for R1 and R2.
 
+mkdir -p $trim_dir
+
 #########
 task () {
 
-  fastq_IDs=( $(find ${data_dir}/$sample_ID -maxdepth 1 -name "*.fastq.gz") )
+  fastq_IDs=( $(find ${data_dir}/$sample_ID -name "*.$input_extension") )
   #declare -p fastq_IDs
 
   len=${#fastq_IDs[@]}
@@ -42,19 +44,27 @@ task () {
   echo "finish trim_galore for $sample_ID at $(date)" ;
 }
 
-n=0
+  n=0
 
-for sample_ID in ${sample_IDs[@]}; do
+  for sample_ID in ${sample_IDs[@]}; do
     n=$((n+1))
     echo "-----------running $n out of $total_sample samples---------------------- "
-
+  trim_file=( $(find ${trim_dir}/${sample_ID} -maxdepth 1 -name "*.fq.gz") )
+  if [ -s "$trim_file" ] 
+  then
+    echo "$trim_file exists. Skip trimming step for $sample_ID!"
+  else 
     task '$sample_ID' &
+  fi
+  done
 
-done
-
-wait
-
-# generate report
-multiqc ${trim_dir} -n trim_report -o ${trim_dir}
-echo "all done trimming"
-
+  wait
+multiqc_file=$trim_dir/trim_report.html
+ if [ -s "$multiqc_file" ] 
+  then
+    echo "$multiqc_file exists. Skip generating qc report for trimming step!"
+  else 
+  # generate report
+  multiqc ${trim_dir} -n trim_report -o ${trim_dir}
+fi
+  echo "all done trimming"
