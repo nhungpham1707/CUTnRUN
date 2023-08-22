@@ -11,3 +11,5 @@ python modifyBedgraphForS3norm.py
 
 . ./7-run_s3norm.sh 
 
+# call peak for normalize data
+. ./8b-peakCalling_normalize.sh # copy paste code run but the whole script does not - check again 

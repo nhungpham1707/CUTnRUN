@@ -40,7 +40,6 @@ mkdir -p $peak_analysis_dir
 figure_dir=${res_dir}/figures
 
 diffBind_res_dir=${res_dir}/diffBind_analysis
-mkdir -p $diffBind_res_dir
 
 # Define tool dir 
 bowtie2Index=/hpc/pmc_drost/SOURCES/Genomes/human/bowtie2/human_gencode37_hg38
@@ -82,8 +81,9 @@ fasta_genome_dir=/hpc/pmc_drost/SOURCES/Genomes/human/gencode37_GRCh38_primary_a
 #             "SCC-bulkChIC-PMC-DRO-024"\
 #             "SCC-bulkChIC-PMC-DRO-025")
 
-sample_IDs=( "bulkChIC-PMC-DRO-011" \
-            "bulkChIC-PMC-DRO-012")
+# sample_IDs=( "bulkChIC-PMC-DRO-011" \
+#             "bulkChIC-PMC-DRO-012")
+sample_IDs=('SCC-bulkChIC-PMC-DRO-020' 'SCC-bulkChIC-PMC-DRO-023')
 
 total_sample=${#sample_IDs[@]}
 
@@ -135,3 +135,15 @@ s3norm_script_directory='/hpc/pmc_drost/nhung/S3norm'
 s3norm_working_directory=$modify_bedgraph_dir 
 # sample list csv file and bedgraph files need to be in this working dir. result will be stored in the working dir. 
 s3norm_sample_file_name=anti_SFPQ_w_control 
+
+# directory to save peak from normalize data
+peak_after_s3norm_dir=$normalize_peak_dir/$s3norm_sample_file_name
+
+# module 3: peak analysis
+## variables for generating sample sheet for diffBind
+diffbind_save_name='diffbind_normalize_samples' # the same name for the sample sheet file
+export SAMPLE_SHEET_DIR=$diffBind_res_dir
+export BAM_DIR=$rm_dup_dir
+export PEAK_DIR=$peak_after_s3norm_dir 
+#clean_normalize_peak_dir
+export SAVE_NAME=$diffbind_save_name

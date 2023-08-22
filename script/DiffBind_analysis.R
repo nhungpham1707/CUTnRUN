@@ -37,7 +37,7 @@ text(x = seq(1,length(olap.rate), by=1) , y = olap.rate - 500, labels=as.charact
 dev.off()
 # consensus.peaks <- dba.peakset(peaks_narrow, bRetrieve=TRUE) # extract peaks that are in at least 2 samples
 # consensus.peaks[,0] # 47 sequences 
-# counting overlapping peaks
+# counting peaks
 peak_counts <- dba.count(peaks)
 save.image(paste0(res_dir, '/', Sys.Date(),'-', save_name,"-peak_count_DiffBind.RData"))   
 #

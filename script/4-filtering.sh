@@ -29,7 +29,7 @@ task () {
 
 # Mark and remove duplicates
   echo "start mark dup and remove for $sample_ID at $(date)"
-
+# java -Xmx12g is to specify the maximum memory allocation pool for JVM
   java -Xmx12g -Djava.io.tmpdir=$new_tmp_dir -jar $picardTool MarkDuplicates \
 	 -I ${sample_rmdup}/${sample_ID}_sorted.bam  \
 	 -O ${sample_rmdup}/${sample_ID}_mkrmdup.bam \
