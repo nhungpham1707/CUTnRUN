@@ -10,7 +10,11 @@ Module 1, 2 and 4 were run on HPC with slurm in a conda environment.  A similar 
 ```
 conda env create -f environment_export.yaml
 ```
+Activate conda env by
 
+```
+conda activate cutnrun_env
+```
 The other modules were run in a local machine in R.
 ## Data normalization step
 
@@ -19,7 +23,19 @@ To install s3norm. cd to the location where you want to save s3norm and then clo
 ```
 git clone https://github.com/guanjue/S3norm.git
 ```
-# Scripts and running time overview
+
+# Other data
+fasta genome and bowtie2index for hg38 are included in data folder
+
+# How to run
+The pipeline is not completely automatic. Modification need to be done before adapting the steps to your experiment. The first 6 steps in module 1 are automatic. In module 4, a sample sheet need to be generated. Example sample sheet can be found in the data folder.
+
+The main script is run_pipeline.sh. Read the script carefully and modify wherever needed as mentioned in the script. 
+
+Comment out steps that are not desirable. 
+
+Before run run_pipeline.sh, setup the Config.sh to suit your experiment.
+# Runtime overview
 Steps that are not mentioned here have runtime less than 30 minutes. 
 
 The running time was recorded with --mem=90G, --cpu-per-task=8, and --time=96:0:0. These steps composed different modules. Check each module script for more detail. 
@@ -34,13 +50,12 @@ The running time was recorded with --mem=90G, --cpu-per-task=8, and --time=96:0:
 |6. Calculate FRiP| ~ 40 mins (24 samples) | 6-Calculate_FRiP.sh|
 |7. Data normalization| ~ 4 hours (24 samples) | 7-run_s3norm.sh  |
 |5. Call peak|  ~ 1 hour (18 samples) | 5-peakCalling.sh |
-|6. Peak analysis| | 6-DiffBind.R  |
+|6. Peak analysis| ~ 30 minutes | 6-DiffBind.R  |
 |7. Peak annotation | |  |
 |8. Transform bam file to bigwig | ~ 2-3 hours| |8-bam2bigwig.sh|
 |9. Heatmap generation| ~30 minutes (4 samples) |9-heatmap.sh |
 |10. Motif analysis| ~ 30 minutes - 1h ||
 |11. Find motif location | ~ 30 minutes|  |
-|12. Data normalization | ~ 1h | |
 
 
 
