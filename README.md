@@ -5,28 +5,26 @@ Nhung Pham, 14-03-2023
 
 # Set up
 ## All steps 
-All scripts were run on HPC with slurm in a conda environment. A similar environment can be created from environment.yaml. The file is arranged to have trim_galore installed before other packages to prevent version conflict. 
+Module 1, 2 and 4 were run on HPC with slurm in a conda environment.  A similar environment can be created from environment.yaml. Note: if there is packages conflict, have trim_galore installed before other packages. 
 
 ```
-conda env create -f environment.yaml
+conda env create -f environment_export.yaml
 ```
+
+The other modules were run in a local machine in R.
 ## Data normalization step
-A different conda environment was used for the data normalization step since the data normalization package s3norm requires python 2.7
 
-```
-conda create --name s3norm --file spec-file-s3norm.txt
-```
-
-To install s3norm 
+To install s3norm. cd to the location where you want to save s3norm and then clone 
 
 ```
 git clone https://github.com/guanjue/S3norm.git
 ```
 # Scripts and running time overview
+Steps that are not mentioned here have runtime less than 30 minutes. 
 
-The cut and run data were analyzed based on published protocol with modification [add ref]. The running time was calculated with the current setup in the master_script.sh. 
+The running time was recorded with --mem=90G, --cpu-per-task=8, and --time=96:0:0. These steps composed different modules. Check each module script for more detail. 
 
-|Steps | Run time (with current set up, 16 threads, parallel)| Script name|
+|Steps | Run time | Script name|
 |------|-----------------|------------|
 |1. Quality checking | ~ 30 mins (1 sample) | 1-qualityCheck.sh |
 |2. Trimming|  ~40 mins (1 sample) |2-trimming.sh |
@@ -42,7 +40,8 @@ The cut and run data were analyzed based on published protocol with modification
 |9. Heatmap generation| ~30 minutes (4 samples) |9-heatmap.sh |
 |10. Motif analysis| ~ 30 minutes - 1h ||
 |11. Find motif location | ~ 30 minutes|  |
-|12. Analyze motif | | | | 
+|12. Data normalization | ~ 1h | |
+
 
 
 # Steps description
