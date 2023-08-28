@@ -72,7 +72,7 @@ Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignmen
         </p>
         
 ### 1. Quality checking 
-Reads quality for each sequence in each sample is checked with fastQC in order to identify poor quality sequencing sample(s). 
+Reads quality for each sequence in each sample is checked with fastQC in order to identify poor quality sequencing sample(s). Plots are shown in trimming step
 
 ### 2. Trimming
 Remove adapter and conduct fastQC after with trim_galore
