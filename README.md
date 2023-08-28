@@ -38,7 +38,7 @@ Before run run_pipeline.sh, setup the Config.sh to suit your experiment.
 # Runtime overview
 Steps that are not mentioned here have runtime less than 30 minutes. 
 
-The running time was recorded with --mem=90G, --cpu-per-task=8, and --time=96:0:0. These steps composed different modules. Check each module script for more detail. 
+The running time was recorded with --mem=90G, --cpu-per-task=8, and --time=96:0:0. Samples are run in parallel. These steps composed different modules. Check each module script for more detail. 
 
 |Steps | Run time | Script name|
 |------|-----------------|------------|
