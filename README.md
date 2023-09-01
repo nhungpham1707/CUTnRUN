@@ -28,7 +28,7 @@ git clone https://github.com/guanjue/S3norm.git
 fasta genome and bowtie2index for hg38 are included in data folder
 
 # How to run
-The pipeline is not completely automatic. Adapting the steps to your experiment before running. The first 6 steps in module 1 are automatic. In module 4, a sample sheet need to be generated. Example sample sheet can be found in the data folder.
+The pipeline is not completely automatic. Adapting the steps to your experiment before running. The first 6 steps in module 1 are automatic. In module 4, a sample sheet need to be generated. Example sample sheet can be found in the data folder. Variables in module 7 need to be adapted to your experiment.
 
 The main script is run_pipeline.sh. Read the script carefully and modify wherever needed as mentioned in the script. 
 
