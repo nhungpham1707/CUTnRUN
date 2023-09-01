@@ -1,8 +1,6 @@
 # Author:
 Nhung Pham, 14-03-2023
 
-# Data description
-
 # Set up
 ## All steps 
 Module 1, 2 and 4 were run on HPC with slurm in a conda environment.  A similar environment can be created from environment.yaml. Note: if there is packages conflict, have trim_galore installed before other packages. 
