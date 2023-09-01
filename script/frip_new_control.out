@@ -1,5 +1,0 @@
-start running cut and run analysis at Thu Jun  1 09:56:35 CEST 2023
--------------------step 6. running frip calculation-------- 
------------running 1 out of 12 samples---------------
------------running 2 out of 12 samples---------------
-slurmstepd: error: *** JOB 543740 ON n0062 CANCELLED AT 2023-06-01T09:56:55 ***
