@@ -47,19 +47,19 @@ The running time was recorded with --mem=90G, --cpu-per-task=8, and --time=96:0:
 |5. Convert bam file to bigwig| | 5-bam2bigwig.sh|
 |6. Calculate FRiP| ~ 40 mins (24 samples) | 6-Calculate_FRiP.sh|
 |7. Data normalization| ~ 4 hours (24 samples) | 7-run_s3norm.sh  |
-|5. Call peak|  ~ 1 hour (18 samples) | 5-peakCalling.sh |
-|6. Peak analysis| ~ 30 minutes | 6-DiffBind.R  |
-|7. Peak annotation | |  |
-|8. Transform bam file to bigwig | ~ 2-3 hours| |8-bam2bigwig.sh|
-|9. Heatmap generation| ~30 minutes (4 samples) |9-heatmap.sh |
-|10. Motif analysis| ~ 30 minutes - 1h ||
-|11. Find motif location | ~ 30 minutes|  |
+|8. Call peak|  ~ 1 hour (18 samples) | 8-peakCalling.sh |
+|9. Peak analysis| ~ 30 minutes | 9-DiffBind.R  |
+|10. Peak annotation | |  |
+|11. Transform bam file to bigwig | ~ 2-3 hours| |11-bam2bigwig.sh|
+|12. Heatmap generation| ~30 minutes (4 samples) |12-heatmap.sh |
+|13. Motif analysis| ~ 30 minutes - 1h ||
+|14. Find motif location | ~ 30 minutes|  |
 
 
 
 # Steps description
 
-Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignment-post-processing [https://github.com/nf-core/cutandrun]
+Report ideas were adapted from https://nf-co.re/cutandrun/dev/output#4--alignment-post-processing 
 ## Module 1. Data processing: quality checking, trimming, alignment, replicates correlation 
 
 <p>
