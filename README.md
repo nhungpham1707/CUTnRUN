@@ -61,7 +61,7 @@ The running time was recorded with --mem=90G, --cpu-per-task=8, and --time=96:0:
 Report ideas were adapted from Zheng Y et al (2020). Protocol.io at https://yezhengstat.github.io/CUTTag_tutorial/#324_Visualizing_the_sequencing_depth_and_alignment_results
 
 
-## Module 1. Data processing: quality checking, trimming, alignment, replicates correlation 
+## Module 1. Data processing: quality checking, trimming, alignment, replicates correlation (script: module-1.sh)
 
 <p>
 <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/M1.png" alt>
