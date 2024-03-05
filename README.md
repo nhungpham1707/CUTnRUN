@@ -22,7 +22,7 @@ git clone https://github.com/guanjue/S3norm.git
 ```
 
 # Other data
-fasta genome and bowtie2index for hg38 are included in data folder
+fasta genome and bowtie2index for hg38 can be found [here](https://drive.google.com/drive/folders/1aEGRtyluNKgfF8pZVqV1CNH2YYKsgagO?usp=drive_link) 
 
 # How to run
 The pipeline is not completely automatic. Adapting the steps to your experiment before running. The first 6 steps in module 1 are automatic. In module 4, a sample sheet need to be generated. Example sample sheet can be found in the data folder. Variables in module 7 need to be adapted to your experiment.
@@ -58,7 +58,7 @@ The running time was recorded with --mem=90G, --cpu-per-task=8, and --time=96:0:
 
 # Steps description
 
-Report ideas were adapted from Zheng Y et al (2020). Protocol.io at https://yezhengstat.github.io/CUTTag_tutorial/#324_Visualizing_the_sequencing_depth_and_alignment_results
+Report ideas were adapted from Zheng Y et al (2020). Protocol.io at [link](https://yezhengstat.github.io/CUTTag_tutorial/#324_Visualizing_the_sequencing_depth_and_alignment_results)
 
 
 ## Module 1. Data processing: quality checking, trimming, alignment, replicates correlation (script: module-1.sh)
