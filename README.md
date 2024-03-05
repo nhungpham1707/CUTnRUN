@@ -133,7 +133,7 @@ To check the correlation between replicates from the same group. A good experime
     <img src="https://github.com/nhungpham1707/CUTnRUN/blob/main/Figures/heatmap_PearsonCorr_readCounts.png" width="400", height="400" alt>
 </p>
 <p>
-    <em>Replicate correlation: overall most replicates from the same condition are highly correlated indicate that data from replicates are reliable.</em>
+    <em>Replicate correlation: overall most replicates from the same condition are highly correlated indicate that data from replicates are reliable. The last 6 samples: -FH, -011, -TH, -LH, -012, -013 used anti-histone antibodies so it is correct that they are not correlated with other samples that use anti-TFE3 antibody.</em>
 </p>
 
 ## Module 2. Data normalization and peak calling 
