@@ -32,6 +32,8 @@ The main script is run_pipeline.sh. Read the script carefully and modify whereve
 Comment out steps that are not desirable. 
 
 Before run run_pipeline.sh, setup the Config.sh to suit your experiment.
+
+More downstream analysis can be found [here](https://github.com/nhungpham1707/tRCC_downstream_analysis)
 # Runtime overview
 Steps that are not mentioned here have runtime less than 30 minutes. 
 
